@@ -1,7 +1,7 @@
 function loadMD(filename) {
   var converter = new showdown.Converter();
   var txtFile = new XMLHttpRequest();
-  txtFile.open("GET", "./md/" + filename, true);
+  txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
     if (txtFile.readyState === 4) {
       allText = txtFile.responseText;
