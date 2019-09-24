@@ -1,2 +1,2 @@
-# dmu-multimedia
-materials related to multimedia stream delivery
+# DMU Multimedia
+Materials related to multimedia stream delivery
