@@ -1,0 +1,9 @@
+#controls {
+  text-align: right;
+}
+
+@media print {
+  #controls {
+    display: none;
+  }
+}
