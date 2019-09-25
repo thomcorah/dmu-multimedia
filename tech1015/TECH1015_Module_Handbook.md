@@ -195,7 +195,7 @@ All practical work uploaded to your public server space
 [Back to the Contents](#toc)
 
 <div style="page-break-after: always;"></div>
-<a name='cw1'></a>
+<a name='cw1' id='cw1'></a>
 ##Coursework 1 - Coursework Specification
 
 <table>
@@ -378,7 +378,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 [Back to the Contents](#toc)
 
 <div style="page-break-after: always;"></div>
-<a name='cw2'></a>
+<a name='cw2' id='cw2'></a>
 ##Coursework 2 - Coursework Specification
 
 <table>
