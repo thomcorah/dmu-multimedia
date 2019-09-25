@@ -49,7 +49,7 @@ function updateStyleSheet() {
   console.log(theme);
   document
     .getElementsByTagName("link")[0]
-    .setAttribute("href", "./css/" + theme + ".css");
+    .setAttribute("href", "/dmu-multimedia/css/" + theme + ".css");
 
   if (theme === "Clearness_Dark") {
     document.getElementById("backgroundcolour").innerHTML =
