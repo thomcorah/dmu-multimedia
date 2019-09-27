@@ -162,7 +162,9 @@ If you use somebody else’s work, either as research or directly, always attrib
 
 If you are found to of copied work without crediting the source you are likely to face a disciplinary panel and could see your mark reduced to 0, or worse in extreme cases.
 
-If you have any questions regarding plagiarism and other academic practice offences, you can email the Leicester Media School's Academic Practice Officer, Simon Walsh, on <simon.walsh@dmu.ac.uk>.
+If you have any questions regarding plagiarism and other academic practice offences, you can email either of the Leicester Media School's Academic Practice Officers:  
+Simon Walsh  <simon.walsh@dmu.ac.uk>  
+Helen Ackerley <hackerley@dmu.ac.uk>  
 
 [Back to the Contents](#toc)
 
@@ -172,10 +174,10 @@ If you have any questions regarding plagiarism and other academic practice offen
 You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview. 
 
 ###Coursework 1  
-Worth 40% of the module total, your first coursework is an individual task. It will test the core skills learnt through much of the first semester seeing you produce a simple two-page website. Due in at the end of week 11, it’ll give you a chance to reflect what you have learnt so far before heading into Coursework 2.
+Worth 40% of the module total, your first coursework is an individual task. It will test the core skills learnt through much of the first semester seeing you produce a simple two-page website. Due in at the end of week 11, it’ll give you a chance to reflect what you have learnt so far before heading into Coursework 2. 
 
 ###Coursework 2  
-Worth 60% of the module total this coursework will tackle more advanced web technologies to have you produce a simple website from scratch. This coursework is much more open-ended: you choose what you're making, so there's plenty of scope to try out things that interest you. This is due in at the end of week 27, the last day before the Easter break.
+Worth 60% of the module total this coursework will tackle more advanced web technologies to have you produce a simple website from scratch. This coursework is much more open-ended: you choose what you're making, so there's plenty of scope to try out things that interest you. This is due in at the end of week 27, the last day before the Easter break. Note that the proposal portion is due earlier, by midday on Friday 24th January.
 
 ###Some notes on assessment submissions
 
@@ -195,7 +197,7 @@ All practical work uploaded to your public server space
 [Back to the Contents](#toc)
 
 <div style="page-break-after: always;"></div>
-<a name='cw1' id='cw1'></a>
+<a name='cw1'></a>
 ##Coursework 1 - Coursework Specification
 
 <table>
@@ -212,7 +214,7 @@ All practical work uploaded to your public server space
 	<td><b>This coursework item is:</b></td><td> Summative / <del>Formative</del> </td>
 </tr>
 <tr>
-	<td colspan='2'><b>The learning outcomes that are assesses by this coursework are</b></td>
+	<td colspan='2'><b>The learning outcomes that are assessed by this coursework are</b></td>
 </tr>
 <tr>
 	<td colspan='2'>
@@ -373,12 +375,14 @@ Your documentation should provide an overview of the production process, includi
 You should seek opinion from others on the quality of your work and reflect on this. Have a handful of people use your site and complete a short questionnaire for example. Include the results, but then go on to discuss them.
 
 **Quality of Self-Evaluation**  
-A good evaluation will demonstrate an ability to stand back from your work and critically evaluate it. What worked, what didn’t, and what could be improved. 
+A good evaluation will demonstrate an ability to stand back from your work and critically evaluate it. What worked, what didn’t, and what could be improved.
+
+**Your report should be 500 words, plus appropriate screenshots.**  
 
 [Back to the Contents](#toc)
 
 <div style="page-break-after: always;"></div>
-<a name='cw2' id='cw2'></a>
+<a name='cw2'></a>
 ##Coursework 2 - Coursework Specification
 
 <table>
@@ -395,7 +399,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 	<td><b>This coursework item is:</b></td><td> Summative / <del>Formative</del> </td>
 </tr>
 <tr>
-	<td colspan='2'><b>The learning outcomes that are assesses by this coursework are</b></td>
+	<td colspan='2'><b>The learning outcomes that are assessed by this coursework are</b></td>
 </tr>
 <tr>
 	<td colspan='2'>
@@ -421,7 +425,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 3rd April 2020 </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 6th May 2020 </td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Thursday 7th May 2020 </td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
@@ -491,25 +495,28 @@ Any content you produce for your website such as an audio interview will be mark
 There are two main components to this coursework: the website itself and a portfolio of associated documentation. The website attracts 60% of the mark for this coursework, and the documentation 40%.
 
 ###Documentation.
-**Weighting:** 40% of the coursework mark, broken down as follows.
+**Weighting:** 40% of the coursework mark, broken down as follows.  
+**Word Count:** 300 words plus designs for the proposal, 800 words for the production and evaluation, plus appropriate screenshots. 
 
-Your documentation should consist of the following components. 
+Your documentation should consist of the following components. Note that there are two hand in dates for the documentation.
 
 ####Proposal and Initial Designs
-**Weighting:** 10% of the coursework mark 
+**Weighting:** 10% of the coursework mark   
+**Due:** Submit via Turnitin by midday on Friday 24th January
  
 This should give an outline of your intended website, including:
 
 * Description that includes an outline of your idea  
 * Target audience and possible ramifications for the site design  
 * Discussion on the technical challenges your idea poses  
-* Initial basic designs for layout and site structure  
+* Initial designs for layout, look, and site structure  
 
 
 ####Production  
-**Weighting:** 10% of the coursework mark
+**Weighting:** 10% of the coursework mark  
+**Due:** Submit via Turnitin by midday on Friday 3rd April
 
-This should give some insight into the development of your website. Pick three individual components and discuss:
+This should give some insight into the development of your website. Pick two individual components and discuss:
 
 * What you were trying to achieve
 * How you did this
@@ -519,7 +526,8 @@ This should give some insight into the development of your website. Pick three i
 Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on. 
 
 ####Evaluation
-**Weighting:** 20% of the coursework mark  
+**Weighting:** 20% of the coursework mark    
+**Due:** Submit via Turnitin by midday on Friday 3rd April
 
 You should address the following points:
 
@@ -532,10 +540,9 @@ You should address the following points:
 	* Any problems you encountered along the way, with potential solutions where possible  
 
 
-Your complete documentation should be submitted through the Turnitin link on Blackboard no later than midday on Friday 3rd April.
-
 ###Web Site
-**Weighting:** 60% of the coursework mark, broken down as follows.
+**Weighting:** 60% of the coursework mark, broken down as follows.  
+**Amount:** 3 pages or equivalent.
 
 Your site should be accessible via your `public_html` folder. It should be located at `public_html > TECH1015 > coursework1 > production`.
 
