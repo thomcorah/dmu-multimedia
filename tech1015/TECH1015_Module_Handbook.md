@@ -1,8 +1,8 @@
 ![DMU logo](https://www.dropbox.com/s/71r1lkrzihjl4fn/DMU-Logo-768x329.png?raw=1 )
 
-###Leicester Media School
+### Leicester Media School
 
-#TECH1015: Multimedia I
+# TECH1015: Multimedia I
            
 
 **Module Leader:** Thom Corah (GH6.62)  
@@ -13,7 +13,7 @@
 <div style="page-break-after: always;"></div>
 
 <a name='toc'></a>
-##Table of Contents
+## Table of Contents
 
 [Welcome to Multimedia I](#welcome)  
 [Module Tutors](#tutors)  
@@ -30,7 +30,7 @@
 <div style="page-break-after: always;"></div>
 
 <a name='welcome'></a> 
-##Welcome to Multimedia I
+## Welcome to Multimedia I
 I hope you enjoy studying this module through your first year and find that you learn many valuable skills from it. It is a modern reality that many creative disciplines can be enhanced with at least a working knowledge of how the web works. An incredible amount of content is now delivered over the Internet, from short form videos to full blockbusters, from amateur audio clips to professional albums, images, radio, applications and more. Whether you’re a videographer, sound engineer, animator or editor, an understanding of the web should be a key component of your skillset. 
 
 Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily. 
@@ -42,7 +42,7 @@ Thom Corah - Module Leader
 [Back to the Contents](#toc)
 
 <a name='tutors'></a>
-##Module Tutors
+## Module Tutors
 **Thom Corah** (Module Leader)  
 Location: GH6.62  
 Email: <tcorah@dmu.ac.uk>   
@@ -54,7 +54,7 @@ Email: <msallam@dmu.ac.uk>
 [Back to the Contents](#toc)
 
 <a name='description'></a>
-##Module Description
+## Module Description
 
 This module will launch you into the world of presenting interesting and interactive media. The ability to be able to turn ideas into digital realities is becoming increasingly important in a range of industries, and so this module will seek to equip you with some fundamental skills in HTML authoring and online interactivity. We take a look at creating styled webpages with the languages of HTML and CSS, before dipping a toe into the language of Javascript to add a little more oomph to the page. 
 
@@ -65,7 +65,7 @@ Throughout the module you are encouraged to undertake your own research into the
 [Back to the Contents](#toc)
 
 <a name='outcomes'></a>
-##Learning Outcomes
+## Learning Outcomes
 
 At the end of the module, you will be able to:
 
@@ -78,7 +78,7 @@ At the end of the module, you will be able to:
 [Back to the Contents](#toc)
 
 <a name='topics'></a>
-##Key Topics
+## Key Topics
 
 This module will cover the basics of media presentation through the web using HTML, CSS, and a little JavaScript. This list gives you an indication of the topics we will be exploring over the course of the year:
 
@@ -97,7 +97,7 @@ There is some flexibility with what we cover. As we progress through the year, i
 [Back to the Contents](#toc)
 
 <a name='reading'></a>
-##Module Reading
+## Module Reading
 
 The Blackboard shell for the module will contain an increasing list of resources to help support you through the module. This will include links to tutorials, examples, articles and books. To get you started, the following publications will provide some useful depth on a number of the topics and techniques covered on the module.
 
@@ -134,7 +134,7 @@ Really great website with loads of posts on stying your webpages and sites, all 
 [Back to the Contents](#toc)
 
 <a name='blackboard'></a>
-##Blackboard – Virtual Learning Environment
+## Blackboard – Virtual Learning Environment
 
 This module makes use of Blackboard – De Montfort University’s Virtual Learning Environment. It is important that you access Blackboard regularly to keep up to date with:
 
@@ -152,7 +152,7 @@ Access to Blackboard can be found at:
 [Back to the Contents](#toc)
 
 <a name="plagiarism"></a>
-##Plagiarism
+## Plagiarism
 
 DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit. 
 
@@ -169,17 +169,17 @@ Helen Ackerley <hackerley@dmu.ac.uk>
 [Back to the Contents](#toc)
 
 <a name='assessment'></a>
-##Assessment
+## Assessment
 
 You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview. 
 
-###Coursework 1  
+### Coursework 1  
 Worth 40% of the module total, your first coursework is an individual task. It will test the core skills learnt through much of the first semester seeing you produce a simple two-page website. Due in at the end of week 11, it’ll give you a chance to reflect what you have learnt so far before heading into Coursework 2. 
 
-###Coursework 2  
+### Coursework 2  
 Worth 60% of the module total this coursework will tackle more advanced web technologies to have you produce a simple website from scratch. This coursework is much more open-ended: you choose what you're making, so there's plenty of scope to try out things that interest you. This is due in at the end of week 27, the last day before the Easter break. Note that the proposal portion is due earlier, by midday on Friday 24th January.
 
-###Some notes on assessment submissions
+### Some notes on assessment submissions
 
 All written submissions (i.e. reports and documentation) should be submitted through Turnitin. You will find a link to submit your report through the Assessment section on Blackboard.
 
@@ -198,7 +198,7 @@ All practical work uploaded to your public server space
 
 <div style="page-break-after: always;"></div>
 <a name='cw1'></a>
-##Coursework 1 - Coursework Specification
+## Coursework 1 - Coursework Specification
 
 <table>
 <tr>
@@ -278,7 +278,7 @@ All practical work uploaded to your public server space
 
 ***
 
-###Overview
+### Overview
 Coursework 1 is an individual piece of web work that will see you demonstrate knowledge and use of the core principles of media presentation through the web. To this end, you will create a two page website showcasing a film. This will include imagery, audio and video content, as well as a simple style. Alongside the practical work, you will also submit documentation that provides an overview of the production process and evaluates your finished work.
 
 **All written work must be submitted through the Turnitin link on Blackboard**
@@ -287,7 +287,7 @@ The submission deadline for this work is midday on Friday 13th December. You are
 
 Coursework 1 is worth 40% of your module mark.
 
-###The Task
+### The Task
 
 You are to produce a two page website for an upcoming film. Which film this is remains up to you. It can be new, old, made up. From the viewers’ point of view, several things should be included:
 
@@ -314,7 +314,7 @@ You should pay close attention to the marking criteria below for the specific po
 
 If you’re at all unsure about what you are meant to do, ask your lab tutor for guidance.
 
-###The Documentation
+### The Documentation
 
 You are also to produce documentation alongside this. This has two main aims. Firstly, you should provide an overview of your production process including the reason for making the choices you have. For example, how did you lay out the cast rows and why did you choose that method. We want to see two things here, that you understand what you’ve done, and that you’ve put some thought into possible approaches. Screenshots and code snippets are useful here for helping to show what you’re talking about. 
 
@@ -324,22 +324,22 @@ You should then go on to form your own critical opinion of your work, building i
 
 Again, ask your lab tutor if you are at all unsure about what you should be writing.
 
-###Submission
+### Submission
 
 Your work should be submitted in two places, before midday on Friday 13th December.
 
-####Turnitin
+#### Turnitin
 Turnitin is a facility that allows for the submission of documentation and includes a similarity checker to ensure your work is original. Your report should be submitted through the Turnitin link available on the module Blackboard shell. You'll find it in the Assessments section.
 
-####public_html
+#### public_html
 In order to be able to view your website through a web server, you should transfer your website to your `public_html` folder, uncompressed, with its complete folder structure intact. On doing so, you should view your website through the server to ensure that all links and media still work.   
 **Do not make any changes after the deadline**
 
-###Marking Criteria
+### Marking Criteria
 
 There are two components here, the website and the documentation, so each is marked separately.   
 
-####Website  
+#### Website  
 The website makes up 70% of your mark. You have to demonstrate a number of principles. You will receive a mark for each depending on the degree to which you successfully achieve this. They are:
 
 **Include Images**  
@@ -365,7 +365,7 @@ Full marks for using CSS to successfully achieve the given layout.
 
 For each of these seven criteria you will receive a mark out of 10, giving you a total out of 70.
 
-###Documentation  
+### Documentation  
 The documentation is worth 30% of the coursework grade. You will be marked against three criteria, again with a mark out of 10 for each one:
 
 **Justification of Choices**  
@@ -383,7 +383,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 
 <div style="page-break-after: always;"></div>
 <a name='cw2'></a>
-##Coursework 2 - Coursework Specification
+##  Coursework 2 - Coursework Specification
 
 <table>
 <tr>
@@ -465,7 +465,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 
 ***
 
-###Overview
+### Overview
 In semester 1 you produced an individual piece of web work. For this coursework you will produce a full website or web-based application. 
 
 The actual website or application you produce is up to you. You are encouraged to develop something that you will find personally interesting. Some examples include:
@@ -494,13 +494,13 @@ Any content you produce for your website such as an audio interview will be mark
 
 There are two main components to this coursework: the website itself and a portfolio of associated documentation. The website attracts 60% of the mark for this coursework, and the documentation 40%.
 
-###Documentation.
+### Documentation.
 **Weighting:** 40% of the coursework mark, broken down as follows.  
 **Word Count:** 300 words plus designs for the proposal, 800 words for the production and evaluation, plus appropriate screenshots. 
 
 Your documentation should consist of the following components. Note that there are two hand in dates for the documentation.
 
-####Proposal and Initial Designs
+#### Proposal and Initial Designs
 **Weighting:** 10% of the coursework mark   
 **Due:** Submit via Turnitin by midday on Friday 24th January
  
@@ -512,7 +512,7 @@ This should give an outline of your intended website, including:
 * Initial designs for layout, look, and site structure  
 
 
-####Production  
+#### Production  
 **Weighting:** 10% of the coursework mark  
 **Due:** Submit via Turnitin by midday on Friday 3rd April
 
@@ -525,7 +525,7 @@ This should give some insight into the development of your website. Pick two ind
 
 Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on. 
 
-####Evaluation
+#### Evaluation
 **Weighting:** 20% of the coursework mark    
 **Due:** Submit via Turnitin by midday on Friday 3rd April
 
@@ -540,7 +540,7 @@ You should address the following points:
 	* Any problems you encountered along the way, with potential solutions where possible  
 
 
-###Web Site
+### Web Site
 **Weighting:** 60% of the coursework mark, broken down as follows.  
 **Amount:** 3 pages or equivalent.
 
@@ -548,7 +548,7 @@ Your site should be accessible via your `public_html` folder. It should be locat
 
 The website will be assessed on the following three points.
 
-####Content 
+#### Content 
 **Weighting:** 15% of the coursework mark  
 Your website content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently. 
 
@@ -558,7 +558,7 @@ Your website content should be fit for purpose and appropriate. This includes al
 * Original content is credited and third-party content is referenced  
 
 
-####Style 
+#### Style 
 **Weighting:** 15% of the coursework mark  
 Your website should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your site. 
 
@@ -567,7 +567,7 @@ Your website should appeal to your intended audience and be consistent with your
 * Design and content matches the target audience  
 * Skilful use of CSS to style and arrange site elements   
 
-####Technical Skills 
+#### Technical Skills 
 **Weighting:** 30% of the coursework mark  
 Your web site should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module. 
 
