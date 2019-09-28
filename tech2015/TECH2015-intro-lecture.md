@@ -7,6 +7,15 @@ And some text again
 | label | contents |
 | label | contents |
 
+<table>
+  <tr>
+    <td>head</td><td>head 2</td>
+  </tr>
+  <tr>
+    <td>body</td><td>body 2</body>
+  </tr>
+  </table>
+
 [link](somewhere.com)
 
 notes: this is a speaker note
