@@ -2,10 +2,6 @@
 
 And some text again aaah
 
-| head  | head     |
-| ----- | -------- |
-| label | contents |
-| label | contents |
 
 <table>
   <tr>
