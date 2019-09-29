@@ -45,7 +45,7 @@ Create a page with a blue square that:
 Create a page with a box with a 0 in it. Every second, the number in the box goes up by 1. 
 
 ## 9.
-Create a page with a green square that starts off in the top left corner but moves 50 pixels to the right every time it's clicked. 
+Create a page with a green square that starts off in the top left corner but moves 50 pixels to the right every time it's clicked.   
 (Bonus points: start the square in the middle of the page and move it in a random direction with each click)
 
 ## 10.
