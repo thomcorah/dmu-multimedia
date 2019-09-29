@@ -37,8 +37,8 @@ At the end of the module, you will be able to:
 
 ___
 
-* Understand the constraints and possibilities for the presentation of different media types.  <!-- .element: class="fragment" data-fragment-index="3" -->
-* Develop a further understanding of web technologies in the production of an interactive media presentation. <!-- .element: class="fragment" data-fragment-index="4" -->
+* Understand the constraints and possibilities for the presentation of different media types.  
+* Develop a further understanding of web technologies in the production of an interactive media presentation. <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
@@ -52,7 +52,7 @@ This module will develop your understanding and engagement with:
 
 ___
 
-* Media User Interface prototype and design  <!-- .element: class="fragment" data-fragment-index="4" -->
+* Media User Interface prototype and design
 * Responsive web design – user interfaces that adapt to screen size  <!-- .element: class="fragment" data-fragment-index="5" -->
 * The use of animation in user interface design and presentation  <!-- .element: class="fragment" data-fragment-index="6" -->
 * Accessibility and Usability - a web that works for all  <!-- .element: class="fragment" data-fragment-index="7" -->
