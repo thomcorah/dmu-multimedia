@@ -2,6 +2,7 @@
 
 And some text again aaah
 
+here comes a table 
 
 <table>
   <tr>
