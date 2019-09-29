@@ -75,9 +75,8 @@ Internet Radio
 * The Library
 * Module Staff
 * Workspaces
-* The Internet
+* The Internet (inc Blackboard)
 * Feedback
-* Blackboard
 
 ---
 
@@ -88,7 +87,10 @@ Internet Radio
 * HTML elements, building a webpage with meaning  <!-- .element: class="fragment" --> 
 * Visual styling of a webpage  <!-- .element: class="fragment" --> 
 * Webpage layout  <!-- .element: class="fragment" --> 
-* Embedding audio and video content  <!-- .element: class="fragment" --> 
+
+___
+
+* Embedding audio and video content  
 * Working with fonts  <!-- .element: class="fragment" --> 
 * User interface animations  <!-- .element: class="fragment" --> 
 * Manipulating what's on the page with JavaScript  <!-- .element: class="fragment" --> 
