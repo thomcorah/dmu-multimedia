@@ -80,10 +80,10 @@ ___
 
 ## Coursework 2
 
-* Individual
-* Make what you designed for Coursework 1
-* Demonstrate technical prowess!
-* Due midday, Friday 3rd April
+* Individual  <!-- .element: class="fragment" -->
+* Make what you designed for Coursework 1  <!-- .element: class="fragment" -->
+* Demonstrate technical prowess!  <!-- .element: class="fragment" -->
+* Due midday, Friday 3rd April  <!-- .element: class="fragment" -->
 
 note: if you don't want to use what you did for coursework 1, we can supply you with a design to work from.
 
@@ -99,6 +99,7 @@ All practical work to be in your public_html folder
 
 # Any Questions So Far?
 
+
 ---
 
 # A Web Refresher
@@ -111,7 +112,8 @@ All practical work to be in your public_html folder
   * The Server?  <!-- .element: class="fragment" -->
   * The Browser?  <!-- .element: class="fragment" -->
   * Developer Tools?  <!-- .element: class="fragment" -->
-  
+
+
 ---
 
 # Any Questions?
