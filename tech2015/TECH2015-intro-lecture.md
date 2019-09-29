@@ -23,6 +23,21 @@ tcorah@dmu.ac.uk
 Gateway House 6.62    
 Schedule a meeting: https://calendly.com/tcorah/15min    
 
+___
+
+# Introductions: You  
+
+Who are you, and what do you want?
+
+---
+
+# Module Overview
+
+Students should be able to 
+
+* do something <!-- .element: class="fragment" data-fragment-index="2" -->
+* do something else <!-- .element: class="fragment" data-fragment-index="1" -->
+
 ---
 
 ## Code
