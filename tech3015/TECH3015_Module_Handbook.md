@@ -7,7 +7,7 @@
 
 **Module Leader:** Thom Corah (GH6.62)  
 
-**Level:** 5
+**Level:** 6
 
 **Session:** 2019/20
 <div style="page-break-after: always;"></div>
