@@ -1,35 +1,27 @@
-# Page Title
-
-And some text again aaah
-
-here comes a table 
-
-<table>
-  <tr>
-    <td>head</td><td>head 2</td>
-  </tr>
-  <tr>
-    <td>body</td><td>body 2</body>
-  </tr>
-  </table>
-
-[link](somewhere.com)
-
-notes: this is a speaker note
+# Welcome to TECH2015
+## Multimedia II
 
 ---
 
-# Page 2
+# Today
 
-more stuff
+* Introductions  
+* Overview of the module  
+* Themes through the year 
+* Assessment details  
+* A web refresher
+
 
 note: and some more notes.
 
-___
+---
 
-# Sub Page
+# Introductions: Me
 
-worked?
+Thom Corah 
+tcorah@dmu.ac.uk
+Gateway House 6.62
+Schedule a meeting: https://calendly.com/tcorah/15min
 
 ---
 
