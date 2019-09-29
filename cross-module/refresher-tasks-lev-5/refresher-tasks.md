@@ -25,15 +25,15 @@ Create a page with three red squares, distributed equally across the full width 
 Create a page that mimics the Danish flag, filling the page, and so that it resizes as the browser window changes size.
 (bonus points: do the same but for the Icelandic flag)
 
-![Danish flag](flag-denmark.jpeg?raw=1 )
+![Danish flag](flag-denmark.jpg?raw=1 )
 
 ## 6.
 Create a page that contains a video using the `<video>` element. It should have a poster image and use all three file formats. There are sample files below, just right click the link and `Save As...`
 
-[Poster](vidPoster.jpg)  
-[mp4 version](vidSample.mp4)
-[webM version](vidSample.webm)
-[ogg version](vidSample.ogv)
+[Poster](vidPoster.jpg)   
+[mp4 version](vidSample.mp4)  
+[webM version](vidSample.webm)  
+[ogg version](vidSample.ogv)  
 
 ## 7. 
 Create a page with a blue square that:
