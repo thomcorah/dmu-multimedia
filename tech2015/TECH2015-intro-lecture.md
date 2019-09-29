@@ -18,10 +18,10 @@ note: and some more notes.
 
 # Introductions: Me
 
-Thom Corah 
-tcorah@dmu.ac.uk  
-Gateway House 6.62  
-Schedule a meeting: https://calendly.com/tcorah/15min  
+Thom Corah   
+tcorah@dmu.ac.uk    
+Gateway House 6.62    
+Schedule a meeting: https://calendly.com/tcorah/15min    
 
 ---
 
