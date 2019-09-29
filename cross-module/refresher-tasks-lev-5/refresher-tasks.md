@@ -37,7 +37,7 @@ Create a page that contains a video using the `<video>` element. It should have 
 
 ## 7. 
 Create a page with a blue square that:
-* turns blue when the mouse hovers over it
+* turns red when the mouse hovers over it
 * turns back to blue when the mouse is no longer over it
 * transitions both changes over 0.3 seconds
 
