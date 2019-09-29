@@ -142,6 +142,7 @@ public_html folder??
 * Be on time to lectures <!-- .element: class="fragment" --> 
 * Be on time to labs <!-- .element: class="fragment" --> 
 * Take headphones to labs <!-- .element: class="fragment" --> 
+* Take pen and paper to labs <!-- .element: class="fragment" --> 
 * Make use of the optional surgery slot from week 6 <!-- .element: class="fragment" --> 
 * Experiment <!-- .element: class="fragment" --> 
 
