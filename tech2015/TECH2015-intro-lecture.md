@@ -51,3 +51,66 @@ This module will develop your understanding and engagement with:
 * The use of animation in user interface design and presentation  <!-- .element: class="fragment" data-fragment-index="6" -->
 * Accessibility and Usability - a web that works for all  <!-- .element: class="fragment" data-fragment-index="7" -->
 * Vector graphics for the web  <!-- .element: class="fragment" data-fragment-index="8" -->
+
+notes: if you want to add to this or go into more detail on anything we cover, that's fine, just ask
+
+---
+
+# Assessment Details
+
+___
+
+## Coursework 1
+
+* Individual  <!-- .element: class="fragment" -->
+* Create an interactive prototype for a four page website    <!-- .element: class="fragment" -->
+* Test the prototype  <!-- .element: class="fragment" -->
+* Write a report  <!-- .element: class="fragment" -->
+* Emphasis on usability, accessibility, and responsive design  <!-- .element: class="fragment" -->
+* Worth 40% of your module mark  <!-- .element: class="fragment" -->
+* Due midday, Friday 13th December  <!-- .element: class="fragment" -->
+
+___
+
+## Coursework 2
+
+* Individual
+* Make what you designed for Coursework 1
+* Demonstrate technical prowess!
+* Due midday, Friday 3rd April
+
+notes: if you don't want to use what you did for coursework 1, we can supply you with a design to work from.
+
+___
+
+## Coursework Submission
+
+All written work to be submitted through the Turnitin link on Blackboard. 
+
+All practical work to be in your public_html folder
+
+---
+
+# Any Questions So Far?
+
+---
+
+# A Web Refresher
+
+* What is/are...
+  * HTML?  <!-- .element: class="fragment" -->
+  * CSS?  <!-- .element: class="fragment" -->
+  * Javascript?  <!-- .element: class="fragment" -->
+  * The Client?  <!-- .element: class="fragment" -->
+  * The Server?  <!-- .element: class="fragment" -->
+  * The Browser?  <!-- .element: class="fragment" -->
+  * Developer Tools?  <!-- .element: class="fragment" -->
+  
+---
+
+# Any Questions?
+
+---
+
+# Thank you.
+
