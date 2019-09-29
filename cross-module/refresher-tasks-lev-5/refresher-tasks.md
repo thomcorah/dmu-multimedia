@@ -1,5 +1,5 @@
 # Refresher Tasks
-## Designed to test your competency with HTML, CSS, and JavaScript
+### Designed to test your competency with HTML, CSS, and JavaScript
 
 In each case, you should create a new HTML file. Any CSS and JavaScript should be contained in the same file. 
 
