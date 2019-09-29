@@ -10,6 +10,7 @@ Create a page that has a filled red square in the top left corner.
 
 ## 2.
 Create a page that has a square with a dashed border in the middle of the page.
+![Dashed box](dashed-box.png?raw=1 )
 
 ## 3.
 Create a page with three paragraphs of text, the first letter of each being large and purple. 
