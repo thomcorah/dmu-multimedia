@@ -19,18 +19,19 @@ Create a page with three red squares, distributed equally across the full width 
 
 ## 5.
 Create a page that mimics the Danish flag, filling the page, and so that it resizes as the browser window changes size.
+(bonus points: do the same but for the Icelandic flag)
 
 ## 6.
-As with number 5, but this time recreate the Icelandic flag. 
-
-## 7.
 Create a page that contains a video using the `<video>` element. It should have a poster image and use all three file formats.
 
-## 8. 
+## 7. 
 Create a page with a blue square that:
 * turns blue when the mouse hovers over it
 * turns back to blue when the mouse is no longer over it
 * transitions both changes over 0.3 seconds
+
+## 8.
+Create a page with a box with a 0 in it. Every second, the number in the box goes up by 1. 
 
 ## 9.
 Create a page with a green square that starts off in the top left corner but moves 50 pixels to the right every time it's clicked. 
