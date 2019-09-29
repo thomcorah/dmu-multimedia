@@ -11,9 +11,6 @@
 * Assessment details  
 * A web refresher
 
-
-note: and some more notes.
-
 ---
 
 # Introductions: Me
@@ -33,17 +30,24 @@ Who are you, and what do you want?
 
 # Module Overview
 
-Students should be able to 
+At the end of the module, you will be able to:
 
-* do something <!-- .element: class="fragment" data-fragment-index="2" -->
-* do something else <!-- .element: class="fragment" data-fragment-index="1" -->
+* Produce a time-based multimedia production incorporating animation techniques and interactivity.  <!-- .element: class="fragment" data-fragment-index="1" -->
+* Design and evaluate multimedia interfaces for implementation of a multimedia production. <!-- .element: class="fragment" data-fragment-index="2" --> 
+* Understand the constraints and possibilities for the presentation of different media types.  <!-- .element: class="fragment" data-fragment-index="3" -->
+* Develop a further understanding of web technologies in the production of an interactive media presentation. <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
-## Code
+# Key Themes
 
-```css
-.dive {
-  background-color: "red";
-}
-```
+This module will develop your understanding and engagement with:
+
+* Multimedia time-based applications in terms of their structure, content, and design features.  <!-- .element: class="fragment" data-fragment-index="1" -->
+* The application of text, graphics, sound and video in Multimedia production.   <!-- .element: class="fragment" data-fragment-index="2" -->
+* Intermediate Javascript <!-- .element: class="fragment" data-fragment-index="3" -->
+* Media User Interface prototype and design  <!-- .element: class="fragment" data-fragment-index="4" -->
+* Responsive web design – user interfaces that adapt to screen size  <!-- .element: class="fragment" data-fragment-index="5" -->
+* The use of animation in user interface design and presentation  <!-- .element: class="fragment" data-fragment-index="6" -->
+* Accessibility and Usability - a web that works for all  <!-- .element: class="fragment" data-fragment-index="7" -->
+* Vector graphics for the web  <!-- .element: class="fragment" data-fragment-index="8" -->
