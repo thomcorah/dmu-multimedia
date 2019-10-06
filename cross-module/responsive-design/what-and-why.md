@@ -111,6 +111,7 @@ Smashing Magazine, 2011
 ## Bibliography
 
 <div style='font-size: 80%'>
+  
 Martinez, J. (2019) *Importance of Mobile First Web Design.* [Online] Build This. Available from: https://buildthis.com/blog/importance-of-mobile-first-web-design/ [Accessed 06/10/19]
 
 Smashing Magazine. (2011) *Responsive Web Design - What It Is And How To Use It.* [Online] Smashing Magazine. Available from: https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/ [Accessed 01/10/19]
