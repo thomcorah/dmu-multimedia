@@ -110,6 +110,7 @@ Smashing Magazine, 2011
 
 ## Bibliography
 
+<small>
 Martinez, J. (2019) *Importance of Mobile First Web Design.* [Online] Build This. Available from: https://buildthis.com/blog/importance-of-mobile-first-web-design/ [Accessed 06/10/19]
 
 Smashing Magazine. (2011) *Responsive Web Design - What It Is And How To Use It.* [Online] Smashing Magazine. Available from: https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/ [Accessed 01/10/19]
@@ -119,6 +120,8 @@ Fox, M. and Kemp, M. (2009) *Interactive Architecture.* Princeton Architectural 
 Marcotte, E. (2010) *Responsive Web Design.* [Online] A List Apart. Available from: https://alistapart.com/article/responsive-web-design/ [Accessed 01/10/19]
 
 SWEOR. (2019) *27 Eye-Opening Website Statistics: Is Your Website Costing You Clients.* [Online] SWEOR. Available from: https://www.sweor.com/firstimpressions [Accessed 06/10/19]
+
+</small>
 
 ---
 
