@@ -64,7 +64,15 @@ You'll see this folder appears in the pane on the left.
 
 ![Atom Screenshot](https://www.dropbox.com/s/uoakr34mx5by0t4/atomStart.png?raw=1)
 
-This is handy. Now `right-click` on that `week2` folder and select `New File`. Atom will ask you to enter the path for the new file. This means the location and file name. Well, we want it right in that folder, so just the filename is fine. Call it `first.html`. 
+We need an image for this page. Create an `images` folder inside your `week2` folder. You can do this in Atom by right-clicking `week2` and selecting `New Folder`. Visit the url below, `right-click` the image, and save it into the images folder you've just created. 
+
+<https://www.therapydogs.com/wp-content/uploads/2017/06/dogwork.jpg>
+
+![Dog at work](https://www.therapydogs.com/wp-content/uploads/2017/06/dogwork.jpg?raw=1)
+
+Now that you’ve got the resources you’ll need in place let’s create our page. 
+
+`right-click` on that `week2` folder and select `New File`. Atom will ask you to enter the path for the new file. This means the location and file name. Well, we want it right in that folder, so just the filename is fine. Call it `first.html`. 
 
 That `.html` on the end is really important. It tells the system what kind of file this it. For Atom, that means it'll know how to colour in and help you out with what you're typing. For a browser, it'll mean it knows it should display it as a webpage. 
 
@@ -85,6 +93,33 @@ There’s some HTML that we’ll want for every page we start, so pop this in. A
 </html>
 ```
 
-Let’s have a look at a couple of bits though. First off, there’s that <!DOCTYPE> element right at the top that also says html. This is a special element that defines what type of document this is. After this, we’ve got the <html> element with a lang attribute. This tells the browser what language the page is in. The “en” is  language code for English. “es” would specify Spanish, “fr” French and so on. 
+Notice there's a `<title>` element inside the `<head>` section. Make the title more relevant to the page. We’re going to create a short page about dogs being used in data-entry positions in the financial sector. Your title should reflect the content of the page, so something like “Dogs become valuable employees at major bank” should do nicely. 
+
+We want to create a heading. We can do this by using a `<h1>` element. You can make the heading the same as the page title. 
+
+```HTML
+<h1>Dogs Become Valuable Employees at Bank</h1>
+```
+
+Now we want to put the image in. Images are inserted using an <img> element. This tag is one of the rare ones that doesn’t have a corresponding closing tag, it’s self closing. However, we need to be able to tell the browser some information about this image, such as where to find it. We do this using attributes. Attributes define information about an element. To display our image, add the following line underneath your header line. 
+
+```HTML
+<img src='images/dogwork.jpg' />
+```
+
+> Attributes almost always have two components: the name of the attribute and its value. In this case we're assigning the value “images/DogPicture.jpg” to the src attribute, specifying the source of the image. This URL is relative to the page that’s loading the image, so in this case it will look inside the images folder and grab the dog picture. 
+
+Save your file and view it in a browser. Hopefully you should see your title and the happy dog. If you don’t see the picture of the dog something’s gone wrong. Try to work out what. 
+
+We’re going to add some text content underneath the picture. Copy the following code:
+
+```HTML
+<p>It was revealed this moring that a major high street bank has <strong>begun employing clever canines</strong> to perform basic data-entry tasks in several of its UK data centres. In a statement earlier today a spokesperson for the bank said that training had gone well with the <strong>first intake of ten pooches</strong> and that overall they were just happy to be involved.</p>
+```
+
+
+
+
+
 
 
