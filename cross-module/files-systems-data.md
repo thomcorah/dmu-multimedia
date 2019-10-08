@@ -19,7 +19,7 @@ ___
 
 ---
 
-![Duffel Coat](https://www.dropbox.com/s/u1uwbvm45a6zpbn/coat.png?raw=1 =100x)
+![Duffel Coat](https://www.dropbox.com/s/u1uwbvm45a6zpbn/coat.png?raw=1)
 
 ___
 
