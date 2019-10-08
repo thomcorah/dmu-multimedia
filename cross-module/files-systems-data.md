@@ -1,4 +1,3 @@
-
 # Multimedia 1
 ## Files, Systems, and Data
 
@@ -34,7 +33,7 @@ ___
 
 # File Extensions
 * Websites are comprised of files <!-- .element: class="fragment" --> 
-* The browser needs to know *exactly* what those files are <!-- .element: class="fragment" --> 
+* The browser needs to know exactly what those files are <!-- .element: class="fragment" --> 
 * It does that using the file extension <!-- .element: class="fragment" --> 
 
 ___
@@ -135,3 +134,27 @@ We are concerned with two types of text file:
 * css
 
 ---
+
+# HTML = Data Representation
+
+HTML describes the content and its structure with text.
+
+What do we mean by content and structure?
+
+Lets look at an example 
+<https://en.wikipedia.org/wiki/Main_Page>
+
+---
+
+# To Recap
+* We need to be explicit with the computer
+* We need to make media choices carefully
+* HTML = content and its structure
+
+---
+
+# Any Questions?
+
+---
+
+# Thank You
