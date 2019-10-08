@@ -27,3 +27,21 @@ ___
 
 ---
 
+# ???
+
+---
+
+# File Extensions
+* Websites are comprised of files <!-- .element: class="fragment" --> 
+* The browser needs to know *exactly* what those files are <!-- .element: class="fragment" --> 
+* It does that using the file extension <!-- .element: class="fragment" --> 
+
+___
+
+# File Names
+
+File names actually have two parts.
+
+teddy<!-- .element: class="fragment" -->.jpg<!-- .element: class="fragment" -->
+
+---
