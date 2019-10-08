@@ -72,9 +72,9 @@ ___
 ___
 
 ## gif
-* popular lossless format
+* Popular lossless format
 * 256 colours
-* transparency and animation
+* Transparency and animation
 
 ___
 
@@ -88,19 +88,20 @@ ___
 # Audio
 
 ## mp3
-* Cery popular lossy format
+* Very popular lossy format
 * Supports varying compression
 
 ___
 
 ## wav
 * Uncompressed format  
-* Development (and owned) my Microsoft and IBM
+* Developed (and owned) my Microsoft and IBM
 
 ___
 
 ## ogg
-* increasingly popular lossy or lossless
+* increasingly popular 
+* lossy or lossless
 * open source
 
 ---
@@ -143,6 +144,10 @@ What do we mean by content and structure?
 
 Lets look at an example 
 <https://en.wikipedia.org/wiki/Main_Page>
+
+___
+
+## How can we represent this with text?
 
 ---
 
