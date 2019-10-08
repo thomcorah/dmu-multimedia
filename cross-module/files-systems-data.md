@@ -42,6 +42,6 @@ ___
 
 File names actually have two parts.
 
-teddy<!-- .element: class="fragment" -->.jpg<!-- .element: class="fragment" -->
+<span class="fragment fade-in">teddy</span><span class="fragment fade-in">.jpg</span>
 
 ---
