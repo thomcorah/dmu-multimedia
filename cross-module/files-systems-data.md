@@ -33,7 +33,7 @@ ___
 
 # File Extensions
 * Websites are comprised of files <!-- .element: class="fragment" --> 
-* The browser needs to know *exactly* what those files are <!-- .element: class="fragment" --> 
+* The browser needs to know **exactly** what those files are <!-- .element: class="fragment" --> 
 * It does that using the file extension <!-- .element: class="fragment" --> 
 
 ___
