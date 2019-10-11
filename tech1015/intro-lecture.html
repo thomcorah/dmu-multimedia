@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link id="stylesheet" rel='stylesheet' type='text/css' href="/dmu-multimedia/css/GitHub2.css" />
+    <link rel='stylesheet' type='text/css' href='/dmu-multimedia/css/common.css' />
+  </head>
+  <body>
+    <div id='controls'>
+        <label for='themeSelect'>Theme</label>
+        <select name='themeSelect' id='themeSelect'>
+          <option value='GitHub2'>Light</option>
+          <option value='Clearness_Dark'>Dark</option>
+        </select>
+        <label for='fontsize'>Font Size</label>
+        <select name='fontsize' id='fontsize'>
+          <option value='8'>Tiny</option>
+          <option value='10'>Small</option>
+          <option value='14' selected>Normal</option>
+          <option value='18'>Large</option>
+          <option value='24'>Massive</option>
+        </select>
+        <label for='backgroundcolour'>Background Colour</label>
+        <select name='backgroundcolour' id='backgroundcolour'>
+          <option value='#8bd5f7'>Blue</option>
+          <option value='#8bf7c1'>Green</option>
+          <option value='#f7ef81'>Yellow</option>
+          <option value='#f79d77'>Peach</option>
+          <option value='#fff' selected>White</option>
+        </select>
+
+
+    </div>
+    <div id="container"></div>
+  </body>
+  <script src="/dmu-multimedia/js/showdown.min.js"></script>
+  <script src="/dmu-multimedia/js/markdownhandler.js"></script>
+  <script type="text/javascript">
+  loadMD('TECH1015-intro-lecture.md');
+</script>
+</html>
