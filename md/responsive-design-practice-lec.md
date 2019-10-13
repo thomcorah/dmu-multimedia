@@ -59,6 +59,8 @@ What does that look like?
 
 We can fix this with a meta tag
 
-`<meta name="viewport" content="width=device-width" />`
+```HTML
+<meta name="viewport" content="width=device-width" />
+```
 
 ---
