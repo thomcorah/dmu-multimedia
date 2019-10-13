@@ -219,6 +219,7 @@ We have various testing options:
 
 ## Further Reading
 
+<div style='font-size: 80%'>
 ### Ethan Marcotte: Responsive Web Design  
 <https://abookapart.com/products/responsive-web-design>
 
@@ -230,6 +231,8 @@ We have various testing options:
 
 ### This is Responsive: Patterns and Resources  
 <http://bradfrost.github.io/this-is-responsive/>
+
+</div>
 
 ---
 
