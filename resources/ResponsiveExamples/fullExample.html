@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Responsive Design Example</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .credit {
+        margin-top: -10px;
+        font-size: 80%;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      h1,
+      p {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .photo {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 500px) {
+        .photo {
+          width: 50%;
+          float: left;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .photo {
+          width: 33%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lovely Photos</h1>
+      <div class="photo">
+        <img src="img/meric.jpg" />
+        <p class="caption">Sakura Tree in Bloom</p>
+        <p class="credit">
+          by
+          <a
+            href="https://unsplash.com/@meric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Meriç Dağlı</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="photo">
+        <img src="img/janine.jpg" />
+        <p class="caption">pink dahlia in bloom</p>
+        <p class="credit">
+          by
+          <a
+            href="https://unsplash.com/@joyful_janine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Janine Joles</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="photo">
+        <img src="img/meric.jpg" />
+        <p class="caption">Sakura Tree in Bloom</p>
+        <p class="credit">
+          by
+          <a
+            href="https://unsplash.com/@meric?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Meriç Dağlı</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="photo">
+        <img src="img/janine.jpg" />
+        <p class="caption">pink dahlia in bloom</p>
+        <p class="credit">
+          by
+          <a
+            href="https://unsplash.com/@joyful_janine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Janine Joles</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
