@@ -29,7 +29,7 @@ This lab won't teach you how to use Invision, but will guide you through the pro
 Head to <https://www.invisionapp.com> and create an account.
 
 ### 2. Resources
-You'll find the screen images as well as the PSD they all came from here -> <https://thomcorah.github.io/dmu-multimedia/resources/ReminderAppScreens.zip>
+You'll find the screen images as well as the PSD they all came from here -> <https://thomcorah.github.io/dmu-multimedia/resources/ReminderAppScreenDesigns.zip>
 
 Right-click and save to your computer, then unzip.
 
