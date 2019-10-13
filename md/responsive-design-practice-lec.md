@@ -32,3 +32,33 @@ We build for the small screen first.
 4. Use CSS media queries
 
 ---
+
+## The ViewPort
+
+The viewport is the window through which the user sees our website.  
+
+We must tell the browser how to handle our page’s  
+*dimension*  
+*scaling*  
+within the viewport.
+
+---
+
+## Viewport Dimension
+
+Mobile browsers attempt desktop screen size  
+
+Usually 980px
+
+And then scale content  
+
+What does that look like?  
+
+
+## Viewport Dimension
+
+We can fix this with a meta tag
+
+`<meta name="viewport" content="width=device-width" />`
+
+---
