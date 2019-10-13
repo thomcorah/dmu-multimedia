@@ -220,6 +220,7 @@ We have various testing options:
 ## Further Reading
 
 <div style='font-size: 80%'>
+
 ### Ethan Marcotte: Responsive Web Design  
 <https://abookapart.com/products/responsive-web-design>
 
