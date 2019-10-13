@@ -64,3 +64,38 @@ We can fix this with a meta tag
 ```
 
 ---
+
+## Viewport Scaling
+
+When switching to landscape, some mobile browsers simply zoom in.
+
+You may lose the benefit of the wider screen
+
+
+## Viewport Scaling
+
+We can fix this with a meta tag
+
+```HTML
+<meta name="viewport" content="initial-scale=1" />
+```
+
+---
+
+## Dimension & Scaling!
+
+Both together?
+
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+
+---
+
+## Size Content To Viewport
+
+With the view width set to the device width…
+
+We might accidentally make something too wide!
+
+What does that look like?
