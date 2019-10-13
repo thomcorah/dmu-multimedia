@@ -1,4 +1,19 @@
 function loadMD(filename) {
+  if (!filename) {
+    console.log("loadMD");
+    const queryString = location.search;
+    console.log(queryString);
+    // console.log(location);
+
+    const rgx = /([a-zA-Z\-0-9]+)/g;
+    // const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
+    // const match = regex.exec(queryString);
+    const match = queryString.match(rgx);
+    // console.log(match);
+    console.log(match[0]);
+    filename = "md/" + match[0] + ".md";
+  }
+
   var converter = new showdown.Converter();
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
@@ -10,34 +25,6 @@ function loadMD(filename) {
     }
   };
   txtFile.send(null);
-}
-
-async function download(filename, format) {
-  /*
-  console.log("downloading", filename, format);
-  console.log("aha");
-  var mdReq = await fetch("./md/" + filename);
-  var md = await mdReq.text();
-  var cssReq = await fetch("./css/GitHub2.css");
-  var css = await cssReq.text();
-  var formData = new FormData();
-  formData.append("from", "markdown");
-  formData.append("to", format);
-  //formData.append("css", css);
-  //let blob = new Blob([md], { type: "text/markdown" });
-  const file = new File([blob], "TECH1015_Module_Handbook.md", {
-    type: "text/markdown"
-  });
-  formData.append("input_files[]", file);
-  console.log(formData);
-  const response = await fetch("http://c.docverter.com/convert", {
-    method: "POST",
-    headers: { "Content-Type": "multipart/form-data" },
-    cache: "no-cache",
-    data: formData
-  });
-  console.log(response);
-  */
 }
 
 document
