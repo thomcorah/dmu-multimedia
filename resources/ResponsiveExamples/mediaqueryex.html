@@ -11,10 +11,17 @@
         transition: background-color 1s, height 1s;
       }
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: 800px) {
         #bob {
           height: 100px;
           background-color: orange;
+        }
+      }
+
+      @media screen and (orientation: landscape) {
+        #bob {
+          height: 50px;
+          background-color: red;
         }
       }
     </style>
