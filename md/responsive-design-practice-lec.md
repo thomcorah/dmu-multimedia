@@ -54,7 +54,7 @@ And then scale content
 
 What does that look like?  
 
-notes: https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/noviewport.html  
+notes: <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/noviewport.html>  
 
 
 
@@ -93,7 +93,7 @@ Both together?
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 
-notes: https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/withviewport.html
+notes: <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/withviewport.html>
 
 ---
 
@@ -105,7 +105,7 @@ We might accidentally make something too wide!
 
 What does that look like?
 
-notes: https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/toowide.html
+notes: <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/toowide.html>
 
 ---
 
