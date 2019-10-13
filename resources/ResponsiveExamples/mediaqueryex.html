@@ -6,15 +6,15 @@
 
     <style>
       #bob {
-        height: 100px;
-        background-color: orange;
+        height: 200px;
+        background-color: blue;
         transition: background-color 1s, height 1s;
       }
-      @media (max-width: 800px) {
+
+      @media (min-width: 800px) {
         #bob {
-          height: 200px;
-          background-color: blue;
-          transition: background-color 1s, height 1s;
+          height: 100px;
+          background-color: orange;
         }
       }
     </style>
