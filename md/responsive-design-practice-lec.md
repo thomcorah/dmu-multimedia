@@ -221,16 +221,16 @@ We have various testing options:
 
 <div style='font-size: 80%'>
 
-### Ethan Marcotte: Responsive Web Design  
+**Ethan Marcotte: Responsive Web Design**   
 <https://abookapart.com/products/responsive-web-design>
 
-### Google: Responsive Web Design Basics  
+**Google: Responsive Web Design Basics**  
 <https://developers.google.com/web/fundamentals/design-and-ui/responsive/>
 
-### Fastcode: RWD Explained in GIFs
+**Fastcode: RWD Explained in GIFs**  
 <https://www.fastcodesign.com/3038367/9-gifs-that-explain-responsive-design-brilliantly>
 
-### This is Responsive: Patterns and Resources  
+**This is Responsive: Patterns and Resources**   
 <http://bradfrost.github.io/this-is-responsive/>
 
 </div>
