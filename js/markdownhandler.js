@@ -14,7 +14,7 @@ function loadMD(filename) {
     filename = "md/" + match[0] + ".md";
   }
 
-  var converter = new showdown.Converter();
+  var converter = new showdown.Converter({ tables: true });
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
