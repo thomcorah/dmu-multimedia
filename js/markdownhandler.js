@@ -1,6 +1,5 @@
 function loadMD(filename) {
   if (!filename) {
-    console.log("loadMD");
     const queryString = location.search;
     console.log(queryString);
     // console.log(location);

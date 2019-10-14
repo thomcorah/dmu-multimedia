@@ -31,6 +31,7 @@
     <div class="reveal">
       <div class="slides">
         <section
+          id="markdown-holder"
           data-markdown="https://thomcorah.github.io/dmu-multimedia/md/responsive-design-practice-lec.md"
           data-separator-vertical="^\r?\n\r?\n"
         ></section>
@@ -50,6 +51,18 @@ reveal.js#configuration // -https://github.com/hakimel/reveal.js#dependencies */
           { src: "plugin/highlight/highlight.js", async: true }
         ]
       });
+
+      const queryString = location.search;
+      console.log(queryString);
+      // console.log(location);
+
+      const rgx = /([a-zA-Z\-0-9]+)/g;
+      // const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
+      // const match = regex.exec(queryString);
+      const match = queryString.match(rgx);
+      // console.log(match);
+      console.log(match[0]);
+      filename = "./md/" + match[0] + ".md";
     </script>
   </body>
 </html>
