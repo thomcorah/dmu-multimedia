@@ -32,7 +32,6 @@
       <div class="slides">
         <section
           id="markdown-holder"
-          data-markdown="https://thomcorah.github.io/dmu-multimedia/md/the-internet-and-the-www-lec.md"
           data-separator-vertical="^\r?\n\r?\n"
         ></section>
       </div>
@@ -62,7 +61,11 @@ reveal.js#configuration // -https://github.com/hakimel/reveal.js#dependencies */
       const match = queryString.match(rgx);
       // console.log(match);
       console.log(match[0]);
-      filename = "./md/" + match[0] + ".md";
+      filename =
+        "https://thomcorah.github.io/dmu-multimedia/md/" + match[0] + ".md";
+      document
+        .getElementById("markdown-holder")
+        .setAttribute("data-markdown", filename);
     </script>
   </body>
 </html>
