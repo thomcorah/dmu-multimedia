@@ -155,7 +155,7 @@ What is a document on the web?
 ![Annotated McDonalds Interior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd3.png)
 
 
-**Client - - Request - - > Server**
+**Client - - Request - - > Server**  
 **Client < - - Response - - Server**
 
 ---
