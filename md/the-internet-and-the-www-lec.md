@@ -19,3 +19,6 @@ Any questions about Coursework 1?
 
 
 ![Network Image 1](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network1.png)
+
+
+![Network Image 2](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network2.png)
