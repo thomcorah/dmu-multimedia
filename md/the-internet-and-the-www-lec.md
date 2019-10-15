@@ -16,4 +16,6 @@ Any questions about Coursework 1?
 ---
 
 # What is the Internet?
+
+
 ![Network Image 1](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network1.png)
