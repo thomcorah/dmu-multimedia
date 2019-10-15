@@ -27,9 +27,6 @@ Any questions about Coursework 1?
 ![Network Image 3](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network3.png)
 
 
-![Network Image 4](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network4.png)
-
-
 ![Network Image 5](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network5.png)
 
 
@@ -135,3 +132,43 @@ What is a document on the web?
 
 ## How do we get it?
 ![Network Image 18](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network18.png)
+
+
+## Your Browser < - - - - - > Google
+
+
+## Client < - - - - - > Server
+
+
+## Client - - Request - - > Server
+
+
+## Client < - - Response - - Server
+
+
+![McDonalds Exterior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd1.png)
+
+
+![McDonalds Interior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd2.png)
+
+
+![Annotated McDonalds Interior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd3.png)
+
+
+# Client - - Request - - > Server
+# Client < - - Response - - Server
+
+---
+
+# To Recap
+* The internet is a connected network of computers and devices
+* The WWW exists ON the internet
+* It all works using clients and servers
+
+---
+
+# Any Questions?
+
+---
+
+# Thank you
