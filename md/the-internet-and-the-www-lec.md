@@ -25,12 +25,15 @@ Any questions about Coursework 1?
 ![Network Image 2](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network2.png)
 
 
+<!-- .slide: data-transition="fade-out" -->
 ![Network Image 3](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network3.png)
 
 
+<!-- .slide: data-transition="slide" -->
 ![Network Image 5](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network5.png)
 
 
+<!-- .slide: data-transition="none" -->
 ![Network Image 6](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network6.png)
 
 
