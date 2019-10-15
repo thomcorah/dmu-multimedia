@@ -6,7 +6,6 @@
 
 ![rock](https://www.dropbox.com/s/0pzldawvouaq3wb/rock.jpeg?raw=1)
 
-___
 
 ![rock showing compartment for key](https://www.dropbox.com/s/tum1lp28s8r7v1j/rockfull.jpg?raw=1)
 
@@ -14,7 +13,6 @@ ___
 
 ![teddy](https://www.dropbox.com/s/5kuah2184f7yp1a/teddy.jpg?raw=1)
 
-___
 
 ![zoomed in on the camera in the nose of the teddy](https://www.dropbox.com/s/o41zif24ou36pbv/teddycam.jpeg?raw=1)
 
@@ -22,7 +20,6 @@ ___
 
 ![Duffel Coat](https://www.dropbox.com/s/u1uwbvm45a6zpbn/coat.png?raw=1)
 
-___
 
 ![Duffel coat on a boy](https://www.dropbox.com/s/cc9ljvwbo0peo71/coatonboy.png?raw=1)
 
@@ -33,11 +30,10 @@ ___
 ---
 
 # File Extensions
-* Websites are comprised of files <!-- .element: class="fragment" --> 
-* The browser needs to know exactly what those files are <!-- .element: class="fragment" --> 
-* It does that using the file extension <!-- .element: class="fragment" --> 
+* Websites are comprised of files <!-- .element: class="fragment" -->
+* The browser needs to know exactly what those files are <!-- .element: class="fragment" -->
+* It does that using the file extension <!-- .element: class="fragment" -->
 
-___
 
 # File Names
 
@@ -47,13 +43,11 @@ File names actually have two parts.
 <span class="fragment fade-in">week2</span><span class="fragment fade-in">.html</span>  
 <span class="fragment fade-in">saturday</span><span class="fragment fade-in">.mp4</span>  
 
-Every file has an extension, but the operating system doesn't usually show it to you.<!-- .element: class="fragment" --> 
+Every file has an extension, but the operating system doesn't usually show it to you.<!-- .element: class="fragment" -->
 
-___
 
 ## What happens if you don't add the extension?
 
-___
 
 ## Don't put spaces in file names
 
@@ -70,14 +64,12 @@ ___
 * Millions of colours
 * No transparency
 
-___
 
 ## gif
 * popular lossless format
 * 256 colours
 * transparency and animation
 
-___
 
 ## png
 * Popular lossless format  
@@ -92,13 +84,11 @@ ___
 * Cery popular lossy format
 * Supports varying compression
 
-___
 
 ## wav
 * Uncompressed format  
 * Development (and owned) my Microsoft and IBM
 
-___
 
 ## ogg
 * increasingly popular lossy or lossless
@@ -112,14 +102,12 @@ ___
 * Very popular
 * Lossy or lossless
 
-___
 
 ## webm
 * Open source
 * Better quality than mp4
 * Slightly smaller file size than mp4
 
-___
 
 ## ogv
 * Open source
@@ -131,7 +119,7 @@ ___
 # Text
 We are concerned with two types of text file:  
 
-* html 
+* html
 * css
 
 ---
@@ -142,7 +130,7 @@ HTML describes the content and its structure with text.
 
 What do we mean by content and structure?
 
-Lets look at an example 
+Lets look at an example
 <https://en.wikipedia.org/wiki/Main_Page>
 
 ---
@@ -159,9 +147,3 @@ Lets look at an example
 ---
 
 # Thank You
-
-
-
- 
-
-

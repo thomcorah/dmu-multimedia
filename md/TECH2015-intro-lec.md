@@ -7,7 +7,7 @@
 
 * Introductions  
 * Overview of the module  
-* Themes through the year 
+* Themes through the year
 * Assessment details  
 * A web refresher
 
@@ -20,7 +20,6 @@ tcorah@dmu.ac.uk
 Gateway House 6.62    
 Schedule a meeting: https://calendly.com/tcorah/15min    
 
-___
 
 # Introductions: You  
 
@@ -33,9 +32,8 @@ Who are you, and what do you want?
 At the end of the module, you will be able to:
 
 * Produce a time-based multimedia production incorporating animation techniques and interactivity.  <!-- .element: class="fragment" data-fragment-index="1" -->
-* Design and evaluate multimedia interfaces for implementation of a multimedia production. <!-- .element: class="fragment" data-fragment-index="2" --> 
+* Design and evaluate multimedia interfaces for implementation of a multimedia production. <!-- .element: class="fragment" data-fragment-index="2" -->
 
-___
 
 * Understand the constraints and possibilities for the presentation of different media types.  
 * Develop a further understanding of web technologies in the production of an interactive media presentation. <!-- .element: class="fragment" data-fragment-index="3" -->
@@ -50,7 +48,6 @@ This module will develop your understanding and engagement with:
 * The application of text, graphics, sound and video in Multimedia production.   <!-- .element: class="fragment" data-fragment-index="2" -->
 * Intermediate Javascript <!-- .element: class="fragment" data-fragment-index="3" -->
 
-___
 
 * Media User Interface prototype and design
 * Responsive web design – user interfaces that adapt to screen size  <!-- .element: class="fragment" data-fragment-index="5" -->
@@ -64,7 +61,6 @@ note: if you want to add to this or go into more detail on anything we cover, th
 
 # Assessment Details
 
-___
 
 ## Coursework 1
 
@@ -76,7 +72,6 @@ ___
 * Worth 40% of your module mark  <!-- .element: class="fragment" -->
 * Due midday, Friday 13th December  <!-- .element: class="fragment" -->
 
-___
 
 ## Coursework 2
 
@@ -87,11 +82,10 @@ ___
 
 note: if you don't want to use what you did for coursework 1, we can supply you with a design to work from.
 
-___
 
 ## Coursework Submission
 
-All written work to be submitted through the Turnitin link on Blackboard. 
+All written work to be submitted through the Turnitin link on Blackboard.
 
 All practical work to be in your public_html folder
 
@@ -121,4 +115,3 @@ All practical work to be in your public_html folder
 ---
 
 # Thank you.
-
