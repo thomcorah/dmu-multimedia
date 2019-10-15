@@ -18,10 +18,11 @@ Any questions about Coursework 1?
 # What is the Internet?
 
 
+<!-- .slide: data-transition="fade" -->
 ![Network Image 1](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network1.png)
 
 
-<!-- .slide: data-transition='fade' -->
+<!-- .slide: data-transition="fade" -->
 ![Network Image 2](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network2.png)
 
 
@@ -142,6 +143,7 @@ It's **on** the internet
 What is a document on the web?
 
 
+<!-- .slide: data-transition="fade" -->
 ## Here's one:
 ![YouTube Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/YouTubeScreenshot.png)
 
