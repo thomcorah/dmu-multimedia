@@ -134,16 +134,16 @@ What is a document on the web?
 ![Network Image 18](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/network18.png)
 
 
-## Your Browser < - - - - - > Google
+**Your Browser < - - - - - > Google**
 
 
-## Client < - - - - - > Server
+**Client < - - - - - > Server**
 
 
-## Client - - Request - - > Server
+**Client - - Request - - > Server**
 
 
-## Client < - - Response - - Server
+**Client < - - Response - - Server**
 
 
 ![McDonalds Exterior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd1.png)
@@ -155,8 +155,8 @@ What is a document on the web?
 ![Annotated McDonalds Interior](https://thomcorah.github.io/dmu-multimedia/resources/internetAndWWW/mcd3.png)
 
 
-# Client - - Request - - > Server
-# Client < - - Response - - Server
+**Client - - Request - - > Server**
+**Client < - - Response - - Server**
 
 ---
 
