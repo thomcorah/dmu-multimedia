@@ -3,14 +3,18 @@ function loadMD(filename) {
     const queryString = location.search;
     console.log(queryString);
     // console.log(location);
-
-    const rgx = /([a-zA-Z\-0-9]+)/g;
-    // const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
-    // const match = regex.exec(queryString);
-    const match = queryString.match(rgx);
-    // console.log(match);
-    console.log(match[0]);
-    filename = "md/" + match[0] + ".md";
+    if (queryString) {
+      const rgx = /([a-zA-Z\-0-9]+)/g;
+      // const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
+      // const match = regex.exec(queryString);
+      const match = queryString.match(rgx);
+      // console.log(match);
+      console.log(match[0]);
+      filename = "md/" + match[0] + ".md";
+    } else {
+      console.log("no sheet specified");
+      listLabSheets();
+    }
   }
 
   var converter = new showdown.Converter({ tables: true });
@@ -25,6 +29,23 @@ function loadMD(filename) {
   };
   txtFile.send(null);
 }
+
+listLabSheets = () => {
+  var req = new XMLHttpRequest();
+  req.onload = processList;
+  req.onerror = processError;
+  req.open("./php/getMDFiles.php");
+  req.send();
+};
+
+processList = () => {
+  var list = JSON.parse(this.responseText);
+  console.log(list);
+};
+
+processError = err => {
+  console.log("oops", err);
+};
 
 document
   .getElementById("themeSelect")
