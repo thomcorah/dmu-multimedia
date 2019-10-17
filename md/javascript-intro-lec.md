@@ -17,7 +17,7 @@ Including on the page
 
 **Only for debugging / quick prototyping**
 
-```HTML
+```html
 <script>
   console.log('Hello There');
 </script>
@@ -26,7 +26,7 @@ Including on the page
 
 Importing an external file
 
-```HTML
+```html
 <script src='js/fun.js'>
 </script>
 ```
@@ -34,7 +34,7 @@ Importing an external file
 
 Put all `<script>`s at the end of your `<body>`
 
-```HTML
+```html
   <script src='js/fun.js'>
   </script>
 </body>
@@ -50,7 +50,7 @@ We can change that data  <!-- .element: class="fragment" -->
 
 We can make it a number, for example  <!-- .element: class="fragment" -->  
 
-```JavaScript
+```js
 let myBag = 5;
 ```
 <!-- .element: class="fragment" -->
@@ -58,7 +58,7 @@ let myBag = 5;
 
 Or it could be a word (string)
 
-```JavaScript
+```js
 let myBag = 'brown';
 ```
 
@@ -101,13 +101,13 @@ We will discuss more another week. <!-- .element: class="fragment" -->
 We use the document object to get a HTML element  
 It has a method to get an element with a given id  
 
-```JavaScript
+```js
 document.getElementById('navbar');
 ```
 
 We can store this reference in a variable
 
-```JavaScript
+```js
 let menu = document.getElementById('navbar');
 ```
 
@@ -122,7 +122,7 @@ So that we can do other things to it.
 
 A function is a defined chunk of code
 
-```JavaScript
+```js
 addThese = () => {
   // one or more lines of code
 }
@@ -131,14 +131,14 @@ addThese = () => {
 
 If we want it to run, we call it
 
-```JavaScript
+```js
 addThese()
 ```
 
 
 We can pass data into a function
 
-```JavaScript
+```js
 updateDisplay = (score) => {
   console.log('Score', score);
 }
@@ -149,7 +149,7 @@ updateDisplay(15);
 
 We can get data back from a function
 
-```JavaScript
+```js
 shotRock = (score) => {
   let newScore = score + 10;
   return newScore;
@@ -187,7 +187,7 @@ We first get a reference to the element
 
 Then we add an event listener <!-- .element: class="fragment" -->
 
-```JavaScript
+```js
 document.getElementById('buyButton').addEventListener();
 ```
 <!-- .element: class="fragment" -->
@@ -197,7 +197,7 @@ We need to tell the event listener two things.
 1. What event are we listening for  <!-- .element: class="fragment" -->
 2. What to do when the event occurs  <!-- .element: class="fragment" -->
 
-```JavaScript
+```js
 document.getElementById('buyButton')
 .addEventListener('click', addToCart);
 ```

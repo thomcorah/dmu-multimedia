@@ -23,6 +23,7 @@ displayMDFile = filename => {
   var converter = new showdown.Converter({
     tables: true
   });
+
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
@@ -30,6 +31,9 @@ displayMDFile = filename => {
       allText = txtFile.responseText;
       var html = converter.makeHtml(allText);
       document.getElementById("container").innerHTML = html;
+      document.querySelectorAll("pre code").forEach(block => {
+        hljs.highlightBlock(block);
+      });
     }
   };
   txtFile.send(null);
