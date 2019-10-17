@@ -20,7 +20,10 @@ function loadMD(filename) {
 }
 
 displayMDFile = filename => {
-  var converter = new showdown.Converter({ tables: true });
+  var converter = new showdown.Converter({
+    tables: true,
+    extensions: ["codehighlight"]
+  });
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
