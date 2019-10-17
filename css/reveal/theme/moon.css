@@ -71,7 +71,7 @@ body {
 }
 
 .reveal h1 {
-  font-size: 3.77em;
+  font-size: 2.8em;
 }
 
 .reveal h2 {
@@ -199,6 +199,15 @@ body {
   overflow: auto;
   max-height: 400px;
   word-wrap: normal;
+}
+
+.reveal code {
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+.reveal code span {
+  font-size: inherit;
 }
 
 .reveal table {
