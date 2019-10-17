@@ -11,12 +11,15 @@ function loadMD(filename) {
       // console.log(match);
       console.log(match[0]);
       filename = "md/" + match[0] + ".md";
+      displayMDFile(filename);
     } else {
       console.log("no sheet specified");
       listLabSheets();
     }
   }
+}
 
+displayMDFile = filename => {
   var converter = new showdown.Converter({ tables: true });
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
@@ -28,14 +31,49 @@ function loadMD(filename) {
     }
   };
   txtFile.send(null);
-}
+};
 
 listLabSheets = () => {
-  var req = new XMLHttpRequest();
+  /* var req = new XMLHttpRequest();
   req.onload = processList;
   req.onerror = processError;
-  req.open("./php/getMDFiles.php");
-  req.send();
+  req.open("get", "./php/getMDFiles.php", true);
+  req.send();*/
+
+  fetch("./php/getMDFiles.php").then(response => {
+    console.log(response);
+    response.json().then(data => {
+      console.log(data.labs);
+      let htmlstring =
+        "<h1>All Files</h1><p>You've come here as a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
+      htmlstring += "<h2>Lectures</h2>";
+
+      for (let i = 0; i < data.lectures.length; i++) {
+        let thisLecture = data.lectures[i];
+        let url = "./lab-reader.html?" + thisLecture.file;
+        htmlstring +=
+          "<a href='" + url + "'>" + thisLecture.name + "</a><br />";
+      }
+
+      htmlstring += "<h2>Labs</h2>";
+
+      for (let i = 0; i < data.labs.length; i++) {
+        let thisLab = data.labs[i];
+        let url = "./lab-reader.html?" + thisLab.file;
+        htmlstring += "<a href='" + url + "'>" + thisLab.name + "</a><br />";
+      }
+
+      htmlstring += "<h2>Other</h2>";
+
+      for (let i = 0; i < data.other.length; i++) {
+        let thisThing = data.other[i];
+        let url = "./lab-reader.html?" + thisThing.file;
+        htmlstring += "<a href='" + url + "'>" + thisThing.name + "</a><br />";
+      }
+
+      document.getElementById("container").innerHTML = htmlstring;
+    });
+  });
 };
 
 processList = () => {
