@@ -21,8 +21,7 @@ function loadMD(filename) {
 
 displayMDFile = filename => {
   var converter = new showdown.Converter({
-    tables: true,
-    extensions: ["codehighlight"]
+    tables: true
   });
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
