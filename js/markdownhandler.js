@@ -41,7 +41,7 @@ listLabSheets = () => {
   req.send();*/
 
   fetch("./php/getMDFiles.php").then(response => {
-    console.log(response);
+    console.log(response.data);
     response.json().then(data => {
       console.log(data.labs);
       let htmlstring =
