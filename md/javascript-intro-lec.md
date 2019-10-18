@@ -87,7 +87,7 @@ What's an object? <!-- .element: class="fragment" -->
 
 An object in JavaScript is really just another variable.  
 
-Or rather, variables are a type of object. <!-- .element: class="fragment" -->  
+But supercharged a little. <!-- .element: class="fragment" -->  
 
 Objects can contain data - properties. <!-- .element: class="fragment" -->  
 
