@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intitial-scale=1" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .col-w {
+        width: 100%;
+      }
+
+      .col-n {
+        width: 50%;
+        float: left;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .headline {
+        font-size: 2em;
+      }
+
+      @media screen and (min-width: 600px) {
+        .col-w img {
+          width: 60%;
+          float: left;
+        }
+      }
+
+      @media screen and (min-width: 770px) {
+        .col-w img {
+          width: 100%;
+        }
+
+        .col-w {
+          width: 50%;
+          float: left;
+        }
+
+        .col-n {
+          width: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="col-w">
+      <img src="newsPic.jpg" />
+      <div class="headline">Headline</div>
+    </div>
+    <div class="col-n">
+      <img src="newsPic.jpg" />
+      <div class="headline">Headline</div>
+    </div>
+    <div class="col-n">
+      <img src="newsPic.jpg" />
+      <div class="headline">Headline</div>
+    </div>
+  </body>
+</html>
