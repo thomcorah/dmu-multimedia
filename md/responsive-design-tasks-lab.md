@@ -66,4 +66,4 @@ This time, the images are already stacking next to each other, so you just need 
 ## Recreate the BBC site
 Visit <https://www.bbc.co.uk/> in responsive mode. Expand and contract the screen and notice how the layout adapts.
 
-Attempt to mirror this with media queries.
+Attempt to mirror this with media queries. Remember, start with mobile first. Just the top bit - the three main stories.
