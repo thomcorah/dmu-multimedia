@@ -156,6 +156,15 @@ Well, this is the same really.
 
 ---
 
+# Too Much To Remember?
+
+**C** ontrast  
+**R** epetition  
+**A** lignment  
+**P** roximity
+
+---
+
 # User Interface Components
 
 Some common components on the mobile web
@@ -186,6 +195,11 @@ notes:
 * Principles of UI Design
 * Challenges for mobile
 * Examples
+
+---
+
+# Further Reading
+
 
 ---
 
