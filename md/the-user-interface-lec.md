@@ -199,7 +199,11 @@ notes:
 ---
 
 # Further Reading
+Lots of detail: <https://theblog.adobe.com/4-golden-rules-ui-design/>  
+Original heuristics: <https://www.nngroup.com/articles/ten-usability-heuristics/>  
+Lots more detail: <https://medium.com/swlh/ui-ux-design-guide-with-terms-explanations-tips-and-trends-754b9356d914>  
 
+Inspiration: <https://dribbble.com> 
 
 ---
 
