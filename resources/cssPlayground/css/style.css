@@ -43,3 +43,8 @@ footer {
   color: white;
   font-size: 0.9em;
 }
+
+footer a {
+  color: #aff1f3;
+  text-decoration: none;
+}
