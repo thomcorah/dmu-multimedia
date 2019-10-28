@@ -15,24 +15,21 @@ Each of these buttons will need an event listener. Two of these will point to a 
 As ever, create a new folder for this, and open it in Atom.
 
 #### 1.  Do the HTML for your first question page.
-Start with the standard boilerplate, add the viewport meta tag. At the very least this page needs to have a `<p>` for the question and then a `<button>` for each answer.
+Start with the standard boilerplate, add the viewport meta tag. At the very least this page needs to have a `<p>` for the question and then a `<a>` for each answer.
 
 #### 2. Create a .css file.
-Link this into your html page, and make your page look good. You might want to go back to the HTML at this point to add structural elements, like wrapping the three buttons in a `<div>` so that you can put a border around them for example.
+Link this into your html page, and make your page look good. You might want to go back to the HTML at this point to add structural elements, like making those `<a>` elements look like buttons and wrapping them in a `<div>` so that you can put a border around them for example.
 
 #### 3. Create your Game Over page.
 Again, this can be quite simple, with just a single `<p>` containing some kind of text. Link in the .css file you’ve already got and style your page up. You need consistency with your question page, but you also need to set this page out as something bad or sad.
 
-#### 4. Write your application logic.
-Back in your question page, put in a `<script>` element and write the JavaScript that will respond to the button press. Whichever button they press, you’ll need to send them to another URL. You’ll have to search for a way to do this with JavaScript.
-
-#### 5. Copy your question page four times.
+#### 4. Copy your question page four times.
 Give each a different filename, a different question, and order the buttons differently. Otherwise it’s pretty much the same.
 
-#### 6. Create your Well Done page.
+#### 5. Create your Well Done page.
 If the user gets to the fifth question and gets that question correct, they should be taken to the Well Done page. As with the Game Over page, link in your .css file and style up the page.
 
-#### 7. Test it
+#### 6. Test it
 If it all works, you’re done.
 
 ### Going Further
