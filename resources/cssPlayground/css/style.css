@@ -12,7 +12,8 @@ img {
 
 header,
 section,
-aside {
+aside,
+footer {
   padding: 8px;
 }
 
@@ -35,4 +36,10 @@ aside {
 
 .keyFact p {
   margin-top: 2px;
+}
+
+footer {
+  background-color: #072d35;
+  color: white;
+  font-size: 0.9em;
 }
