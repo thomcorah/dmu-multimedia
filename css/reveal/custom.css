@@ -1,3 +1,14 @@
 strong {
   filter: brightness(1.5);
 }
+
+.reveal pre code {
+  font-size: 1.6em;
+  padding: 15px;
+}
+
+p > code {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 8px;
+  filter: brightness(1.2);
+}
