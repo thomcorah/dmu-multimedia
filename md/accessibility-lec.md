@@ -89,19 +89,19 @@ Users interact using the keyboard.
 
 ## Screen Reader Limits
 
-* Screen readers can't understand images, so we must provide a descriptions.
+* Screen readers can't understand images, so we must provide descriptions.
 * They can't survey a whole page's visual layout to understand what's important and what isn't.
 
 ---
 
 # What can we do?
 
-* Make content easy to understand
-* Keep page layout clear and uncluttered
-* Provide images to illustrate points
-* Make user interfaces easy and obvious
-* Use a range of media
-* Good navigation helps accessibility
+* Make content easy to understand <!-- .element: class="fragment" -->
+* Keep page layout clear and uncluttered <!-- .element: class="fragment" -->
+* Provide images to illustrate points <!-- .element: class="fragment" -->
+* Make user interfaces easy and obvious <!-- .element: class="fragment" -->
+* Use a range of media <!-- .element: class="fragment" -->
+* Good navigation helps accessibility <!-- .element: class="fragment" -->
 
 ---
 
@@ -160,12 +160,16 @@ These elements result in some default browser styling.
 
 There are some elements that exist just for the meaning.
 
-`<nav>` = a block of navigation, links to other pages for example.  
-`<article>` = a fully complete self-enclosed piece of work, like an article in a magazine.  
-`<section>` = a self contained part of a larger whole, like a chapter in a book.  
-`<header>` = one or more elements that form a header for either a page, article, or section.  
-`<footer>` = one of more elements that form a footer for either a page, article, or section.  
-`<aside>` = holds tangentially related information.
+<div style='text-align: left'>
+
+`<nav>` a block of navigation, links to other pages for example.  
+`<article>` a fully complete self-enclosed piece of work, like an article in a magazine.  
+`<section>` a self contained part of a larger whole, like a chapter in a book.  
+`<header>` one or more elements that form a header for either a page, article, or section.  
+`<footer>` one of more elements that form a footer for either a page, article, or section.  
+`<aside>` holds tangentially related information.
+
+</div>
 
 ---
 
