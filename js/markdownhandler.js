@@ -1,19 +1,12 @@
 function loadMD(filename) {
   if (!filename) {
     const queryString = location.search;
-    console.log(queryString);
-    // console.log(location);
     if (queryString) {
       const rgx = /([a-zA-Z\-0-9]+)/g;
-      // const regex = /(?<user>[\w]+)_(?<repo>[\S]+)_(?<file>[\S]+)/g;
-      // const match = regex.exec(queryString);
       const match = queryString.match(rgx);
-      // console.log(match);
-      console.log(match[0]);
       filename = "md/" + match[0] + ".md";
       displayMDFile(filename);
     } else {
-      console.log("no sheet specified");
       listLabSheets();
     }
   }
@@ -27,13 +20,18 @@ displayMDFile = filename => {
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
+    console.log("aa");
     if (txtFile.readyState === 4) {
-      allText = txtFile.responseText;
-      var html = converter.makeHtml(allText);
-      document.getElementById("container").innerHTML = html;
-      document.querySelectorAll("pre code").forEach(block => {
-        hljs.highlightBlock(block);
-      });
+      if (txtFile.status === 404) {
+        listLabSheets();
+      } else {
+        allText = txtFile.responseText;
+        var html = converter.makeHtml(allText);
+        document.getElementById("container").innerHTML = html;
+        document.querySelectorAll("pre code").forEach(block => {
+          hljs.highlightBlock(block);
+        });
+      }
     }
   };
   txtFile.send(null);
