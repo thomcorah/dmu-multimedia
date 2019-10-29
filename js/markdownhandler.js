@@ -40,46 +40,75 @@ displayMDFile = filename => {
 };
 
 listLabSheets = () => {
-  /* var req = new XMLHttpRequest();
-  req.onload = processList;
-  req.onerror = processError;
-  req.open("get", "./php/getMDFiles.php", true);
-  req.send();*/
-
-  fetch("./php/getMDFiles.php").then(response => {
-    console.log(response.data);
+  let options = {
+    headers: {
+      Accept: "application/vnd.github.v3+json"
+    }
+  };
+  let labs = [];
+  let lectures = [];
+  let misc = [];
+  fetch(
+    "https://api.github.com/repos/thomcorah/dmu-multimedia/contents/md",
+    options
+  ).then(response => {
     response.json().then(data => {
-      console.log(data.labs);
-      let htmlstring =
-        "<h1>All Files</h1><p>You've come here as a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
-      htmlstring += "<h2>Lectures</h2>";
-
-      for (let i = 0; i < data.lectures.length; i++) {
-        let thisLecture = data.lectures[i];
-        let url = "./lab-reader.html?" + thisLecture.file;
-        htmlstring +=
-          "<a href='" + url + "'>" + thisLecture.name + "</a><br />";
-      }
-
-      htmlstring += "<h2>Labs</h2>";
-
-      for (let i = 0; i < data.labs.length; i++) {
-        let thisLab = data.labs[i];
-        let url = "./lab-reader.html?" + thisLab.file;
-        htmlstring += "<a href='" + url + "'>" + thisLab.name + "</a><br />";
-      }
-
-      htmlstring += "<h2>Other</h2>";
-
-      for (let i = 0; i < data.other.length; i++) {
-        let thisThing = data.other[i];
-        let url = "./lab-reader.html?" + thisThing.file;
-        htmlstring += "<a href='" + url + "'>" + thisThing.name + "</a><br />";
-      }
-
-      document.getElementById("container").innerHTML = htmlstring;
+      data.forEach(entry => {
+        let name = entry.name.substring(0, entry.name.length - 3);
+        name = name.replace(/-/g, " ");
+        if (name.substring(name.length - 3, name.length) === "lab") {
+          let thisEntry = {
+            name: name.replace(/ lab/g, ""),
+            file: entry.name
+          };
+          labs.push(thisEntry);
+        } else if (name.substring(name.length - 3, name.length) === "lec") {
+          let thisEntry = {
+            name: name.replace(/ lec/g, ""),
+            file: entry.name
+          };
+          lectures.push(thisEntry);
+        } else {
+          let thisEntry = {
+            name: name,
+            file: entry.name
+          };
+          misc.push(thisEntry);
+        }
+      });
+      writeList(lectures, labs, misc);
     });
   });
+};
+
+writeList = (lectures, labs, misc) => {
+  let htmlstring =
+    "<h1>All Files</h1><p>You've come here as a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
+  htmlstring += "<h2>Lectures</h2>";
+
+  for (let i = 0; i < lectures.length; i++) {
+    let thisLecture = lectures[i];
+    let url = "./lab-reader.html?" + thisLecture.file;
+    htmlstring += "<a href='" + url + "'>" + thisLecture.name + "</a><br />";
+  }
+
+  htmlstring += "<h2>Labs</h2>";
+
+  for (let i = 0; i < labs.length; i++) {
+    let thisLab = labs[i];
+    let url = "./lab-reader.html?" + thisLab.file;
+    htmlstring += "<a href='" + url + "'>" + thisLab.name + "</a><br />";
+  }
+
+  htmlstring += "<h2>Other</h2>";
+
+  for (let i = 0; i < misc.length; i++) {
+    let thisThing = misc[i];
+    let url = "./lab-reader.html?" + thisThing.file;
+    htmlstring += "<a href='" + url + "'>" + thisThing.name + "</a><br />";
+  }
+
+  document.getElementById("container").innerHTML = htmlstring;
 };
 
 processList = () => {
