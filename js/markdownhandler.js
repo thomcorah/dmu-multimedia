@@ -20,7 +20,6 @@ displayMDFile = filename => {
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
   txtFile.onreadystatechange = function() {
-    console.log("aa");
     if (txtFile.readyState === 4) {
       if (txtFile.status === 404) {
         listLabSheets();
