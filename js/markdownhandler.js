@@ -1,4 +1,4 @@
-function loadMD(filename) {
+loadMD = filename => {
   if (!filename) {
     const queryString = location.search;
     if (queryString) {
@@ -10,7 +10,7 @@ function loadMD(filename) {
       listLabSheets();
     }
   }
-}
+};
 
 displayMDFile = filename => {
   var converter = new showdown.Converter({
@@ -108,20 +108,11 @@ writeList = (lectures, labs, misc) => {
   document.getElementById("container").innerHTML = htmlstring;
 };
 
-processList = () => {
-  var list = JSON.parse(this.responseText);
-  console.log(list);
-};
-
-processError = err => {
-  console.log("oops", err);
-};
-
 document
   .getElementById("themeSelect")
   .addEventListener("change", updateStyleSheet);
 
-function updateStyleSheet() {
+updateStyleSheet = () => {
   var theme = document.getElementById("themeSelect").value;
   console.log(theme);
   document
@@ -136,14 +127,14 @@ function updateStyleSheet() {
       "<option value='#8bd5f7'>Blue</option><option value='#97f0a1'>Green</option><option value='#f2ef91'>Yellow</option><option value='#f79d77'>Peach</option><option value='#fff' selected>White</option>";
   }
   updateOptions();
-}
+};
 
 document.getElementById("fontsize").addEventListener("change", updateOptions);
 document
   .getElementById("backgroundcolour")
   .addEventListener("change", updateOptions);
 
-function updateOptions() {
+updateOptions = () => {
   var colour = document.getElementById("backgroundcolour").value;
   var size = document.getElementById("fontsize").value;
   var lineHeight = parseInt(size) * 1.4;
@@ -158,4 +149,4 @@ function updateOptions() {
         "px; background-color: " +
         colour
     );
-}
+};
