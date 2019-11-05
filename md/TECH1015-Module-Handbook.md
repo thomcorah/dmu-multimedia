@@ -3,7 +3,7 @@
 ### Leicester Media School
 
 # TECH1015: Multimedia I
-           
+
 
 **Module Leader:** Thom Corah (GH6.62)  
 
@@ -29,13 +29,13 @@
 
 <div style="page-break-after: always;"></div>
 
-<a name='welcome'></a> 
+<a name='welcome'></a>
 ## Welcome to Multimedia I
-I hope you enjoy studying this module through your first year and find that you learn many valuable skills from it. It is a modern reality that many creative disciplines can be enhanced with at least a working knowledge of how the web works. An incredible amount of content is now delivered over the Internet, from short form videos to full blockbusters, from amateur audio clips to professional albums, images, radio, applications and more. Whether you’re a videographer, sound engineer, animator or editor, an understanding of the web should be a key component of your skillset. 
+I hope you enjoy studying this module through your first year and find that you learn many valuable skills from it. It is a modern reality that many creative disciplines can be enhanced with at least a working knowledge of how the web works. An incredible amount of content is now delivered over the Internet, from short form videos to full blockbusters, from amateur audio clips to professional albums, images, radio, applications and more. Whether you’re a videographer, sound engineer, animator or editor, an understanding of the web should be a key component of your skillset.
 
-Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily. 
+Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily.
 
-Some of you may of created websites with HTML before and some won’t. For those that haven’t, don’t worry. We start from the very beginning and build things up at a pace that you can deal with. If you would like extra help, get in touch. 
+Some of you may of created websites with HTML before and some won’t. For those that haven’t, don’t worry. We start from the very beginning and build things up at a pace that you can deal with. If you would like extra help, get in touch.
 
 Thom Corah - Module Leader
 
@@ -47,7 +47,7 @@ Thom Corah - Module Leader
 Location: GH6.62  
 Email: <tcorah@dmu.ac.uk>   
 Tel: 0116 207 8088  
-  
+
 **Mohamed Sallam**  
 Email: <msallam@dmu.ac.uk>  
 
@@ -56,11 +56,11 @@ Email: <msallam@dmu.ac.uk>
 <a name='description'></a>
 ## Module Description
 
-This module will launch you into the world of presenting interesting and interactive media. The ability to be able to turn ideas into digital realities is becoming increasingly important in a range of industries, and so this module will seek to equip you with some fundamental skills in HTML authoring and online interactivity. We take a look at creating styled webpages with the languages of HTML and CSS, before dipping a toe into the language of Javascript to add a little more oomph to the page. 
+This module will launch you into the world of presenting interesting and interactive media. The ability to be able to turn ideas into digital realities is becoming increasingly important in a range of industries, and so this module will seek to equip you with some fundamental skills in HTML authoring and online interactivity. We take a look at creating styled webpages with the languages of HTML and CSS, before dipping a toe into the language of Javascript to add a little more oomph to the page.
 
-An initial run of lectures will lay some theoretical groundwork for what is to come. Practical skills will be developed through hands-on learning and practice at the workstation, supported by experienced lab tutors and live demonstrations. 
+An initial run of lectures will lay some theoretical groundwork for what is to come. Practical skills will be developed through hands-on learning and practice at the workstation, supported by experienced lab tutors and live demonstrations.
 
-Throughout the module you are encouraged to undertake your own research into the software and practices we undertake. You should develop the ability to solve problems encountered in your work in an independent fashion, though your lab tutor will step in if necessary. 
+Throughout the module you are encouraged to undertake your own research into the software and practices we undertake. You should develop the ability to solve problems encountered in your work in an independent fashion, though your lab tutor will step in if necessary.
 
 [Back to the Contents](#toc)
 
@@ -92,7 +92,7 @@ This module will cover the basics of media presentation through the web using HT
 * User interface animations
 * Manipulating what's on the page with JavaScript
 
-There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs. 
+There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs.
 
 [Back to the Contents](#toc)
 
@@ -126,10 +126,10 @@ Question and answer site perhaps used by every developer ever. If you put a web 
 Amazing resource with mini tutorials and a great reference section for HTML, CSS, and JavaScript.
 
 **<https://www.codecademy.com>** and **<https://www.udacity.com>**
-Short form online courses in many things, including web authoring. 
+Short form online courses in many things, including web authoring.
 
 **<https://css-tricks.com>**
-Really great website with loads of posts on stying your webpages and sites, all really well explained. 
+Really great website with loads of posts on stying your webpages and sites, all really well explained.
 
 [Back to the Contents](#toc)
 
@@ -143,7 +143,7 @@ This module makes use of Blackboard – De Montfort University’s Virtual Learn
 * Lecture notes
 * Your assessment feedback
 * General notices and announcements
-* Lecture recordings 
+* Lecture recordings
 
 Access to Blackboard can be found at:
 
@@ -154,7 +154,7 @@ Access to Blackboard can be found at:
 <a name="plagiarism"></a>
 ## Plagiarism
 
-DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit. 
+DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit.
 
 You can read more about plagiarism and other acedemic offences in Chapter 4 of the student regulations: <https://www.dmu.ac.uk/documents/dmu-students/academic-support-office/student-regulations/chapter-4-17.18.pdf>
 
@@ -171,10 +171,10 @@ Helen Ackerley <hackerley@dmu.ac.uk>
 <a name='assessment'></a>
 ## Assessment
 
-You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview. 
+You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview.
 
 ### Coursework 1  
-Worth 40% of the module total, your first coursework is an individual task. It will test the core skills learnt through much of the first semester seeing you produce a simple two-page website. Due in at the end of week 11, it’ll give you a chance to reflect what you have learnt so far before heading into Coursework 2. 
+Worth 40% of the module total, your first coursework is an individual task. It will test the core skills learnt through much of the first semester seeing you produce a simple two-page website. Due in at the end of week 11, it’ll give you a chance to reflect what you have learnt so far before heading into Coursework 2.
 
 ### Coursework 2  
 Worth 60% of the module total this coursework will tackle more advanced web technologies to have you produce a simple website from scratch. This coursework is much more open-ended: you choose what you're making, so there's plenty of scope to try out things that interest you. This is due in at the end of week 27, the last day before the Easter break. Note that the proposal portion is due earlier, by midday on Friday 24th January.
@@ -183,9 +183,9 @@ Worth 60% of the module total this coursework will tackle more advanced web tech
 
 All written submissions (i.e. reports and documentation) should be submitted through Turnitin. You will find a link to submit your report through the Assessment section on Blackboard.
 
-You will be required to create a logical folder structure on your public server to which you will upload your practical work for marking. Follow the instructions for structure and naming exactly, and don’t put anything there that shouldn’t be marked. If your tutor is in any doubt as to where your work is, it may not get marked. 
+You will be required to create a logical folder structure on your public server to which you will upload your practical work for marking. Follow the instructions for structure and naming exactly, and don’t put anything there that shouldn’t be marked. If your tutor is in any doubt as to where your work is, it may not get marked.
 
-Make sure the names of all files on your public server include only letters, numbers, underscores and hyphens. No spaces, no slashes! 
+Make sure the names of all files on your public server include only letters, numbers, underscores and hyphens. No spaces, no slashes!
 
 If you are unsure about any details of an assessment, ask your lab tutor.
 
@@ -220,7 +220,7 @@ All practical work uploaded to your public server space
 	<td colspan='2'>
 	<ul>
 		<li> Develop a standalone web-site incorporating animated and dynamic content </li>
-		<li>Use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of your efforts in an objective manner </li> 
+		<li>Use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of your efforts in an objective manner </li>
 		<li>Develop a basic understanding of the languages of the web, HTML, CSS and JavaScript </li>
 	</ul>
 	</td>
@@ -270,7 +270,7 @@ All practical work uploaded to your public server space
 <tr>
 	<td colspan='2'>
 	These include plagiarism, cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own. If you are in any doubt about what constitutes an academic offence or bad academic practice you must check with your tutor. Further information and details of how DSU can support you, if needed, is available at:
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and 
+<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and
 <a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx</a>
 	</td>
 </tr>
@@ -283,7 +283,7 @@ Coursework 1 is an individual piece of web work that will see you demonstrate kn
 
 **All written work must be submitted through the Turnitin link on Blackboard**
 
-The submission deadline for this work is midday on Friday 13th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work. To this end, the lab session in the week before submission is entirely given over to completion of this work. You may have the opportunity in earlier lab sessions to complete work towards this assignment should you finish the prescribed task for that session early, though don’t rely on this. 
+The submission deadline for this work is midday on Friday 13th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work. To this end, the lab session in the week before submission is entirely given over to completion of this work. You may have the opportunity in earlier lab sessions to complete work towards this assignment should you finish the prescribed task for that session early, though don’t rely on this.
 
 Coursework 1 is worth 40% of your module mark.
 
@@ -300,27 +300,27 @@ You are to produce a two page website for an upcoming film. Which film this is r
 * A synopsis of the film  
 	- so you’ve got some text content  
 
-Your website will be across two pages. The first page will include the synopsis and trailer. The second page will have cast pictures and audio interviews. 
+Your website will be across two pages. The first page will include the synopsis and trailer. The second page will have cast pictures and audio interviews.
 
-You don’t need to include the real trailer, or real interviews with the task, but they do need to be actual video and audio files. You’re being marked on how you include these, not the quality of the media itself. 
+You don’t need to include the real trailer, or real interviews with the task, but they do need to be actual video and audio files. You’re being marked on how you include these, not the quality of the media itself.
 
 There is a prescribed layout for each of the two pages. You should use CSS to attempt to achieve these layouts. The fonts, colours, and other embellishments are up to you.
 
-![Required Website Layout](https://www.dropbox.com/s/141m48lm8t7ungv/TECH1015%20CW1%20Layout.png?raw=1)
+![Required Website Layout](https://thomcorah.github.io/dmu-multimedia/resources/tech1015-cw1-layout.png)
 
 While you can add to this for better visual clarity, such as by boxing up each row of cast information and adding more rows, you should maintain as much of this layout as possible. The menu will only have two options in it, one for each page. The footer should have something suitably generic, such as a copyright notice for example.
 
-You should pay close attention to the marking criteria below for the specific points you will be marked on. 
+You should pay close attention to the marking criteria below for the specific points you will be marked on.
 
 If you’re at all unsure about what you are meant to do, ask your lab tutor for guidance.
 
 ### The Documentation
 
-You are also to produce documentation alongside this. This has two main aims. Firstly, you should provide an overview of your production process including the reason for making the choices you have. For example, how did you lay out the cast rows and why did you choose that method. We want to see two things here, that you understand what you’ve done, and that you’ve put some thought into possible approaches. Screenshots and code snippets are useful here for helping to show what you’re talking about. 
+You are also to produce documentation alongside this. This has two main aims. Firstly, you should provide an overview of your production process including the reason for making the choices you have. For example, how did you lay out the cast rows and why did you choose that method. We want to see two things here, that you understand what you’ve done, and that you’ve put some thought into possible approaches. Screenshots and code snippets are useful here for helping to show what you’re talking about.
 
-The second part of your documentation is the evaluation. This should include feedback from peers. You’ll see from the marking criteria that you’ll lose marks if you don’t include this. Ideally, you’ll have a range of people try out your website and then provide structured feedback on it. You might want to create a questionnaire that has a few questions soliciting a numerical answer (quality of design between 1 and 5, clarity of content etc) and then a couple of opportunities for the user to provide some more text-based feedback. You should then include this data in your report, and very importantly, comment on it. 
+The second part of your documentation is the evaluation. This should include feedback from peers. You’ll see from the marking criteria that you’ll lose marks if you don’t include this. Ideally, you’ll have a range of people try out your website and then provide structured feedback on it. You might want to create a questionnaire that has a few questions soliciting a numerical answer (quality of design between 1 and 5, clarity of content etc) and then a couple of opportunities for the user to provide some more text-based feedback. You should then include this data in your report, and very importantly, comment on it.
 
-You should then go on to form your own critical opinion of your work, building in reflection on your peer feedback. You need to be able to stand back from your work and be objective about it. This is crucial. What works about your site, what doesn’t. What did you find difficult, or what did you fail to achieve. Be completely honest. You wont lose any marks for pointing out something that doesn’t work. Indeed, you’ll gain marks for having a good critical approach. 
+You should then go on to form your own critical opinion of your work, building in reflection on your peer feedback. You need to be able to stand back from your work and be objective about it. This is crucial. What works about your site, what doesn’t. What did you find difficult, or what did you fail to achieve. Be completely honest. You wont lose any marks for pointing out something that doesn’t work. Indeed, you’ll gain marks for having a good critical approach.
 
 Again, ask your lab tutor if you are at all unsure about what you should be writing.
 
@@ -346,10 +346,10 @@ The website makes up 70% of your mark. You have to demonstrate a number of princ
 Full marks for at least three images included using the `<img>` element, with suitable alt text, and originals that are close to the final display size of the image.
 
 **Include Audio**  
-Full marks for the inclusion of audio using the `<audio>` element with at least two different file formats properly used. 
+Full marks for the inclusion of audio using the `<audio>` element with at least two different file formats properly used.
 
 **Include Video**  
-Full marks for the inclusion of video using the `<video>` element, with at least two different file formats properly used and a poster image in place. 
+Full marks for the inclusion of video using the `<video>` element, with at least two different file formats properly used and a poster image in place.
 
 **Separate Style Sheet**  
 Full marks for using a single .css file that uses properly formed CSS and linking it to both pages of the website.
@@ -361,7 +361,7 @@ Full marks for a site that has properly written HTML and makes full use of HTML 
 Full marks for both successfully linking the two pages together, and providing links to external pages i.e. other website(s).
 
 **Layout Implementation**  
-Full marks for using CSS to successfully achieve the given layout. 
+Full marks for using CSS to successfully achieve the given layout.
 
 For each of these seven criteria you will receive a mark out of 10, giving you a total out of 70.
 
@@ -369,7 +369,7 @@ For each of these seven criteria you will receive a mark out of 10, giving you a
 The documentation is worth 30% of the coursework grade. You will be marked against three criteria, again with a mark out of 10 for each one:
 
 **Justification of Choices**  
-Your documentation should provide an overview of the production process, including justification for your approach to problems and the solutions you used. 
+Your documentation should provide an overview of the production process, including justification for your approach to problems and the solutions you used.
 
 **Consideration of Third-Party Feedback**  
 You should seek opinion from others on the quality of your work and reflect on this. Have a handful of people use your site and complete a short questionnaire for example. Include the results, but then go on to discuss them.
@@ -404,11 +404,11 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 <tr>
 	<td colspan='2'>
 	<ul>
-		<li>Develop a standalone web-site incorporating animated and dynamic content. </li> 
-		<li>Use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of your efforts in an objective manner.  </li> 
-		<li>Understand issues related to browser platforms, accessibility and usability when displaying dynamic and animated content on the Web.  </li> 
-		<li>Gather, analyse, and present data to assist with the evaluation of your work.  </li> 
-		<li>Develop a basic understanding of the languages of the web, HTML, CSS and JavaScript </li> 
+		<li>Develop a standalone web-site incorporating animated and dynamic content. </li>
+		<li>Use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of your efforts in an objective manner.  </li>
+		<li>Understand issues related to browser platforms, accessibility and usability when displaying dynamic and animated content on the Web.  </li>
+		<li>Gather, analyse, and present data to assist with the evaluation of your work.  </li>
+		<li>Develop a basic understanding of the languages of the web, HTML, CSS and JavaScript </li>
 	</ul>
 	</td>
 </tr>
@@ -457,7 +457,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 <tr>
 	<td colspan='2'>
 	These include plagiarism, cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own. If you are in any doubt about what constitutes an academic offence or bad academic practice you must check with your tutor. Further information and details of how DSU can support you, if needed, is available at:
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and 
+<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and
 <a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx</a>
 	</td>
 </tr>
@@ -466,7 +466,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 ***
 
 ### Overview
-In semester 1 you produced an individual piece of web work. For this coursework you will produce a full website or web-based application. 
+In semester 1 you produced an individual piece of web work. For this coursework you will produce a full website or web-based application.
 
 The actual website or application you produce is up to you. You are encouraged to develop something that you will find personally interesting. Some examples include:
 
@@ -496,14 +496,14 @@ There are two main components to this coursework: the website itself and a portf
 
 ### Documentation.
 **Weighting:** 40% of the coursework mark, broken down as follows.  
-**Word Count:** 300 words plus designs for the proposal, 800 words for the production and evaluation, plus appropriate screenshots. 
+**Word Count:** 300 words plus designs for the proposal, 800 words for the production and evaluation, plus appropriate screenshots.
 
 Your documentation should consist of the following components. Note that there are two hand in dates for the documentation.
 
 #### Proposal and Initial Designs
 **Weighting:** 10% of the coursework mark   
 **Due:** Submit via Turnitin by midday on Friday 24th January
- 
+
 This should give an outline of your intended website, including:
 
 * Description that includes an outline of your idea  
@@ -523,7 +523,7 @@ This should give some insight into the development of your website. Pick two ind
 * Why you chose the approach you did
 * How successful the approach was
 
-Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on. 
+Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on.
 
 #### Evaluation
 **Weighting:** 20% of the coursework mark    
@@ -548,9 +548,9 @@ Your site should be accessible via your `public_html` folder. It should be locat
 
 The website will be assessed on the following three points.
 
-#### Content 
+#### Content
 **Weighting:** 15% of the coursework mark  
-Your website content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently. 
+Your website content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently.
 
 * Text content shows semantic structure e.g. headings, lists  
 * Careful selection, creation and editing of video and/or audio  
@@ -558,32 +558,22 @@ Your website content should be fit for purpose and appropriate. This includes al
 * Original content is credited and third-party content is referenced  
 
 
-#### Style 
+#### Style
 **Weighting:** 15% of the coursework mark  
-Your website should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your site. 
+Your website should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your site.
 
 * Style and layout reflect/have evolved from proposal  
 * Coherent overall design, colour and font choices  
 * Design and content matches the target audience  
 * Skilful use of CSS to style and arrange site elements   
 
-#### Technical Skills 
+#### Technical Skills
 **Weighting:** 30% of the coursework mark  
-Your web site should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module. 
+Your web site should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module.
 
-* Evidence of intelligent ability to choose and code current website techniques 
-* Awareness of usability/accessibility (semantic HTML5 tags and image “alt” attributes) 
+* Evidence of intelligent ability to choose and code current website techniques
+* Awareness of usability/accessibility (semantic HTML5 tags and image “alt” attributes)
 * Use of CSS animations and transitions  
 * All links work, media loads, site is consistent across browsers
 
 [Back to the Contents](#toc)
-
-
-
-
-
-
-
-
-
-
