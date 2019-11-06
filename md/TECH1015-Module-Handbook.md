@@ -306,7 +306,7 @@ You don’t need to include the real trailer, or real interviews with the task, 
 
 There is a prescribed layout for each of the two pages. You should use CSS to attempt to achieve these layouts. The fonts, colours, and other embellishments are up to you.
 
-![Required Website Layout](https://thomcorah.github.io/dmu-multimedia/resources/tech1015-cw1-layout.png)
+![Required Website Layout](https://thomcorah.github.io/dmu-multimedia/resources/movieSiteSimpleLayout.png)
 
 While you can add to this for better visual clarity, such as by boxing up each row of cast information and adding more rows, you should maintain as much of this layout as possible. The menu will only have two options in it, one for each page. The footer should have something suitably generic, such as a copyright notice for example.
 
