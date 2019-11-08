@@ -108,10 +108,6 @@ writeList = (lectures, labs, misc) => {
   document.getElementById("container").innerHTML = htmlstring;
 };
 
-document
-  .getElementById("themeSelect")
-  .addEventListener("change", updateStyleSheet);
-
 updateStyleSheet = () => {
   var theme = document.getElementById("themeSelect").value;
   console.log(theme);
@@ -129,11 +125,6 @@ updateStyleSheet = () => {
   updateOptions();
 };
 
-document.getElementById("fontsize").addEventListener("change", updateOptions);
-document
-  .getElementById("backgroundcolour")
-  .addEventListener("change", updateOptions);
-
 updateOptions = () => {
   var colour = document.getElementById("backgroundcolour").value;
   var size = document.getElementById("fontsize").value;
@@ -150,3 +141,13 @@ updateOptions = () => {
         colour
     );
 };
+
+document
+  .getElementById("themeSelect")
+  .addEventListener("change", updateStyleSheet);
+
+document.getElementById("fontsize").addEventListener("change", updateOptions);
+
+document
+  .getElementById("backgroundcolour")
+  .addEventListener("change", updateOptions);
