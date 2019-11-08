@@ -283,7 +283,7 @@ Coursework 1 is an individual piece of web work that will see you demonstrate kn
 
 **All written work must be submitted through the Turnitin link on Blackboard**
 
-The submission deadline for this work is midday on Friday 13th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work. To this end, the lab session in the week before submission is entirely given over to completion of this work. You may have the opportunity in earlier lab sessions to complete work towards this assignment should you finish the prescribed task for that session early, though don’t rely on this.
+The submission deadline for this work is midday on Friday 13th December! You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work. To this end, the lab session in the week before submission is entirely given over to completion of this work. You may have the opportunity in earlier lab sessions to complete work towards this assignment should you finish the prescribed task for that session early, though don’t rely on this.
 
 Coursework 1 is worth 40% of your module mark.
 
