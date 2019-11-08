@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #544;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.answerContainer {
+  margin: 10px;
+  padding: 20px;
+}
+
+.answerButton {
+  padding: 20px;
+  color: #544;
+  background-color: #eee;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin: 2px 5px;
+  text-decoration: none;
+}
