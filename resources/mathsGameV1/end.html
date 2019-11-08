@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href='css/style.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div class='gameOverScreen'>
+      <h1>Well Done!</h1>
+      <p>You scored <span id='score'></span> points!</p>
+    </div>
+
+    <script>
+
+      /* We need to find out what score they got and write that onto the page.
+      *  We've already got somewhere to put it, there's a span there with
+      *  an id of 'score'.
+      *  First though, we need to find out what their score is.
+      */
+
+      let finalScore = localStorage.getItem('score');
+
+      /* Then we write that into the element with an id of "score" */
+      document.getElementById('score').textContent = finalScore;
+
+    </script>
+  </body>
+</html>
