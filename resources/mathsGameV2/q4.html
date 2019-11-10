@@ -11,9 +11,53 @@
     <h2>Question 4</h2>
     <p>What is 6 x 6?</p>
     <div class='answerContainer'>
-      <a href='gameOver.html' class='answerButton'>33</a>
-      <a href='q5.html' class='answerButton'>36</a>
-      <a href='gameOver.html' class='answerButton'>28</a>
+      <a class='answerButton' id='a1'>33</a>
+      <a class='answerButton' id='a2'>36</a>
+      <a class='answerButton' id='a3'>28</a>
     </div>
+
+    <script type="text/javascript">
+
+      answerIsCorrect = () => {
+        /* From question 2 onwards we already have something stored for score.
+        *  We need to add 1 to it if they got the correct answer and save their
+        *  new score.
+        *
+        *  Localstorage saves everything as text, not numbers, so to be able to
+        *  do any maths on it (like add 1) we need to first convert it to a
+        *  number.
+        */
+
+        let existingScore = localStorage.getItem('score');
+        let existingScoreAsNumber = parseInt(existingScore);
+
+        /* Now it's a number, we can add 1 to it. */
+        existingScoreAsNumber++;
+
+        /* And now we can resave it. */
+        localStorage.setItem('score', existingScoreAsNumber);
+
+        /* And then send them to question 5 */
+        window.location.href = 'q5.html';
+
+      }
+
+      answerIsWrong = () => {
+        /* From q2 onwards, we don't need to anything with the score
+        *  if the answer is wrong.
+        *  We just send them to question 5
+        */
+        window.location.href = 'q5.html';
+      }
+
+      /* Add appropriate event listener to each answer button
+      *  This will run one of the two functions above, as appropriate.
+      */
+      document.getElementById('a1').addEventListener('click', answerIsWrong);
+      document.getElementById('a2').addEventListener('click', answerIsCorrect);
+      document.getElementById('a3').addEventListener('click', answerIsWrong);
+
+    </script>
+
   </body>
 </html>
