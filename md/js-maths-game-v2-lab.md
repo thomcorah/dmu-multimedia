@@ -77,4 +77,59 @@ You can either log out the value stored in localStorage, or use the Application 
 ### 3. Navigating to another page
 With the score update, we need to go to q2.html. We can do this using the location object in JavaScript. Take a look at this page from W3Schools for pointers: <https://www.w3schools.com/jsref/prop_loc_href.asp>
 
-### 4.
+## Q2 Onwards - Updating the score
+When we get to question 2, we need to do things a little differently if the play gets the correct answer:
+
+1. Get the current score
+2. Add 1 to it
+3. Save the new score
+
+Furthermore, locastorage data is all stored as strings, not numbers, so there's actually a further step in there:
+
+1.5. Convert the score to a number.
+
+### 1. Set up your event handlers and listeners
+In q2.html, create your event handlers and listeners: one function for a correct answer, one for a wrong answer, and an event listener on each button.
+
+### 2. Get the score
+In the function for the correct answer, before we can update the score we need to find out what it is. We need to retrieve it from localStorage. Refer back to the MDN page to see how to do it: <https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage>
+
+Note: assign this to a variable, it'll make things easier.
+
+### 3. Convert to a number
+Before we can do any maths on it, we need to convert this score to a number. Here's a nice little page about converting strings to numbers in JS: <https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/>
+
+### 4. Add 1 to it.
+Yep, add 1 to it.
+
+### 5. Save the new score
+This is just the same as saving it in the first place for q1.
+
+### 6. Go to question 3
+Now put in a line to go to q3. You'll need this in the function for the incorrect answers too.
+
+### 7. Check it works
+Do you go to q3? Does the score in localstorage update when it should?
+
+### 8. And repeat
+Do the same for q3, q4, and q5. The only exception though is that from q5 the player will be taken to some end screen, rather than another question.
+
+### 9. Check it all works
+As for point step 7.
+
+## Results!
+All that's left is to create the final screen that tells the player their score.
+
+### 1. Create the HTML
+This can really be anything you want, though it would be nice if it does more than just give them a number. Perhaps stick it in a sentence, like "You scored 4 points".
+
+You don't know the points yet though, so use an empty `<span>` with an id so you can put the score in there when you've fetched it.
+
+### 2. Fetch the score
+You know how to find out the score already, so do that.
+
+### 3. Print it to the screen
+You know how to get a reference to an element on the screen, so do that to get a reference to that `<span>`. You then want to write the value of the score variable into it. There's a question on stack overflow with an accepted answer that covers this: <https://stackoverflow.com/questions/41764061/adding-text-to-an-existing-text-element-in-javascript-via-dom>
+
+### 4. Check the whole thing works
+Fingers crossed....Yay!
