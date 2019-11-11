@@ -12,7 +12,7 @@ This means we need to be able to do a few things:
 
 One step at a time.
 
-You can see a finished example at <http://localhost:8989/resources/mathsGameV2/q1.html>
+You can see a finished example at <https://thomcorah.github.io/dmu-multimedia/resources/mathsGameV2/q1.html>
 
 ## Get Set Up
 
