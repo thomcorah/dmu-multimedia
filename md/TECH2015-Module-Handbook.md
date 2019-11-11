@@ -3,7 +3,7 @@
 ### Leicester Media School
 
 # TECH2015: Multimedia II
-           
+
 
 **Module Leader:** Thom Corah (GH6.62)  
 
@@ -29,11 +29,11 @@
 
 <div style="page-break-after: always;"></div>
 
-<a name='welcome'></a> 
+<a name='welcome'></a>
 ## Welcome to Multimedia II
-I hope you enjoy studying this module through your second year and find that you learn many valuable skills from it. It is a modern reality that many creative disciplines can be enhanced with at least a working knowledge of how the web works. An incredible amount of content is now delivered over the Internet, from short form videos to full blockbusters, from amateur audio clips to platinum albums, images, radio, applications and more. Whether you’re a videographer, sound engineer, animator or editor, an understanding of the web should be a key component of your skillset. 
+I hope you enjoy studying this module through your second year and find that you learn many valuable skills from it. It is a modern reality that many creative disciplines can be enhanced with at least a working knowledge of how the web works. An incredible amount of content is now delivered over the Internet, from short form videos to full blockbusters, from amateur audio clips to platinum albums, images, radio, applications and more. Whether you’re a videographer, sound engineer, animator or editor, an understanding of the web should be a key component of your skillset.
 
-Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily. 
+Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily.
 
 
 Thom Corah - Module Leader
@@ -52,9 +52,9 @@ Tel: 0116 207 8088
 <a name='description'></a>
 ## Module Description
 
-This module will build on your work last year in TECH1015 and develop your understanding of media presentation using the Internet. Last year was concerned with getting the basics of HTML, CSS, and JavaScript, as well as some of the mechanics of the Internet. Through the course of this module you’ll develop a more nuanced approach that will consider the needs of different users consuming your media through a range of platforms. 
+This module will build on your work last year in TECH1015 and develop your understanding of media presentation using the Internet. Last year was concerned with getting the basics of HTML, CSS, and JavaScript, as well as some of the mechanics of the Internet. Through the course of this module you’ll develop a more nuanced approach that will consider the needs of different users consuming your media through a range of platforms.
 
-You will build on your technical understanding of the languages of the web: HTML, CSS, and JavaScript. Through these languages you will investigate issues of layout, style, animation, and interactivity, all with a keen focus on the user and the user experience. You will also make use of existing online resources, particularly those that can manage your media productions such as Vimeo and SoundCloud. 
+You will build on your technical understanding of the languages of the web: HTML, CSS, and JavaScript. Through these languages you will investigate issues of layout, style, animation, and interactivity, all with a keen focus on the user and the user experience. You will also make use of existing online resources, particularly those that can manage your media productions such as Vimeo and SoundCloud.
 
 Throughout the module you are encouraged to undertake your own research in to the software and practices we undertake. You should develop the ability to solve problems encountered in your work in an independent fashion, though your lab tutor will step in if necessary.
 
@@ -69,7 +69,7 @@ At the end of the module, you will be able to:
 * Produce a time-based multimedia production incorporating animation techniques and interactivity.  
 * Design and evaluate multimedia interfaces for implementation of a multimedia production.  
 * Understand the constraints and possibilities for the presentation of different media types.  
-* Develop a further understanding of web technologies in the production of an interactive media presentation. 
+* Develop a further understanding of web technologies in the production of an interactive media presentation.
 
 [Back to the Contents](#toc)
 
@@ -80,14 +80,14 @@ This module will develop your understanding and engagement with:
 
 * Multimedia time-based applications in terms of their structure, content, and design features.  
 * The application of text, graphics, sound and video in Multimedia production.   
-* Intermediate Javascript 
+* Intermediate Javascript
 * Media User Interface prototype and design
 * Responsive web design – user interfaces that adapt to screen size  
 * The use of animation in user interface design and presentation
 * Accessibility and Usability - a web that works for all  
 * Vector graphics for the web
 
-There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs. 
+There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs.
 
 [Back to the Contents](#toc)
 
@@ -124,10 +124,10 @@ Question and answer site perhaps used by every developer ever. If you put a web 
 Amazing resource with mini tutorials and a great reference section for HTML, CSS, and JavaScript.
 
 **<https://www.codecademy.com>** and **<https://www.udacity.com>**  
-Short form online courses in many things, including web authoring. 
+Short form online courses in many things, including web authoring.
 
 **<https://css-tricks.com>**  
-Really great website with loads of posts on stying your webpages and sites, all really well explained. 
+Really great website with loads of posts on stying your webpages and sites, all really well explained.
 
 [Back to the Contents](#toc)
 
@@ -141,7 +141,7 @@ This module makes use of Blackboard – De Montfort University’s Virtual Learn
 * Lecture notes
 * Your assessment feedback
 * General notices and announcements
-* Lecture recordings 
+* Lecture recordings
 
 Access to Blackboard can be found at:
 
@@ -152,7 +152,7 @@ Access to Blackboard can be found at:
 <a name="plagiarism"></a>
 ## Plagiarism
 
-DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit. 
+DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit.
 
 You can read more about plagiarism and other acedemic offences in Chapter 4 of the student regulations: <https://www.dmu.ac.uk/documents/dmu-students/academic-support-office/student-regulations/chapter-4-17.18.pdf>
 
@@ -169,10 +169,10 @@ Helen Ackerley <hackerley@dmu.ac.uk>
 <a name='assessment'></a>
 ## Assessment
 
-You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview. 
+You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview.
 
 ### Coursework 1  
-Worth 40% of the module total, your first coursework will see you produce an individual piece of work. This will involve specifying and designing a web app, including producing a prototype,  testing, and getting feedback from users. 
+Worth 40% of the module total, your first coursework will see you produce an individual piece of work. This will involve specifying and designing a web app, including producing a prototype,  testing, and getting feedback from users.
 
 ### Coursework 2  
 Worth 60% of the module total this coursework will tackle HTML5 and other web technologies to have you produce the website or application you designed for Coursework1.
@@ -181,9 +181,9 @@ Worth 60% of the module total this coursework will tackle HTML5 and other web te
 
 All written submissions (i.e. reports and documentation) should be submitted through Turnitin. You will find a link to submit your report through the Assessment section on Blackboard.
 
-You will be required to create a logical folder structure on your public server to which you will upload your practical work for marking. Follow the instructions for structure and naming exactly, and don’t put anything there that shouldn’t be marked. If your tutor is in any doubt as to where your work is, it may not get marked. 
+You will be required to create a logical folder structure on your public server to which you will upload your practical work for marking. Follow the instructions for structure and naming exactly, and don’t put anything there that shouldn’t be marked. If your tutor is in any doubt as to where your work is, it may not get marked.
 
-Make sure the names of all files on your public server include only letters, numbers, underscores and hyphens. No spaces, no slashes! 
+Make sure the names of all files on your public server include only letters, numbers, underscores and hyphens. No spaces, no slashes!
 
 If you are unsure about any details of an assessment, ask your lab tutor.
 
@@ -247,7 +247,7 @@ All practical work uploaded to your public server space
 <tr>
 	<td colspan='2'>
 		The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page. <br />  
-			
+
 	<b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
 			</td>
 </tr>
@@ -265,7 +265,7 @@ All practical work uploaded to your public server space
 <tr>
 	<td colspan='2'>
 	These include plagiarism, cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own. If you are in any doubt about what constitutes an academic offence or bad academic practice you must check with your tutor. Further information and details of how DSU can support you, if needed, is available at:
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and 
+<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and
 <a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx</a>
 	</td>
 </tr>
@@ -279,21 +279,21 @@ Coursework 1 will see you tackle the specification and design of a media-driven 
 
 The submission deadline for this work is midday (12pm) on Friday 13th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
 
-This design and specification can form the basis of what you produce for Coursework 2, so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework. 
+This design and specification can form the basis of what you produce for Coursework 2, so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework.
 
 
 ### Where to Start?
 
-Your first job is to decide what your app is going to be. Although you are going to carry this design forward into Coursework 2, you can make changes between the two based on the feedback you’ll get, so don’t feel you’ve got to commit to something that will satisfy CW2 right now. 
+Your first job is to decide what your app is going to be. Although you are going to carry this design forward into Coursework 2, you can make changes between the two based on the feedback you’ll get, so don’t feel you’ve got to commit to something that will satisfy CW2 right now.
 
-However, there are a number of points that your app must satisfy: 
- 
+However, there are a number of points that your app must satisfy:
+
 * Uses or presents audio and/or video content  
 * Animates the user interface  
 * Is accessible  
 * Is mobile-first and adapts to desktop  
-* Contains four pages, or is equivalent. 
-  
+* Contains four pages, or is equivalent.
+
 If you’re stuck for an idea, you’ll find some suggestions at the end of this brief, so feel free to use one of them.  
 
 
@@ -304,7 +304,7 @@ Your final submission will be a written report and your interactive prototype.
 The report should contain:
 
 * An introduction - what is your app  
-* A specification - a detailed list of the things it should do/be 
+* A specification - a detailed list of the things it should do/be
 * Initial design sketches with commentary  
 * Your final designs for both mobile and desktop with commentary  
 * User feedback based on your prototype  
@@ -312,7 +312,7 @@ The report should contain:
 * Conclusion - how successfully does this design meet the specification you set  
 
 Where there is a requirement for commentary, make sure to include
- 
+
 * details of steps you will take to ensure your app is accessible  
 * how the interface changes/adapts to screen size  
 * why you have made the choices you’ve made  
@@ -345,14 +345,14 @@ This is concerned with the degree to which to make sure your app adapts to the s
 
 |Mark Range| Requirement                              |
 |----------------|------------------------------------|
-|Excellent (70+) |The prototypes show clear differences between the desktop and mobile versions, with the advantages and limitations of each clearly accepted. The documentation discusses these choices and why they have been made, with reference to external sources where appropriate. |
-|Good (50 - 69)  |The prototypes show that a moderate amount of effort has gone in to working with each screen size. This is mostly successful, though there are some minor issues. The report discusses these well showing a good grasp of responsive design.|
-|Satisfactory (40 - 49) | The prototypes show that there is some difference between the two versions, though there is at least one major issue, such as a grid of tiles not collapsing to a single column. The documentation shows an awareness of the principles of responsive design and provides some commentary on the choices made. |
-|Poor (0 - 39)   |There is only one prototype or almost no difference between the two. The report fails to discuss responsive design, or at most does so poorly. |
+|Excellent (70+) |The report discusses clear differences between the desktop and mobile versions, with the advantages and limitations of each clearly accepted. It discusses these choices and why they have been made, with reference to external sources where appropriate. |
+|Good (50 - 69)  |The report shows that a moderate amount of effort has gone in to working with each screen size. This is mostly successful, though there are some minor issues. It discusses these well showing a good grasp of responsive design.|
+|Satisfactory (40 - 49) | The report shows that there is some difference between the two versions, though there is at least one major issue, such as a single column not expanding into a grid. The documentation shows an awareness of the principles of responsive design and provides some commentary on the choices made. |
+|Poor (0 - 39)   | The report fails to discuss responsive design, or at most does so poorly. |
 
 
 #### Critical Analysis
-This is concerned with your testing and evaluation of your prototype. 
+This is concerned with your testing and evaluation of your prototype.
 
 |Mark Range| Requirement                              |
 |----------------|------------------------------------|
@@ -372,7 +372,7 @@ This is concerned with the process of designing your app, from initial idea and 
 |Poor (0 - 39)   |Report shows little or no evidence of a design process. Any developments that are included have no justification or evaluation. There are either no sketches, or they are so general and rudimentary as to be pointless.  |
 
 #### Presentation
-This is concerned with the presentation of both your prototype and the report. 
+This is concerned with the presentation of both your prototype and the report.
 
 |Mark Range| Requirement                              |
 |----------------|------------------------------------|
@@ -383,7 +383,7 @@ This is concerned with the presentation of both your prototype and the report.
 
 ### Example App Ideas
 
-Here are a few examples of what you could do. You can use one of these ideas as a start point as it is, or simply for inspiration to get you going. 
+Here are a few examples of what you could do. You can use one of these ideas as a start point as it is, or simply for inspiration to get you going.
 
 #### A Single-Page Website
 Multiple sections combine into a single long vertical-scrolling page. As the user scrolls down, new sections are introduced through a combination of background (colour, shape, image) and foreground (text, graphics) animations. A menu provides direct access to each section.
@@ -392,7 +392,7 @@ Multiple sections combine into a single long vertical-scrolling page. As the use
 A grid of thumbnails presents a range of artwork. Click on one and you can see it full size, alongside notes such as the artist, medium, date etc. The thumbnails in the grid are resizeable - when they're made larger, you get less in a row - they rearrange. The grid is filterable: the user selects to just show photography, everything else disappears and the grid rearranges.
 
 #### A Personalised Story
-The user enters their name and other details on page 1, before being presented with a simple interactive story that incorporates these details. Animations mark the transition between scenes and the introduction of text and graphics within them. 
+The user enters their name and other details on page 1, before being presented with a simple interactive story that incorporates these details. Animations mark the transition between scenes and the introduction of text and graphics within them.
 
 [Back to the Contents](#toc)
 
@@ -422,7 +422,7 @@ The user enters their name and other details on page 1, before being presented w
 		<li>gather, analyse, and present data to assist with the evaluation of their work.</li>
 		<li>use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of their efforts in an objective manner.</li>
 <li>develop a standalone web-site designed to W3C standards incorporating animated and dynamic content.</li>
-<li>understand and evaluate issues related to browser platforms, accessibility and usability when displaying dynamic and animated content on the Web.</li> 
+<li>understand and evaluate issues related to browser platforms, accessibility and usability when displaying dynamic and animated content on the Web.</li>
 	</ul>
 	</td>
 </tr>
@@ -471,7 +471,7 @@ The user enters their name and other details on page 1, before being presented w
 <tr>
 	<td colspan='2'>
 	These include plagiarism, cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own. If you are in any doubt about what constitutes an academic offence or bad academic practice you must check with your tutor. Further information and details of how DSU can support you, if needed, is available at:
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and 
+<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and
 <a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx</a>
 	</td>
 </tr>
@@ -480,18 +480,18 @@ The user enters their name and other details on page 1, before being presented w
 ***
 
 ### Overview
-In semester 1 you designed and prototyped a modern web app or website. For this coursework you will go on to produce it using HTML, CSS and JavaScript. 
+In semester 1 you designed and prototyped a modern web app or website. For this coursework you will go on to produce it using HTML, CSS and JavaScript.
 
-You will first make any modifications to the design that you think are necessary following feedback from your tutor and peers. You will then let loose your webdev skills in realising your dream design. 
+You will first make any modifications to the design that you think are necessary following feedback from your tutor and peers. You will then let loose your webdev skills in realising your dream design.
 
-As well as your practical work, you will also submit a report documenting your updated design, production work, and evaluation of your finished project. 
+As well as your practical work, you will also submit a report documenting your updated design, production work, and evaluation of your finished project.
 
 But what if you don't want to use your design from Coursework 1? That's fine, your tutor can provide you with a prototype on which to base your work, just as if it was done for the previous coursework.
 
 Some key points to consider:
 
 * Make sure to pay attention to the marking criteria. A good mark for Coursework 1 doesn't automatically translate to a website that hits all the criteria for coursework 2 - you may need to adapt your design
-* Don't skimp on the testing - this is critically important and **will** get you a better mark. 
+* Don't skimp on the testing - this is critically important and **will** get you a better mark.
 * Stick to your (updated) design. If you need to differ from it, make sure to discuss this in your report.
 
 
@@ -505,11 +505,11 @@ There are two main components to this coursework: the website itself and a portf
 **Weighting:** 40% of the coursework mark, broken down as follows.  
 **Word Count:** 1300 words, plus appropriate screenshots.
 
-Your documentation should consist of the following components. 
+Your documentation should consist of the following components.
 
 #### Overview of Designs
-**Weighting:** 10% of the coursework mark 
- 
+**Weighting:** 10% of the coursework mark
+
 You should include your designs, whether updated or not. These should be accompanied by a commentary that addresses:
 
 * what was strong about your design
@@ -532,7 +532,7 @@ This should give some insight into the development of your website. Pick three i
 * Why you chose the approach you did
 * How successful the approach was
 
-Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on. 
+Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on.
 
 #### Evaluation
 **Weighting:** 20% of the coursework mark  
@@ -558,9 +558,9 @@ Your site should be accessible via your `public_html` folder. It should be locat
 
 The website will be assessed on the following three points.
 
-#### Content 
+#### Content
 **Weighting:** 15% of the coursework mark  
-Your website content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently. 
+Your website content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently.
 
 * Text content shows semantic structure e.g. headings, lists  
 * Careful selection, creation and editing of video and/or audio  
@@ -568,25 +568,25 @@ Your website content should be fit for purpose and appropriate. This includes al
 * Original content is credited and third-party content is referenced  
 
 
-#### Style 
+#### Style
 **Weighting:** 15% of the coursework mark  
-Your website should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your site. 
+Your website should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your site.
 
 * Style and layout reflect/have evolved from design  
 * Coherent overall design, colour and font choices  
 * Design and content matches the target audience  
 * Skilful use of CSS to style and arrange site elements   
 
-#### Technical Skills 
+#### Technical Skills
 **Weighting:** 30% of the coursework mark  
-Your web site should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module. 
+Your web site should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module.
 
-* Evidence of intelligent ability to choose and code current website techniques 
-* Awareness of usability/accessibility (semantic HTML5 tags and image “alt” attributes) 
+* Evidence of intelligent ability to choose and code current website techniques
+* Awareness of usability/accessibility (semantic HTML5 tags and image “alt” attributes)
 * Use of CSS animations and transitions  
 * All links work, media loads, site is consistent across browsers
 * Excellent use of at least two of:
-	* JavaScript 
+	* JavaScript
 	* CSS animations and transitions
 	* SVG animation
 	* Responsive design
