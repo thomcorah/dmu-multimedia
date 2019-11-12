@@ -4,7 +4,7 @@ You've seen elements stacking vertically - most do this by default. Sometimes we
 
 ## Exercise 1 - Embedded Image
 
-You're going to explore wrapping text around an image. There is a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/floating/exercise1.html>
+You're going to explore wrapping text around an image. There is a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/floating/floating.html>
 
 Feel free to copy the image and/or text from there. You can also inspect the code if you get stuck.
 
