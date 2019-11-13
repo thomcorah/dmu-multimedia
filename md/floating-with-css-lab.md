@@ -12,9 +12,9 @@ Feel free to copy the image and/or text from there. You can also inspect the cod
 * Create a folder, open it in Atom.
 * Create a `css` folder, and create a `style.css` file inside it.
 * Create your `html` file.
+* Fill it with the starting HTML (html -> `tab`)
 * Add the viewport meta tag to the `<head>` section:
   * `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
-* Fill it with the starting HTML (html -> `tab`)
 * Link the stylesheet in (`<link>` element)
 * Open your page in Chrome - https://my.tech.dmu.ac.uk/~pNumber
 * Open the inspector and switch to responsive mode.
