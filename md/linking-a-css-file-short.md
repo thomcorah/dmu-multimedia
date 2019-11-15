@@ -10,7 +10,7 @@ It takes three attributes:
 * rel: this describes how the style file relates to our webpage
 * type: this is the mime type of the style file
 
-## The file location
+## The href attribute
 
 This is the location of the css file from the HTML file we're linking it into.
 
