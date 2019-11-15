@@ -41,7 +41,7 @@ We need to go into the css folder first. So, our element actually needs to look 
 The rel attribute tells the browser how this file that we're linking in relates to the html file we're linking it to. The css file is its stylesheet. This is always the value of this attribute.
 
 ```html
-<link src='css/style.css' rel='stylesheet' />
+<link href='css/style.css' rel='stylesheet' />
 ```
 
 ## The type attribute
@@ -55,5 +55,5 @@ An mp4 video for example has a mime type of 'video/mp4'
 CSS files have a mime type of 'text/css', so this is always the value of the type attribute, giving us a finished `<link>` element looking like this.
 
 ```html
-<link src='css/style.css' rel='stylesheet' type='text/css'/>
+<link href='css/style.css' rel='stylesheet' type='text/css'/>
 ```
