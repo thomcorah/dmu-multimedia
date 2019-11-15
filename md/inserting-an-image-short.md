@@ -1,7 +1,5 @@
 # Inserting an Image
 
-<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=ea7bdfc4-d5d8-4edb-927d-ab0300f8c546&v=1" width="720" height="405" style="padding: 0px; border: 1px solid #464646;" frameborder="0" allowfullscreen allow="autoplay"></iframe>
-
 ## The `<img>` element
 
 We use the `<img>` element to insert an image.
