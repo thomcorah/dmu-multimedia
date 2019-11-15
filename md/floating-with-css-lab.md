@@ -19,6 +19,8 @@ Feel free to copy the image and/or text from there. You can also inspect the cod
 * Open your page in Chrome - https://my.tech.dmu.ac.uk/~pNumber
 * Open the inspector and switch to responsive mode.
 
+There's a short guide to inserting a stylesheet here: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?linking-a-css-file-short.md>
+
 ### 2. Get an image
 Create an `img` folder, find an image, and put it in.
 
