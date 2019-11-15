@@ -22,10 +22,10 @@ Feel free to copy the image and/or text from there. You can also inspect the cod
 ### 2. Get an image
 Create an `img` folder, find an image, and put it in.
 
-There's a short guide to images in html here: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?inserting-an-image-short.md>
-
 ### 3. Insert the image
 Add the image to your html page. Refresh the page in Chrome to make sure this has worked.
+
+There's a short guide to images in html here: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?inserting-an-image-short.md>
 
 ### 4. Set the image width
 Using CSS, set the width of the image to 25%, with a minimum width of 100px.
