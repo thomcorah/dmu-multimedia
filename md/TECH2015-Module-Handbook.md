@@ -306,7 +306,7 @@ The report should contain:
 * An introduction - what is your app  
 * A specification - a detailed list of the things it should do/be
 * Initial design sketches with commentary  
-* Your final designs for both mobile and desktop with commentary  
+* Your final designs with commentary  
 * User feedback based on your prototype  
 * Details of any changes made based on feedback  
 * Conclusion - how successfully does this design meet the specification you set  
@@ -321,10 +321,7 @@ Your report will be submitted through Turnitin. If you do not submit through Tur
 
 Your report should be 1000 words plus imagery.
 
-Your will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This can be a prototype for either the desktop or mobile version of your website. It should demonstrate website structure and functionality as much as the prototyping platform allows.  
-
-
-
+Your will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This should be the prototype for the mobile version of your website. It should demonstrate website structure and functionality as much as the prototyping platform allows.  
 
 ### Marking Criteria
 
