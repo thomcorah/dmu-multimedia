@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  background-color: #d3e7f1;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+#listContainer {
+  margin: 20px;
+}

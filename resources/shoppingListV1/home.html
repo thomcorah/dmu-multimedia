@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Shopping List</h1>
+    <form>
+      <input id="newItemName" type="text" placeholder="New Item" />
+      <button id="addItemBtn">Add Item</button>
+    </form>
+    <div id="listContainer"></div>
+    <script>
+      /*
+       * We need to create an empty array to use to keep a list of
+       * things.
+       */
+      let shoppingList = [];
+
+      /*
+       * When the user clicks the Add Item button, this function runs, adding
+       * the contents of the <input> to the end of the shoppingList array.
+       *
+       * There's a gotcha here though. When a button gets clicked in a <form>,
+       * the page refreshes. We don't want this default behaviour to happen.
+       * In order to stop it, we need to grab the event object. Whenever a
+       * function is run from an event listener, it's passed information about
+       * the event in an object. Here, we're storing it in a variable called
+       * evt.
+       * We then use that object to prevent the default page refresh, using
+       * its preventDevault() method.
+       */
+      addItem = evt => {
+        // Stops the page refreshing.
+        evt.preventDefault();
+
+        // Gets the contents of the input box and stores it in a variable.
+        let thisItem = document.getElementById("newItemName").value;
+
+        // Adds the new item to the end of the shoppingList array
+        shoppingList.push(thisItem);
+
+        // Sets the contets of the input back to nothing ready for a new
+        // entry.
+        document.getElementById("newItemName").value = "";
+
+        // Runs the updateDisplay function.
+        updateDisplay();
+      };
+
+      /*
+       * The updateDisplay function creates a html list out of the items
+       * in the shoppingList array.
+       *
+       * It does this by creating a new string, looping through
+       * the contents of the shoppingList array, and adding to
+       * that string for each item in the list.
+       *
+       * Once the loop has finished, it then deposits that string
+       * into the page.
+       */
+      updateDisplay = () => {
+        // Create an empty string ready for building.
+        let listContents = "";
+
+        // Loop through the contents of the shoppingList array.
+        for (let i = 0; i < shoppingList.length; i++) {
+          // For each item, we add a string of HTML to listContents.
+          listContents += '<div class="listItem">' + shoppingList[i] + "</div>";
+        }
+        // When the looping is finished, we put the listContents string
+        // into the page.
+        document.getElementById("listContainer").innerHTML = listContents;
+      };
+
+      document.getElementById("addItemBtn").addEventListener("click", addItem);
+    </script>
+  </body>
+</html>
