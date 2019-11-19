@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Maths Quiz</h1>
+    <h2>Question 1</h2>
+    <p>What is 5 x 4?</p>
+    <div class="answerContainer">
+      <a class="answerButton" id="a1">20</a>
+      <a class="answerButton" id="a2">25</a>
+      <a class="answerButton" id="a3">15</a>
+    </div>
+    <script type="text/javascript">
+      let questions = [
+        { question: "What is 5 x 4?", answers: [20, 25, 15], correct: 0 },
+        { question: "What is 16 + 5?", answers: [20, 23, 21], correct: 2 },
+        { question: "What is 19 x 2?", answers: [38, 51, 55], correct: 0 },
+        { question: "What is 6 x 6?", answers: [33, 36, 39], correct: 1 },
+        { question: "What is 8 - 3?", answers: [2, 5, 6], correct: 1 }
+      ];
+
+      let currentQ = 0;
+
+      askQuestion = () => {};
+
+      answerIsCorrect = () => {
+        /* This is the first question, so if the answer is correct we
+         *  just store 1 as the score
+         */
+        localStorage.setItem("score", "1");
+
+        /* And then send them to question 2 */
+        window.location.href = "q2.html";
+      };
+
+      answerIsWrong = () => {
+        /* When we get to question 2, we still want to have something stored for
+         *  score, even if it's just 0.
+         */
+        localStorage.setItem("score", "0");
+
+        /* And then send them to question 2 */
+        window.location.href = "q2.html";
+      };
+
+      /* Add appropriate event listener to each answer button
+       *  This will run one of the two functions above, as appropriate.
+       */
+      document.getElementById("a1").addEventListener("click", answerIsCorrect);
+      document.getElementById("a2").addEventListener("click", answerIsWrong);
+      document.getElementById("a3").addEventListener("click", answerIsWrong);
+    </script>
+  </body>
+</html>
