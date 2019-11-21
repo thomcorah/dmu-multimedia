@@ -10,7 +10,7 @@ Setup for a new project. You'll find a handy little step-by-step guide here: <ht
 ## Horizontal Menu
 One of the things flex box can do is spread some items neatly across a container’s width. This can be really handy for creating a menu for example. So, this is your first task. Create a horizontal menu with four items, all with centred text and spread out evenly.
 
-![Horizontal Layout](../resources/flexbox/img/t1.png)
+![Horizontal Layout](https://thomcorah.github.io/dmu-multimedia/resources/flexbox/img/t1.png)
 
 * The menu is three `<a>` elements inside a `<nav>`
 * The `<nav>` has been set up as a flexbox container - use the `display` css property
@@ -22,7 +22,7 @@ You can see this completed example here: <https://thomcorah.github.io/dmu-multim
 
 Can you change it so that the menu items are grouped in the centre?
 
-![Horizontal Layout](../resources/flexbox/img/t1v2.png)
+![Horizontal Layout](https://thomcorah.github.io/dmu-multimedia/resources/flexbox/img/t1v2.png)
 
 You'll need to stop the `<a>` elements from expanding, and you'll have to tell the `<nav>` how to justify its contents. Refer to that CSS tricks page for pointers.
 
@@ -31,7 +31,7 @@ You can see this completed example here: <https://thomcorah.github.io/dmu-multim
 ## Vertical Centring
 Flexbox can be used to centre things vertically, as well as horizontally. Can you put a square in the middle of the page?
 
-![Centred square](../resources/flexbox/img/t2.png)
+![Centred square](https://thomcorah.github.io/dmu-multimedia/resources/flexbox/img/t2.png)
 
 * The red square is a `<div>` with height and width set to 50px
 * This is inside a `<div>` set up as a flexbox, but with its height set to `100vh` to make it the full height of the browser window.
@@ -43,8 +43,8 @@ You can see a completed example here: <https://thomcorah.github.io/dmu-multimedi
 We can use flexbox to create a grid of elements - photos for example - that automatically adapts to screen size. Have a look at this video:
 
 <video controls>
-  <source src='../resources/flexbox/video/flexgrid.webm' type='video/webm' />
-  <source src='../resources/flexbox/video/flexgrid.mp4' type='video/mp4' />
+  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexgrid.webm' type='video/webm' />
+  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexgrid.mp4' type='video/mp4' />
   Sorry, your browser does not support HTML5 video. You can download it <a href='../resources/flexbox/video/flexgrid.mp4'>here</a>.  
 </video>
 
