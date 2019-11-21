@@ -43,8 +43,8 @@ You can see a completed example here: <https://thomcorah.github.io/dmu-multimedi
 We can use flexbox to create a grid of elements - photos for example - that automatically adapts to screen size. Have a look at this video:
 
 <video controls>
-  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexgrid.webm' type='video/webm' />
-  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexgrid.mp4' type='video/mp4' />
+  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexGrid.webm' type='video/webm' />
+  <source src='https://thomcorah.github.io/dmu-multimedia/resources/flexbox/video/flexGrid.mp4' type='video/mp4' />
   Sorry, your browser does not support HTML5 video. You can download it <a href='../resources/flexbox/video/flexgrid.mp4'>here</a>.  
 </video>
 
