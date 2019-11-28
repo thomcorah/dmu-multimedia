@@ -7,15 +7,33 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- The HTML is mostly just placeholders that we'll fill once a
+    question has been selected -->
     <h1>Maths Quiz</h1>
-    <h2>Question 1</h2>
-    <p>What is 5 x 4?</p>
-    <div class="answerContainer">
-      <a class="answerButton" id="a1">20</a>
-      <a class="answerButton" id="a2">25</a>
-      <a class="answerButton" id="a3">15</a>
+    <h2>Question <span id='currentQuestionNumber'>1</span></h2>
+    <p id='question'></p>
+    <div class="answerContainer" id='answers'>
     </div>
+
+
     <script type="text/javascript">
+
+      /*
+       * We are storing the questions in an array. This gives us a few
+       * options going forward. We can easily add more questions, or change
+       * it so that questions are selected in a random order, or give each
+       * question a different points value based on its difficulty, and so on.
+       *
+       * For each question, we also need to store the possible answers, as well
+       * as something that tells us which one is correct.
+       *
+       * To do this, we're going to store each question as an object. This object
+       * has three keys:
+       *  question: this is a string
+       *  answers: this is an array of possible answers
+       *  correct: this is the array index of the correct answer
+       */
+
       let questions = [
         { question: "What is 5 x 4?", answers: [20, 25, 15], correct: 0 },
         { question: "What is 16 + 5?", answers: [20, 23, 21], correct: 2 },
@@ -24,36 +42,160 @@
         { question: "What is 8 - 3?", answers: [2, 5, 6], correct: 1 }
       ];
 
-      let currentQ = 0;
-
-      askQuestion = () => {};
-
-      answerIsCorrect = () => {
-        /* This is the first question, so if the answer is correct we
-         *  just store 1 as the score
-         */
-        localStorage.setItem("score", "1");
-
-        /* And then send them to question 2 */
-        window.location.href = "q2.html";
-      };
-
-      answerIsWrong = () => {
-        /* When we get to question 2, we still want to have something stored for
-         *  score, even if it's just 0.
-         */
-        localStorage.setItem("score", "0");
-
-        /* And then send them to question 2 */
-        window.location.href = "q2.html";
-      };
-
-      /* Add appropriate event listener to each answer button
-       *  This will run one of the two functions above, as appropriate.
+      /*
+       * We're going to go through the questions sequentially. Before we get
+       * going, we create a variable to hold the array index of the current
+       * question, and a variable to keep track of the score.
        */
-      document.getElementById("a1").addEventListener("click", answerIsCorrect);
-      document.getElementById("a2").addEventListener("click", answerIsWrong);
-      document.getElementById("a3").addEventListener("click", answerIsWrong);
+      let currentQ = 0;
+      let score = 0;
+
+      /*
+       * Each time we ask a question, we want to do the same things, so we wrap
+       * this up in a function.
+       */
+      askQuestion = () => {
+        /* Pull the current question object out of the array */
+        let thisQuestion = questions[currentQ];
+
+        /* Upate the display with the current question number */
+        document.getElementById('currentQuestionNumber').textContent = currentQ + 1;
+
+        /* Update the display with the current question text */
+        document.getElementById('question').textContent = thisQuestion.question;
+
+        /*
+         * For the answers, we need to put some html into the page. More
+         * specifically, an <a> element for each answer. So, we're going to
+         * start off with an empty string and then loop over each of the possible
+         * answers for this question adding an <a> element to the string for
+         * each one. Once the loops finished we then output that string to
+         * the document.
+         */
+        let answers = '';
+
+        /*
+         * We want to loop round each item in the answers array that's
+         * contained in thisQuestion.
+         */
+        for(let i = 0; i < thisQuestion.answers.length; i++) {
+          /*
+           * For each answer, we build a string. This should mostly look fine,
+           * except you might not be too familiar with using back ticks `` to
+           * create a string literal. This is useful when we want to build a
+           * string to include the values of a few variables. It makes the
+           * code easier to read.
+           *
+           * One thing to note here, we're going to add an event listener to this
+           * button, indeed, to all the buttons, but they're all going to point
+           * to the same function to check if the user has selected the correct
+           * answer. That function will need to know which button was clicked, or
+           * more usefully, the array index of the answer that button represented.
+           * It will then check to see if that's the same as the correct answer.
+           *
+           * In order to be able to pick that up in the function, we add our own
+           * custom attribute to the <a> element here 'data-answer' and set its
+           * value to the array index of this answer, which is the same as i.
+           */
+          answers += `<a class="answerButton" data-answer="${i}">${thisQuestion.answers[i]}</a>`;
+        }
+        // Once the loop's finished, we output the string to the page.
+        document.getElementById('answers').innerHTML = answers;
+
+        /*
+         * It's not enough however to simply add the <a> elements. We also
+         * need to add an event listener to each one so that when the user
+         * clicks on it, we can check if they were correct and proceed
+         * accordingly.
+         *
+         * We can select all our answer buttons in one go by using
+         * document.querySelectorAll. There's a page on MDN about it here:
+         * https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+         *
+         * In short, you provide a selector, and it gives you back an array of
+         * matching elements. So, we can provide the classname, and get a
+         * list of all the answer buttons.
+         *
+         * We can then use forEach to add an event listener to each one.
+         */
+        document.querySelectorAll('.answerButton').forEach( el => {
+          el.addEventListener('click', checkAnswer);
+        })
+
+        /*
+         * If you're not comfortable with forEach, we could of done this with
+         * a for loop like this:
+         *
+         * let answers = document.querySelectorAll('.answerButton');
+         *
+         * for(let i = 0; i < answers.length; i++) {
+         *    answers[i].addEventListener('click', checkAnswer);
+         * }
+         */
+       }
+      };
+
+      /*
+       * This function will check if the selected answer is correct, and
+       * proceed accordingly. In order to know which button was clicked,
+       * we need to pick up details of the event. We do this by creating
+       * a variable in the (), in this case it's called evt.
+       */
+      checkAnswer = (evt) => {
+        /* Get the current question ready to compare answers */
+        let thisQuestion = questions[currentQ];
+        /*
+         * When we created the buttons, we put the array index of the answer
+         * in a 'data-answer' attribute that we made up. That's what we need
+         * to get at, using the event information. If you log the event
+         * object, you'll see all sorts of data in there.
+         *
+         * If you're interested, you can check out the documentation on MDN
+         * too see all the bits of info you get with an event object:
+         *  https://developer.mozilla.org/en-US/docs/Web/API/Event
+         *
+         * And then extra stuff for mouse events:
+         *  https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+         *
+         * One of the properties of an event object is 'target', which in
+         * this case is the object that was clicked (or touched) in order
+         * to fire the event. This is our button, and it's a normal html
+         * element so we can use .getAttribute() on it to get the value
+         * of the 'data-answer' attribute we set when creating it.
+         */
+        let thisAnswer = evt.target.getAttribute('data-answer');
+
+        /*
+         * We then check to see if the array index of the selected answer
+         * matches the value held in the question.
+         *
+         * If it does, we add one to the score.
+         *
+         * We then go on to the next question.
+         */
+        if(thisAnswer == thisQuestion.correct) {
+          score++;
+        }
+
+        nextQuestion();
+      }
+
+      /*
+       * This function goes onto the next question, unless there aren't any
+       * more left in which case is stores the score acquired in localStorage
+       * and moves the browser off to the end game screen.
+       */
+      nextQuestion = () => {
+        currentQ++;
+        if(currentQ < questions.length) {
+          askQuestion();
+        } else {
+          localStorage.setItem('score', score);
+          location.href='end.html';
+        }
+      }
+
+      askQuestion();
     </script>
   </body>
 </html>
