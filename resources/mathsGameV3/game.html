@@ -64,46 +64,83 @@
         /* Update the display with the current question text */
         document.getElementById('question').textContent = thisQuestion.question;
 
+        /* Get rid of any existing answers in the answer container */
+        let answerContainer = document.getElementById('answers');
+
+        /*
+         * firstChild is a property of any HTML element. It will tell you
+         * the first thing inside the element. This while loop then will loop
+         * as long as there actually is a firstChild inside the answers
+         * container i.e. as long as there is something in there to remove.
+         */
+        while (answerContainer.firstChild) {
+          // If there is something in the container, this removes it.
+          answerContainer.firstChild.remove();
+        }
+
         /*
          * For the answers, we need to put some html into the page. More
          * specifically, an <a> element for each answer. So, we're going to
-         * start off with an empty string and then loop over each of the possible
-         * answers for this question adding an <a> element to the string for
-         * each one. Once the loops finished we then output that string to
-         * the document.
-         */
-        let answers = '';
-
-        /*
-         * We want to loop round each item in the answers array that's
+         * loop over each of the possible answers for this question adding
+         * an <a> element to our answer container element for each one.
+         *
+         * In the maths game, we created a string of html and wrote this
+         * into an element. This time however we're going to create actual
+         * html elements in JavaScript. This will allow us to add an event
+         * listener to each one as we create it.
+         *
+         * If we went down the string route, this would be fine, but once we'd
+         * added the string containing all the html into the page, we would then
+         * have to select all those <a> elements and add event listeners to
+         * them in a separate step.
+         *
+         * So, we want to loop round each item in the answers array that's
          * contained in thisQuestion.
          */
         for(let i = 0; i < thisQuestion.answers.length; i++) {
           /*
-           * For each answer, we build a string. This should mostly look fine,
-           * except you might not be too familiar with using back ticks `` to
-           * create a string literal. This is useful when we want to build a
-           * string to include the values of a few variables. It makes the
-           * code easier to read.
+           * We use the document's createElement and craeatTextNode methods
+           * here to create each of our buttons.
            *
-           * One thing to note here, we're going to add an event listener to this
-           * button, indeed, to all the buttons, but they're all going to point
-           * to the same function to check if the user has selected the correct
-           * answer. That function will need to know which button was clicked, or
+           * We also add an event listener to each button as we create it.
+           * Each of these event listeners however points to the same function
+           * to check if the user has selected the correct answer. That
+           * function will need to know which button was clicked, or
            * more usefully, the array index of the answer that button represented.
            * It will then check to see if that's the same as the correct answer.
            *
            * In order to be able to pick that up in the function, we add our own
-           * custom attribute to the <a> element here 'data-answer' and set its
+           * custom attribute to the <div> element here 'data-answer' and set its
            * value to the array index of this answer, which is the same as i.
+           *
+           * We start by creating the button
            */
-          answers += `<a class="answerButton" data-answer="${i}">${thisQuestion.answers[i]}</a>`;
+           let thisButton = document.createElement('a');
+
+           // Give it a class name so it gets styled properly.
+           thisButton.className = 'answerButton';
+
+           // Set a custom attribute to store the array index of this answer
+           thisButton.setAttribute('data-answer', i);
+
+           // Create the text that's going to go in the button
+           let buttonLabel = document.createTextNode(thisQuestion.answers[i]);
+
+           // Add the text label to the button
+           thisButton.appendChild(buttonLabel);
+
+           // Add the event listener to the button
+           thisButton.addEventListener('click', checkAnswer);
+
+           // Add the button to the page
+           answerContainer.appendChild(thisButton);
+          //answers += `<div class="answerButton" data-answer="${i}">${thisQuestion.answers[i]}</div>`;
         }
         // Once the loop's finished, we output the string to the page.
-        document.getElementById('answers').innerHTML = answers;
+        //document.getElementById('answers').innerHTML = answers;
 
         /*
-         * It's not enough however to simply add the <a> elements. We also
+         * It's not enough however to simply add the <div> elements. We also
          * need to add an event listener to each one so that when the user
          * clicks on it, we can check if they were correct and proceed
          * accordingly.
@@ -133,7 +170,7 @@
          * }
          */
        }
-      };
+
 
       /*
        * This function will check if the selected answer is correct, and
