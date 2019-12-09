@@ -135,41 +135,7 @@
 
           // Add the button to the page
           answerContainer.appendChild(thisButton);
-          //answers += `<div class="answerButton" data-answer="${i}">${thisQuestion.answers[i]}</div>`;
         }
-        // Once the loop's finished, we output the string to the page.
-        //document.getElementById('answers').innerHTML = answers;
-
-        /*
-         * It's not enough however to simply add the <div> elements. We also
-         * need to add an event listener to each one so that when the user
-         * clicks on it, we can check if they were correct and proceed
-         * accordingly.
-         *
-         * We can select all our answer buttons in one go by using
-         * document.querySelectorAll. There's a page on MDN about it here:
-         * https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
-         *
-         * In short, you provide a selector, and it gives you back an array of
-         * matching elements. So, we can provide the classname, and get a
-         * list of all the answer buttons.
-         *
-         * We can then use forEach to add an event listener to each one.
-         */
-        document.querySelectorAll(".answerButton").forEach(el => {
-          el.addEventListener("click", checkAnswer);
-        });
-
-        /*
-         * If you're not comfortable with forEach, we could of done this with
-         * a for loop like this:
-         *
-         * let answers = document.querySelectorAll('.answerButton');
-         *
-         * for(let i = 0; i < answers.length; i++) {
-         *    answers[i].addEventListener('click', checkAnswer);
-         * }
-         */
       };
 
       /*
