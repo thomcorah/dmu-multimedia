@@ -10,14 +10,11 @@
     <!-- The HTML is mostly just placeholders that we'll fill once a
     question has been selected -->
     <h1>Maths Quiz</h1>
-    <h2>Question <span id='currentQuestionNumber'>1</span></h2>
-    <p id='question'></p>
-    <div class="answerContainer" id='answers'>
-    </div>
-
+    <h2>Question <span id="currentQuestionNumber">1</span></h2>
+    <p id="question"></p>
+    <div class="answerContainer" id="answers"></div>
 
     <script type="text/javascript">
-
       /*
        * We are storing the questions in an array. This gives us a few
        * options going forward. We can easily add more questions, or change
@@ -59,15 +56,19 @@
         let thisQuestion = questions[currentQ];
 
         /* Upate the display with the current question number */
-        document.getElementById('currentQuestionNumber').textContent = currentQ + 1;
+        document.getElementById("currentQuestionNumber").textContent =
+          currentQ + 1;
 
         /* Update the display with the current question text */
-        document.getElementById('question').textContent = thisQuestion.question;
+        document.getElementById("question").textContent = thisQuestion.question;
 
-        /* Get rid of any existing answers in the answer container */
-        let answerContainer = document.getElementById('answers');
+        /* Get a reference to the answer container */
+        let answerContainer = document.getElementById("answers");
 
         /*
+         * We want to get rid of any answers that are still on the page
+         * from the previous question.
+         *
          * firstChild is a property of any HTML element. It will tell you
          * the first thing inside the element. This while loop then will loop
          * as long as there actually is a firstChild inside the answers
@@ -97,7 +98,7 @@
          * So, we want to loop round each item in the answers array that's
          * contained in thisQuestion.
          */
-        for(let i = 0; i < thisQuestion.answers.length; i++) {
+        for (let i = 0; i < thisQuestion.answers.length; i++) {
           /*
            * We use the document's createElement and craeatTextNode methods
            * here to create each of our buttons.
@@ -115,25 +116,25 @@
            *
            * We start by creating the button
            */
-           let thisButton = document.createElement('a');
+          let thisButton = document.createElement("a");
 
-           // Give it a class name so it gets styled properly.
-           thisButton.className = 'answerButton';
+          // Give it a class name so it gets styled properly.
+          thisButton.className = "answerButton";
 
-           // Set a custom attribute to store the array index of this answer
-           thisButton.setAttribute('data-answer', i);
+          // Set a custom attribute to store the array index of this answer
+          thisButton.setAttribute("data-answer", i);
 
-           // Create the text that's going to go in the button
-           let buttonLabel = document.createTextNode(thisQuestion.answers[i]);
+          // Create the text that's going to go in the button
+          let buttonLabel = document.createTextNode(thisQuestion.answers[i]);
 
-           // Add the text label to the button
-           thisButton.appendChild(buttonLabel);
+          // Add the text label to the button
+          thisButton.appendChild(buttonLabel);
 
-           // Add the event listener to the button
-           thisButton.addEventListener('click', checkAnswer);
+          // Add the event listener to the button
+          thisButton.addEventListener("click", checkAnswer);
 
-           // Add the button to the page
-           answerContainer.appendChild(thisButton);
+          // Add the button to the page
+          answerContainer.appendChild(thisButton);
           //answers += `<div class="answerButton" data-answer="${i}">${thisQuestion.answers[i]}</div>`;
         }
         // Once the loop's finished, we output the string to the page.
@@ -155,9 +156,9 @@
          *
          * We can then use forEach to add an event listener to each one.
          */
-        document.querySelectorAll('.answerButton').forEach( el => {
-          el.addEventListener('click', checkAnswer);
-        })
+        document.querySelectorAll(".answerButton").forEach(el => {
+          el.addEventListener("click", checkAnswer);
+        });
 
         /*
          * If you're not comfortable with forEach, we could of done this with
@@ -169,8 +170,7 @@
          *    answers[i].addEventListener('click', checkAnswer);
          * }
          */
-       }
-
+      };
 
       /*
        * This function will check if the selected answer is correct, and
@@ -178,7 +178,7 @@
        * we need to pick up details of the event. We do this by creating
        * a variable in the (), in this case it's called evt.
        */
-      checkAnswer = (evt) => {
+      checkAnswer = evt => {
         /* Get the current question ready to compare answers */
         let thisQuestion = questions[currentQ];
         /*
@@ -200,7 +200,7 @@
          * element so we can use .getAttribute() on it to get the value
          * of the 'data-answer' attribute we set when creating it.
          */
-        let thisAnswer = evt.target.getAttribute('data-answer');
+        let thisAnswer = evt.target.getAttribute("data-answer");
 
         /*
          * We then check to see if the array index of the selected answer
@@ -210,12 +210,12 @@
          *
          * We then go on to the next question.
          */
-        if(thisAnswer == thisQuestion.correct) {
+        if (thisAnswer == thisQuestion.correct) {
           score++;
         }
 
         nextQuestion();
-      }
+      };
 
       /*
        * This function goes onto the next question, unless there aren't any
@@ -224,13 +224,13 @@
        */
       nextQuestion = () => {
         currentQ++;
-        if(currentQ < questions.length) {
+        if (currentQ < questions.length) {
           askQuestion();
         } else {
-          localStorage.setItem('score', score);
-          location.href='end.html';
+          localStorage.setItem("score", score);
+          location.href = "end.html";
         }
-      }
+      };
 
       askQuestion();
     </script>
