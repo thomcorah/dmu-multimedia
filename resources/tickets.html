@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Currently Serving Ticket</h1>
+    <h2 id="currentTicket">0</h2>
+    <p>Out of <span id="totalTickets">0</span> ticket(s)</p>
+    <button id="createNewTicket">New Ticket</button>
+    <button id="nextTicket">Next Ticket</button>
+    <script>
+      let totalTickets = 0;
+      let thisTicket = 0;
+      document
+        .getElementById("createNewTicket")
+        .addEventListener("click", () => {
+          totalTickets++;
+          alert("You got ticket number " + totalTickets);
+          document.getElementById("totalTickets").textContent = totalTickets;
+        });
+      document.getElementById("nextTicket").addEventListener("click", () => {
+        thisTicket++;
+        document.getElementById("currentTicket").textContent = thisTicket;
+      });
+    </script>
+  </body>
+</html>
