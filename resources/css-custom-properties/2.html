@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <style>
-      .cast p {
-        color: red;
-        color: var(--main-color, blue);
+      :root {
+        --main-text-size: 170%;
+      }
+
+      @media screen and (min-width: 600px) {
+        :root {
+          --main-text-size: 100%;
+        }
+      }
+
+      p {
+        font-size: var(--main-text-size);
       }
     </style>
   </head>
   <body>
     <section class="cast">
+      <p>A paragraph of text</p>
+      <p>A paragraph of text</p>
+      <p>A paragraph of text</p>
       <p>A paragraph of text</p>
     </section>
   </body>
