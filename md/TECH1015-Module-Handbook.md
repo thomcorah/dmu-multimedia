@@ -466,7 +466,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 ***
 
 ### Overview
-In semester 1 you produced an individual piece of web work. For this coursework you will produce a full website or web-based application.
+In semester 1 you produced an individual piece of web work. For this coursework you will produce a full mobile website or mobile web-based application.
 
 The actual website or application you produce is up to you. You are encouraged to develop something that you will find personally interesting. Some examples include:
 
@@ -474,7 +474,6 @@ The actual website or application you produce is up to you. You are encouraged t
 * A website for a band that includes discography, live dates, and streams music from their latest release  
 * A website for a film that includes a trailer as well as interviews with the cast and a countdown to release  
 * A digital story that allows the reader to follow a range of paths through the narrative, incorporating graphics, audio, and video  
-* An online music video for a song that uses multiple windows as the song progresses  
 * A simple web-based game  
 
 Some key points to consider include:
@@ -544,7 +543,7 @@ You should address the following points:
 **Weighting:** 60% of the coursework mark, broken down as follows.  
 **Amount:** 3 pages or equivalent.
 
-Your site should be accessible via your `public_html` folder. It should be located at `public_html > TECH1015 > coursework1 > production`.
+Your site should be accessible via your `public_html` folder. It should be located at `public_html > TECH1015 > coursework2`.
 
 The website will be assessed on the following three points.
 
