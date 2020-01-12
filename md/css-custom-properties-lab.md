@@ -86,3 +86,5 @@ As before, use a media query so that this only takes effect above a certain scre
 
 ### 6. Have a little play around
 Rather than everything be full width on mobile, can you make the article and aside half width? How does that change your css?
+
+Hopefully you've seen that custom properties can be a useful too, particularly when combined with media queries and the calc function. Experiment more if you want. There are lots of interesting resources on the web for pointers on other things to try.
