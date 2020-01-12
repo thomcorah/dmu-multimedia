@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <style>
+      header {
+        background-color: rgb(245, 197, 187);
+        height: 100px;
+      }
+      article {
+        background-color: rgb(242, 246, 159);
+        height: 300px;
+        --width: 6;
+      }
+      aside {
+        background-color: rgb(225, 183, 246);
+        height: 300px;
+        --width: 6;
+      }
+
+      @media screen and (min-width: 600px) {
+        header {
+          --width: 12;
+        }
+        article {
+          --width: 8;
+        }
+        aside {
+          --width: 4;
+        }
+      }
+
+      .col {
+        float: left;
+        width: calc(var(--width, 12) / 12 * 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="col">
+      The header
+    </header>
+    <article class="col">
+      Main content
+    </article>
+    <aside class="col">
+      Sub content
+    </aside>
+  </body>
+</html>

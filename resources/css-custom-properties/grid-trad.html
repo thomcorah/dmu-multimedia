@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <style>
+      header {
+        background-color: rgb(245, 197, 187);
+        height: 100px;
+      }
+      article {
+        background-color: rgb(242, 246, 159);
+        height: 300px;
+      }
+      aside {
+        background-color: rgb(225, 183, 246);
+        height: 300px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .col {
+          float: left;
+        }
+
+        .col-1 {
+          width: 8.333%;
+        }
+        .col-2 {
+          width: 16.666%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.333%;
+        }
+        .col-5 {
+          width: 41.666%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.333%;
+        }
+        .col-8 {
+          width: 66.666%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.333%;
+        }
+        .col-11 {
+          width: 91.666%;
+        }
+        .col-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="col col-12">
+      The header
+    </header>
+    <article class="col col-8">
+      Main content
+    </article>
+    <aside class="col col-4">
+      Sub content
+    </aside>
+  </body>
+</html>
