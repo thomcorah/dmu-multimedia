@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .menuItem {
+        padding: 10px;
+        font-family: sans-serif;
+        font-size: 1.5em;
+        opacity: 0;
+        transition: opacity 0.3s;
+        color: white;
+      }
+
+      .square {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        transition: background-color 0.3s, width 0.3s, height 0.3s;
+        overflow: hidden;
+      }
+
+      .square:hover {
+        background-color: blue;
+        width: 70vw;
+        height: 100vh;
+      }
+
+      .square:hover .menuItem {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square">
+      <div class="menuItem">home</div>
+      <div class="menuItem">about</div>
+      <div class="menuItem">film</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      header {
+        text-align: center;
+      }
+
+      @keyframes introMenu {
+        0% {
+          transform: translateX(-100vw);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .menu {
+        display: flex;
+        transform: translateX(-100vw);
+        animation: introMenu 0.5s cubic-bezier(0.3, 1.165, 0.725, 1.335)
+          forwards;
+      }
+
+      .menuItem {
+        padding: 10px;
+        background-color: lightgrey;
+        border-radius: 4px;
+        margin: 1px;
+        flex-grow: 1;
+        text-align: center;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Movie</h1>
+      <div class="menu">
+        <div class="menuItem">Home</div>
+        <div class="menuItem">About</div>
+        <div class="menuItem">Trailer</div>
+      </div>
+    </header>
+  </body>
+</html>
