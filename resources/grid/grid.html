@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 40px 80px 40px 50px;
+        grid-template-areas:
+          "header header header"
+          "nav main main"
+          "footer footer footer";
+        grid-gap: 10px 10px;
+      }
+
+      .box {
+        text-align: center;
+        background-color: blue;
+      }
+
+      #placed {
+        grid-area: footer;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box" id="placed">Placed</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+      <div class="box">Some Content</div>
+    </div>
+  </body>
+</html>
