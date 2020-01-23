@@ -422,7 +422,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 	<td><b>Date set:</b></td><td> 6th January 2020 </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 3rd April 2020 </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Monday 6th April 2020 </td>
 </tr>
 <tr>
 	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Thursday 7th May 2020 </td>
@@ -513,7 +513,7 @@ This should give an outline of your intended website, including:
 
 #### Production  
 **Weighting:** 10% of the coursework mark  
-**Due:** Submit via Turnitin by midday on Friday 3rd April
+**Due:** Submit via Turnitin by midday on Monday 6th April
 
 This should give some insight into the development of your website. Pick two individual components and discuss:
 
