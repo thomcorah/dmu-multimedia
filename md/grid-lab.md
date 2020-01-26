@@ -86,3 +86,45 @@ When you then create your content, you can place it in a named area using `grid-
 ```
 
 Of course, if you place an element in the 'main' template area, you can then set it up with its own grid and place content in that using the method in the previous exercise.
+
+## Flexible Grid
+
+The BBC exercise used a fixed layout. You specifically placed items on it. However, sometimes you might want something a little more fluid. You might want to just specify the size of items and let the browser reorder them to fill spaces if it can.
+
+You can do this with the span keyword.
+
+### Set up a container
+Give it 12 equal width columns and rows of 40px height.
+
+### Create classes for three sizes.
+Let's say you want some large tiles, some medium tiles, and some small tiles.
+
+If you create a class for each that will set the size, you can just assign that class to an element in your html.
+
+```css
+.large {
+  grid-column: span 5;
+  grid-row: span 7;
+}
+
+.medium {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+.small {
+  grid-column: span 2;
+  grid-row: span 4;
+  font-size: 0.8em;
+}
+```
+
+Here's a news page example: <https://thomcorah.github.io/dmu-multimedia/resources/grid/grid.html>
+
+## Further Reading
+
+There's quite a good grid tutorial on freecodecamp here: <https://www.freecodecamp.org/news/css-grid-a-simple-layout-design-tutorial-5312a4a8bcaf/>
+
+This tutorial on Creative Bloq tackles a responsive grid: <https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid>
+
+This short post contains a handy bit of CSS Grid code that can give you a responsive grid layout without any media queries: <https://responsivedesign.is/patterns/css-grid-responsive-layout/>
