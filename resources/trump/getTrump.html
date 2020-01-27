@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("img/rally.jpg");
+        background-size: cover;
+      }
+
+      #trump {
+        width: 100px;
+        display: inline-block;
+        transition: transform 0.2s;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="http://trumpdonald.org" id="trump"
+        ><img id="trump" src="img/trump.png"
+      /></a>
+    </div>
+
+    <script>
+      moveTrump = () => {
+        console.log("trump");
+        let trump = document.getElementById("trump");
+        let x = Math.random() * (window.innerWidth - 100);
+        let y = Math.random() * (window.innerHeight - 100);
+        console.log(`x: ${x} y: ${y}`);
+        trump.style.transform = "translate(" + x + "px, " + y + "px)";
+      };
+
+      setInterval(moveTrump, 500);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .menu {
+        display: inline-flex;
+        flex-direction: column;
+      }
+
+      .menuItem {
+        background-color: rgb(138, 206, 218);
+        padding: 8px;
+        margin: 2px 0;
+        border-radius: 0 4px 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="menuItem">Home</div>
+      <div class="menuItem">About</div>
+      <div class="menuItem">Oranges</div>
+      <div class="menuItem">My Goat</div>
+      <div class="menuItem">Contact</div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      gsap.from(".menuItem", {
+        duration: 0.8,
+        x: -200,
+        ease: "elastic",
+        stagger: 0.2
+      });
+    </script>
+  </body>
+</html>

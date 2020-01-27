@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      #ball {
+        width: 100px;
+        height: 100px;
+        background-image: radial-gradient(
+          circle,
+          rgb(230, 241, 249) 0%,
+          rgb(143, 176, 240) 25%,
+          rgb(10, 98, 154) 100%
+        );
+        border-radius: 50%;
+        background-size: 200% 200%;
+        background-position: 25% 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ball"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      gsap.to("#ball", { duration: 1, y: 500, ease: "bounce" });
+    </script>
+  </body>
+</html>
