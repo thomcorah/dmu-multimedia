@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+      @keyframes flash {
+        0% {
+          fill: red;
+        }
+        100% {
+          fill: blue;
+        }
+      }
+
+      #poly {
+        animation: flash 1s infinite;
+        fill: red;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="800" viewBox="0 0 400 400">
+
+      <RadialGradient id='myGradient'>
+        <stop offset="5%"  stop-color="gold" />
+        <stop offset="95%" stop-color="red" />
+      </RadialGradient>
+      <filter id='blurFilter'>
+        <feGaussianBlur id='blur' stdDeviation="5">
+          <animate attributeName='stdDeviation' values="0;10;0" dur='1s' repeatCount='indefinite' />
+        </feGaussianBlur>
+
+      </filter>
+      <filter id="displacementFilter">
+    <feTurbulence type="turbulence" baseFrequency="0.05"
+        numOctaves="8" result="turbulence">
+
+      </feTurbulence>
+    <feDisplacementMap in2="turbulence" in="SourceGraphic"
+        scale="50" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+      <rect id='rect' x="10" y="10" width="180" height="180" fill="url(#myGradient)" />
+      <circle cx="300" cy="100" r="90" fill='blue' filter="url(#blurFilter)"/>
+      <ellipse cx="100" cy="300" rx="90" ry="50" fill='green'>
+        <animate attributeName="rx" values="90;50;90" dur="1s" repeatCount="indefinite" />
+        <animate attributeName="ry" values="50;90;50" dur="1s" repeatCount="indefinite" />
+      </ellipse>
+      <polygon id='poly' points="210,210 390,390 390,210 210,390" fill='yellow' />
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      gsap.to('#rect', {duration: 1, width: 280});
+    </script>
+  </body>
+</html>
