@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      #coffee {
+        width: 200px;
+      }
+
+      #Espresso, #SteamedMilk, #Foam {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      id="coffee"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 611.18 595"
+    >
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #e6e7e8;
+          }
+          .cls-1,
+          .cls-2,
+          .cls-3,
+          .cls-4 {
+            stroke: #231f20;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+          }
+          .cls-2 {
+            fill: #512803;
+          }
+          .cls-3 {
+            fill: #fcfcf7;
+          }
+          .cls-4 {
+            fill: #fcf7e0;
+          }
+        </style>
+      </defs>
+      <title>coffee</title>
+      <polygon
+        id="Cup"
+        class="cls-1"
+        points="510.59 594.5 100.59 594.5 0.59 0.5 610.59 0.5 510.59 594.5"
+      />
+      <polygon
+        id="Espresso"
+        class="cls-2"
+        points="510.59 594.5 100.59 594.5 74.59 439.5 536.59 439.5 510.59 594.5"
+      />
+      <polygon
+        id="SteamedMilk"
+        class="cls-3"
+        points="536.59 439.5 74.59 439.5 35.59 210.5 575.59 209.5 536.59 439.5"
+      />
+      <polygon
+        id="Foam"
+        class="cls-4"
+        points="575.59 209.5 35.59 210.5 6.59 33.5 604.59 34.5 575.59 209.5"
+      />
+    </svg>
+
+    <!---
+    <object id='coffeeObject' type="image/svg+xml" data="img/coffee.svg"
+      >Your browser does not support SVGs</object
+    >-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      //let coffeeObject = document.getElementById('coffeeObject');
+      //let coffeeSvg = coffeeObject.contentDocument;
+      //console.log(coffeeObject);
+
+      let border = {
+        top: 0.5,
+        bottom: 594.5,
+        left: 0.59,
+        right: 610.59
+      };
+
+      let points = {
+        cup: {
+          topLeft: { x: border.left, y: border.top },
+          topRight: { x: border.right, y: border.top },
+          bottomRight: { x: border.right - 100, y: border.bottom },
+          bottomLeft: { x: border.left + 100, y: border.bottom }
+        },
+        espresso: {
+          topLeft: { x: border.left + 74, y: border.top + 439 },
+          topRight: { x: border.right - 74, y: border.top + 439 },
+          bottomRight: { x: border.right - 100, y: border.bottom },
+          bottomLeft: { x: border.left + 100, y: border.bottom }
+        },
+        milk: {
+          topLeft: { x: border.left + 35, y: border.top + 210 },
+          topRight: { x: border.right - 35, y: border.top + 210 },
+          bottomRight: { x: border.right - 74, y: border.top + 439 },
+          bottomLeft: { x: border.left + 74, y: border.top + 439 }
+        },
+        foam: {
+          topLeft: { x: border.left + 6, y: border.top + 33 },
+          topRight: { x: border.right - 6, y: border.top + 33 },
+          bottomRight: { x: border.right - 35, y: border.top + 210 },
+          bottomLeft: { x: border.left + 35, y: border.top + 210 }
+        }
+      };
+
+      let espresso = document.getElementById("Espresso");
+      let milk = document.getElementById("SteamedMilk");
+      let foam = document.getElementById("Foam");
+
+      updatePoints = () => {
+        espresso.setAttribute(
+          "points",
+          points.espresso.bottomRight.x +
+            " " +
+            points.espresso.bottomRight.y +
+            " " +
+            points.espresso.bottomLeft.x +
+            " " +
+            points.espresso.bottomLeft.y +
+            " " +
+            points.espresso.topLeft.x +
+            " " +
+            points.espresso.topLeft.y +
+            " " +
+            points.espresso.topRight.x +
+            " " +
+            points.espresso.topRight.y
+        );
+
+        milk.setAttribute(
+          "points",
+          points.milk.bottomRight.x +
+            " " +
+            points.milk.bottomRight.y +
+            " " +
+            points.milk.bottomLeft.x +
+            " " +
+            points.milk.bottomLeft.y +
+            " " +
+            points.milk.topLeft.x +
+            " " +
+            points.milk.topLeft.y +
+            " " +
+            points.milk.topRight.x +
+            " " +
+            points.milk.topRight.y
+        );
+        foam.setAttribute(
+          "points",
+          points.foam.bottomRight.x +
+            " " +
+            points.foam.bottomRight.y +
+            " " +
+            points.foam.bottomLeft.x +
+            " " +
+            points.foam.bottomLeft.y +
+            " " +
+            points.foam.topLeft.x +
+            " " +
+            points.foam.topLeft.y +
+            " " +
+            points.foam.topRight.x +
+            " " +
+            points.foam.topRight.y
+        );
+      };
+
+      fillEspresso = () => {
+        gsap.to(espresso, {duration: 0.2, opacity: 1});
+        gsap.from(points.espresso.topLeft, {
+          duration: 1,
+          onUpdate: updatePoints,
+          x: points.espresso.bottomLeft.x,
+          y: points.espresso.bottomLeft.y
+        });
+        gsap.from(points.espresso.topRight, {
+          duration: 1,
+          onUpdate: updatePoints,
+          onComplete: fillMilk,
+          x: points.espresso.bottomRight.x,
+          y: points.espresso.bottomRight.y
+        });
+
+      };
+
+      fillMilk = () => {
+        gsap.to(milk, {duration: 0.2, opacity: 1});
+        gsap.from(points.milk.topLeft, {
+          duration: 1,
+          onUpdate: updatePoints,
+          x: points.milk.bottomLeft.x,
+          y: points.milk.bottomLeft.y
+        });
+        gsap.from(points.milk.topRight, {
+          duration: 1,
+          onUpdate: updatePoints,
+          onComplete: fillFoam,
+          x: points.milk.bottomRight.x,
+          y: points.milk.bottomRight.y
+        });
+      }
+
+      fillFoam = () => {
+        gsap.to(foam, {duration: 0.2, opacity: 1});
+        gsap.from(points.foam.topLeft, {
+          duration: 1,
+          onUpdate: updatePoints,
+          x: points.foam.bottomLeft.x,
+          y: points.foam.bottomLeft.y
+        });
+        gsap.from(points.foam.topRight, {
+          duration: 1,
+          onUpdate: updatePoints,
+          x: points.foam.bottomRight.x,
+          y: points.foam.bottomRight.y
+        });
+      }
+
+
+      fillEspresso();
+    </script>
+  </body>
+</html>
