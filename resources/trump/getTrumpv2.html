@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("img/rally.jpg");
+        background-size: cover;
+      }
+
+      #trump {
+        width: 100px;
+        display: inline-block;
+        transition: transform 0.2s;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .info p {
+        margin: 0 20px;
+        font-size: 300%;
+      }
+
+      #gameOverScreen {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: green;
+        display: none;
+      }
+
+      #gameOverScreen p {
+        font-size: 200%;
+        text-align: center;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class='info'>
+        <p id='countdown_display'>30s</p>
+        <p id='score_display'>0</p>
+      </div>
+      <img id="trump" src="img/trump.png"
+      />
+    </div>
+
+    <div id='gameOverScreen'>
+      <p>Game Over</p>
+      <p id='finalScoreDisplay'></p>
+    </div>
+
+    <script>
+      moveTrump = () => {
+        console.log("trump");
+        let trump = document.getElementById("trump");
+        let x = Math.random() * (window.innerWidth - 100);
+        let y = Math.random() * (window.innerHeight - 100);
+        console.log(`x: ${x} y: ${y}`);
+        trump.style.transform = "translate(" + x + "px, " + y + "px)";
+      };
+
+      updateCountdown = () => {
+        timeLeft--;
+        document.getElementById('countdown_display').textContent = timeLeft + 's';
+        if(timeLeft == 0) {
+          document.getElementById('gameOverScreen').style.display = 'block';
+          document.getElementById('finalScoreDisplay').textContent = "You scored " + score + " points";
+        }
+      }
+
+      updateScore = () => {
+        score++;
+        document.getElementById('score_display').textContent = score;
+      }
+
+      let timeLeft = 30;
+      let score = 0;
+      let countdownTimer = setInterval(updateCountdown, 1000);
+      setInterval(moveTrump, 1000);
+
+      document.getElementById('trump').addEventListener('click', updateScore)
+
+
+    </script>
+  </body>
+</html>
