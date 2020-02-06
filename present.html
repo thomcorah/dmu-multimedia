@@ -53,13 +53,11 @@ reveal.js#configuration // -https://github.com/hakimel/reveal.js#dependencies */
       });
 
       const queryString = location.search;
-      console.log(queryString);
 
       const rgx = /([a-zA-Z\-0-9]+)/g;
 
       const match = queryString.match(rgx);
 
-      console.log(match[0]);
       filename = "./md/" + match[0] + ".md";
       document
         .getElementById("markdown-holder")

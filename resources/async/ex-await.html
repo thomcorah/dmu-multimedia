@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      fetchStuff = async () => {
+        let res = await fetch("content/stuff.html");
+        let stuff = await res.text();
+        console.log(stuff);
+      };
+
+      fetchStuff();
+    </script>
+  </body>
+</html>

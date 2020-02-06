@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      fetchStuff = async (page, callback) => {
+        let res = await fetch("content/" + page);
+        let stuff = await res.text();
+        callback(stuff);
+      };
+
+      putOnPage = stuff => {
+        document.getElementById("content").innerHTML = stuff;
+      };
+
+      fetchStuff("moreStuff.html", putOnPage);
+    </script>
+  </body>
+</html>

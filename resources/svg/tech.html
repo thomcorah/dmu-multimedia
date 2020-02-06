@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <svg width="500" viewBox="0 0 300 300">
+      <polygon id="T" fill="black" />
+    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      points = {
+        0: { x: 150, y: 150 },
+        1: { x: 150, y: 150 },
+        2: { x: 150, y: 150 },
+        3: { x: 150, y: 150 },
+        4: { x: 150, y: 150 },
+        5: { x: 150, y: 150 },
+        6: { x: 150, y: 150 },
+        7: { x: 150, y: 150 }
+      };
+      endPoints = {
+        0: { x: 0, y: 0 },
+        1: { x: 300, y: 0 },
+        2: { x: 300, y: 100 },
+        3: { x: 200, y: 100 },
+        4: { x: 200, y: 300 },
+        5: { x: 100, y: 300 },
+        6: { x: 100, y: 100 },
+        7: { x: 0, y: 100 }
+      };
+
+      updatePoints = () => {
+        let pointsString = "";
+        for (let i = 0; i < 8; i++) {
+          console.log(pointsString);
+          pointsString += points[i]["x"] + "," + points[i]["y"] + " ";
+        }
+        document.getElementById("T").setAttribute("points", pointsString);
+      };
+
+      updatePoints();
+
+      gsap.to(points[0], {
+        duration: 2,
+        x: endPoints[0].x,
+        y: endPoints[0].y,
+        onUpdate: updatePoints
+      });
+      for (let i = 1; i < 8; i++) {
+        gsap.to(points[i], {
+          duration: 2,
+          x: endPoints[i].x,
+          y: endPoints[i].y
+        });
+      }
+    </script>
+  </body>
+</html>

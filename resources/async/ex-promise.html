@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      fetch("content/stuff.html")
+        .then(response => {
+          return response.text();
+        })
+        .then(html => {
+          console.log(html);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html>
