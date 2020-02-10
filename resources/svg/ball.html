@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <svg width="200" viewBox="0 0 200 1000">
+      <radialGradient id="ballGradient" fx="80%" fy="20%" cx="60%" cy="40%">
+        <stop offset="0%" stop-color="#D4E2FF" />
+        <stop offset="5%" stop-color="#D4E2FF" />
+        <stop offset="95%" stop-color="#398DFF" />
+      </radialGradient>
+
+      <circle cx="100" cy="100" r="100" fill="url(#ballGradient)">
+        <animate
+          attributeName="cy"
+          from="100"
+          to="900"
+          dur="2s"
+          begin="click"
+          fill="freeze"
+          calcMode="spline"
+          values="100; 900; 600; 900; 750; 900"
+          keyTimes="0; 0.35; 0.55; 0.75; 0.87; 1.0"
+          keySplines="0.42 0 1 1;
+          0 0 0.58 1;
+          0.42 0 1 1;
+          0 0 0.58 1;
+          0.42 0 1 1"
+        />
+      </circle>
+    </svg>
+  </body>
+</html>
