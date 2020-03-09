@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title></title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      img {
+        width: 100%;
+      }
+      /*
+        Makes the nav full height, 70% width, dark background etc.
+        Crucially, it sets its position to fixed to that it's fixed to the window,
+        and not the page. In order to have it hidden by default we set the left
+        property to -100%. This shifts it off the screen to the left.
+        When we want to show it, we'll change the left property, so we also add
+        a transition so that it'll animate in.
+        The z-index on this and the cover adjusts their vertical stacking so
+        that the menu is in front of the cover.
+      */
+      nav {
+        background-color: #333;
+        height: 100vh;
+        width: 70vw;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        transition: left 0.4s;
+      }
+      #menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid #555;
+        display: block;
+      }
+      /* The menu is only 70% of the screen width. The cover sits underneath it
+         and fills the screen with a semi-transparent blackness. It too is animated in
+         when the menu is opened.
+      */
+      #cover {
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100vw;
+        z-index: 8;
+        left: -100%;
+        transition: left 0.4s;
+      }
+      #menuButton {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav id='menu'>
+      <a class='menuItem' href='hamburger.html'>Home</a>
+      <a class='menuItem' href='hamburger.html'>About</a>
+      <a class='menuItem' href='hamburger.html'>Badgers</a>
+    </nav>
+
+    <div id='cover'></div>
+
+    <div id='menuButton'><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg"></div>
+    <div class='content'>
+      <h1>Great Page</h1>
+      <p> This is my great page. aslkdjflsajflkaj slkfj alsj flkasjflksaj flks af jsalkj flksaj flkasj lfkjs alkfj salkj df</p>
+      <img src="https://www.wildlifetrusts.org/sites/default/files/styles/node_hero_desk_wide/public/2017-12/Badger%20-%20Credit%20Mark%20Davison.jpg" />
+    </div>
+
+    <script>
+
+    /* We show the cover and menu by setting the left property to 0 */
+      openMenu = () => {
+        document.getElementById('menu').style.left = '0';
+        document.getElementById('cover').style.left = '0';
+      }
+
+      closeMenu = () => {
+        document.getElementById('menu').style.left = '-100%';
+        document.getElementById('cover').style.left = '-100%';
+      }
+
+      document.getElementById('menuButton').addEventListener('click', openMenu);
+      document.getElementById('cover').addEventListener('click', closeMenu);
+
+    </script>
+  </body>
+</html>
