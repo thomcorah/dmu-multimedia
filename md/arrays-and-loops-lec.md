@@ -28,7 +28,7 @@ notes: The index starts at 0 for the first item.
 # Creating an Array
 We can create an array like any other variable  
 
-```javascript 
+```javascript  
 let shoppingList = [];  
 ```
 
