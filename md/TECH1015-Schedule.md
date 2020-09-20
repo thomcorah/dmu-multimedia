@@ -2,21 +2,21 @@
 
 ## Week 1 (5th October)
 
-- Why do we have HTML
-- Structure of an HTML element
-- Webpage starter code
+- What is HTML? (inc. structure of an HTML element)
+- Starter code
 - Making a page mobile friendly
 - Signing up to Github -> working with files -> enabling pages
 
 ### Assessment Task
 
-Create a simple mobile-friendly page about you. It should have a heading and a paragraph of text, and be mobile-friendly.
+Create a simple mobile-friendly page about you. It should have a heading and a paragraph of text, and be mobile-friendly. Publish it on Github, and add your tutors as collaborators.
 
 ## Week 2 (12th October)
 
 - Ordered and unordered lists
 - Headings
 - Nesting HTML elements to create structure - divs
+- Adding style with inline style rules
 - HTML Comments
 
 ### Assessment Task
@@ -53,4 +53,4 @@ Add either an audio or video clip to your page.
 
 ## Assessment Task
 
-Add style to your page. Change the text, change the backgound colour(s).
+Add style to your page. Change the text, change the background colour(s).
