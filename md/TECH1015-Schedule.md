@@ -2,6 +2,7 @@
 
 ## Week 1 (5th October)
 
+- Quick intro to Atom
 - What is HTML? (inc. structure of an HTML element)
 - Starter code
 - Making a page mobile friendly
