@@ -1,5 +1,9 @@
 # Mobile Friendly
 
+Why do we need to make sure our websites work properly on mobile devices, and how can we do that?
+
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1211d3fe-2379-49f8-855e-ac3d011824b1&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Mobile First?
 
 It's really important that our webpages work on mobile. Mobile web browsing is growing rapidly, and many people browsing the web on their smartphone will leave a site if it's difficult to use or read because it's only been designed for larger desktop computers.

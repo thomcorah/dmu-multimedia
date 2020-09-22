@@ -2,6 +2,8 @@
 
 There are some key elements that you need to have in your HTML file whenever you start a new page.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8d828a42-5abb-48ba-881d-ac3d0114d29c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Declare a DOCTYPE
 
 We first need to tell the browser what kind of file this is. We do this with the special DOCTYPE tag. Just include this as the first line of your HTML file.
