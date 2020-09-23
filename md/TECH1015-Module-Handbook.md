@@ -19,6 +19,7 @@
 [Welcome to Multimedia I](#welcome)  
 [Module Tutors](#tutors)  
 [Module Description](#description)  
+[How the Module Works](#how)  
 [Learning Outcomes](#outcomes)  
 [Key Topics](#topics)  
 [Module Reading](#reading)  
@@ -71,6 +72,34 @@ This module will launch you into the world of presenting interesting and interac
 An initial run of lectures will lay some theoretical groundwork for what is to come. Practical skills will be developed through hands-on learning and practice at the workstation, supported by experienced lab tutors and demonstrations.
 
 Throughout the module you are encouraged to undertake your own research into the software and practices we use. You should develop the ability to solve problems encountered in your work in an independent fashion, though your lab tutor will step in if necessary.
+
+[Back to the Contents](#toc)
+
+<a name='how'></a>
+
+## How the Module Works
+
+These are difficult and unprecedented times. You may have keen worries about your own health, or those you care for, or you may not. We wanted this module to be one which you can tackle in the way in which you feel most safe and comfortable.
+
+### Practical Lab Sessions
+
+In previous years, you would have a one hour lecture for the first five weeks, a two hour lab session every week, and an optional drop-in weekly lab from week 6 onwards. However, we've changed this.
+
+You'll still see you have a lab on your timetable for this module. Ignore that. Instead, all labs through the week are open to anybody on the module. You can go to whichever one you want. Some of them are face-to-face, some of them are online. You can choose each week which one to attend.
+
+We need to keep a cap on numbers though, so you'll need to book yourself onto the lab you want to go to. There are links on Blackboard for this. If you don't book a slot, you may not be allowed entry as the lab may be full.
+
+### Learning Materials
+
+In past years, you'd walk into your lab session and we'd start off with your tutor giving a live demo at the front. You'd then work through a task that sees you learning whatever we're doing at that point. Ideally you'd finish before the end of the lab.
+
+This year, things will be slightly different. There will be no live demo at the front of the room. Instead, we are producing a series of short explainers for each lab session. Each of these will discuss a particular 'thing', such as how to write HTML for example with both a video and a text version. There will then be a guided activity that will see you using those techniques. All of these will be available via Blackboard from the beginning of the week BEFORE the lab.
+
+This means you can start on this at home really early. You can start on week 2 work as soon as you've finished your week 1 lab for example. You don't have to, but you can if you want, if that's what suits you. You might find you get to week 2 and it all made total sense and you don't need to go to a lab session. If that's the case, just check in with a tutor via email or book into an online session for a quick review.
+
+### Lectures
+
+I mentioned those lectures in the first five weeks already. As with your other modules, lectures will be entirely online and pre-recorded. The links will be on Blackboard.
 
 [Back to the Contents](#toc)
 
