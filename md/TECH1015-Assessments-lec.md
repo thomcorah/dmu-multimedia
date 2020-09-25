@@ -2,6 +2,8 @@
 
 There are two graded assessments, and one informal formative assessment on this module.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=54dc5f15-ac68-40a5-8a2c-ac40014002a0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Informal Assessment
 
 This assessment is not part of your module grade, but provides an opportunity for your tutors to ensure you are picking up the basics in the first five weeks and to help identify any areas for improvement moving forward. As such, it is a simple task completed as you undertake the lab work.

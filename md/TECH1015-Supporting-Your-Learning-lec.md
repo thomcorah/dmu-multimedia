@@ -2,6 +2,8 @@
 
 These are difficult and unprecedented times. You may have keen worries about your own health, or those you care for, or you may not. We wanted this module to be one which you can tackle in the way in which you feel most safe and comfortable.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8b52c9f6-68ec-440a-b7c8-ac40013c6990&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Labs
 
 You'll see you have a lab on your timetable for this module. Ignore that. Instead, all labs through the week are open to anybody on the module. You can go to whichever one you want. Some of them are face-to-face, some of them are online. You can choose each week which one to attend.
