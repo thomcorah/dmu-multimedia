@@ -316,7 +316,7 @@ As an example, your finished webpage might look something like this, though obvi
 	<ul>
 		<li> Develop a standalone web-site incorporating animated and dynamic content </li>
 		<li>Use a range of sources in order to help solve technical problems related to basic web authoring and evaluate the results of your efforts in an objective manner </li>
-		<li>Develop a basic understanding of the languages of the web, HTML, CSS and JavaScript </li>
+		<li>Develop a basic understanding of the languages of the web, such as HTML, CSS and JavaScript </li>
 	</ul>
 	</td>
 </tr>
@@ -346,7 +346,7 @@ As an example, your finished webpage might look something like this, though obvi
 	<td colspan='2'>
 		<ol>
 			<li>The report should be submitted through the Turnitin link in the Assessments section of the TECH1015 Blackboard page</li>
-			<li> The website should be in your public_html folder</li>
+			<li> The website should be on your public server.</li>
 			</ol>
 			<b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
 			</td>
@@ -542,7 +542,7 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 	<td colspan='2'>
 		<ol>
 			<li>The report should be submitted through the Turnitin link in the Assessments section of the TECH1015 Blackboard page</li>
-			<li> The website should be in your public_html folder</li>
+			<li> The website should be on your public server.</li>
 			</ol>
 			<b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
 			</td>
