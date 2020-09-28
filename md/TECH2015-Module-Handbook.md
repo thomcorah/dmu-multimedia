@@ -196,8 +196,7 @@ If you use somebody else’s work, either as research or directly, always attrib
 
 If you are found to of copied work without crediting the source you are likely to face a disciplinary panel and could see your mark reduced to 0, or worse in extreme cases.
 
-If you have any questions regarding plagiarism and other academic practice offences, you can email either of the Leicester Media School's Academic Practice Officers:  
-Simon Walsh <simon.walsh@dmu.ac.uk>  
+If you have any questions regarding plagiarism and other academic practice offences, you can email the Leicester Media School's Academic Practice Officer:  
 Helen Ackerley <hackerley@dmu.ac.uk>
 
 [Back to the Contents](#toc)
@@ -268,13 +267,13 @@ All practical work uploaded to your public server space
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 30th September </td>
+	<td><b>Date set:</b></td><td> 5th October </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 13th December </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Monday 21st December </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Monday 20th January </td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Tuesday 26th January </td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
@@ -285,7 +284,7 @@ All practical work uploaded to your public server space
 </tr>
 <tr>
 	<td colspan='2'>
-		The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page. <br />
+		The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page.<br />
 
     <b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
     		</td>
@@ -317,7 +316,7 @@ All practical work uploaded to your public server space
 
 Coursework 1 will see you tackle the specification and design of a media-driven web app. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your web app is and does, your testing results, and justification for your design choices.
 
-The submission deadline for this work is midday (12pm) on Friday 13th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
+The submission deadline for this work is midday (12pm) on Monday 21st December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
 
 This design and specification can form the basis of what you produce for Coursework 2, so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework.
 
@@ -343,23 +342,23 @@ The report should contain:
 
 - An introduction - what is your app
 - A specification - a detailed list of the things it should do/be
-- Initial design sketches with commentary
-- Your final designs with commentary
+- Initial design sketches of the mobile view with commentary
+- Your final mobile designs with commentary
+- Some sketches and commentary on how it will adapt to desktop
 - User feedback based on your prototype
 - Details of any changes made based on feedback
 - Conclusion - how successfully does this design meet the specification you set
 
-Where there is a requirement for commentary, make sure to include
+Through this, your report should cover:
 
-- details of steps you will take to ensure your app is accessible
-- how the interface changes/adapts to screen size
+- the steps you will take to ensure your app is accessible
 - why you have made the choices you’ve made
 
 Your report will be submitted through Turnitin. If you do not submit through Turnitin, your report will not be marked.
 
 Your report should be 1000 words plus imagery.
 
-Your will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This should be the prototype for the mobile version of your website. It should demonstrate website structure and functionality as much as the prototyping platform allows.
+You will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This should be the prototype for the mobile version of your website. It should demonstrate website structure and functionality as much as the prototyping platform allows.
 
 ### Marking Criteria
 
@@ -367,7 +366,7 @@ There are five marking criteria, each worth an equal 20% of the total coursework
 
 #### Accessibility
 
-This is concerned with the degree to which to make sure your app is as accessible as possible to all, regardless of physical or mental impairments.
+This is concerned with the degree to which to make sure your app is as accessible as possible to all, regardless of physical or mental impairments. This should be discussed in your report, justifying aspects of your design in terms of their accessibility.
 
 | Mark Range             | Requirement                                                                                                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -475,13 +474,13 @@ The user enters their name and other details on page 1, before being presented w
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 6th January 2020 </td>
+	<td><b>Date set:</b></td><td> 11th January 2021 </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 3rd April 2020 </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 4th May 2021 </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Thursday 7th May 2020 </td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 2nd June 2021 </td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
@@ -494,7 +493,7 @@ The user enters their name and other details on page 1, before being presented w
 	<td colspan='2'>
 		<ol>
 			<li>The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page</li>
-			<li> The website should be in your public_html folder</li>
+			<li> The website should be on your public server</li>
 			</ol>
 			<b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
 			</td>
@@ -527,9 +526,9 @@ In semester 1 you designed and prototyped a modern web app or website. For this 
 
 You will first make any modifications to the design that you think are necessary following feedback from your tutor and peers. You will then let loose your webdev skills in realising your dream design.
 
-As well as your practical work, you will also submit a report documenting your updated design, production work, and evaluation of your finished project.
+As well as your practical work, you will also submit a report documenting any changes to your designs and an evaluation of your finished project.
 
-But what if you don't want to use your design from Coursework 1? That's fine, your tutor can provide you with a prototype on which to base your work, just as if it was done for the previous coursework.
+But what if you don't want to use your design from Coursework 1? That's fine, speak to your tutor about developing a proposal for a different idea.
 
 Some key points to consider:
 
@@ -541,14 +540,16 @@ Any content that is not yours (images, music, sound effects, etc.) should be app
 
 Any content you produce for your website such as an audio interview will be marked primarily on its suitability for web deployment rather than its own production value. For example, a video that is stored at a much larger size than it is displayed at would be a no no. You have other modules where you are keenly assessed on the production value of your digital output. Speak to your tutor if you have any questions about this.
 
-There are two main components to this coursework: the website itself and a portfolio of associated documentation. The website attracts 60% of the mark for this coursework, and the documentation 40%.
+You are expected to heavily comment your HTML, CSS, and JS code. These comments should show an understanding of how the code functions, and discuss any alternative approaches that were discounted. For the purposes of marking, these comments will be included in the mark for documentation.
+
+There are two main components to this coursework: the website itself and the documentation. The website attracts 60% of the mark for this coursework, and the documentation 40%.
 
 ### Documentation.
 
 **Weighting:** 40% of the coursework mark, broken down as follows.  
-**Word Count:** 1300 words, plus appropriate screenshots.
+**Word Count:** 1000 words, plus appropriate screenshots.
 
-Your documentation should consist of the following components.
+Your documentation should consist of the following components. The Overview of Designs and Evaluation should be submitted as a single document through Turnitin. Your production notes will be included as comments in your website code.
 
 #### Overview of Designs
 
@@ -569,14 +570,11 @@ If you are using a tutor-supplied design then you will not have tutor feedback, 
 
 **Weighting:** 10% of the coursework mark
 
-This should give some insight into the development of your website. Pick three individual components and discuss:
+Included as comments throughout your code, these should give a high degree of insight into the development of your website. Your comments should document what your code does and why at every point. It would be useful to include any discussion of alternative approaches as appropriate. For example, if you considered a different style of menu, why have you gone with what you've got.
 
-- What you were trying to achieve
-- How you did this
-- Why you chose the approach you did
-- How successful the approach was
+Your comments should demonstrate a thorough understanding of what your code does.
 
-Examples of what is meant here by an individual component of your website include a slideshow, a dropdown menu, an accordian display, an animated transition between pages and so on.
+Your comments should clearly show where you have used code from elsewhere, including a link to the source of the code. As well as for directly copied code, this also applies to code that has resulted from you following a tutorial.
 
 #### Evaluation
 
@@ -599,7 +597,7 @@ Your complete documentation should be submitted through the Turnitin link on Bla
 **Weighting:** 60% of the coursework mark, broken down as follows.  
 **Volume:** 4 pages or equivalent.
 
-Your site should be accessible via your `public_html` folder. It should be located at `public_html > TECH2015 > coursework2 > production`.
+Your site should be accessible via your public server.
 
 The website will be assessed on the following three points.
 
