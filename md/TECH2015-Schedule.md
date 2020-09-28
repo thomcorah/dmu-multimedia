@@ -2,7 +2,8 @@
 
 ## Week 1 (5th October)
 
-- HTML and CSS Refresher
+- HTML Refresher
+- CSS Refresher
 - Signing up to Github -> working with files -> enabling pages
 
 ## Task
