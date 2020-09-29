@@ -1,5 +1,7 @@
 # TECH2015 Module Overview
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=59444436-17c6-47b0-a8cc-ac4400fcb495&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## What is Multimedia 2
 
 This module will build on your work last year in TECH1015 and develop your understanding of media presentation using the Internet. Last year was concerned with getting the basics of HTML, CSS, and JavaScript, as well as some of the mechanics of the Internet. Through the course of this module you’ll develop a more nuanced approach that will consider the needs of different users consuming your media through a range of platforms.
