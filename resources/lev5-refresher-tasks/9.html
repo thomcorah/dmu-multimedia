@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      #square {
+        background: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="square"></div>
+    <script>
+      let currentX = 0;
+      moveSquare = () => {
+        currentX += 50;
+        document.getElementById("square").style.left = currentX + "px";
+      };
+
+      document.getElementById("square").addEventListener("click", moveSquare);
+    </script>
+  </body>
+</html>

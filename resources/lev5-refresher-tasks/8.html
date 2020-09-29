@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style></style>
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <script>
+      let count = 0;
+
+      updateCount = () => {
+        count++;
+        document.getElementById("counter").textContent = count;
+      };
+
+      setInterval(updateCount, 1000);
+    </script>
+  </body>
+</html>

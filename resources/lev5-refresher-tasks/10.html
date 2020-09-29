@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      #square1 {
+        background-color: red;
+      }
+
+      #square2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="square1"></div>
+    <div id="square2"></div>
+
+    <script>
+      let originalState = true;
+
+      swapSquares = () => {
+        originalState = !originalState;
+        if (originalState) {
+          document.getElementById("square1").style.backgroundColor = "red";
+          document.getElementById("square2").style.backgroundColor = "blue";
+        } else {
+          document.getElementById("square1").style.backgroundColor = "blue";
+          document.getElementById("square2").style.backgroundColor = "red";
+        }
+      };
+
+      document.getElementById("square1").addEventListener("click", swapSquares);
+      document.getElementById("square2").addEventListener("click", swapSquares);
+    </script>
+  </body>
+</html>
