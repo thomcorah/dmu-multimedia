@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+  </head>
+  <body>
+    <input id="entry" /><button id="alert">Click Me!</button>
+
+    <script>
+      showAlert = () => {
+        alert(document.getElementById("entry").value);
+      };
+      document.getElementById("alert").addEventListener("click", showAlert);
+    </script>
+  </body>
+</html>

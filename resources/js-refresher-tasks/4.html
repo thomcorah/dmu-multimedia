@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="colours">
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+    </select>
+    <script>
+      changeColour = evt => {
+        document.querySelector("body").style.backgroundColor = evt.target.value;
+      };
+
+      document
+        .getElementById("colours")
+        .addEventListener("change", changeColour);
+    </script>
+  </body>
+</html>

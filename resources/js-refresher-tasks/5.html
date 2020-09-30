@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      html,
+      body {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let colours = ["red", "green", "blue", "lightgrey"];
+
+      changeColour = evt => {
+        let newColourIndex = Math.floor(Math.random() * colours.length);
+        document.querySelector("body").style.backgroundColor =
+          colours[newColourIndex];
+      };
+
+      setInterval(changeColour, 1000);
+    </script>
+  </body>
+</html>
