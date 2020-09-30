@@ -23,8 +23,8 @@
 [Module Reading](#modulereading)  
 [Blackboard Virtual Learning Environment](#blackboardvirtuallearningenvironment)  
 [Plagiarism](#plagiarism)  
-[Assessment](#assessment)
-[Coursework 1](#coursework1)
+[Assessment](#assessment)  
+[Coursework 1](#coursework1)  
 [Coursework 2](#coursework2)
 
 <div style="page-break-after: always;"></div>
