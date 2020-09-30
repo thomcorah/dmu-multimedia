@@ -248,7 +248,7 @@ To reiterate:
 
 [Back to the Contents](#tableofcontents)
 
-## Coursework 1 - Specification
+## Coursework 1
 
 |                          |                               |
 | :----------------------- | ----------------------------: |
