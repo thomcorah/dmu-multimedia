@@ -94,7 +94,7 @@ At the end of the module, you will be able to:
 - Understand and evaluate complex issues related to browser platforms, accessibility, usability and mobile access when developing dynamic and animated content on the web.
 - Collect, evaluate, and analyse feedback from users at various points in the development cycle of a Multimedia application.
 - Develop strategies for the effective design and planning of a multimedia production.
-- Research, synthesise and adapt solutions to technical problems
+- Source and synthesise solutions to technical problems
 
 <!-- NEW
 - Develop strategies for the effective design and planning of a multimedia production.
@@ -209,10 +209,7 @@ If you use somebody else’s work, either as research or directly, always attrib
 
 If you are found to of copied work without crediting the source you are likely to face a disciplinary panel and could see your mark reduced to 0, or worse in extreme cases.
 
-If you have any questions regarding plagiarism and other academic practice offences, you can email either of the Leicester Media School's Academic Practice Officers:
-
-- Simon Walsh <simon.walsh@dmu.ac.uk>
-- Helen Ackerley <hackerley@dmu.ac.uk>
+If you have any questions regarding plagiarism and other academic practice offences, you can email the Leicester Media School's Academic Practice Officer: Helen Ackerley <hackerley@dmu.ac.uk>
 
 [Back to the Contents](#table-of-contents)
 
@@ -222,13 +219,13 @@ You will be assessed continuously through the module with formal feedback given 
 
 ### Coursework 1
 
-**Date and time due: 12pm (midday) on Friday 13th December 2019**
+**Date and time due: 12pm (midday) on Monday 21st December 2020**
 
 Worth **40%** of the module total, your first coursework will see you produce an individual piece of work. This will involve planning and designing a responsive website, this should include wireframe sketches, final designs including navigation, mood board, content inventory, testing from card-sorting in the labs and interaction design (what changes, how and why). You also need to explain how you will prepare media types and text content for web delivery.
 
 ### Coursework 2
 
-**Date and time due: 12pm (midday) on Friday 3rd April 2020**
+**Date and time due: 12pm (midday) on Tuesday 4th May 2021**
 
 Worth **60%** of the module total, this coursework will tackle HTML5, CSS3 and JavaScript ES6 to have you produce the website or web application you designed for coursework 1.
 
