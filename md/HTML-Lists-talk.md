@@ -1,0 +1,29 @@
+# HTML Lists
+
+There are two types of list you can create with HTML, ordered (numbered) and unordered (bullet points).
+
+## Ordered Lists
+
+Ordered lists are usually numbered, though you can also have order provided with letters (uppercase or lowercase) and roman numerals (uppercase or lowercase).
+
+To create an ordered list, use the `<ol>` element.
+
+## Unordered Lists
+
+Unordered lists are bulleted. The items still appear in the order in which they are specified in your HTML, it's just that bullet points don't convey order in the same way numbers do.
+
+To create an unordered list, use the `<ul>` element.
+
+## List Structure
+
+Whichever type of list you use, you populate your list with list items. Use `<li>` elements nested inside your list element to do this. For example, here's a list of fruits:
+
+```HTML
+<ul>
+  <li>Strawberries</li>
+  <li>Bananas</li>
+  <li>Blueberries</li>
+</ul>
+```
+
+Make sure not to forget any of those closing tags.
