@@ -14,7 +14,7 @@ You might find this useful to help remind you what you were trying to do, or to 
 
 It can be surprisingly easy to come back to code you wrote a week ago and completely forget what you were thinking. This means you have to spend some time going back through your code to understand what's going on before you can actually do the work you sat down to do.
 
-## How do I Write Them
+## How Do I Write Them
 
 In order to write a comment, we need to make it clear to the browser where our comment starts and ends. To start a comment, use the following sequence of characters:
 
