@@ -16,7 +16,7 @@ For example, if we wanted to change the text colour of an element, the rule for 
 color: red;
 ```
 
-## The style attribute
+## The Style Attribute
 
 We apply these rules to an element using the element's `style` attribute. So, if we wanted to make the text of a paragraph blue, we might write:
 
