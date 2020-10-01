@@ -16,7 +16,7 @@ Create a simple mobile-friendly page about you. It should have a heading and a p
 
 - Ordered and unordered lists
 - Headings
-- Nesting HTML elements to create structure - divs
+- HTML attributes
 - Adding style with inline style rules
 - HTML Comments
 
@@ -27,7 +27,7 @@ Add a list, subheadings, and HTML comments to the page.
 ## Week 3 (19th October)
 
 - Using the Inspector
-- HTML attributes
+- Nesting HTML elements to create structure - divs
 - File locations - relative and absolute
 - The anchor element
 - The img element
