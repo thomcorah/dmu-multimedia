@@ -2,6 +2,8 @@
 
 We can quickly change the appearance of HTML elements by applying in-line style.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fdd59ac4-65ce-4123-9e2b-ac47011f1888&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Style Rules
 
 When we talk about the appearance of webpages, we're talking about style. That style is expressed as rules. Style rules always follow the same format:
