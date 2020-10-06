@@ -35,7 +35,7 @@ Now you want to open this folder in Atom.
 > **Start With a Folder**  
 > When opening your project in Atom, it's always best to open the folder that contains all your project files. This way, Atom can show you your file structure in the left hand pane, making things easier.
 
-So, go to `File > Open Folder..` and find and select the `week2` folder you just created.
+So, go to `File > Open Folder..` and find and select the folder you just created.
 
 Note: if you're on a Mac, there is no `Open Folder` menu option, just `Open`. This is fine, you can still select a folder with it.
 
