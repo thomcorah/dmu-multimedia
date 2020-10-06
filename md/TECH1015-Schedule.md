@@ -14,11 +14,12 @@ Create a simple mobile-friendly page about you. It should have a heading and a p
 
 ## Week 2 (12th October)
 
+- HTML attributes
 - Ordered and unordered lists
 - Headings
-- HTML attributes
 - Adding style with inline style rules
 - HTML Comments
+- Chrome's Mobile View
 
 ### Assessment Task
 
