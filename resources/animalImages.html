@@ -14,6 +14,12 @@
         width: 100%;
       }
 
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
       @media screen and (min-width: 650px) {
         img {
           width: 50%;
@@ -29,17 +35,19 @@
     </style>
   </head>
   <body>
-    <h1>Animal Photography</h1>
-    <p>Some cool animals!</p>
-    <img src="animalImages/dog1.jpg" />
-    <img src="animalImages/dog2.jpg" />
-    <img src="animalImages/elephants.jpg" />
-    <img src="animalImages/hawk.jpg" />
-    <img src="animalImages/heron.jpg" />
-    <img src="animalImages/horse.jpg" />
-    <img src="animalImages/lama.jpg" />
-    <img src="animalImages/peli.jpg" />
-    <img src="animalImages/snake.jpg" />
-    <img src="animalImages/stags.jpg" />
+    <div class="clearfix">
+      <h1>Animal Photography</h1>
+      <p>Some cool animals!</p>
+      <img src="animalImages/dog1.jpg" />
+      <img src="animalImages/dog2.jpg" />
+      <img src="animalImages/elephants.jpg" />
+      <img src="animalImages/hawk.jpg" />
+      <img src="animalImages/heron.jpg" />
+      <img src="animalImages/horse.jpg" />
+      <img src="animalImages/lama.jpg" />
+      <img src="animalImages/peli.jpg" />
+      <img src="animalImages/snake.jpg" />
+      <img src="animalImages/stags.jpg" />
+    </div>
   </body>
 </html>
