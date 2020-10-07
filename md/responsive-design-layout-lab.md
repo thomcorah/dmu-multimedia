@@ -4,6 +4,10 @@ This worksheet will guide you through the creation of a responsive mobile-first 
 
 The website will be photography gallery, containing a responsive grid of images.
 
+You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/animalImages.html>
+
+Resize your browser to see how the grid of images adapts to different screen sizes.
+
 ## Set Up Your Files
 
 ### 1. Create a folder for your website
