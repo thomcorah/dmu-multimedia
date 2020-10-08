@@ -1,4 +1,6 @@
-# Responsive Web Design
+# Why Responsive Design
+
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=1456d9ee-fc79-4c04-8cd4-ac4e009423ee&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### The What and the Why
 
