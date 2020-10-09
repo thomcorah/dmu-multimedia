@@ -174,7 +174,6 @@ footer p {
 @media screen and (min-width: 1000px) {
   header {
     text-align: left;
-
     background-color: rgb(255, 218, 154);
   }
   .contents {
@@ -184,13 +183,9 @@ footer p {
     margin: 0 auto;
   }
   #mainMenu {
-    display: block;
-    text-align: right;
-  }
-
-  .menuItem {
-    display: inline-block;
-    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .col-left {
