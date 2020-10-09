@@ -12,7 +12,7 @@ You can see the mobile version in your browser here: <https://thomcorah.github.i
 
 Make sure to view it at mobile size.
 
-You can download the code here: <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveSite/mobileOnly.zip>
+You can download the code here: <https://drive.google.com/file/d/1YWpQBOvnwmAZxngvEZMHJSn5aX3Yc0VE/view?usp=sharing>
 
 Your task is to use media queries to adapt the code work at tablet sized display first, and then full desktop.
 
