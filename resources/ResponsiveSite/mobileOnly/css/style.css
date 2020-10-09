@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+}
+
+.centred {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+input + button {
+  margin-left: 10px;
+}
+
+.inlineForm {
+  display: flex;
+}
+
+.inlineForm input {
+  flex-grow: 4;
+}
+
+.inlineForm button {
+  flex-grow: 1;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+nav {
+  text-align: left;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: -90vw;
+  padding: 20px;
+  transition: left 0.4s;
+}
+
+nav #menuButton {
+  position: relative;
+  left: calc(90vw - 5px);
+  color: black;
+  transition: color 0.6s, background-color 0.6s;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.menuItem {
+  padding: 20px;
+}
+
+.menuItem a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+nav.active {
+  left: 0vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav.active #menuButton {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.quote {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.7em;
+}
+
+section,
+footer {
+  padding: 20px;
+}
+
+.highlightSection {
+  background-color: rgb(255, 218, 154);
+}
+
+.socialFollow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialFollow i {
+  font-size: 1.2em;
+  color: white;
+  margin: 6px 15px;
+}
+
+footer {
+  background-color: rgb(54, 55, 54);
+  color: white;
+}
+
+footer .contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+footer p {
+  margin: 0;
+}
+
+.clearFloat::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.albumCovers {
+  display: none;
+}
