@@ -2,6 +2,8 @@
 
 Once you've created a site that work well on mobile, it's time to think about scaling it up to desktop. This means introducing Media Queries.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=4baa94a9-3aa2-442c-b8cf-ac4f00a5e685&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Media Queries
 
 @media queries in CSS apply styles conditionally
