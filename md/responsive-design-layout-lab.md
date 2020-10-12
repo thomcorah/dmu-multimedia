@@ -12,7 +12,7 @@ Resize your browser to see how the grid of images adapts to different screen siz
 
 ### 1. Create a folder for your website
 
-Do this in the file explorer, inside your `public_html` folder.
+Do this in the file explorer.
 
 ### 2. Open the folder in Atom
 
