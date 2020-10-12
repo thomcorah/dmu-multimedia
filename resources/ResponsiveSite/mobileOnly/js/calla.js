@@ -18,6 +18,7 @@ delayNavigation = evt => {
 };
 
 document.getElementById("menuButton").addEventListener("click", toggleMenu);
+
 let menuLinks = document.querySelectorAll(".menuItem a");
 for (let i = 0; i < menuLinks.length; i++) {
   menuLinks[i].addEventListener("click", delayNavigation);
