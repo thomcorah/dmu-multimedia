@@ -27,7 +27,7 @@ Add a list, subheadings, and HTML comments to the page.
 
 ## Week 3 (19th October)
 
-- Using the Inspector
+- Using the Developer Tools
 - Nesting HTML elements to create structure - divs
 - File locations - relative and absolute
 - The anchor element
