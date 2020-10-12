@@ -9,6 +9,8 @@ To place an image on the page, use the `<img>` element. Unlike many HTML element
 1. Where is the image
 2. What is the image
 
+## Attributes
+
 We do this with two attributes. We provide a URL that points to the location of the image using the `href` attribute. This can be a relative or absolute URL, though as the image is normally in your own website folder structure, this will likely be a relative URL.
 
 We tell the browser what the image is with the `alt` attribute. This is a very important attribute. Not only does it provide a short description to the browser, to be displayed if there's a problem loading your image, but it's also what a screen reader will speak to a partially-sighted user.
