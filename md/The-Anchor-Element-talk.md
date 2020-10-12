@@ -6,7 +6,7 @@ Usually used for adding links to pages, the anchor element provides navigation a
 
 The anchor element lets you display something on the page, which if clicked, will take the user somewhere else. That could be to another website, a different page on the same website, or a different place on the same page.
 
-## What does it look like?
+## Linking to Another Website
 
 An anchor element is created with the `<a>` tags. We use the `html` attribute to tell the browser where to navigate to when clicked. The contents of the `<a>` element are what's displayed on the page for the user to click. For example:
 
