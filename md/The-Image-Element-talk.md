@@ -22,3 +22,11 @@ For example:
 ```HTML
 <img src="img/dogs.jpg" alt="A pack of dogs" />
 ```
+
+## Images on Mobile
+
+When we include images in our website, they might be too wide for the screen. It's therefore a good idea to limit the width of the image to 100%, so that it can't be any wider than the thing it's in.
+
+```HTML
+<img src="img/dogs.jpg" alt="A pack of dogs" style="max-width: 100%"/>
+```
