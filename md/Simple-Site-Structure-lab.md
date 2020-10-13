@@ -12,6 +12,8 @@ You will be creating a simple website about a cake maker. It will have three pag
 
 You can see an example of the finished site here: <https://thomcorah.github.io/dmu-multimedia/resources/SiteStructure/>
 
+This lab sheet doesn't tell you the detail of how to complete every step, you'll need to work a lot of that out. Refer to the videos provided, search for solutions on the internet, or ask.
+
 ## Get Setup
 
 ### 1. Create a folder for your site
