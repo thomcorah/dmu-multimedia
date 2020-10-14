@@ -2,6 +2,8 @@
 
 Google's Chrome browser (and others) comes with a handy set of developer tools that can help us to diagnose problems with our website.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8820d79c-9adb-40b6-9023-ac5301004267&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## What are Developer Tools
 
 The browser provides a set of tools that you can use to inspect your websites. Amongst other things, you can:

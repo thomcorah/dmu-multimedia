@@ -2,6 +2,8 @@
 
 It is important to understand how to properly point to the location of a file.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fde6a244-9d5e-42b5-a86d-ac530126ed39&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## When Would You Need To
 
 Surprisingly often. For any image you want to include in your site, you need to tell the browser where the image is. The same for any video or audio file. If you want to link to another page, or another website you'll need to provide the location. To include style rules that work across your website, you'll need to link in a separate file.
