@@ -6,4 +6,4 @@ Website menus are commonly a horizontal container of page names. However, when b
 
 A popover menu is one that slides over the content at the press of a button. When not in use the only impact on the page is a button, but when it's needed the user gets a big, easy to interact list of options.
 
-<video loop src="https://thomcorah.github.io/dmu-multimedia/resources/vid/popoverMenuExample.mp4"></video>
+<video muted autoplay loop src="https://thomcorah.github.io/dmu-multimedia/resources/vid/popoverMenuExample.mp4"></video>
