@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <h1>Picture Example</h1>
+    <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="img/logo-sm-1x.jpg 1x, img/logo-sm-2x.jpg 2x"
+      />
+      <source
+        media="(max-width: 1000px)"
+        srcset="img/logo-md-1x.jpg, img/logo-md-2x.jpg 2x"
+      />
+      <img src="img/logo-lg.jpg" alt="Logo" />
+    </picture>
+  </body>
+</html>
