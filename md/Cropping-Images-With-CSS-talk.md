@@ -76,3 +76,7 @@ For more on the `object-fit` and `object-position` rules, their respective W3Sch
 
 object-fit: <https://www.w3schools.com/cssref/css3_pr_object-fit.asp>  
 object-position: <https://www.w3schools.com/cssref/css3_pr_object-position.asp>
+
+## What about video?
+
+I'm glad you asked, as this also works for the `<video>` element. Neat!
