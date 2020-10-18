@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .menuItem {
+        text-decoration: none;
+        color: black;
+        padding: 30px;
+        display: inline-block;
+        background-color: rgb(224, 213, 247);
+        margin: 2px;
+      }
+
+      .action {
+        background-color: red;
+        padding: 20px;
+      }
+
+      @media screen and (pointer: coarse) {
+        button {
+          font-size: 1.6em;
+          padding: 10px;
+        }
+      }
+
+      @media screen and (hover: none) {
+        @keyframes non-hover-highlight {
+          0% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0.8;
+          }
+        }
+
+        .non-hoverable {
+          animation: non-hover-highlight 0.5s alternate infinite;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <a class="menuItem" href="#">Home</a>
+      <a class="menuItem" href="#">About</a>
+      <a class="menuItem" href="#">Music</a>
+      <a class="menuItem" href="#">Videos</a>
+      <a class="menuItem" href="#">Contact</a>
+    </div>
+    <div class="non-hoverable action">Some Element</div>
+    <button>Test Button</button>
+  </body>
+</html>

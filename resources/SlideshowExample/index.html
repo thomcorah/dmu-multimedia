@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .slideshow {
+        position: relative;
+        height: 70vw;
+        overflow: hidden;
+      }
+
+      .navButton {
+        color: white;
+        opacity: 0;
+        font-size: 50px;
+        position: absolute;
+        top: calc(50% - 25px);
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.4s;
+      }
+
+      .slideshow:hover .navButton {
+        opacity: 1;
+      }
+
+      #leftButton {
+      }
+
+      #rightButton {
+        right: 0;
+      }
+
+      .slideshow img {
+        width: 100vw;
+        height: 70vw;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        display: none;
+        transition: opacity 0.4s;
+      }
+
+      @media screen and (hover: none) {
+        .navButton {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/badger1-sm.jpg" />
+        <img src="img/badger1.jpg" alt="A badger" />
+      </picture>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/badger2-sm.jpg" />
+        <img src="img/badger2.jpg" alt="A badger" />
+      </picture>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/badger3-sm.jpg" />
+        <img src="img/badger3.jpg" alt="A badger" />
+      </picture>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/badger4-sm.jpg" />
+        <img src="img/badger4.jpg" alt="A badger" />
+      </picture>
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/mushroom-sm.jpg" />
+        <img src="img/mushroom.jpg" alt="A badger" />
+      </picture>
+      <div class="navButton" id="leftButton"><</div>
+      <div class="navButton" id="rightButton">></div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      let slides = document.querySelectorAll(".slideshow img");
+
+      nextSlide = () => {
+        currentSlide++;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        showSlide();
+      };
+
+      prevSlide = () => {
+        currentSlide--;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        showSlide();
+      };
+
+      showSlide = () => {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.opacity = 0;
+          slides[i].style.display = "none";
+        }
+        console.log(slides[currentSlide]);
+        slides[currentSlide].style.opacity = 1;
+        slides[currentSlide].style.display = "block";
+      };
+
+      showSlide();
+      document
+        .getElementById("leftButton")
+        .addEventListener("click", prevSlide);
+      document
+        .getElementById("rightButton")
+        .addEventListener("click", nextSlide);
+    </script>
+  </body>
+</html>

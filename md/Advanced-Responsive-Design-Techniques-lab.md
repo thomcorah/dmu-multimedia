@@ -3,4 +3,4 @@
 1. The `<picture>` element
 2. Cropping images
 3. Creating a responsive menu
-4. Detecting hover ability
+4. Detecting hover ability and pointer accuracy

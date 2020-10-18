@@ -62,7 +62,7 @@ nav {
   top: 0px;
   left: -90vw;
   padding: 20px;
-  transition: left 0.4s;
+  transition: left 0.4s, background-color 0.4s;
 }
 
 nav #menuButton {
@@ -74,12 +74,10 @@ nav #menuButton {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
 }
-
 .menuItem {
   padding: 20px;
-}
-
-.menuItem a {
+  display: inline-block;
+  width: 100%;
   font-size: 1.5em;
   color: white;
   text-decoration: none;
@@ -159,9 +157,10 @@ footer p {
     padding: 0;
   }
 
-  .menuItem a {
+  .menuItem {
     color: black;
     font-size: 1.2em;
+    width: auto;
   }
 
   .insetImage {
