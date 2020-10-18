@@ -92,3 +92,59 @@ From here, you could:
 - add a timer to automatically transition the slides every two seconds
 - make the 'hit' area of those buttons larger on devices that have 'coarse' pointer ability
 - try adapting the slideshow to include a video or two - the cropping works with them too
+
+```HTML
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div class="slideshow">
+      <img src="img/badger1.jpg" alt="A badger" />
+      <img src="img/badger2.jpg" alt="A badger" />
+      <img src="img/badger3.jpg" alt="A badger" />
+      <img src="img/badger4.jpg" alt="A badger" />
+      <img src="img/mushroom.jpg" alt="A badger" />
+      <div class="navButton" id="leftButton"><</div>
+      <div class="navButton" id="rightButton">></div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      let slides = document.querySelectorAll(".slideshow img");
+
+      nextSlide = () => {
+        currentSlide++;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        showSlide();
+      };
+
+      prevSlide = () => {
+        currentSlide--;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        showSlide();
+      };
+
+      showSlide = () => {
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.opacity = 0;
+          slides[i].style.display = "none";
+        }
+        slides[currentSlide].style.opacity = 1;
+        slides[currentSlide].style.display = "block";
+      };
+
+      showSlide();
+      document
+        .getElementById("leftButton")
+        .addEventListener("click", prevSlide);
+      document
+        .getElementById("rightButton")
+        .addEventListener("click", nextSlide);
+    </script>
+  </body>
+</html>
+```
