@@ -710,9 +710,9 @@ Address the following points:
 - Evidence of code testing (e.g. all links work, media loads, the site is consistent across browsers) and the HTML has been validated.
 - Evidence and a breakdown of structured user testing and feedback.
 - Evaluate your work, with reference to testing where appropriate, and user feedback, describing:  
-   _ Any limitations of your website  
-   _ Any improvements you would make to the site and why  
-   \* Any problems you encountered along the way, referencing any solutions you found or devised
+   - Any limitations of your website  
+   - Any improvements you would make to the site and why  
+   - Any problems you encountered along the way, referencing any solutions you found or devised
 
 [Back to CW2 Marking Criteria](#cw2-marking-criteria)
 
