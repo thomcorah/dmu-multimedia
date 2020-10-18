@@ -9,21 +9,17 @@
         font-family: sans-serif;
       }
 
-      .menuItem {
-        text-decoration: none;
-        color: black;
-        padding: 30px;
-        display: inline-block;
-        background-color: rgb(224, 213, 247);
-        margin: 2px;
-      }
-
       .action {
         background-color: red;
         padding: 20px;
       }
 
-      @media screen and (pointer: coarse) {
+      .action:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s;
+      }
+
+      @media screen and (pointer: course) {
         button {
           font-size: 1.6em;
           padding: 10px;
@@ -47,13 +43,6 @@
     </style>
   </head>
   <body>
-    <div class="menu">
-      <a class="menuItem" href="#">Home</a>
-      <a class="menuItem" href="#">About</a>
-      <a class="menuItem" href="#">Music</a>
-      <a class="menuItem" href="#">Videos</a>
-      <a class="menuItem" href="#">Contact</a>
-    </div>
     <div class="non-hoverable action">Some Element</div>
     <button>Test Button</button>
   </body>

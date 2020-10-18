@@ -2,6 +2,8 @@
 
 Sometimes it can be useful to crop an image.
 
+### The Video is Coming!
+
 ## When to crop
 
 Consider these two use cases:

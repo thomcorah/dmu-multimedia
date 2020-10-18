@@ -41,10 +41,14 @@ Exercises in responsive design - changing layout based on screen size.
 ### Lab
 
 - RWD: Media Queries part 2
+  - The `<picture>` element
+  - Cropping images with `object-fit`
+  - Media query based on hover ability
+  - Media query based on pointer accuracy
 
 ### Task
 
-Exercises in responsive design - changing content based on screen size.
+Exercises in responsive design - create a slideshow that loads an image file based on screen size, crops the image, and with controls that have a hover effect only on devices that support hover.
 
 ## Week 4 (26th October)
 

@@ -2,6 +2,8 @@
 
 Some internet browsing devices have a pointer on the screen, such as desktop computers. Some don't, such as mobile phones. Sometimes we might want to adjust styles based on the precision of the pointer, and the ability to hover.
 
+### The Video Is Coming!
+
 ## Why would we do this
 
 It can be tempting to build functionality around the ability to detect the user hovering the mouse over an element. A dropdown menu for example might be expanded on hover. However, when the user doesn't have a pointer to hover over the element, this can break. We might also use hover state for styling that communicates something to the user, such as highlighting that something is clickable. Again, this would break on mobile.

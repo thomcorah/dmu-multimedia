@@ -2,6 +2,8 @@
 
 The `<picture>` element lets us deliver an image to a device that's suitable for the devices size, instead of always delivering a large image to be scaled.
 
+### The Video is Coming!
+
 ## What's the problem with `<img>`?
 
 The `<img>` element is great for displaying an image, obviously. However, it's not ideal to have mobile devices load large imaged intended for the desktop, to then simply scale them down.
