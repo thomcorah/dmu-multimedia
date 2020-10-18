@@ -2,7 +2,7 @@
 
 Sometimes it can be useful to crop an image.
 
-### The Video is Coming!
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=423e1496-d7f8-4605-b53a-ac580152b81a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## When to crop
 

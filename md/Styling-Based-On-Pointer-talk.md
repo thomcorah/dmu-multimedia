@@ -2,7 +2,7 @@
 
 Some internet browsing devices have a pointer on the screen, such as desktop computers. Some don't, such as mobile phones. Sometimes we might want to adjust styles based on the precision of the pointer, and the ability to hover.
 
-### The Video Is Coming!
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a3d065bb-36ef-454d-8100-ac58015358e8&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## Why would we do this
 

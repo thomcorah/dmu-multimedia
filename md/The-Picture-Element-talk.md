@@ -2,7 +2,7 @@
 
 The `<picture>` element lets us deliver an image to a device that's suitable for the devices size, instead of always delivering a large image to be scaled.
 
-### The Video is Coming!
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=6cb2fc7c-9d84-4d80-96a5-ac5801506e62&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## What's the problem with `<img>`?
 
