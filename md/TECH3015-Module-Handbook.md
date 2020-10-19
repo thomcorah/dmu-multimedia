@@ -1,8 +1,8 @@
-![DMU logo](https://www.dropbox.com/s/71r1lkrzihjl4fn/DMU-Logo-768x329.png?raw=1 )
+![DMU logo](https://www.dropbox.com/s/71r1lkrzihjl4fn/DMU-Logo-768x329.png?raw=1)
 
-<!-- 
-https://thomcorah.github.io/dmu-multimedia/tech3015/module-handbook.html 
-https://tech3015.github.io/lectures/module-handbook.md 
+<!--
+https://thomcorah.github.io/dmu-multimedia/tech3015/module-handbook.html
+https://tech3015.github.io/lectures/module-handbook.md
 -->
 
 ### Leicester Media School
@@ -19,7 +19,7 @@ https://tech3015.github.io/lectures/module-handbook.md
 
 ## Table of Contents
 
-[Welcome to Multimedia III](#welcome-to-multimedia-iii)  
+[Welcome to Multimedia III](#welcometomultimediaiii)  
 [Module Tutors](#module-tutors)  
 [Module Description](#module-description)  
 [How the Module Works](#how-the-module-works)  
@@ -30,7 +30,7 @@ https://tech3015.github.io/lectures/module-handbook.md
 [Plagiarism](#plagiarism)  
 [Assessment](#assessment)  
 [Coursework 1](#coursework-1)  
-[Coursework 2](#coursework-2)  
+[Coursework 2](#coursework-2)
 
 <div style="page-break-after: always;"></div>
 
@@ -58,7 +58,7 @@ Email: <deveritt@dmu.ac.uk>
 
 ## Module Description
 
-This module will build on your work last year in TECH2015, as well as what you did in TECH1015  and develop your understanding of media presentation using the Internet. Through the course of this module you’ll develop a more nuanced approach that will consider the needs of different users consuming your media through a range of platforms.
+This module will build on your work last year in TECH2015, as well as what you did in TECH1015 and develop your understanding of media presentation using the Internet. Through the course of this module you’ll develop a more nuanced approach that will consider the needs of different users consuming your media through a range of platforms.
 
 You will build on your technical understanding of the languages of the web: HTML, CSS, and JavaScript. Through these languages you will investigate issues of layout, style, animation, and interactivity, all with a keen focus on the user and the user experience. You will also make use of existing online resources and data sources.
 
@@ -116,11 +116,11 @@ At the end of the module, you will be able to:
 
 This module will develop your understanding and engagement with:
 
-* Wireframing, prototyping and mobile-first planning
-* Designing and developing for any device with Responsive Web Design (RWD)
-* Scalable vector graphics (SVG) for the web
-* Accessing other websites' data using APIs
-* Persisting data using local database storage
+- Wireframing, prototyping and mobile-first planning
+- Designing and developing for any device with Responsive Web Design (RWD)
+- Scalable vector graphics (SVG) for the web
+- Accessing other websites' data using APIs
+- Persisting data using local database storage
 
 There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs and lectures.
 
@@ -151,20 +151,20 @@ The Blackboard shell for the module will contain an increasing list of resources
 The following optional books are all from well-regarded publishers _A Book Apart_. They're easy-to-read and compact, although you will need to purchase digital (and/or printed) copies. Despite their publication date, the top two are still the core publications on Responsive Web Design and Mobile-First development.
 
 - Marcotte, Ethan (2014). **Responsive Web Design 2nd Ed.** A Book Apart. **This is the core text on Responsive Web Design.**  
-Available from: [abookapart.com/products/responsive-web-design](https://abookapart.com/products/responsive-web-design)
+  Available from: [abookapart.com/products/responsive-web-design](https://abookapart.com/products/responsive-web-design)
 - Wroblewski, Luke (2011). **Mobile First** A Book Apart. **The crucial book that started the entire movement.**  
-Available from: [abookapart.com/products/mobile-first](https://abookapart.com/products/mobile-first)
+  Available from: [abookapart.com/products/mobile-first](https://abookapart.com/products/mobile-first)
 - Keith, Jeremy & Andrew, Rachel (2016). **HTML5 For Web Designers** A Book Apart.  
-Available from: [abookapart.com/products/html5-for-web-designers](https://abookapart.com/products/html5-for-web-designers)
-- Cederholm, Dan (2015). **CSS3 for Web Designers** A Book Apart.   Available from: [abookapart.com/products/css3-for-web-designers](https://abookapart.com/products/css3-for-web-designers)
+  Available from: [abookapart.com/products/html5-for-web-designers](https://abookapart.com/products/html5-for-web-designers)
+- Cederholm, Dan (2015). **CSS3 for Web Designers** A Book Apart. Available from: [abookapart.com/products/css3-for-web-designers](https://abookapart.com/products/css3-for-web-designers)
 - Marquis, Mat (2016). **JavaScript for Web Designers** A Book Apart.  
-Available from: [abookapart.com/products/javascript-for-web-designers](https://abookapart.com/products/javascript-for-web-designers). NOTE: if you follow the code, change the `var` declarations to `let` or `const` for arrays, objects and `getElementById`.
+  Available from: [abookapart.com/products/javascript-for-web-designers](https://abookapart.com/products/javascript-for-web-designers). NOTE: if you follow the code, change the `var` declarations to `let` or `const` for arrays, objects and `getElementById`.
 - Coyier, Chris (2016). **Practical SVG** A Book Apart.  
-Available from: [abookapart.com/products/practical-svg](https://abookapart.com/products/practical-svg)
+  Available from: [abookapart.com/products/practical-svg](https://abookapart.com/products/practical-svg)
 - Keith, Jeremy (2018). **Going Offline** A Book Apart.  
-Available from: [abookapart.com/products/going-offline](https://abookapart.com/products/going-offline)
+  Available from: [abookapart.com/products/going-offline](https://abookapart.com/products/going-offline)
 - Grigsby, Jason (2018). **Progressive Web Apps** A Book Apart.  
-Available from: [abookapart.com/products/progressive-web-apps](https://abookapart.com/products/progressive-web-apps)
+  Available from: [abookapart.com/products/progressive-web-apps](https://abookapart.com/products/progressive-web-apps)
 
 ### Recommended online resources
 
@@ -177,10 +177,10 @@ Available from: [abookapart.com/products/progressive-web-apps](https://abookapar
 - **[css-tricks.com](https://css-tricks.com)**  
   Really great website with loads of posts on stying your webpages and sites, all very well-explained.
 - **[codecademy.com](https://www.codecademy.com)** Free high-quality online courses, although only the following (on the three front-end web languages) are recommended for this module:
-    - [Learn How to Build Websites](https://www.codecademy.com/learn/paths/learn-how-to-build-websites)
-    - [Introduction to **HTML**](https://www.codecademy.com/learn/learn-html)
-    - [Learn **CSS**](https://www.codecademy.com/learn/learn-css)
-    - [Introduction to **JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript).
+  - [Learn How to Build Websites](https://www.codecademy.com/learn/paths/learn-how-to-build-websites)
+  - [Introduction to **HTML**](https://www.codecademy.com/learn/learn-html)
+  - [Learn **CSS**](https://www.codecademy.com/learn/learn-css)
+  - [Introduction to **JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript).
 - **[learn.freecodecamp.org](https://learn.freecodecamp.org/)**  
   A complete free front-end course, including responsive webapps.
 - **[WatchAndCode.com: Practical Javascript](https://watchandcode.com/p/practical-javascript)**  
@@ -194,11 +194,11 @@ Available from: [abookapart.com/products/progressive-web-apps](https://abookapar
 
 This module makes use of Blackboard – De Montfort University’s Virtual Learning Environment. It is important that you access Blackboard regularly to keep up to date with:
 
-* General notices and announcements
-* Lab activities and exercises
-* Lecture slides and recordings
-* Assessments
-* Your assessment feedback
+- General notices and announcements
+- Lab activities and exercises
+- Lecture slides and recordings
+- Assessments
+- Your assessment feedback
 
 Log into Blackboard at: [blackboard.dmu.ac.uk](https://www.blackboard.dmu.ac.uk)
 
@@ -222,7 +222,7 @@ If you have any questions regarding plagiarism and other academic practice offen
 
 You will be assessed continuously through the module with formal feedback given at two key points through the year as well as informally in labs. The full details of coursework 1 and 2 follows this brief overview.
 
-### Coursework 1  
+### Coursework 1
 
 **Date and time due: 12pm (midday) on Monday 21st December 2020**
 
@@ -262,7 +262,8 @@ To reiterate:
 | Title of Assessment:     |              **Coursework 1** |
 | This coursework item is: | **Summative / ~~Formative~~** |
 
-****
+---
+
 The learning outcomes that are assessed by this coursework are:
 
 - Understand and evaluate complex issues related to browser platforms, accessibility, usability and mobile access when developing dynamic and animated content on the web.
@@ -278,7 +279,8 @@ This coursework constitutes **40% of the overall module mark**.
 | Date and time due:                  | **12pm (midday) Monday 21st December 2020** |
 | Marked coursework and feedback due: |               **Tuesday 26th January 2021** |
 
-****
+---
+
 If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback.
 
 Note that you should normally receive feedback on your coursework by no later than 20 University working days after the formal hand-in date, provided that you have met the submission deadline.
@@ -522,7 +524,7 @@ The user enters their name and other details on page 1, before being presented w
 | Title of Assessment:     |              **Coursework 2** |
 | This coursework item is: | **Summative / ~~Formative~~** |
 
-****
+---
 
 The learning outcomes that are assessed by this coursework are:
 
@@ -540,7 +542,8 @@ This coursework constitutes **60% of the overall module mark**.
 | Date and time due:                       | **12pm (midday) Tuesday 4th May 2021** |
 | Your marked coursework and feedback due: |             **Thursday 3rd June 2021** |
 
-****
+---
+
 If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback.
 
 Note that you should normally receive feedback on your coursework by no later than 20 University working days after the formal hand-in date, provided that you have met the submission deadline.
@@ -709,12 +712,11 @@ Address the following points:
 
 - Evidence of code testing (e.g. all links work, media loads, the site is consistent across browsers) and the HTML has been validated.
 - Evidence and a breakdown of structured user testing and feedback.
-- Evaluate your work, with reference to testing where appropriate, and user feedback, describing:  
-   - Any limitations of your website  
-   - Any improvements you would make to the site and why  
-   - Any problems you encountered along the way, referencing any solutions you found or devised
+- Evaluate your work, with reference to testing where appropriate, and user feedback, describing:
+  - Any limitations of your website
+  - Any improvements you would make to the site and why
+  - Any problems you encountered along the way, referencing any solutions you found or devised
 
 [Back to CW2 Marking Criteria](#cw2-marking-criteria)
 
 [Contents](#table-of-contents)
-
