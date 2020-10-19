@@ -20,17 +20,17 @@ https://tech3015.github.io/lectures/module-handbook.md
 ## Table of Contents
 
 [Welcome to Multimedia III](#welcometomultimediaiii)  
-[Module Tutors](#module-tutors)  
-[Module Description](#module-description)  
-[How the Module Works](#how-the-module-works)  
-[Learning Outcomes](#learning-outcomes)  
-[Key Topics](#key-topics)  
-[Module Reading](#module-reading)  
-[Blackboard Virtual Learning Environment](#blackboard-virtual-learning-environment)  
+[Module Tutors](#moduletutors)  
+[Module Description](#moduledescription)  
+[How the Module Works](#howthemoduleworks)  
+[Learning Outcomes](#learningoutcomes)  
+[Key Topics](#keytopics)  
+[Module Reading](#modulereading)  
+[Blackboard Virtual Learning Environment](#blackboardvirtuallearningenvironment)  
 [Plagiarism](#plagiarism)  
 [Assessment](#assessment)  
-[Coursework 1](#coursework-1)  
-[Coursework 2](#coursework-2)
+[Coursework 1](#coursework1)  
+[Coursework 2](#coursework2)
 
 <div style="page-break-after: always;"></div>
 
@@ -42,7 +42,7 @@ Throughout the module please get in touch if you have anything to say on the con
 
 Thom Corah - Module Leader
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Module Tutors
 
@@ -54,7 +54,7 @@ Tel: 0116 207 8088
 **Dave Everitt** (lectures only)  
 Email: <deveritt@dmu.ac.uk>
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Module Description
 
@@ -64,7 +64,7 @@ You will build on your technical understanding of the languages of the web: HTML
 
 Throughout the module you are encouraged to undertake your own research into the software and practices we undertake. You should develop the ability to solve problems encountered in your work in an independent fashion, though your lab tutor will step in if necessary.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## How the module works
 
@@ -90,7 +90,7 @@ This means you can start on this at home really early. You can start on week 2 w
 
 As with all modules, lectures will be asynchronous through the whole module - this means they will be pre-recorded and made available the week before that for which they are intended. Please do watch these as they will communicate many of the practical techniques and technologies that you'll need to make use of for the lab work, and indeed, for your coursework.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Learning Outcomes
 
@@ -110,7 +110,7 @@ At the end of the module, you will be able to:
 - Understand and evaluate complex issues related to browser platforms, accessibility, usability and mobile access when developing dynamic and animated content on the web.
 - Collect, evaluate, and analyse feedback from users at various points in the development cycle of a Multimedia application. -->
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Key Topics
 
@@ -124,7 +124,7 @@ This module will develop your understanding and engagement with:
 
 There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs and lectures.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Module Reading
 
@@ -188,7 +188,7 @@ The following optional books are all from well-regarded publishers _A Book Apart
 - **[Udacity.com: Front End Web Developer](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011)**  
   The above Udacity course is recommended for this module.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Blackboard Virtual Learning Environment
 
@@ -202,7 +202,7 @@ This module makes use of Blackboard – De Montfort University’s Virtual Learn
 
 Log into Blackboard at: [blackboard.dmu.ac.uk](https://www.blackboard.dmu.ac.uk)
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Plagiarism
 
@@ -216,7 +216,7 @@ If you are found to of copied work without crediting the source you are likely t
 
 If you have any questions regarding plagiarism and other academic practice offences, you can email the Leicester Media School's Academic Practice Officer: Helen Ackerley <hackerley@dmu.ac.uk>
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## Assessment
 
@@ -249,7 +249,7 @@ To reiterate:
 - **All written work through Turnitin**
 - **All practical work uploaded to your public server space**
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ---
 
@@ -302,7 +302,7 @@ These include plagiarism, cheating, collusion, copying work and reuse of your ow
 - [Academic Offences](http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx)
 - [Bad Academic Practice](http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx)
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ### CW1 Overview
 
@@ -312,7 +312,7 @@ You are encouraged to seek feedback about your ongoing work from your lab tutor 
 
 This design and specification can form the basis of what you produce for coursework 2 (but does not have to be), so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ### Where to Start?
 
@@ -327,7 +327,7 @@ However, there are a number of points that your plans should satisfy:
 - is valid HTML
 - contains multiple pages/sections
 
-If you’re stuck for an idea, you’ll find some [suggestions at the end of this brief](#example-website-ideas), so feel free to use one of them.
+If you’re stuck for an idea, you’ll find some [suggestions at the end of this brief](#examplewebsiteideas), so feel free to use one of them.
 
 Once you know what your website is going to be all about you can start planning it all out:
 
@@ -343,7 +343,7 @@ Once you know what your website is going to be all about you can start planning 
 
 Finally, make sure you **read the marking criteria** and fill in any gaps that you haven't addressed already.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ### Deliverables
 
@@ -368,17 +368,17 @@ It might also contain:
 
 Your report will be submitted through Turnitin. If you do not submit through Turnitin, it will not be marked.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ### CW1 Marking Criteria
 
 There are five marking criteria, each worth an equal 20% of the total coursework mark for assignment 1.
 
-- [Information Architecture](#information-architecture)
+- [Information Architecture](#informationarchitecture)
 - [Responsiveness](#responsiveness)
-- [Design and Interaction](#design-and-interaction)
+- [Design and Interaction](#designandinteraction)
 - [Accessibility](#accessibility)
-- [Critical Analysis](#critical-analysis)
+- [Critical Analysis](#criticalanalysis)
 
 This means that each deliverable might contribute to several or all of the marking criteria and vice-versa.
 
@@ -412,7 +412,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 - design sketches and finished design
 - user stories / user profiles
 
-[Back to CW1 Marking Criteria](#cw1-marking-criteria)
+[Back to CW1 Marking Criteria](#cw1markingcriteria)
 
 ### Responsiveness
 
@@ -430,7 +430,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 - wireframes (mobile, tablet, desktop)
 - design sketches and finished design
 
-[Back to CW1 Marking Criteria](#cw1-marking-criteria)
+[Back to CW1 Marking Criteria](#cw1markingcriteria)
 
 ### Design and Interaction
 
@@ -451,7 +451,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 - wireframes (mobile, tablet, desktop)
 - design sketches and finished design
 
-[Back to CW1 Marking Criteria](#cw1-marking-criteria)
+[Back to CW1 Marking Criteria](#cw1markingcriteria)
 
 ### Accessibility
 
@@ -476,7 +476,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 
 Consider using the [Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/)
 
-[Back to CW1 Marking Criteria](#cw1-marking-criteria)
+[Back to CW1 Marking Criteria](#cw1markingcriteria)
 
 ### Critical Analysis
 
@@ -493,7 +493,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 - evidence of user feedback (e.g. card sorting, design feedback, ...)
 - consistent reference formatting
 
-[Back to CW1 Marking Criteria](#cw1-marking-criteria)
+[Back to CW1 Marking Criteria](#cw1markingcriteria)
 
 ### Example website ideas
 
@@ -511,7 +511,7 @@ A grid of thumbnails presents a range of artwork. Click on one and you can see i
 **A Personalised Story**  
 The user enters their name and other details on page 1, before being presented with a simple interactive story that incorporates these details. Animations mark the transition between scenes and the introduction of text and graphics within them.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ---
 
@@ -572,7 +572,7 @@ These include plagiarism, cheating, collusion, copying work and reuse of your ow
 - [Academic Offences](http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx)
 - [Bad Academic Practice](http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx)
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ## CW2 Marking Criteria
 
@@ -582,13 +582,13 @@ These include plagiarism, cheating, collusion, copying work and reuse of your ow
 
 - [Content](#content)
 - [Style](#style)
-- [Technical Skills](#technical-skills)
+- [Technical Skills](#technicalskills)
 
 ### Documentation
 
 40% of the coursework mark (1000-1500 words, with separate references and appendices not included in the word count)
 
-- [Design Process](#design-process)
+- [Design Process](#designprocess)
 - [Production](#production)
 - [Evaluation](#evaluation)
 
@@ -610,7 +610,7 @@ If you don't want to use your design or topic from Coursework 1, explain how and
 
 ### Key points to consider:
 
-- Examine [CW2 marking criteria](#cw2-marking-criteria) closely. A good mark for Coursework 1 doesn't automatically translate to a website that meets the criteria for coursework 2 - you may need to adapt your design or prototype
+- Examine [CW2 marking criteria](#cw2markingcriteria) closely. A good mark for Coursework 1 doesn't automatically translate to a website that meets the criteria for coursework 2 - you may need to adapt your design or prototype
 - Don't skimp on **user testing** - this is critically important and **will** get you a better mark
 - [validate your HTML](https://validator.w3.org/) (this is crucial) and at least run your [CSS through a validator](https://jigsaw.w3.org/css-validator/), and [check for accessibility issues](https://wave.webaim.org/) (although these can be advisory) and briefly document this process
 - **Reference any content** that’s not yours (images, music, sounds, online tutorial code not included in the learning materials etc.) e.g. in a list or appendix in the documentation (note: Google or other search engines themselves are _not_ primary sources of information). Failure to do so is plagiarism and may effect your grade.
@@ -633,7 +633,7 @@ If you don't want to use your design or topic from Coursework 1, explain how and
 
 You should add comments to your HTML, CSS and JavaScript, with explanations of what your code does. These comments will demonstrate your understanding of your code and the reasons you took the approaches you did.
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
 
 ### Content
 
@@ -645,7 +645,7 @@ Your website content should be fully functional and robust (valid HTML, no missi
 - Awareness of loading speed and disk space e.g. no huge images
 - Your own original content is credited and any third-party content referenced (media from a single source can have just a single general credit/reference)
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
 ### Style
 
@@ -658,7 +658,7 @@ Your website should appeal to your intended audience and be consistent with your
 - No duplicate CSS, classes instead of IDs for selectors
 - Well-ordered CSS: mobile-first followed by `min-width` breakpoints to be fully responsive at any screen width
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
 ### Technical Skills
 
@@ -674,7 +674,7 @@ Your web site should demonstrate your ability to apply the concepts you have lea
   _ CSS Animation
   _ JavaScript user interaction and/or functionality
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
 ## CW2 Documentation
 
@@ -693,7 +693,7 @@ Refer back to your mock-ups from assignment 1 and discuss:
 
 This should be written in light of your own evaluation of your design from CW1, with your peer and tutor feedback.
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
 ### Production
 
@@ -704,7 +704,7 @@ Offer some insight into the development of your website through extensive code c
 - Why you chose a certain approach
 - How successful the outcome was
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
 ### Evaluation
 
@@ -717,6 +717,6 @@ Address the following points:
   - Any improvements you would make to the site and why
   - Any problems you encountered along the way, referencing any solutions you found or devised
 
-[Back to CW2 Marking Criteria](#cw2-marking-criteria)
+[Back to CW2 Marking Criteria](#cw2markingcriteria)
 
-[Contents](#table-of-contents)
+[Contents](#tableofcontents)
