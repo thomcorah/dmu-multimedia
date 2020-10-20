@@ -100,6 +100,6 @@ For example, in order to provide playback controls for the user, we would add th
 </audio>
 ```
 
-Note that in many browsers, autoplay won't work unless you also mute the audio by default. This is to cut down on users having audio erupt from their computers uninvited when browsing the web.
+Note that in many browsers, autoplay won't work. This is to cut down on users having audio erupt from their computers uninvited when browsing the web.
 
 Finally, although you can use the `src` attribute, it is better to nest `<source>` elements in order to provide a range of file options.§
