@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+section {
+  background-color: green;
+  border: 1px black solid;
+}
+
+footer {
+  background-color: darkgrey;
+}
+
+footer p {
+  color: white;
+}
+
+.jeff {
+}
+
+#thisHeading {
+}
