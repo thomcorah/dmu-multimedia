@@ -24,7 +24,7 @@ Create a new repository. This is just another name for a place to store all your
 
 GitHub takes you to a page that gives you a few options for adding code. There's a link to upload a file. Click this.
 
-![GitHub Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/img/gitgub-1.jpg)
+![GitHub Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/img/github-1.jpg)
 
 Once you've got a file in there, you'll see the start of a list of your files, as well as a button to add more.
 
@@ -40,7 +40,7 @@ You should add your tutor(s) to your projects so that we can help you out by edi
 
 To add a collaborator, go into the settings for your repository, and then select Manage Access. There is a button there to add collaborators. Click that, and then enter the username of your tutor. Done.
 
-![GitHub Screenshot](https://thomcorah.GitHub.io/dmu-multimedia/resources/img/GitHub-3.jpg)
+![GitHub Screenshot](https://thomcorah.GitHub.io/dmu-multimedia/resources/img/github-3.jpg)
 
 ## Enable Pages
 
