@@ -2,6 +2,8 @@
 
 The audio element can be used to embed an audio file in a page, providing the user with playback controls.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=47494638-de60-40e4-b4a4-ac5a01031ea9&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Audio file formats
 
 The three audio file formats that work with the `<audio>` element are MP3, ogg audio, and wav. However, they don't all work on all browsers, as this table of support from the main browsers shows.

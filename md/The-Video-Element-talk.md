@@ -2,6 +2,8 @@
 
 The video element can be used to embed a video file in a page, providing the user with playback controls.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=68c931bb-6847-47c0-81fd-ac5a0105b0a3&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Video file formats
 
 The three video file formats that work with the `<video>` element are MP4, ogg video, and webm. However, they don't all work on all browsers, as this table of support from the main browsers shows.
