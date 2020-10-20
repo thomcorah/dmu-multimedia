@@ -76,6 +76,12 @@ Create a `<div>` element to contain the whole content area. Inside it, create an
 
 The `<img>` element will need its `src` and `alt` attributes setting appropriately.
 
+As we're creating a page for mobile, it's a good idea to limit the width of the images so they don't go spilling over the edge of the screen. We can do this by using the `style` attribute on the `<img>` elements. We want to use the `style` attribute to set the `max-width` property to 100%. Here's what we might do:
+
+```HTML
+<img style='max-width: 100%' src='img/cake1.jpg' alt='A Tall Cake' />
+```
+
 Repeat this process to place a second second second inside your main content area `<div>`.
 
 ### 6. Create the footer
