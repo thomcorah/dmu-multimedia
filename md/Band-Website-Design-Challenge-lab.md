@@ -1,6 +1,6 @@
 # Band Website Design Challenge
 
-Your task is to design a mobile website for a band. They have a good deal of content they would like including. You can find it here: <https://thomcorah.github.io/dmu-multimedia/resources/BandWebsiteDesignResources.zip>
+Your task is to design a mobile website for a band. They have a good deal of content they would like including. You can find it here: <https://thomcorah.github.io/dmu-multimedia/resources/BandWebsiteDesignChallengeResources.zip>
 
 You should use your knowledge of design principles and information architecture to ensure that your design is easy to use, consistent, and organised.
 
