@@ -12,7 +12,7 @@ You will find starter code at <https://thomcorah.github.io/dmu-multimedia/resour
 
 ### 1. Download the starter code and open it in Atom
 
-Make sure to place it in your public_html folder.
+Make sure to open the folder, not just the HTML file.
 
 ### 2. View it in the browser
 
@@ -25,6 +25,14 @@ Do you know what everything is? Can you relate the HTML to what you see on the p
 ### 4. Look at the completed example
 
 Note what's different.
+
+### 5. Create a CSS file
+
+Create a folder for your CSS files and create a css file. Use the `<link>` element in your HTML to link it in.
+
+### 6. Check the style works
+
+Make sure you've linked your CSS file to your HTML file properly. In your CSS file, do something like make the background of the `<body>` red. Does this change show up in the browser? If not, what have you missed? Did you include all three required attributes in the `<link>` element? Did you spell the folder and file names exactly right in the `href` of the `<link>` element?
 
 ## Changing things
 
