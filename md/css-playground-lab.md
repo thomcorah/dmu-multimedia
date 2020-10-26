@@ -6,7 +6,7 @@ You are provided with the HTML for a page and an empty stylesheet. You are to us
 
 You can see a completed example at <https://thomcorah.github.io/dmu-multimedia/resources/cssPlayground/cssPlayground.html>
 
-You will find starter code at <https://thomcorah.github.io/dmu-multimedia/resources/cssPlayground-starter-code.zip>
+You will find starter code at <https://thomcorah.github.io/dmu-multimedia/resources/cssPlaygroundStarterCode.zip>
 
 ## Getting Started
 
