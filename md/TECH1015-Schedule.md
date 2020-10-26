@@ -48,8 +48,8 @@ Add either an audio or video clip to your page.
 
 ## Week 5 (2nd November)
 
-- What is CSS, how do we write it, where do we write it.
 - Applying styles to elements - CSS selectors
+- Specifying colour with CSS
 - Basic text styling with CSS
 - Basic element styling with CSS
 
