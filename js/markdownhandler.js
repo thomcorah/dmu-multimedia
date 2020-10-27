@@ -104,6 +104,14 @@ writeList = (lectures, labs, misc) => {
     htmlstring += "<a href='" + url + "'>" + thisLab.name + "</a><br />";
   }
 
+  htmlstring += "<h2>Short Talks - Demos and Discussions</h2>";
+
+  for (let i = 0; i < talks.length; i++) {
+    let thisTalk = talks[i];
+    let url = "./lab-reader.html?" + thisTalk.file;
+    htmlstring += "<a href='" + url + "'>" + thisTalk.name + "</a><br />";
+  }
+
   htmlstring += "<h2>Other</h2>";
 
   for (let i = 0; i < misc.length; i++) {
