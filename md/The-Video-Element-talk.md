@@ -8,13 +8,13 @@ The video element can be used to embed a video file in a page, providing the use
 
 The three video file formats that work with the `<video>` element are MP4, ogg video, and webm. However, they don't all work on all browsers, as this table of support from the main browsers shows.
 
-| Browser | MP3 | WAV | OGG |
-| ------- | --- | --- | --- |
-| Edge/IE | YES | YES | YES |
-| Chrome  | YES | YES | YES |
-| Firefox | YES | YES | YES |
-| Safari  | YES | YES | NO  |
-| Opera   | YES | YES | YES |
+| Browser | MP4 | WEBM | OGG |
+| ------- | --- | ---- | --- |
+| Edge/IE | YES | YES  | YES |
+| Chrome  | YES | YES  | YES |
+| Firefox | YES | YES  | YES |
+| Safari  | YES | YES  | NO  |
+| Opera   | YES | YES  | YES |
 
 In order to overcome this, we can provide the same video file, but in multiple file formats. The browser can then choose the one that it works with.
 
