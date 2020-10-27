@@ -2,7 +2,7 @@
 
 This lab will see you adding audio and video content to a simple page. It'll be a page with a heading. a paragraph of text, an audio player, and a video.
 
-You can see a finished example here: <https://thomcorah.github.io/dmu-multimedia/resources/EmbeddingMediaEx/index.html>
+You can see a finished example here: <https://thomcorah.github.io/dmu-multimedia/resources/embeddingMediaEx/index.html>
 
 ## Start a New Project
 
