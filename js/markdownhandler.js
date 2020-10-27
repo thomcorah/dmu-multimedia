@@ -1,4 +1,4 @@
-loadMD = filename => {
+loadMD = (filename) => {
   if (!filename) {
     const queryString = location.search;
     if (queryString) {
@@ -12,14 +12,14 @@ loadMD = filename => {
   }
 };
 
-displayMDFile = filename => {
+displayMDFile = (filename) => {
   var converter = new showdown.Converter({
-    tables: true
+    tables: true,
   });
 
   var txtFile = new XMLHttpRequest();
   txtFile.open("GET", "./" + filename, true);
-  txtFile.onreadystatechange = function() {
+  txtFile.onreadystatechange = function () {
     if (txtFile.readyState === 4) {
       if (txtFile.status === 404) {
         listLabSheets();
@@ -27,7 +27,7 @@ displayMDFile = filename => {
         allText = txtFile.responseText;
         var html = converter.makeHtml(allText);
         document.getElementById("container").innerHTML = html;
-        document.querySelectorAll("pre code").forEach(block => {
+        document.querySelectorAll("pre code").forEach((block) => {
           hljs.highlightBlock(block);
         });
       }
@@ -39,36 +39,43 @@ displayMDFile = filename => {
 listLabSheets = () => {
   let options = {
     headers: {
-      Accept: "application/vnd.github.v3+json"
-    }
+      Accept: "application/vnd.github.v3+json",
+    },
   };
   let labs = [];
   let lectures = [];
   let misc = [];
+  let talks = [];
   fetch(
     "https://api.github.com/repos/thomcorah/dmu-multimedia/contents/md",
     options
-  ).then(response => {
-    response.json().then(data => {
-      data.forEach(entry => {
+  ).then((response) => {
+    response.json().then((data) => {
+      data.forEach((entry) => {
         let name = entry.name.substring(0, entry.name.length - 3);
         name = name.replace(/-/g, " ");
         if (name.substring(name.length - 3, name.length) === "lab") {
           let thisEntry = {
             name: name.replace(/ lab/g, ""),
-            file: entry.name
+            file: entry.name,
           };
           labs.push(thisEntry);
         } else if (name.substring(name.length - 3, name.length) === "lec") {
           let thisEntry = {
             name: name.replace(/ lec/g, ""),
-            file: entry.name
+            file: entry.name,
           };
           lectures.push(thisEntry);
+        } else if (name.substring(name.length - 4, name.length) === "talk") {
+          let thisEntry = {
+            name: name.replace(/ talk/g, ""),
+            file: entry.name,
+          };
+          talks.push(thisEntry);
         } else {
           let thisEntry = {
             name: name,
-            file: entry.name
+            file: entry.name,
           };
           misc.push(thisEntry);
         }
