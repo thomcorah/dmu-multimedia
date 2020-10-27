@@ -80,12 +80,12 @@ listLabSheets = () => {
           misc.push(thisEntry);
         }
       });
-      writeList(lectures, labs, misc);
+      writeList(lectures, labs, talks, misc);
     });
   });
 };
 
-writeList = (lectures, labs, misc) => {
+writeList = (lectures, labs, talks, misc) => {
   let htmlstring =
     "<h1>All Files</h1><p>You've come here as a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
   htmlstring += "<h2>Lectures</h2>";
