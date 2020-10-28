@@ -27,6 +27,10 @@
     <script>
       let score = 0;
 
+      /*
+       * After showing either animal, we hide them again after an
+       * interval. These two functions hide the respective animals.
+       */
       hideMole = () => {
         document.getElementById("mole").style.display = "none";
       };
@@ -35,6 +39,10 @@
         document.getElementById("hedgehog").style.display = "none";
       };
 
+      /*
+       * This function will show either the mole or the hedgehog, and set a
+       * timer to hide it again after 500ms.
+       */
       showAnimal = () => {
         let showMole = Math.random() > 0.5;
         if (showMole) {
@@ -44,22 +52,36 @@
           document.getElementById("hedgehog").style.display = "block";
           setTimeout(hideHedgehog, 500);
         }
+
+        /*
+         * In order to randomise the time between animals, we start a new
+         * timer off each time.
+         */
+        let newTime = Math.random() * 1600 + 400;
+        setTimeout(showAnimal, newTime);
       };
 
-      let gameTimer = setInterval(showAnimal, 1000);
+      /* This sets the game going, after 1 second */
+      setTimeout(showAnimal, 1000);
 
+      /*
+       * Runs if the user clicks on a mole - adds one to the score
+       */
       hitMole = () => {
         score++;
-        console.log("Hit Mole");
         document.getElementById("score").textContent = score;
       };
 
+      /*
+       * Runs if the user taps the hedgehog - subtracts 1 from the score
+       */
       hitHedgehog = () => {
         score--;
         console.log("HIT");
         document.getElementById("score").textContent = score;
       };
 
+      /* Adds an event listener to each animal */
       document.getElementById("mole").addEventListener("click", hitMole);
       document
         .getElementById("hedgehog")
