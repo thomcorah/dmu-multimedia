@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        height: 100vh;
+      }
+
+      .animal {
+        width: 100%;
+        display: none;
+      }
+
+      #score {
+        font-size: 2em;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="score">0</div>
+    <img class="animal" id="mole" src="img/mole.png" />
+    <img class="animal" id="hedgehog" src="img/hedgehog.png" />
+
+    <script>
+      let score = 0;
+
+      hideMole = () => {
+        document.getElementById("mole").style.display = "none";
+      };
+
+      hideHedgehog = () => {
+        document.getElementById("hedgehog").style.display = "none";
+      };
+
+      showAnimal = () => {
+        let showMole = Math.random() > 0.5;
+        if (showMole) {
+          document.getElementById("mole").style.display = "block";
+          setTimeout(hideMole, 500);
+        } else {
+          document.getElementById("hedgehog").style.display = "block";
+          setTimeout(hideHedgehog, 500);
+        }
+      };
+
+      let gameTimer = setInterval(showAnimal, 1000);
+
+      hitMole = () => {
+        score++;
+        console.log("Hit Mole");
+        document.getElementById("score").textContent = score;
+      };
+
+      hitHedgehog = () => {
+        score--;
+        console.log("HIT");
+        document.getElementById("score").textContent = score;
+      };
+
+      document.getElementById("mole").addEventListener("click", hitMole);
+      document
+        .getElementById("hedgehog")
+        .addEventListener("click", hitHedgehog);
+    </script>
+  </body>
+</html>
