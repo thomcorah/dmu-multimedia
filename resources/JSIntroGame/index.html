@@ -6,6 +6,7 @@
     <style>
       body {
         height: 100vh;
+        margin: 0;
       }
 
       .animal {
@@ -13,19 +14,39 @@
         display: none;
       }
 
-      #score {
+      #score,
+      #time {
         font-size: 2em;
         font-family: sans-serif;
+      }
+
+      #gameover {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        width: 100vw;
+        display: none;
       }
     </style>
   </head>
   <body>
-    <div id="score">0</div>
+    <div id="score">Score: 0</div>
+    <div id="time">Time Remaining: 30</div>
     <img class="animal" id="mole" src="img/mole.png" />
     <img class="animal" id="hedgehog" src="img/hedgehog.png" />
 
+    <div id="gameover">
+      <h1>Game Over</h1>
+      <p id="endScore"></p>
+    </div>
+
     <script>
       let score = 0;
+      let timeRemaining = 3;
+      let playing = true;
 
       /*
        * After showing either animal, we hide them again after an
@@ -55,10 +76,13 @@
 
         /*
          * In order to randomise the time between animals, we start a new
-         * timer off each time.
+         * timer off each time. We only do this if the game is still being played.
          */
-        let newTime = Math.random() * 1600 + 400;
-        setTimeout(showAnimal, newTime);
+
+        if (playing) {
+          let newTime = Math.random() * 1600 + 400;
+          setTimeout(showAnimal, newTime);
+        }
       };
 
       /* This sets the game going, after 1 second */
@@ -69,7 +93,7 @@
        */
       hitMole = () => {
         score++;
-        document.getElementById("score").textContent = score;
+        document.getElementById("score").textContent = "Score: " + score;
       };
 
       /*
@@ -78,7 +102,7 @@
       hitHedgehog = () => {
         score--;
         console.log("HIT");
-        document.getElementById("score").textContent = score;
+        document.getElementById("score").textContent = "Score: " + score;
       };
 
       /* Adds an event listener to each animal */
@@ -86,6 +110,30 @@
       document
         .getElementById("hedgehog")
         .addEventListener("click", hitHedgehog);
+
+      /* We give the user 30 seconds to play the game. This is done with a
+       * timer that goes off every second and updates the timeRemaining variable.
+       */
+      updateTime = () => {
+        // subtract 1 from the time remaining
+        timeRemaining--;
+        // update the display
+        document.getElementById("time").textContent =
+          "Time Remaining: " + timeRemaining;
+        // if time has run out...
+        if (timeRemaining <= 0) {
+          // no longer playing - this will stop new animals being shown
+          playing = false;
+          // stop the countdown timer
+          clearInterval(countdown);
+          // update and show the gameover screen
+          document.getElementById("endScore").textContent =
+            "You scored " + score + " points.";
+          document.getElementById("gameover").style.display = "block";
+        }
+      };
+
+      let countdown = setInterval(updateTime, 1000);
     </script>
   </body>
 </html>
