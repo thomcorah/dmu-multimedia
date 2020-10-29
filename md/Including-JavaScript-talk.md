@@ -2,6 +2,8 @@
 
 There are two ways to get some JavaScript into your webpage.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=beb37231-5a93-44ee-b66c-ac6200f63f1c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## On-Page
 
 At the bottom of your page, right before the closing `</body>` tag, add a `<script>` element. You can write JavaScript inside this element. For example:

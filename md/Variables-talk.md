@@ -2,6 +2,8 @@
 
 A variable is a container for some data.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=43327e65-fcb0-4195-91da-ac620115c06a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## What is a variable
 
 A variable is a container that can hold on to some data or information. For example, we might want to keep track of, and update, a users score. Or, we might want to hang on to a reference to an element on the screen so we can do a few things to it.

@@ -2,6 +2,8 @@
 
 Events happen all the time on a webpage. They might include things like the mouse moving, clicking, leaving or entering spaces, network activity, keyboard strokes etc etc.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=dcca105b-326b-4ec2-ac78-ac6201203742&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Responding to events
 
 In order to be able to respond to an event, we need to listen for it. To do this, the browser needs to know three things:

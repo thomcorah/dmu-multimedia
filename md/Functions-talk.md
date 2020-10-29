@@ -2,6 +2,8 @@
 
 Functions are an integral building block of JavaScript, allowing you to build out more complex code, make your code more readable, and respond more easily to events.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=80de23b8-83b9-45a7-97dc-ac62011f9813&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## What is a function
 
 Functions allow you to package together a number of lines of code and give them a name. This can be useful if you have some code that you want to reuse a number of times. Sometimes you need to be able to refer to a chunk of code too, such as when creating event listeners.
