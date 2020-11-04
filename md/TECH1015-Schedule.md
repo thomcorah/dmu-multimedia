@@ -56,3 +56,10 @@ Add either an audio or video clip to your page.
 ## Assessment Task
 
 Add style to your page. Change the text, change the background colour(s).
+
+## Week 6 (9th November)
+
+- Selecting based on class
+- Selecting based on id
+- Background images
+- Transparency

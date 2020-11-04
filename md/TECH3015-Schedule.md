@@ -62,20 +62,58 @@ Exercises in responsive design - create a slideshow that loads an image file bas
 
 ### Task
 
-- Design Challenge
+- Design Challenge - create an interactive prototype of a website
 
 ## Week 5 (2nd November)
 
 ### Lecture
 
+- style guides, design trends
+
 ### Lab
 
+- Back into JavaScript
+  - Variables
+  - Functions
+  - Events
+  - Referencing HTML elements
+
 ### Task
+
+- Create a simple game with JS
 
 ## Week 7 (16th November)
 
 ### Lecture
 
+- Content Strategy, mobile navigation
+
 ### Lab
 
+- API
+
 ### Task
+
+- Build a weather app
+
+## Week 8 (23rd November)
+
+### Lecture
+
+- extra resources, Information Design, Dark UI examples
+
+### Lab
+
+- Databases
+
+### Task
+
+- Add login and high scores to a game.
+
+## Topics
+
+- API
+- Databases
+- E-Commerce
+- Games Development
+- Web Audio
