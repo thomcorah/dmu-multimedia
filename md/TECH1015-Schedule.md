@@ -61,5 +61,9 @@ Add style to your page. Change the text, change the background colour(s).
 
 - Selecting based on class
 - Selecting based on id
+
+## Week 7 (16th November)
+
+- Semantic HTML elements
 - Background images
 - Transparency
