@@ -66,4 +66,3 @@ Add style to your page. Change the text, change the background colour(s).
 
 - Semantic HTML elements
 - Background images
-- Transparency
