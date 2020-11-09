@@ -1,0 +1,41 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+header,
+section,
+footer {
+  margin: 20px;
+  padding: 10px;
+}
+
+header,
+footer {
+  background-color: rgb(45, 44, 44);
+  color: white;
+}
+
+section {
+  background-color: white;
+}
+
+header h1 {
+  margin-top: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+nav a,
+footer a {
+  color: white;
+}
