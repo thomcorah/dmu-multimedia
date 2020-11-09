@@ -79,7 +79,7 @@ For example, we can set the background image to be a specific size:
 ```css
 header {
   background-image: url("../img/trees.jpg");
-  background-repeat: no-no-repeat;
+  background-repeat: no-repeat;
   background-size: 200px 100px;
 }
 ```
@@ -93,12 +93,20 @@ In order to set the size relative to the size of the element, we can use percent
 ```css
 header {
   background-image: url("../img/trees.jpg");
-  background-repeat: no-no-repeat;
+  background-repeat: no-repeat;
   background-size: 50%;
 }
 ```
 
 There are two other values for `background-size` that are really useful.
+
+Firstly though, here's a picture of a panda.
+
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/panda.jpg)
+
+Let's set this as the background image of a `<div>` that's 400px wide by 200px tall. This is the default behaviour - the image is its native size, which is larger than the `<div>`.
+
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/default.jpg)
 
 **Cover**  
 If we set the value of `background-size` to cover, this will resize the image, making it as small as it can whilst maintaining its aspect ratio, so that the whole element is filled with the background.
@@ -107,21 +115,73 @@ This will likely mean that we lose some of the image off the right-hand or botto
 
 ```css
 header {
-  background-image: url("../img/trees.jpg");
-  background-repeat: no-no-repeat;
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 ```
+
+Let's see what this does to our panda.
+
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/cover.jpg)
 
 **Contain**
 This will resize the image, maintaining its aspect ratio, so that it is as large as possible whilst being fully contained within the boundaries of the element. While this means we will see the whole image, it likely means that not all of the element will be covered.
 
 ```css
 header {
-  background-image: url("../img/trees.jpg");
-  background-repeat: no-no-repeat;
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
   background-size: contain;
 }
 ```
 
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/contain.jpg)
+
 ## Background position
+
+By default, a background image (or the first iteration if it's repeated) will start from the top-left corner of the element. We might want to change this though. We can do this with the `background-position` CSS property.
+
+It takes two values, one for placement horizontally, and the second for placement vertically.
+
+If you only provide one value, the other will be centred.
+
+If we wanted to place a background image towards the bottom-left of an element, we might do something like this.
+
+```CSS
+header {
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 20% 80%;
+}
+```
+
+The image will start 20% of the way along the element horizontally, and 80% of the way down the element vertically.
+
+We can also use keywords. Horizontal placement can be specified with `left`, `center`, and `right`. Vertical placement with `top`, `center`, and `bottom`.
+
+For example, this will place the image in the bottom-left corner of the element:
+
+```CSS
+header {
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+```
+
+Looking back at our panda, if we wanted to cover the element, but move the image so that we see the panda's face, we might have some CSS that looks like this:
+
+```css
+div {
+  background-image: url("img/panda.jpg");
+  background-size: cover;
+  background-position: center 75%;
+}
+```
+
+Resulting in a lovely picture:
+
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/centred.jpg)
