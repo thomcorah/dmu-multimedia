@@ -106,7 +106,7 @@ Firstly though, here's a picture of a panda.
 
 Let's set this as the background image of a `<div>` that's 400px wide by 200px tall. This is the default behaviour - the image is its native size, which is larger than the `<div>`.
 
-![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/default.jpg)
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/default.png)
 
 **Cover**  
 If we set the value of `background-size` to cover, this will resize the image, making it as small as it can whilst maintaining its aspect ratio, so that the whole element is filled with the background.
@@ -123,7 +123,7 @@ header {
 
 Let's see what this does to our panda.
 
-![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/cover.jpg)
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/cover.png)
 
 **Contain**
 This will resize the image, maintaining its aspect ratio, so that it is as large as possible whilst being fully contained within the boundaries of the element. While this means we will see the whole image, it likely means that not all of the element will be covered.
@@ -136,7 +136,7 @@ header {
 }
 ```
 
-![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/contain.jpg)
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/contain.png)
 
 ## Background position
 
@@ -172,6 +172,8 @@ header {
 }
 ```
 
+**Note:** American spelling here - center, not centre.
+
 Looking back at our panda, if we wanted to cover the element, but move the image so that we see the panda's face, we might have some CSS that looks like this:
 
 ```css
@@ -184,4 +186,4 @@ div {
 
 Resulting in a lovely picture:
 
-![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/centred.jpg)
+![Panda](https://thomcorah.github.io/dmu-multimedia/resources/img/background-images/centred.png)
