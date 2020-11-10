@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+
+  background-image: url("../img/background.jpg");
+}
+
+header {
+  padding: 30px;
+  margin: 20px;
+  width: 25%;
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: 50% 20%;
+}
