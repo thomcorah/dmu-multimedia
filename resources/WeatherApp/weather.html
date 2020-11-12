@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Where You Are</title>
+  </head>
+
+  <style>
+
+  body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #fff;
+    background: #888;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  section{
+    min-height: 100%;
+  }
+
+  h1{
+    font-size: 2em;
+    padding: 0 0.3em;
+    line-height: 1em;
+  }
+
+  p{
+    padding: 0 1em;
+  }
+
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5em;
+  }
+
+  </style>
+  <body>
+
+    <section>
+      <h1 id="city">Weather Where You Are</h1>
+      <p><span id="temperature"></span> <span id="weather">by Thom Corah</span></p>
+    </section>
+
+
+    <footer>
+      <p>Powered by <a href="http://flickr.com/services/api">Flickr</a> and <a href="http://openweathermap.org">Open Weather Map</a>.</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script id="runFlickrScript"></script>
+
+    <script>
+
+    // First off, get the location
+    $.getJSON('http://ipinfo.io', function(data){
+      console.log(data);
+      var location = data.loc.split(',');
+
+      /* armed with the location information, we can run a function
+       * to get the weather data.
+       */
+      getWeather(location[0], location[1], data.city);
+    });
+
+
+    function getWeather(lat, lon, city){
+      /* We're using an AJAX call here as we need to send a GET request to the
+       * Open Weather Map API and include some additional parameters.
+       */
+      $.ajax({
+        url: 'http://api.openweathermap.org/data/2.5/weather',
+        data: {lat: lat,
+               lon: lon,
+               APPID: 'faa5f3cbac49209a59c3a86dfeb48128',
+               units: 'metric'},
+        success: function onSuccess(result){
+          console.log(result);
+          /* With the weather data, we can now update the text components
+           * of our UI. In the case of temperature, we've got a value in
+           * degrees centigrade, so we want to display the degrees symbol
+           * after the number. This is what &deg will do.
+           */
+          $('#city').html(city);
+          $('#temperature').html(result.main.temp + '&deg');
+          $('#weather').html(result.weather[0].main);
+
+          // Now we go to get a photo.
+          getPhoto(location[0], location[1], result.weather[0].main);
+        }
+      })
+
+    }
+
+
+    function getPhoto(lat, lon, weather){
+      /* Again, we're using an ajax request here as we need to use GET and
+       * send some additional parameters. The url_l for the extras property
+       * asks Flickr to send us the url for the large version of this image.
+       * you can also get small ones (url_s), square ones (url_sq) and all
+       * sorts of others. Details are in Flickr's API docs.
+       */
+      $.ajax({
+        url: 'https://api.flickr.com/services/rest/',
+        data: {method: 'flickr.photos.search',
+               api_key: '4fbcdfa0d1502a47f58b4df2ebaf13ac',
+               format: 'json',
+               extras: 'url_l',
+               lat: lat,
+               lon: lon,
+               tags: weather,
+               per_page: 1},
+        success: function onSuccess(result){
+          /* Fickr actually gives us back a function call, so we inject that into an
+           * empty <script> element to have it run.
+           */
+          $('#runFlickrScript').html(result);
+        }
+      })
+
+
+    }
+
+    /* This is the function that Flickr mandates we create to handle the result of
+     * the API call.
+     */
+    function jsonFlickrApi(data){
+      console.log('DATA', data);
+      $('body').css('background-image', 'url(' + data.photos.photo[0].url_l +')');
+    }
+
+    </script>
+
+
+  </body>
+</html>
