@@ -1,6 +1,6 @@
 # Arrays
 
-Arrays are used in JavaScript to keep lists of data.
+Arrays are used in JavaScript to keep lists of data
 
 <iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=4a91466a-2d12-400f-999f-ac700102e218&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
