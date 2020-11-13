@@ -55,7 +55,7 @@
       </p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script id="runFlickrScript"></script>
 
@@ -71,7 +71,7 @@
         getWeather(location[0], location[1], data.city);
       });
 
-      function getWeather(lat, lon, city) {
+      getWeather = (lat, lon, city) => {
         /* We're using an AJAX call here as we need to send a GET request to the
          * Open Weather Map API and include some additional parameters.
          */
@@ -95,12 +95,12 @@
             $("#weather").html(result.weather[0].main);
 
             // Now we go to get a photo.
-            getPhoto(location[0], location[1], result.weather[0].main);
+            getPhoto(lat, lon, result.weather[0].main);
           },
         });
-      }
+      };
 
-      function getPhoto(lat, lon, weather) {
+      getPhoto = (lat, lon, weather) => {
         /* Again, we're using an ajax request here as we need to use GET and
          * send some additional parameters. The url_l for the extras property
          * asks Flickr to send us the url for the large version of this image.
@@ -118,6 +118,8 @@
             lon: lon,
             tags: weather,
             per_page: 1,
+            has_geo: 1,
+            radius: 20,
           },
           success: function onSuccess(result) {
             /* Fickr actually gives us back a function call, so we inject that into an
@@ -126,18 +128,18 @@
             $("#runFlickrScript").html(result);
           },
         });
-      }
+      };
 
       /* This is the function that Flickr mandates we create to handle the result of
        * the API call.
        */
-      function jsonFlickrApi(data) {
+      jsonFlickrApi = (data) => {
         console.log("DATA", data);
         $("body").css(
           "background-image",
           "url(" + data.photos.photo[0].url_l + ")"
         );
-      }
+      };
     </script>
   </body>
 </html>
