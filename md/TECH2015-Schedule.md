@@ -45,8 +45,8 @@ Simple JS Maths game
 
 ## Week 7 (16th November)
 
-- More JavaScript
+- More JavaScript, Arrays, Loops, and Objects
 
 ## Task
 
-Js Maths game v2.0
+Js Maths game v3.0

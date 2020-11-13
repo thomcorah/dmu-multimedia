@@ -29,6 +29,14 @@ Scroll down to the section called Other CDNs, and click on Google CDN. This will
 </html>
 ```
 
+The way that jQuery works may look a little odd to you. The jQuery library contains lots of functions. They are all accessed through a master jQuery object, \$.
+
+For example, jQuery has a getJSON function. To access it, you would use:
+
+```js
+$.getJSON();
+```
+
 ## Setting up the Interface
 
 ![Weather App Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/img/weatherApp.png)
@@ -162,7 +170,9 @@ $.ajax({
 });
 ```
 
-The success parameter here specifies what to do when the data is received. There is also an error method to catch any errors, perhaps to be able to report back to the user. Anyhow, in this success function you can update the text components of your interface by pulling data out of the object that’s returned.
+The success parameter here specifies what to do when the data is received. There is also an error method to catch any errors, perhaps to be able to report back to the user. Note that functions specified as object methods (as here) have to use the `function` keyword syntax, you can't use => arrow functions here.
+
+Anyhow, in this success function you can update the text components of your interface by pulling data out of the object that’s returned.
 
 If you log the returned object to the console you’ll see that it’s got quite a lot of data in it, so you’ll have to dig into it a bit to get what you want. You can see that the temperature is at main.temp. A nice description of the weather however is a little trickier. It’s inside the weather object, but this object contains an array of just one item. Inside that item we then have the main property, with the value ‘Clouds’. This should do nicely. In order to get to it we need to dig in like so: weather[0].main.
 
@@ -257,9 +267,9 @@ As soon as the result is injected into the `<script>` element, it will be evalua
 So, back to point 1. Create your jsonFlickrApi function and log out what comes in.
 
 ```js
-function jsonFlickrApi(data) {
+jsonFlickrApi = (data) => {
   console.log("DATA", data);
-}
+};
 ```
 
 You’ll see that as with the data we got from Open Weather Map, we’ve got a little digging to do. Inside the object we’ve got a photos object, inside which is a photo array. The first item in here is the photo we want, and comes with lots of information, including the url_l property we asked for to get the URL of the large form of the image.
@@ -267,10 +277,10 @@ You’ll see that as with the data we got from Open Weather Map, we’ve got a l
 This is what we’re after. We want to set the background-image property of the `<body>` element to this URL. Again, we can use jQuery to do this with the css() method.
 
 ```js
-function jsonFlickrApi(data) {
+jsonFlickrApi = (data) => {
   console.log("DATA", data);
   $("body").css("background-image", "url(" + data.photos.photo[0].url_l + ")");
-}
+};
 ```
 
 Notice here that we can’t just supply the URL as the parameter for the background image, we need to wrap it up in the url() identifier as this is CSS we’re dealing with.
