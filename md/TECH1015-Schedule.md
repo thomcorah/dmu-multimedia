@@ -76,3 +76,9 @@ Add style to your page. Change the text, change the background colour(s).
 - Floating elements
 
 - Lab: Floating-With-CSS
+
+## Week 9 (30th November)
+
+- Flexbox
+
+- Lab: flexbox-lab
