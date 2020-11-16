@@ -66,3 +66,13 @@ Add style to your page. Change the text, change the background colour(s).
 
 - Semantic HTML elements
 - Background images
+
+## Week 8 (23rd November)
+
+- Box Model inc
+  - Padding
+  - margin
+  - box sizing
+- Floating elements
+
+- Lab: Floating-With-CSS
