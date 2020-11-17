@@ -2,6 +2,8 @@
 
 We can make HTML elements sit side-by-side, or have them flow around each other, by floating them. Watch out though, there's a big snag to watch out for!
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=a08df481-90e4-4707-af56-ac7600b2d4af&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Floating an element
 
 There are broadly two situation in which we might want elements to be able to sit side-by-side.
@@ -25,7 +27,7 @@ section.column {
 }
 ```
 
-## Clearing the float
+## Clearing the floats
 
 We can run into a problem. When an element is floated, its size is no longer used when calculating the size of its parent. In the second example with two columns, everything was floated so the body had no height.
 

@@ -2,6 +2,8 @@
 
 The box model describes how all elements are viewed by the browser - as rectangles with layers.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=0d6edef4-ee77-41ea-b712-ac7600b1bb2c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## The layers
 
 There are four layers:
