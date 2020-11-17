@@ -6,11 +6,71 @@
     <title></title>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      img {
+        width: 50%;
+        float: left;
+      }
+
+      .col {
+        width: 50%;
+        float: left;
+      }
+
+      .floatfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>All About Pandas</h1>
-    </header>
-    <img src="img/panda.jpg" alt="a panda" />
+    <!-- These are some changes -->
+    <section class="floatfix">
+      <div class="col">
+        <h1>Pandas</h1>
+        <img src="img/panda.jpg" alt="A Panda" />
+        <p>A paragraph of text</p>
+        <p>
+          A paragraph of text. Another paragraph of text. Another paragraph of
+          text. Another paragraph of text. Another paragraph of text. Another
+          paragraph of text
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          A paragraph of text. Another paragraph of text. Another paragraph of
+          text. Another paragraph of text. Another paragraph of text. Another
+          paragraph of text
+        </p>
+      </div>
+    </section>
+
+    <div>
+      <h1>Jaguars</h1>
+      <p>
+        A paragraph about jaguars. A paragraph about jaguars. A paragraph about
+        jaguars. A paragraph about jaguars. A paragraph about jaguars. A
+        paragraph about jaguars.
+      </p>
+      <p>
+        A paragraph about jaguars. A paragraph about jaguars. A paragraph about
+        jaguars. A paragraph about jaguars. A paragraph about jaguars. A
+        paragraph about jaguars.
+      </p>
+      <p>
+        A paragraph about jaguars. A paragraph about jaguars. A paragraph about
+        jaguars. A paragraph about jaguars. A paragraph about jaguars. A
+        paragraph about jaguars.
+      </p>
+      <p>
+        A paragraph about jaguars. A paragraph about jaguars. A paragraph about
+        jaguars. A paragraph about jaguars. A paragraph about jaguars. A
+        paragraph about jaguars.
+      </p>
+    </div>
   </body>
 </html>
