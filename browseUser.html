@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <script
+      src="https://kit.fontawesome.com/a89069ad2d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         font-family: sans-serif;
@@ -21,6 +25,7 @@
   </head>
   <body>
     <input id="username" /><button id="go">Find</button>
+    <div id="usersContainer"></div>
     <div id="container"></div>
     <div id="repoContainer"></div>
 
@@ -69,7 +74,10 @@
             data.forEach((entry) => {
               if (entry.name.includes(".html")) {
                 let link = document.createElement("a");
-                link.appendChild(document.createTextNode(entry.name));
+                let fileIcon = document.createElement("i");
+                fileIcon.className = "fas fa-file-code";
+                link.appendChild(fileIcon);
+                link.appendChild(document.createTextNode(" " + entry.name));
                 link.setAttribute(
                   "href",
                   "https://" +
@@ -79,23 +87,30 @@
                     "/" +
                     entry.path
                 );
-                link.setAttribute("target", "_blank");
+                //link.setAttribute("target", "_blank");
                 document.getElementById("repoContainer").appendChild(link);
               } else if (!entry.name.includes(".")) {
                 let link = document.createElement("a");
-                link.appendChild(document.createTextNode(entry.name));
+                let folderIcon = document.createElement("i");
+                folderIcon.className = "fas fa-folder";
+                link.appendChild(folderIcon);
+                link.appendChild(document.createTextNode(" " + entry.name));
                 link.setAttribute("href", "#");
                 link.setAttribute("data-repo", repoName);
                 link.setAttribute("data-path", entry.path);
                 link.addEventListener("click", selectRepo);
                 document.getElementById("repoContainer").appendChild(link);
+              } else {
+                let listing = document.createElement("span");
+                listing.appendChild(document.createTextNode(entry.name));
+                document.getElementById("repoContainer").appendChild(listing);
               }
             });
           });
         });
       };
 
-      findUser = () => {
+      selectUser = (evt) => {
         username = document.getElementById("username").value;
 
         fetch(
@@ -122,7 +137,40 @@
         });
       };
 
-      document.getElementById("go").addEventListener("click", findUser);
+      searchUser = () => {
+        document.getElementById("usersContainer").innerHTML = "";
+        username = document.getElementById("username").value;
+        const queryString =
+          "q=" + encodeURIComponent(username + " in:login type:user");
+        let theseoptions = {
+          headers: {
+            Accept: "application/vnd.github.v3+json",
+          },
+        };
+        fetch(
+          "https://api.github.com/search/users?q=" + username + "+in:%3Elogin",
+          theseoptions
+        ).then((response) => {
+          response.json().then((data) => {
+            console.log(data);
+            data.items.forEach((user) => {
+              let cont = document.createElement("div");
+              cont.className = "repoLabel";
+              let name = document.createTextNode(user.login + ": ");
+              cont.appendChild(name);
+              let button = document.createElement("button");
+              button.setAttribute("data-username", user.login);
+              button.appendChild(document.createTextNode("View"));
+              button.addEventListener("click", selectUser);
+              cont.appendChild(button);
+              let container = document.getElementById("usersContainer");
+              container.appendChild(cont);
+            });
+          });
+        });
+      };
+
+      document.getElementById("go").addEventListener("click", selectUser);
     </script>
   </body>
 </html>
