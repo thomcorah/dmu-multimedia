@@ -1,12 +1,15 @@
-header {
-  padding: 30px;
-  margin: 20px;
-  width: 25%;
-  background-image: url("../img/panda.jpg");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: 50% 20%;
+body {
+  font-family: sans-serif;
+}
+nav {
+  text-align: center;
 }
 
-/* Some changes */
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 3px;
+  margin: 5%;
+}
