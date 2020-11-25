@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      img {
+        width: 100%;
+        background-image: url("background.jpg");
+        background-size: 300%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+      }
+
+      div {
+        background-color: rgb(131, 99, 14);
+        height: 50vh;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <img src="catInWindow.png" />
+    <div></div>
+    <script>
+      window.addEventListener("scroll", (evt) => {
+        var body = document.body,
+          html = document.documentElement;
+
+        var height = Math.max(
+          body.scrollHeight,
+          body.offsetHeight,
+          html.clientHeight,
+          html.scrollHeight,
+          html.offsetHeight
+        );
+        console.log(evt.target.body.scrollTop);
+        let scrollPos = 1 - window.pageYOffset / window.innerHeight;
+
+        let img = document.querySelector("img");
+        img.style.backgroundPosition = "50%" + scrollPos * 100 + "%";
+      });
+    </script>
+  </body>
+</html>
