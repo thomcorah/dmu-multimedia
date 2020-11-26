@@ -166,10 +166,30 @@
         height: 100%;
         border-radius: 5px;
       }
+
+      #game-over-container {
+        height: 100vh;
+        position: fixed;
+        pointer-events: none;
+        transition: opacity 1s;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        width: 100vw;
+        opacity: 0;
+      }
     </style>
   </head>
   <body>
     <div id="game-container"></div>
+    <div id="game-over-container">
+      <h1>Well Done</h1>
+      <h2 id="attemptsDisplay"></h2>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
@@ -292,6 +312,11 @@
               // Except if matched equals the number of pairs, all the pairs have been found.
               if (matched == pairs) {
                 console.log("SUCCESS");
+                document.getElementById("attemptsDisplay").textContent =
+                  "You took " + attempts + " attempts";
+                document.getElementById(
+                  "game-over-container"
+                ).style.opacity = 1;
               }
             }
           }
