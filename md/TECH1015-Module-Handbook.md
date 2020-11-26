@@ -26,7 +26,7 @@
 [Blackboard - Virtual Learning Environment](#blackboard)  
 [Plagiarism](#plagiarism)  
 [Assessment](#assessment)  
-[Informal Assessment](#ia)
+[Informal Assessment](#ia)  
 [Coursework 1](#cw1)  
 [Coursework 2](#cw2)
 
