@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<!--
+  This game uses some CSS, HTML, and JS from a Pen on CodePen:
+
+    http://codepen.io/tjegan/pen/zrMdEO
+
+  Most of the CSS here is copied directly from there. A good deal has been stripped out as
+  it was unneccessary for our cards that simply show an image on each face.
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      * {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        color: #fff;
+        background: #333333;
+        height: 100%;
+        width: 100%;
+      }
+
+      #game-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 14px;
+        box-sizing: border-box;
+      }
+
+      .cardRow {
+        display: flex;
+      }
+
+      .box {
+        height: 150px;
+        width: 200px;
+        background-color: #e8e8e8;
+      }
+
+      .card--container {
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        height: 200px;
+        width: 150px;
+        margin: 30px;
+      }
+
+      .card--container * {
+        pointer-events: none;
+      }
+
+      .card--container.flip .card--flipper {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+      }
+
+      .card--container:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      .card--container:hover .side,
+      .card--container:hover .side--a,
+      .card--container:hover .side--b {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      .card--container:hover i {
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+      }
+
+      .card--flipper {
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+
+      .side,
+      .side--a,
+      .side--b {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 150px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+
+      .side--a {
+        z-index: 2;
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        background-color: #50abf1;
+        border: 8px solid #50abf1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        color: #50abf1;
+      }
+
+      .side--b {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        background-color: #24cf5f;
+        border: 8px solid #24cf5f;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        color: #24cf5f;
+      }
+
+      body {
+        background-color: #fff;
+      }
+
+      h3 {
+        font-size: 2em;
+        margin-bottom: 2em;
+        color: #333333;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      /* We start off by setting up some variables to store the state of the game.
+       *
+       * matched keeps track of how many pairs have been matched.
+       */
+      let matched = 0;
+
+      /* attempts is how many attempts have been made i.e. how many pairs of cards
+       * have been attempted.
+       */
+      let attempts = 0;
+
+      /* We will need to compare pairs of cards, so we need a way to store the
+       * first card that's flipped, so we can check it against the second.
+       */
+      let firstCard = null;
+
+      /*
+       * We want to know how many card pairs there are, so we'll know
+       * when they've all been found. The value for this will be set
+       * during initialisation.
+       */
+      let pairs;
+
+      shuffle = (array) => {
+        /* This shuffle algorithm comes from Stack Overflow
+         * http://stackoverflow.com/a/2450976
+         */
+        var currentIndex = array.length,
+          temporaryValue,
+          randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      };
+
+      handleCardClick = (evt) => {
+        console.log(evt);
+
+        /*
+         * We first check to see if the card has already been flipped over.
+         * We only want to proceed if it hasn't already been flipped over.
+         * We therefore check to make sure the classList doesn't contain 'flip'.
+         */
+
+        if (!evt.target.classList.contains("flip")) {
+          /* When the event gets triggered on a particular card, we use the classList property
+           * to add the 'flip' class name. This kicks off
+           * the animated transition to flip the card over.
+           */
+          evt.target.classList.add("flip");
+
+          /* If firstCard is null, this means the first card of a pair hasn't yet been
+           * flipped over i.e. this is the first card of the pair.
+           */
+          if (firstCard == null) {
+            firstCard = evt.target;
+          } else {
+            /* If firstCard isn't null, we already have a firstCard so we need to check to
+             * see if the two cards match up.
+             * First off though, we can increment attempts to add one more attempt.
+             */
+            attempts++;
+            console.log("ATTEMPTS", attempts);
+
+            /* We find out the animal shown on the first card by inspecting its
+             * data-card attribute. We set this in the HTML string built up during
+             * initialisation.
+             */
+            let firstAnimal = firstCard.getAttribute("data-card");
+
+            // We also find out the animal on the second card - the one that's just been flipped.
+            let secondAnimal = evt.target.getAttribute("data-card");
+
+            // If the two animals don't match...
+            if (firstAnimal != secondAnimal) {
+              /* We use setTimeout to leave the two cards displayed briefly
+               * before turning them back over.
+               */
+              setTimeout(function () {
+                firstCard.classList.remove("flip");
+                evt.target.classList.remove("flip");
+
+                /* We also need to set firstCard back to null, so that the user can pick
+                 * another pair.
+                 */
+                firstCard = null;
+              }, 500);
+            } else {
+              /* If the two cards do match however, we want to do things differently.
+               *
+               * First off, we remove the click event listeners on both cards.
+               * We don't want the user to be able to flip them back over once
+               * they've got a match.
+               */
+
+              firstCard.removeEventListener("click", handleCardClick);
+              evt.target.removeEventListener("click", handleCardClick);
+
+              // We increment matched.
+              matched++;
+              console.log("CARDS MATCHED", matched);
+
+              // We set firstCard back to null ready for another pair.
+              firstCard = null;
+
+              // Except if matched equals the number of pairs, all the pairs have been found.
+              if (matched == pairs) {
+                console.log("SUCCESS");
+              }
+            }
+          }
+        }
+      };
+      initialise = () => {
+        /* We create a local array of the cards to be used. These correspond to the
+         * the file names of the images to be used.
+         */
+        let animals = [
+          "elephant",
+          "elephant",
+          "gorilla",
+          "gorilla",
+          "leopard",
+          "leopard",
+          "rhino",
+          "rhino",
+          "turtle",
+          "turtle",
+          "orangutan",
+          "orangutan",
+        ];
+
+        // Set the number of pairs
+        pairs = 6;
+
+        /* We then need to shuffle the deck.
+         * See above for the function that does this.
+         */
+        let cardOrder = shuffle(animals);
+
+        /* Now that we've got a list of cards in a random order, we can place the cards.
+         * We're going to make rows that are 4 cards long. It just so happens that with
+         * 12 cards to place, we get an even number of rows.
+         * However, a little maths could work out the placing and number of rows
+         * automatically.
+         * In any case, we're going to build up a string of HTML and insert this
+         * into the DOM. To do that, we start off with an empty string called
+         * html.
+         */
+        let html = "";
+
+        // We then need to loop over our array of cards.
+        for (i in cardOrder) {
+          /* If we're at the start of a row, we need to add the opening <div> tag
+           * for the container that will hold the row of cards.
+           * We do that by using the modulo operator. That's the %. What this does is
+           * divide i by 4 and get the remainder. With a row length of 4, this means we
+           * effectively get a remainder of 0 at the beginning of each row.
+           */
+          if (i % 4 == 0) {
+            html += '<div class="cardRow">';
+          }
+
+          /* And build the html for this particular card.
+           * This looks a little confusing as it's all on one line. You can work out the
+           * structure of the html though. We have a container div, inside which an inner
+           * container does the actual flipping of the card. We then have two inner <div>
+           * elements, one for each side of the card.
+           */
+          html +=
+            '<div class="card--container" data-card="' +
+            cardOrder[i] +
+            '"><div class="card--flipper"><div class="side--a"><img src="img/cardBack.png"></div><div class="side--b"><img src="img/' +
+            cardOrder[i] +
+            '.jpg"></div></div></div>';
+
+          // If we're at the end of a row, we need the closing </div> tag for the row.
+          if (i % 4 == 3) html += "</div>";
+        }
+
+        /* Once we've gone through all the cards and built up our HTML string,
+         * we can pop this into the DOM.
+         */
+        document.getElementById("game-container").innerHTML = html;
+
+        /* We need to add an event listener to every card to listen out for a click event */
+        let cards = document.querySelectorAll(".card--container");
+        console.log(cards);
+
+        cards.forEach((thisCard) => {
+          console.log(thisCard);
+          thisCard.addEventListener("click", handleCardClick);
+        });
+      };
+
+      /* With all that set up, we can now run the initialise function.
+       */
+      initialise();
+    </script>
+  </body>
+</html>
