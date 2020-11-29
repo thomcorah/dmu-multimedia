@@ -4,6 +4,8 @@ In this lab we’re going to bring a few things together to make a card flip gam
 
 You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/CardFlip/>
 
+This is quite a trick one, so once you've had a play, open up the source code to refer to if you need to.
+
 ![Card Flip Game](https://thomcorah.github.io/dmu-multimedia/resources/img/cardFlip.png)
 
 There are a number of steps we’re going to run through to achieve this.
