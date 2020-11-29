@@ -396,15 +396,12 @@
 
         /* We need to add an event listener to every card to listen out for a click event */
         let cards = document.querySelectorAll(".card--container");
-        console.log(cards);
-
         cards.forEach((thisCard) => {
-          console.log(thisCard);
           thisCard.addEventListener("click", handleCardClick);
         });
       };
 
-      /* With all that set up, we can now run the initialise function.
+      /* With all that set up ready, we can now run the initialise function.
        */
       initialise();
     </script>
