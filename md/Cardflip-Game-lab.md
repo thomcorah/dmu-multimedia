@@ -32,7 +32,7 @@ With this all in place, load up your HTML file in the browser. Hopefully it work
 
 However, it’s not showing a picture of an animal! There are six animal pictures we want to use. You can find them all zipped up here:
 
-<https://thomcorah.github.io/dmu-multimedia/resources/cardFlip/img.zip>
+<https://thomcorah.github.io/dmu-multimedia/resources/CardFlip/img.zip>
 
 There's also an image for the back of the card in there.
 
