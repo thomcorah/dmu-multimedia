@@ -16,7 +16,7 @@ There are a number of steps we’re going to run through to achieve this.
 
 ## A Card That Flips
 
-This bit’s quite straightforward as we’re going to borrow what somebody else has done. If you have a look at the pen at http://codepen.io/tjegan/pen/zrMdEO you’ll see that this does a nice card flip, so we're going to grab that.
+This bit’s quite straightforward as we’re going to borrow what somebody else has done. If you have a look at the pen at <http://codepen.io/tjegan/pen/zrMdEO> you’ll see that this does a nice card flip, so we're going to grab that.
 
 - Create a new HTML document with the normal boilerplate stuff in it.
 - Create a CSS file and link it in.
