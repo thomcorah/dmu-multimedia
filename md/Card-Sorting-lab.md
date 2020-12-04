@@ -26,7 +26,7 @@ In no particular order, the airline’s website needs to contain the following p
 
 You need to come up with a heading for each that will be both succinct enough to provide a menu item, but also describes enough of what information it leads to.
 
-Once you have your headings, it’s time to think about how these might be arranged into some kind of navigational structure. This is where a card sorting exercise can prove useful. You can either do this manually, ripping up some paper into squares and writing a heading on each. Or you can use an online tool such as that provided by Optimal Workshop:
+Once you have your headings, it’s time to think about how these might be arranged into some kind of navigational structure. This is where a card sorting exercise can prove useful. You can do this manually, ripping up some paper into squares and writing a heading on each. Or you can use an online tool such as that provided by Optimal Workshop to create something you can share remotely:
 <https://www.optimalworkshop.com/optimalsort>
 
 The aim of this exercise is to have lots of potential users sort the headings into logical groupings. The strength here is in numbers as you’re looking to spot trends in the way the cards are sorted. So, co-opt others into sorting your cards. If you’ve used Optimal Sort, you can invite people to do this in a browser. Be aware though that you need to get this done now, otherwise you can’t really continue with this in the lab.
