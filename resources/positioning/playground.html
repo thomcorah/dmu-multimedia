@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      .flexCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+      .container {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+        border: 2px solid green;
+      }
+
+      .contents {
+        width: 20%;
+        height: 20%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexCont">
+      <h1>Positioning Playground</h1>
+      <label
+        >Positioning Mode
+        <select>
+          <option value="static">Static</option>
+          <option value="relative">Relative</option>
+          <option value="absolute">Absolute</option>
+          <option value="fixed">fixed</option>
+        </select>
+      </label>
+      <label>Top <input id="top" /></label>
+      <label>Bottom <input id="bottom" /></label>
+      <label>Left <input id="left" /></label>
+      <label>Right <input id="right" /></label>
+
+      <div class="container">
+        <div class="contents"></div>
+      </div>
+    </div>
+  </body>
+</html>
