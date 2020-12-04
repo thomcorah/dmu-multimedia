@@ -2,6 +2,8 @@
 
 There are a number of ways in which you can change the position of an element with CSS.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=9cc2384c-01e9-40d5-bf84-ac87010f5142&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Positioning Modes
 
 There are four modes for positioning an element.
@@ -89,7 +91,7 @@ This will allow you to position an element relative to the browser window. This 
 
 **Note:** When you use fixed positioning, it becomes an inline element. Its width contracts to that necessary for its contents. Furthermore, it will be pulled out of the page flow and sit in front of following elements.
 
-## Repositioning an Element
+## Specifying a Position
 
 With the positioning mode sorted out, we can then go on to actually reposition an element, except if it's static.
 
