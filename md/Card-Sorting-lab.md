@@ -29,6 +29,8 @@ You need to come up with a heading for each that will be both succinct enough to
 Once you have your headings, it’s time to think about how these might be arranged into some kind of navigational structure. This is where a card sorting exercise can prove useful. You can do this manually, ripping up some paper into squares and writing a heading on each. Or you can use an online tool such as that provided by Optimal Workshop to create something you can share remotely:
 <https://www.optimalworkshop.com/optimalsort>
 
+Note: You'll need sign up for a free account - unlimited time but restricted in the number of responses you can get to 10.
+
 The aim of this exercise is to have lots of potential users sort the headings into logical groupings. The strength here is in numbers as you’re looking to spot trends in the way the cards are sorted. So, co-opt others into sorting your cards. If you’ve used Optimal Sort, you can invite people to do this in a browser. Be aware though that you need to get this done now, otherwise you can’t really continue with this in the lab.
 
 Once you’ve had lots (or some) of people sort your cards, you should have a pretty good idea of how you might group this list of pages under headings on the website. This is really crucial as there are clearly too many options to display them all at once. Each of those groupings will need a name, the item that gets displayed in the main menu that leads to all members of the group.
