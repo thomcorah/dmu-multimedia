@@ -82,3 +82,34 @@ Add style to your page. Change the text, change the background colour(s).
 - Flexbox
 
 - Lab: flexbox-lab
+
+## Week 10 (7th December)
+
+- Repositioning Elements
+
+- Lab: making a fixed header
+
+## Week 11 (14th December)
+
+- Working on Coursework
+
+## Week 12 - Winter Break
+## Week 13 - Winter Break
+## Week 14 - Winter Break
+
+## Week 15 (11th January)
+
+- Overview and Discussion of CW2
+- Web Fonts
+
+## Week 16 (18th January)
+
+- CSS Transitions
+
+## Week 17 (25th January)
+
+- CSS Keyframe Animations
+
+## Week 18 (1st February)
+
+- Working on Coursework 2
