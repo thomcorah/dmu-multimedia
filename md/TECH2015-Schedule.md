@@ -65,9 +65,11 @@ CSS Grid
 
 ## Week 18
 
-SVG Animation
+UI Animation with Greensock
 
 ## Week 19
+
+SVG Animation
 
 ## Week 20
 
