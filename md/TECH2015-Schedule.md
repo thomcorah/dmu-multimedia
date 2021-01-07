@@ -50,3 +50,25 @@ Simple JS Maths game
 ## Task
 
 Js Maths game v3.0
+
+## Week 15
+
+JavaScript Catchup
+
+## Week 16
+
+CSS Custom Properties
+
+## Week 17
+
+CSS Grid
+
+## Week 18
+
+SVG Animation
+
+## Week 19
+
+## Week 20
+
+## Week 21
