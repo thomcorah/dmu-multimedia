@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Pizza Store</h1>
+    <h2>Add a pizza</h2>
+    <form>
+      <label for="name">
+        Name
+        <input type="text" id="name" />
+      </label>
+      <label for="price">
+        Price
+        <input type="number" id="price" />
+      </label>
+      <label for="toppings">
+        Toppings
+        <input type="text" id="topping1" />
+        <input type="text" id="topping2" />
+        <input type="text" id="topping3" />
+      </label>
+      <button id="addPizzaButton">Add Pizza!</button>
+    </form>
+
+    <table id="listOfPizzas">
+      <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Topping 1</th>
+        <th>Topping 2</th>
+        <th>Topping 3</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    <script>
+      let db = new PouchDB("pizzas");
+
+      addPizza = (evt) => {
+        evt.preventDefault();
+        let newPizza = {
+          _id: new Date().toISOString(),
+          name: document.getElementById("name").value,
+          price: document.getElementById("price").value,
+          toppings: [
+            document.getElementById("topping1").value,
+            document.getElementById("topping2").value,
+            document.getElementById("topping3").value,
+          ],
+        };
+
+        db.put(newPizza);
+      };
+
+      showPizzas = (err, doc) => {
+        console.log(doc.rows);
+        let tableRows = "";
+        doc.rows.forEach((row) => {
+          let thisPizza = row.doc;
+          tableRows +=
+            "<tr><td>" +
+            thisPizza.name +
+            "</td><td>" +
+            thisPizza.price +
+            "</td><td>" +
+            thisPizza.toppings[0] +
+            "</td><td>" +
+            thisPizza.toppings[1] +
+            "</td><td>" +
+            thisPizza.toppings[2] +
+            "</td></tr>";
+        });
+        document.querySelector("#listOfPizzas tbody").innerHTML = tableRows;
+      };
+
+      loadPizzas = () => {
+        console.log("loadingpizzas");
+        db.allDocs({ include_docs: true, descending: true }, showPizzas);
+      };
+
+      db.changes({
+        since: "now",
+        live: true,
+      }).on("change", loadPizzas);
+
+      loadPizzas();
+
+      document
+        .getElementById("addPizzaButton")
+        .addEventListener("click", addPizza);
+    </script>
+  </body>
+</html>
