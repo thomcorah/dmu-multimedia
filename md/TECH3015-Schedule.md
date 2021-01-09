@@ -121,3 +121,11 @@ Exercises in responsive design - create a slideshow that loads an image file bas
 ## Week 15 + 16
 
 - Databases
+
+## Week 17
+
+- Web Audio
+
+## Week 18 + 19
+
+- Games

@@ -8,7 +8,9 @@ However, it has obvious limits.
 
 There is another way. Well, three ways that we're going to discuss here.
 
-## 1. Including the font file
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=660059fb-b3ed-4cbf-a4aa-acab013902ba&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+## 1. Including Font Files
 
 You can include a font file with your website, and point to it within your CSS. Make sure you're allowed to share the font you're using.
 
@@ -58,7 +60,7 @@ If you select `@import` however, you'll have some code you can paste right at th
 
 Notice too, that it tells you what CSS to use to assign this font to an element. You use the `font-family` rule as normal.
 
-## 3. Adobe Typekit
+## 3. Adobe Fonts
 
 Adobe have a similar offering to Google - a catalogue of fonts you can link to for free. There are a couple of hundred available to those without a paid Creative Cloud account, and a lot more to those with.
 
