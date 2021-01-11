@@ -26,22 +26,31 @@
         overflow: hidden;
       }
 
-      .square:hover {
+      .square.out {
         background-color: blue;
         width: 70vw;
         height: 100vh;
       }
 
-      .square:hover .menuItem {
+      .square.out .menuItem {
         opacity: 1;
       }
     </style>
   </head>
   <body>
-    <div class="square">
+    <div class="square" id="square">
       <div class="menuItem">home</div>
       <div class="menuItem">about</div>
       <div class="menuItem">film</div>
     </div>
+
+    <script>
+      toggleAnimation = (evt) => {
+        evt.target.classList.toggle("out");
+      };
+      document
+        .getElementById("square")
+        .addEventListener("click", toggleAnimation);
+    </script>
   </body>
 </html>
