@@ -19,7 +19,7 @@
         pointer-events: none;
       }
 
-      .square {
+      .menu {
         background-color: red;
         width: 50px;
         height: 50px;
@@ -27,20 +27,20 @@
         overflow: hidden;
       }
 
-      .square.out {
+      .menu.out {
         background-color: blue;
         width: 70vw;
         height: 100vh;
       }
 
-      .square.out .menuItem {
+      .menu.out .menuItem {
         opacity: 1;
         pointer-events: all;
       }
     </style>
   </head>
   <body>
-    <nav class="square" id="square">
+    <nav class="menu">
       <div class="menuItem">home</div>
       <div class="menuItem">about</div>
       <div class="menuItem">film</div>
@@ -51,7 +51,7 @@
         evt.target.classList.toggle("out");
       };
       document
-        .getElementById("square")
+        .querySelector(".menu")
         .addEventListener("click", toggleAnimation);
     </script>
   </body>

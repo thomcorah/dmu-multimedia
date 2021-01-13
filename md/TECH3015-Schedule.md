@@ -129,3 +129,9 @@ Exercises in responsive design - create a slideshow that loads an image file bas
 ## Week 18 + 19
 
 - Games
+
+## Week 20 + 21
+
+- Further Animation with Greensock
+- SVG Animation
+-
