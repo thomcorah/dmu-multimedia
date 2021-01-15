@@ -10,7 +10,7 @@ Step-by-step on setting up a new project here: <https://thomcorah.github.io/dmu-
 
 ### 2. Create your html structure
 
-We need a menu item, it could be a `<nav>`, with some menu items inside. These could be `<div>`s.
+We need a menu item, it could be a `<nav>`, wih some menu items inside. These could be `<div>`s.
 
 Make sure your `<nav>` has the 'menu' class.
 
