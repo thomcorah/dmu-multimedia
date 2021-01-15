@@ -2,6 +2,8 @@
 
 CSS transitions let the browser change the value of a property over time. For example, the background colour can change from red to blue over two seconds, instead of immediately. This can be useful as a simple way of animating aspects of your user interface to add character and direction for your users.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fea2fd7f-39dc-4a55-9985-acb100da004d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## What is a Transition?
 
 A transition lets you change the value of a CSS property over time. Or more specifically, tell the browser that if the value of the property changes, rather than happen immediately it should happen over a specified timescale.
