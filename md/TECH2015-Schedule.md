@@ -61,15 +61,13 @@ CSS Custom Properties
 
 ## Week 17
 
-CSS Grid
+UI Animation with Greensock
 
 ## Week 18
 
-UI Animation with Greensock
+SVG Animation
 
 ## Week 19
-
-SVG Animation
 
 ## Week 20
 
