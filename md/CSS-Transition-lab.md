@@ -1,4 +1,4 @@
-## Transitions with CSS
+# Transitions with CSS
 
 We're going to create a little menu button that expands to a full menu when clicked on.
 
