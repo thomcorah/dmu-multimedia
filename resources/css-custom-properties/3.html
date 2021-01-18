@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <style>
+    body {
+      --main-colour: rgb(77, 154, 96);
+    }
+
+    header {
+      background-color: var(--main-colour);
+      padding: 8px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .rowContainer {
+      display: flex;
+      align-items: stretch;
+      margin: 1px 0;
+    }
+
+    .sectionNumber {
+      padding: 10px 20px;
+      background-color: var(--main-colour);
+    }
+
+    .rowContainer div:not(.sectionNumber) {
+      flex-grow: 1;
+      background-color: rgb(242, 249, 165);
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: var(--main-colour);
+      padding: 8px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>The Joys of Trout Fishing</h1>
+    </header>
+    <div>
+      <div class="rowContainer">
+        <div class="sectionNumber">
+          <h1>1</h1>
+        </div>
+        <div>
+          <p>Where to Fish</p>
+        </div>
+      </div>
+      <div class="rowContainer">
+        <div class="sectionNumber">
+          <h1>2</h1>
+        </div>
+        <div>
+          <p>Catch of the Day</p>
+        </div>
+      </div>
+      <div class="rowContainer">
+        <div class="sectionNumber">
+          <h1>3</h1>
+        </div>
+        <div>
+          <p>Lure Gallery</p>
+        </div>
+      </div>
+      <div class="rowContainer">
+        <div class="sectionNumber">
+          <h1>4</h1>
+        </div>
+        <div>
+          <p>Gear</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Made for fun
+    </footer>
+  </body>
+</html>
