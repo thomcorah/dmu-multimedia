@@ -2,6 +2,8 @@
 
 Keyframe animations provide a more detailed way of moving objects on the screen than the more simple CSS Transitions.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=96b9290b-d23a-4851-8d5b-acb401117b6b&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ## Creating an Animation
 
 Animations are created separately to elements. They can then be applied to elements in different ways.
