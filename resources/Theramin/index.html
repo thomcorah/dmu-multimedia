@@ -36,14 +36,12 @@
       let context = new (window.AudioContext || window.webkitAudioContext)();
 
       let oscillator = context.createOscillator();
+      oscillator.type = "sine";
 
       let gain = context.createGain();
 
       oscillator.connect(gain);
       gain.connect(context.destination);
-
-      oscillator.type = "sine";
-      oscillator.frequency.value = 440;
 
       let playing = false;
       let started = false;
@@ -56,8 +54,8 @@
             .removeEventListener("mousemove", updateTheramin);
 
           evt.target.textContent = "Start";
-          gain.gain.setValueAtTime(0, now + 0.3);
-          //oscillator.stop(now + 0.3);
+          gain.gain.setValueAtTime(0, now);
+
           playing = false;
         } else {
           if (!started) {
@@ -70,7 +68,7 @@
             .addEventListener("mousemove", updateTheramin);
 
           evt.target.textContent = "Stop";
-          gain.gain.setValueAtTime(1, now + 0.3);
+          gain.gain.setValueAtTime(1, now);
 
           playing = true;
         }
@@ -79,9 +77,10 @@
       updateTheramin = (evt) => {
         let volume = evt.clientX / window.innerWidth;
         let pitch = 1 - evt.clientY / window.innerHeight;
+        pitch = 950 * pitch + 50;
         let now = context.currentTime;
         gain.gain.setValueAtTime(volume, now);
-        oscillator.frequency.setValueAtTime(880 * pitch + 50, now);
+        oscillator.frequency.setValueAtTime(pitch, now);
       };
 
       document
