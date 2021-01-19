@@ -2,6 +2,8 @@
 
 GSAP is a suite of tools from Greensock that make it easier to create performant and complex animations on the web.
 
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=af36d9a3-2c1e-4f7e-b3b4-acb4011a4368&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 - Greensock have been doing web animation for ages - originally for Flash
 - They provide more complex easing than the standard CSS animations
 - You can sync animations on a timeline
