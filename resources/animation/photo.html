@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      .page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .img-container {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 8px;
+        box-shadow: 4px 4px 4px 0px rgba(153, 153, 153, 0.58);
+      }
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="img-container">
+        <img src="img/elephants.jpg" alt="elephants" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script>
+      gsap.from(".img-container", {
+        x: "-200%",
+        y: 100,
+        rotation: 270,
+        duration: 1,
+      });
+    </script>
+  </body>
+</html>
