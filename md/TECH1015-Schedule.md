@@ -112,4 +112,12 @@ Add style to your page. Change the text, change the background colour(s).
 
 ## Week 18 (1st February)
 
-- Working on Coursework 2
+- JS Part 1
+
+## Week 19
+
+- JS Part 2
+
+## Week 20
+
+- Testing and Validating
