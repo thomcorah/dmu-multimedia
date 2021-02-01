@@ -1,6 +1,6 @@
 # SVGs and Animation
 
-Scalable Vector Graphics are well suited to a wide range of graphics uses and are easy to animate in detail.
+Scalable Vector Graphics are well suited to a wide range of graphic uses and are easy to animate in detail.
 
 <iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=fc4898dc-f088-4e18-b8c2-acbd0136a2db&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
