@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+header p {
+  margin: 0;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+.tshirt-listing {
+  display: flex;
+}
+
+.tshirt-listing img {
+  width: 30%;
+  margin: 10px;
+}
+
+.tshirt-listing .details {
+  margin: 10px;
+}
