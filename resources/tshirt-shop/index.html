@@ -4,17 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <!-- Snipcart stuff -->
+    <link rel="preconnect" href="https://app.snipcart.com" />
+    <link rel="preconnect" href="https://cdn.snipcart.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css"
+    />
+    <!-- Google Fonts stuff -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- My stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script
+      src="https://kit.fontawesome.com/a89069ad2d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <h1>Thom's Tshirt Tavern</h1>
-      <p>Quality T-Shirts, Questionable Designs</p>
+      <div>
+        <h1>Thom's Tshirt Tavern</h1>
+        <p>Quality T-Shirts, Questionable Designs</p>
+      </div>
+      <div>
+        <span class="snipcart-checkout">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="snipcart-total-price"></span>
+          (<span class="snipcart-items-count"></span>)
+        </span>
+      </div>
     </header>
     <div class="content">
       <section class="tshirt-listing">
@@ -28,6 +51,17 @@
             aliquip ex ea commodo consequat.
           </p>
           <p>£12.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="design1"
+            data-item-price="12.00"
+            data-item-url="https://thomcorah.github.io/dmu-multimedia/resources/tshirt-shop/"
+            data-item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            data-item-image="./img/design1.jpg"
+            data-item-name="Down, Down, Down, Up"
+          >
+            Add to cart
+          </button>
         </div>
       </section>
       <section class="tshirt-listing">
@@ -41,6 +75,17 @@
             aliquip ex ea commodo consequat.
           </p>
           <p>£12.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="design2"
+            data-item-price="12.00"
+            data-item-url="/"
+            data-item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            data-item-image="./img/design2.jpg"
+            data-item-name="Boxing"
+          >
+            Add to cart
+          </button>
         </div>
       </section>
       <section class="tshirt-listing">
@@ -54,8 +99,29 @@
             aliquip ex ea commodo consequat.
           </p>
           <p>£12.00</p>
+          <button
+            class="snipcart-add-item"
+            data-item-id="design3"
+            data-item-price="12.00"
+            data-item-url="/"
+            data-item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            data-item-image="./img/design3.jpg"
+            data-item-name="Headless"
+          >
+            Add to cart
+          </button>
         </div>
       </section>
     </div>
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="ZTFkZTc3OWQtODUwNC00YzNlLTgyMzUtYTA2ZDc3NzJhOWVjNjM3NDc3OTc5ODUwNzMyMDgz"
+      data-config-modal-style="side"
+    ></div>
   </body>
 </html>

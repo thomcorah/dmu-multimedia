@@ -13,6 +13,12 @@ h6 {
   font-family: "Playfair Display", serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header p {
   margin: 0;
 }
@@ -23,6 +29,7 @@ header p {
 
 .tshirt-listing {
   display: flex;
+  align-items: flex-start;
 }
 
 .tshirt-listing img {
@@ -32,4 +39,10 @@ header p {
 
 .tshirt-listing .details {
   margin: 10px;
+}
+
+button {
+  background-color: rgb(154, 254, 182);
+  border: none;
+  padding: 10px;
 }
