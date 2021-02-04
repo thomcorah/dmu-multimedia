@@ -104,6 +104,19 @@ let x = 30;
 let newX = x + "px"; // newX will be "30px"
 ```
 
+### 9. Update Trump's Style
+
+If you test this out, you might notice that Trump doesn't actually move. That's because we're trying to move an `<a>` element, and `<a>` elements are designed to be displayed inline.
+
+We need to change that with a little CSS. Set the `<a>` element's `display` property to `inline-block`.
+
+```css
+#trump {
+  width: 100px;
+  display: inline-block;
+}
+```
+
 ### 9. Animate the change
 
 In your CSS, using the transition rule to make sure that any time the transform property on the `<a>` changes the change is animated over 0.2s.
