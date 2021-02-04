@@ -117,11 +117,11 @@ We need to change that with a little CSS. Set the `<a>` element's `display` prop
 }
 ```
 
-### 9. Animate the change
+### 10. Animate the change
 
 In your CSS, using the transition rule to make sure that any time the transform property on the `<a>` changes the change is animated over 0.2s.
 
-### 10. Check it all works
+### 11. Check it all works
 
 You should do this as you go along really.
 
