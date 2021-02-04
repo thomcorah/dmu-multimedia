@@ -88,5 +88,65 @@ Snipcart works by having you create a button, and then adding the details of the
 
 - Name
 - Price
-- Id - unique for each
-- URL
+- Id - unique for each product, but set by you
+- URL - the url of where this button is
+
+There's an important point here on security. As all this stuff is just included as attributes in the button, it would be trivial for somebody to open up the DevTools and manually change the price to something tiny, before clicking the button. Snipcart protects against this. When the user proceeds to checkout, the details of the transaction are sent to Snipcart, including that URL you provided. Snipcart will make sure the URL is in your list of allowed Domains that you set in step 1. If it isn't, the transaction is blocked. If it is, it'll then send a request to the URL, look for the button that comes back, and check the price given. If this price doesn't match the one with the transaction, it'll get blocked.
+
+Back to this URL attribute, you can likely just put `/` in there, which means the page the button is on.
+
+You should also really include the URL of an image to display in the cart and a short description of the product.
+
+In order to provide these details, you need to use attribute names specified by Snipcart. These are given in the table below.
+
+| Name        | Description                                                                                                               | Attribute             | Type   | Required |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------- | ------ | -------- |
+| Name        | Product's name                                                                                                            | data-item-name        | string | true     |
+| Id          | Product's unique Id                                                                                                       | data-item-id          | string | true     |
+| Price       | Product's price. You must use a . as decimal separator.                                                                   | data-item-price       | number | true     |
+| URL         | Product's URL. Must be where the buy button is located. This will be used by our crawler when validating order integrity. | data-item-url         | string | true     |
+| Description | Product's description.                                                                                                    | data-item-description | string | false    |
+| Image       | Product's image URL. Avoid linking to a large image; try to use an optimized one.                                         | data-item-image       | string | false    |
+
+We also need to include the `snipcart-add-item` class name. So, for one of our tshirts, we might include a `<button>` like this:
+
+```html
+<button
+  class="snipcart-add-item"
+  data-item-id="design2"
+  data-item-price="12.00"
+  data-item-url="/"
+  data-item-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  data-item-image="./img/design2.jpg"
+  data-item-name="Boxing"
+></button>
+```
+
+Do this. Add a button to one of your products, and then open the page in Chrome and see if it works. When it's clicked, the cart should open.
+
+If that's working, add buttons to all your products.
+
+### 3. Add a cart button, so users can access the cart and progress to checkout.
+
+If a user returns to shopping after adding an item to their cart, we need them to be able to open the cart again to proceed to checkout. For that, we need a cart button. Ideally, one that also tells them the value of products in the cart and the number of items. We can do that by applying the `snipcart-checkout` class to an element.
+
+```HTML
+<button class="snipcart-checkout">Click here to checkout</button>
+```
+
+We can also insert the number of products, and total value of the cart using elements with class names:
+
+```HTML
+<span class="snipcart-items-count"></span>
+<span class="snipcart-total-price"></span>
+```
+
+### 4. Style those buttons
+
+As a final step, those buttons will likely be the browser default ones. You can restyle them though so that they fit in better with your site. This might be as simple as setting the border to `none`, giving them a `background-color`, and some `padding`.
+
+### 5. Going Further
+
+If you've got this far, you've got a basic store. Snipcart gives you a few more options for your products though. One of those is the ability to provide purchase options for a product to the user. For example, we might want our shoppers to be able to select the size of tshirt they would like. We can do this by adding some more attributes to the buy button. We can even set different prices for different variants of the product. We can take customisation options, provide details like dimensions and weight, and more. We can also sell digital items.
+
+Take a look through the documentation on products to see what's possible: <https://docs.snipcart.com/v3/setup/products>
