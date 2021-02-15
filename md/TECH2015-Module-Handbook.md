@@ -590,7 +590,7 @@ You should address the following points:
    _ Any improvements you would make to the site and why  
    _ Any problems you encountered along the way, with potential solutions where possible
 
-Your complete documentation should be submitted through the Turnitin link on Blackboard no later than midday on Friday 3rd April.
+Your complete documentation should be submitted through the Turnitin link on Blackboard no later than midday on Tuesday 4th May.
 
 ### Web Site
 
