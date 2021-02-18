@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- Imports the P5 and ML5 JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+  <body>
+    <!-- This is our script -->
+    <script>
+      /* We create all the variables we're going to need here. */
+      let video;
+      let extractor;
+      let classifier;
+      let label;
+
+      let pencilBtn;
+      let tubeBtn;
+      let trainBtn;
+
+      /* gotResults gets run whenever the classifier recognises
+       * something, or thinks it does.
+       * It gets given a list of things the image could be, in order
+       * of probability.
+       */
+      gotResults = (err, results) => {
+        if (err) {
+          console.log("Error");
+        } else {
+          console.log(results);
+          /* If the classifier has got some results (not an error) we extract
+           * the label from the most likely candidate - the first item in
+           * the list. We save this into the label variable so the draw function
+           * can pick this up and write it on the screen.
+           */
+          label = results[0].label;
+          /* And we tell the classifier to classify again, re-running this
+           * function when it's got a result.
+           */
+          classifier.classify(gotResults);
+        }
+      };
+
+      /* This gets run repeatedly while the model is in training mode.
+       * That is, while it's chugging through all the images and labels it's
+       * been fed and working out what's what.
+       * It gets given a loss value - the closer to 0 this is, the more
+       * confident it is that'll get things right. When the loss is low enough,
+       * it decides it's finished training. whileTraining gets run once more
+       * but without a value for loss - loss is null. That's when we know we
+       * can start classifying.
+       */
+      whileTraining = (loss) => {
+        console.log(loss);
+        if (!loss) {
+          classifier.classify(gotResults);
+        }
+      };
+
+      /* There are two functions we always start with.
+       * setup will be run once, when the page first loads.
+       * As the name suggests, this is for setting things up.
+       */
+      setup = () => {
+        /* We usually need to create a canvas to draw into.
+         * This will create one that's 400px wide and 600px tall.
+         */
+        createCanvas(400, 600);
+
+        /* Start capturing video and save the video capture into the video
+         * variable so that we can reference it later.
+         */
+        video = createCapture(VIDEO);
+
+        /* We want to draw the video into the canvas, but the default behaviour
+         * is to just show it on the screen, so we hide it.
+         */
+        video.hide();
+
+        /* We create a new feature extractor, using MobileNet as the training
+         * model.
+         */
+        extractor = ml5.featureExtractor("MobileNet", { numLabels: 2 });
+
+        /* We create a classifier that will use the extractor we just created
+         * to classify what's in the video feed.
+         */
+        classifier = extractor.classification(video);
+
+        /* We need some buttons to click to tell the model what it's looking at.
+         * This one's called Pencil, but it could be anything.
+         */
+        pencilBtn = createButton("Pencil");
+        pencilBtn.mousePressed(() => {
+          console.log("pencil clicked");
+          /* Every time this button is clicked, we add an still of the video
+           * feed to the classifier with the "pencil" label.
+           */
+          classifier.addImage("pencil");
+        });
+
+        /* This does the same with another label. */
+        tubeBtn = createButton("Tube");
+        tubeBtn.mousePressed(() => {
+          console.log("tube clicked");
+          classifier.addImage("tube");
+        });
+
+        /* We need to be able to tell the classifier to start
+         * training, so there's a button for that too.
+         */
+        trainBtn = createButton("Train");
+        trainBtn.mousePressed(() => {
+          classifier.train(whileTraining);
+        });
+      };
+
+      /* draw will be run on every frame. This is for updating the
+       * screen - drawing new things etc.
+       */
+      draw = () => {
+        /* refresh the background with a nice grey */
+        background(200);
+        /* add the video in the top-right corner */
+        image(video, 0, 0);
+        /* set the fill colour to black */
+        fill(0);
+        /* set the text size */
+        textSize(64);
+        /* write the value of the label variable to the canvas */
+        text(label, 10, height - 50);
+      };
+    </script>
+  </body>
+</html>
