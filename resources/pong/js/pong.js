@@ -156,6 +156,7 @@ handleFileLoad = (event) => {
      * each value we're interested in.
      */
     case "image":
+      console.log(event.item);
       /* When we load an image, we need to create a new image object
        * from it, and then hand it over to CreateJS.
        */
@@ -235,7 +236,7 @@ addTitleView = () => {
    * to the stage, and force the stage to update with these new images.
    */
   stage.addChild(graphics.bg, TitleView);
-  stage.update();
+  //stage.update();
 
   // We then add an event listener to both buttons.
   graphics.startBtn.addEventListener("click", tweenTitleView);
