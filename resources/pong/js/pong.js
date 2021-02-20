@@ -329,11 +329,11 @@ addGameView = () => {
 
   // Score
 
-  playerScore = new createjs.Text("0", "bold 20px Arial", "#A3FF24");
+  playerScore = new createjs.Text("0", "bold 20px Arial", "#f5ed09");
   playerScore.x = 211;
   playerScore.y = 20;
 
-  cpuScore = new createjs.Text("0", "bold 20px Arial", "#A3FF24");
+  cpuScore = new createjs.Text("0", "bold 20px Arial", "#f5ed09");
   cpuScore.x = 262;
   cpuScore.y = 20;
 
