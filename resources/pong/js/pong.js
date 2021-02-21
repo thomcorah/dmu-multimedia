@@ -233,10 +233,9 @@ addTitleView = () => {
   TitleView.addChild(graphics.main, graphics.startBtn, graphics.creditsBtn);
 
   /* We then add the the main background image, and this new title view
-   * to the stage, and force the stage to update with these new images.
+   * to the stage.
    */
   stage.addChild(graphics.bg, TitleView);
-  //stage.update();
 
   // We then add an event listener to both buttons.
   graphics.startBtn.addEventListener("click", tweenTitleView);
