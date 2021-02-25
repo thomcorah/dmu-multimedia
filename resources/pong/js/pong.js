@@ -372,6 +372,8 @@ startGame = () => {
  * a click on the screen to start things moving again.
  */
 reset = () => {
+  xSpeed = -xSpeed;
+
   graphics.ball.x = 240 - 15;
   graphics.ball.y = 160 - 15;
   graphics.player.y = 160 - 37.5;
@@ -384,11 +386,11 @@ reset = () => {
 /* We'll run this when the game is over, showing either the
  * win or lose graphic accordingly.
  */
-alert = (e) => {
+alert = (outcome) => {
   createjs.Ticker.removeEventListener("tick", update);
   graphics.bg.removeEventListener("click", startGame);
 
-  if (e == "win") {
+  if (outcome == "win") {
     graphics.win.x = 140;
     graphics.win.y = -90;
 
@@ -439,15 +441,10 @@ update = () => {
    * We use CreateJS to play the appropriate sound.
    */
 
-  if (graphics.ball.y < 0) {
+  if (graphics.ball.y < 0 || graphics.ball.y + 30 > 320) {
     ySpeed = -ySpeed;
     createjs.Sound.play("wall");
-  } //Up
-
-  if (graphics.ball.y + 30 > 320) {
-    ySpeed = -ySpeed;
-    createjs.Sound.play("wall");
-  } //down
+  }
 
   /* If the ball manages to go off the left side of the stage, it's
    * got past our paddle so the CPU scores a point. Damn It!
@@ -458,7 +455,6 @@ update = () => {
    * Play the appropriate sound.
    */
   if (graphics.ball.x < 0) {
-    xSpeed = -xSpeed;
     cpuScore.text = parseInt(cpuScore.text + 1);
     reset();
     createjs.Sound.play("enemyScore");
@@ -466,7 +462,6 @@ update = () => {
 
   /* Player score is the same, but the other way around. */
   if (graphics.ball.x + 30 > 480) {
-    xSpeed = -xSpeed;
     playerScore.text = parseInt(playerScore.text + 1);
     reset();
     createjs.Sound.play("playerScore");
@@ -487,7 +482,7 @@ update = () => {
     graphics.ball.y >= graphics.cpu.y &&
     graphics.ball.y < graphics.cpu.y + 75
   ) {
-    xSpeed *= -1;
+    xSpeed = -xSpeed;
     createjs.Sound.play("hit");
   }
 
@@ -499,7 +494,7 @@ update = () => {
     graphics.ball.y >= graphics.player.y &&
     graphics.ball.y < graphics.player.y + 75
   ) {
-    xSpeed *= -1;
+    xSpeed = -xSpeed;
     createjs.Sound.play("hit");
   }
 
