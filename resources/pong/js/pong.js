@@ -252,9 +252,8 @@ showCredits = () => {
    */
   graphics.credits.x = 480;
 
-  // We add the graphic screen to the stage, and force an update.
+  // We add the graphic screen to the stage.
   stage.addChild(graphics.credits);
-  stage.update();
 
   /* Now we want to slide that credits screen in. We can use CreateJS to
    * do this using its Tween functions.
@@ -347,7 +346,7 @@ addGameView = () => {
   );
 
   // and finally, force an update on the stage to show the graphics.
-  stage.update();
+  //stage.update();
 
   /* We're not goint to start the game playing until the user
    * clicks on the screen, so we add an event listener.
