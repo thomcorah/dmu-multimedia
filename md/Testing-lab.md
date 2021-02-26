@@ -2,7 +2,9 @@
 
 This is a little different to the usual labsheet - there are no steps to follow.
 
-Instead, this is a list of tools for testing your website.
+Instead, this is a discussion of some tools for testing your website.
+
+<iframe src="https://dmureplay.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=d74ba3d3-f3db-427e-9c3a-acdb00ca18db&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ## W3 HTML Validator
 
