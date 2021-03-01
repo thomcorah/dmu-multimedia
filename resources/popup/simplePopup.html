@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .imgThumbnail {
+        width: 50%;
+      }
+
+      .popup {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        padding: 5%;
+      }
+
+      .popup img {
+        max-width: 100%;
+      }
+
+      .popup .inside {
+        background-color: white;
+        padding: 2%;
+      }
+
+      .closeBtn {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This image is what's shown on the page to start with. Clicking the
+         image will show the popup. That's because there's an event listener
+         on the image. This could be more than an image - it could have a
+         title underneath it, a border a little text etc. -->
+    <img
+      src="img/boulder.jpg"
+      class="imgThumbnail"
+      alt="Boulder being dropped in the sea"
+      id="greenpeaceImage"
+    />
+
+    <!-- This div is the popup. It's the full size of the screen, with a grey
+    semi-transparent background. It has a white content area in the middle
+    that has the contents of the popout. It's hidden by default by setting its
+    display property to none.-->
+    <div id="greenpeaceInfo" class="popup">
+      <div class="inside">
+        <div id="greenpeaceCloseBtn" class="closeBtn">X</div>
+        <h1>Building a Boulder Barrier</h1>
+        <img src="img/boulder.jpg" alt="Boulder being dropped in the sea" />
+        <p>
+          To stop destructive bottom trawlers from operating in the Offshore
+          Brighton Marine Protected Area we needed to create a physical barrier,
+          for this we turned to natural materials in the form of granite
+          boulders. We chose granite because it’s an inert material and won’t
+          react with the water at the seabed.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      /* In this simple version of a popout we need a pair of functions
+         and a pair of event listeners for each popout. The functions are to
+         hide and show the popout by changing the value of its display property.
+         */
+      showGreenpeace = () => {
+        document.getElementById("greenpeaceInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("greenpeaceInfo").style.display = "none";
+      };
+
+      /* There are two event listeners. The first in on the image and runs the
+         function to show the popup. The second is on the close button inside
+         the popup, and runs the function to close the popup.
+         If you wanted to add another image and popup, you'd need to duplicate
+         all of this code, but with new ids and function names for the new
+         popup. */
+      document
+        .getElementById("greenpeaceImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("greenpeaceCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+</html>
