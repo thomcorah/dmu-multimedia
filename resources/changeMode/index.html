@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link
+      id="themeStyleSheet"
+      href="css/light.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <button id="themeSwitch">dark</button>
+    <h1>This is a page</h1>
+    <p>Some text or other</p>
+    <div class="box">
+      <p>Something with a border</p>
+    </div>
+
+    <script>
+      let theme = "light";
+      changeTheme = () => {
+        document.getElementById("themeSwitch").innerText = theme;
+        if (theme == "light") {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+        document
+          .getElementById("themeStyleSheet")
+          .setAttribute("href", "css/" + theme + ".css");
+      };
+      document
+        .getElementById("themeSwitch")
+        .addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
