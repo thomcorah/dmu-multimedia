@@ -4,7 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title></title>
+    <!-- We're actually loading two stylesheets here. The first is for all the
+         style rules that are common between both light and dark mode. -->
     <link href="css/common.css" rel="stylesheet" type="text/css" />
+
+    <!-- The second style sheet will load the styles that are theme specific.
+         Generally this means colours. It's got an id so that we can grab it
+         with JavaScript and change the style sheet it's pointing to. -->
     <link
       id="themeStyleSheet"
       href="css/light.css"
@@ -13,7 +19,12 @@
     />
   </head>
   <body>
+    <!-- This example uses a button to switch between two themes. When the current
+         theme is dark, the button will say light, and visa-versa -->
     <button id="themeSwitch">dark</button>
+
+    <!-- The rest of this html is just some content to demonstrate the
+         theme change -->
     <h1>This is a page</h1>
     <p>Some text or other</p>
     <div class="box">
@@ -21,18 +32,32 @@
     </div>
 
     <script>
+      /* We've got a variable to keep track of which theme we're currently
+         using. It starts off with the light theme.
+         */
       let theme = "light";
+
+      /* When the user taps the button to change theme, this function is run. */
       changeTheme = () => {
+        /* Before we change the value of the theme variable, we use its
+           current value to update the label on the button. */
         document.getElementById("themeSwitch").innerText = theme;
+
+        /* Then we switch the value of the theme variable */
         if (theme == "light") {
           theme = "dark";
         } else {
           theme = "light";
         }
+
+        /* With the value switched, we can then use the new value to
+           change the style sheet that the second <link> element is loading */
         document
           .getElementById("themeStyleSheet")
           .setAttribute("href", "css/" + theme + ".css");
       };
+
+      /* This is the event listener on the button */
       document
         .getElementById("themeSwitch")
         .addEventListener("click", changeTheme);

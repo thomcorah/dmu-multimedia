@@ -1,3 +1,7 @@
+/* The only notable thing here really is that we've set a
+   transition so that when the theme changes, the change
+   is animated. Nice. */
+
 body {
   font-family: sans-serif;
   transition: all 0.5s;
