@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      .imgThumbnail {
+        width: 50%;
+      }
+
+      .popup {
+        opacity: 0;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        padding: 5%;
+      }
+
+      /* To make the popup fade in and out, we've actually two properties
+         we need to change, so we're using an animation.
+
+         We change the opacity to make it fade in.  Simples.
+
+         But, even though the popout is usually transparent, it can still
+         be clicked on, which means things on our page can't be clicked on
+         normally - the invisible popout is in the way.
+
+         To fix this, we set pointer-events: none on the popout. However, once
+         the popout is visible, we want pointer events back as we'll need to
+         be able to tap the close button, click links etc.
+         */
+
+      @keyframes popoutAppear {
+        0% {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        100% {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+
+      @keyframes popoutDisappear {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      /* These two classes are added and removed from the popout by
+         JS in order to run the above animations to show or hide the popout. */
+
+      .comeOut {
+        animation: popoutAppear 0.5s forwards;
+      }
+
+      .goAway {
+        animation: popoutDisappear 0.5s forwards;
+      }
+
+      .popup img {
+        max-width: 100%;
+      }
+
+      .popup .inside {
+        background-color: white;
+        padding: 2%;
+      }
+
+      .closeBtn {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This image is what's shown on the page to start with. Clicking the
+         image will show the popup. That's because there's an event listener
+         on the image. This could be more than an image - it could have a
+         title underneath it, a border a little text etc. -->
+    <img
+      src="img/boulder.jpg"
+      class="imgThumbnail"
+      alt="Boulder being dropped in the sea"
+      id="greenpeaceImage"
+    />
+    <!-- This div is the popup. It's the full size of the screen, with a grey
+    semi-transparent background. It has a white content area in the middle
+    that has the contents of the popout. It's hidden by default by setting its
+    display property to none.-->
+    <div id="greenpeaceInfo" class="popup">
+      <div class="inside">
+        <div id="greenpeaceCloseBtn" class="closeBtn">X</div>
+        <h1>Building a Boulder Barrier</h1>
+        <img src="img/boulder.jpg" alt="Boulder being dropped in the sea" />
+        <p>
+          To stop destructive bottom trawlers from operating in the Offshore
+          Brighton Marine Protected Area we needed to create a physical barrier,
+          for this we turned to natural materials in the form of granite
+          boulders. We chose granite because it’s an inert material and won’t
+          react with the water at the seabed.
+        </p>
+        <p>
+          Get the full story
+          <a
+            href="https://www.greenpeace.org.uk/news/live-greenpeace-boulders-brighton-fishing/"
+            >here</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script>
+      /* We've got classes set up that will run the appropriate animation
+         for either showing or hiding the popout, so these functions add
+         the classname we want and remove the one we don't.
+         */
+      showGreenpeace = () => {
+        let popup = document.getElementById("greenpeaceInfo");
+        popup.classList.remove("goAway");
+        popup.classList.add("comeOut");
+      };
+      hideGreenpeace = () => {
+        let popup = document.getElementById("greenpeaceInfo");
+        popup.classList.remove("comeOut");
+        popup.classList.add("goAway");
+      };
+
+      /* There are two event listeners. The first in on the image and runs the
+         function to show the popup. The second is on the close button inside
+         the popup, and runs the function to close the popup.
+         If you wanted to add another image and popup, you'd need to duplicate
+         all of this code, but with new ids and function names for the new
+         popup. */
+      document
+        .getElementById("greenpeaceImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("greenpeaceCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+</html>
