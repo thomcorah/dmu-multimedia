@@ -15,9 +15,17 @@
         width: 50%;
       }
 
+      /* We're going to use opacity to fade the popup in and out. The popup starts
+         with an opacity of 0. JS will then change it to 1 when the user clicks the image.
+         However, just being transparent doesn't stop an element from receiving mouse events,
+         and we don't want this to happen while the popup is hidden because it means the user
+         won't be able to click/tap anything on the page. So, we set the visibility to hidden
+         too. This also gets change by JS when the image is clicked on.
+         */
       .popup {
         opacity: 0;
-        pointer-events: none;
+        transition: opacity 0.5s;
+        visibility: hidden;
         width: 100%;
         height: 100%;
         min-height: 100vh;
@@ -25,53 +33,6 @@
         position: absolute;
         top: 0;
         padding: 5%;
-      }
-
-      /* To make the popup fade in and out, we've actually two properties
-         we need to change, so we're using an animation.
-
-         We change the opacity to make it fade in.  Simples.
-
-         But, even though the popout is usually transparent, it can still
-         be clicked on, which means things on our page can't be clicked on
-         normally - the invisible popout is in the way.
-
-         To fix this, we set pointer-events: none on the popout. However, once
-         the popout is visible, we want pointer events back as we'll need to
-         be able to tap the close button, click links etc.
-         */
-
-      @keyframes popoutAppear {
-        0% {
-          opacity: 0;
-          pointer-events: none;
-        }
-
-        100% {
-          opacity: 1;
-          pointer-events: all;
-        }
-      }
-
-      @keyframes popoutDisappear {
-        0% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0;
-        }
-      }
-
-      /* These two classes are added and removed from the popout by
-         JS in order to run the above animations to show or hide the popout. */
-
-      .comeOut {
-        animation: popoutAppear 0.5s forwards;
-      }
-
-      .goAway {
-        animation: popoutDisappear 0.5s forwards;
       }
 
       .popup img {
@@ -126,19 +87,32 @@
     </div>
 
     <script>
-      /* We've got classes set up that will run the appropriate animation
-         for either showing or hiding the popout, so these functions add
-         the classname we want and remove the one we don't.
+      /* We've got two functions here, one for showing the popup, one for hiding it.
+         The main thing we want to do is change the opacity to 1 to show it. As
+         we've already set a transition for opacity on this element, it will fade in.
+         However, we also need to set visibility to visible so that we can actually
+         see it.
          */
       showGreenpeace = () => {
         let popup = document.getElementById("greenpeaceInfo");
-        popup.classList.remove("goAway");
-        popup.classList.add("comeOut");
+        popup.style.visibility = "visible";
+        popup.style.opacity = 1;
       };
+
+      /* When we hide the popup, we set opacity to 0 and let the transition fade it
+         out. However, just fading it out isn't enough as it's still sitting over our
+         page content and able to receive mouse events, even though it's transparent.
+         This means the user won't be able to do anything else on our page. To fix that,
+         we need to set the visibility back to hidden. However, we don't want to do this until
+         after the popup has faded out, so we use setTimeout to do it after 500ms.
+         The setTimeout syntax is setTimeout( function to carry out, delay in milliseconds).
+         */
       hideGreenpeace = () => {
         let popup = document.getElementById("greenpeaceInfo");
-        popup.classList.remove("comeOut");
-        popup.classList.add("goAway");
+        popup.style.opacity = 0;
+        setTimeout(() => {
+          popup.style.visibility = "hidden";
+        }, 500);
       };
 
       /* There are two event listeners. The first in on the image and runs the
