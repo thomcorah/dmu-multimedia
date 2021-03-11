@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- Load the fontawesome script - this is for the heart icons. -->
+    <script
+      src="https://kit.fontawesome.com/a89069ad2d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .imageContainer {
+        margin: 10px 0;
+      }
+      img {
+        max-width: 100%;
+      }
+
+      .imageContainer span {
+        margin-left: 10px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- A div container for each image.
+         The ids used are important here. Each image has a simple filename, and
+         that filename is used in the id for the heart icon (the <i>) and the
+         like count container (the <span>).
+         This is so we can tie all of these together.
+  -->
+
+    <div class="imageContainer">
+      <img src="img/circles.jpeg" alt="Stone circles" />
+      <i id="circlesLike" class="far fa-heart"></i
+      ><span id="circlesLikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake.jpeg" alt="Lake" />
+      <i id="lakeLike" class="far fa-heart"></i><span id="lakeLikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake2.jpeg" alt="Stone circles" />
+      <i id="lake2Like" class="far fa-heart"></i
+      ><span id="lake2LikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake3.jpeg" alt="Stone circles" />
+      <i id="lake3Like" class="far fa-heart"></i
+      ><span id="lake3LikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/pier.jpeg" alt="Stone circles" />
+      <i id="pierLike" class="far fa-heart"></i><span id="pierLikeCount"></span>
+    </div>
+
+    <script>
+      /* To make things just a little easier, we're creating an array of the
+         image file names. This will mean we can loop over this array to do
+         a bunch of things, instead of repeating ourselves for every image.
+         */
+      let images = ["circles", "lake", "lake2", "lake3", "pier"];
+
+      /* This will go through each of the images and find out how many likes
+         each on has had, updating the appropriate <span> elements as it goes.
+         Importantly, if there's isn't a value stored for this already, it
+         creates one with 0.
+         */
+      updateLikeCounts = () => {
+        for (let i = 0; i < images.length; i++) {
+          /* We're doing all of these things by cycling over the images
+             array. This means we can access the file name of each image in
+             turn by using the loop index i.
+
+             images[i] will give us the current image name.
+
+             We then use this as the basis for both the id of elements on the
+             page, and the data we've stored in local storage.
+             */
+          let thisLikes = localStorage.getItem(images[i] + "LikeCount");
+          if (thisLikes) {
+            document.getElementById(
+              images[i] + "LikeCount"
+            ).innerText = thisLikes;
+          } else {
+            localStorage.setItem(images[i] + "LikeCount", 0);
+          }
+        }
+      };
+
+      /* This is quite rudimentary. With this fontawesome icon, if it has the
+         far classname, that's a hollow heart. If it has the fas classname, that's
+         a filled in heart. So, to switch from one to the other we add the fas
+         classname on the end of the classlist.
+
+         We can use this to check if an image has been liked - look to see
+         if the classlist contains the fas class.
+
+         That's the basis of this function. It gets the classlist of the
+         element that was clicked (the target of the event) and checks if it has
+         the fas class. If it does have it, it removes it.
+
+         If it doesn't have it, it adds it, but then goes on to add 1 to the
+         like count for this image. In real life, we'd have multiple users, and
+         so the like count would be incremented by 1 when we like an image, and
+         decremented by 1 if we unlike it. However, for this dummy system we want
+         to be able to up the like count beyond 1 to simulate lots of likes on
+         an image. */
+      toggleLike = (evt) => {
+        /* We start off by getting a reference to the heart icon that was
+           clicked. */
+        let likeButton = evt.target;
+
+        /* We need to know which image this relates to. We can do this by
+           looking at the id of the element, which is the name of the
+           image with "Like" on the end. We therefore get the id and
+           take a substring that omits the last four characters.
+           */
+        let thisImage = evt.target.id.substring(0, evt.target.id.length - 4);
+
+        /* We check if the heart is already filled in. */
+        if (likeButton.classList.contains("fas")) {
+          /* If it's already liked, we want to unlike it, so we
+             remove fas from the classlist of the heart icon to make it
+             revert back to the hollow variety, and... */
+          likeButton.classList.remove("fas");
+
+          /* ... Update a value in local storage. */
+          localStorage.setItem(thisImage + "Liked", false);
+        } else {
+          /* If the image isn't already liked, we add the fas class to the icon. */
+          likeButton.classList.add("fas");
+
+          /* And store that it's been liked in local storage. */
+          localStorage.setItem(thisImage + "Liked", true);
+
+          /* We also need to update the number of likes in local storage. We
+             start by getting the current value.
+             */
+          let likeCount = localStorage.getItem(thisImage + "LikeCount");
+
+          /* This is complicated slightly by the fact that local storage stores
+             everything as a string, even if we put it in as a number. Before
+             we can do any maths on it, we need to convert it to a number. */
+          let likeCountAsNumber = parseInt(likeCount);
+
+          /* We can then add 1 to it. */
+          likeCountAsNumber++;
+
+          /* And save the new number back to localstorage. */
+          localStorage.setItem(thisImage + "LikeCount", likeCountAsNumber);
+
+          /* We then update the appropriate bit of the display with the new count */
+          document.getElementById(
+            thisImage + "LikeCount"
+          ).innerText = likeCountAsNumber;
+        }
+      };
+
+      /* When the page first loads, we need to go through each of the images
+         and check whether each is already liked or not.
+         We also add an event listener to each of the heart icons
+         that will run the toggleLike() function when they're clicked.
+         */
+      updateLikeButtons = () => {
+        for (let i = 0; i < images.length; i++) {
+          let thisLikeButton = document.getElementById(images[i] + "Like");
+          thisLikeButton.addEventListener("click", toggleLike);
+          let thisIsLiked = localStorage.getItem(images[i] + "Liked");
+          if (thisIsLiked == "true") {
+            thisLikeButton.classList.toggle("fas");
+          }
+        }
+      };
+
+      /* We need to run both of these when the page first loads
+         to make sure we're displaying likes correctly. */
+      updateLikeCounts();
+      updateLikeButtons();
+    </script>
+  </body>
+</html>
