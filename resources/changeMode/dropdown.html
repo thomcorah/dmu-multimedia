@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link
+      id="themeStyleSheet"
+      href="css/light.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title></title>
+  </head>
+  <body>
+    <select id="themeSwitcher">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="volcanic">Volcanic</option>
+      <option value="lunar">Lunar</option>
+    </select>
+    <h1>This is a page</h1>
+    <p>Some text or other</p>
+    <div class="box">
+      <p>Something with a border</p>
+    </div>
+    <p>
+      Here's a version just two themes and a button to switch between them:
+      <a
+        href="https://thomcorah.github.io/dmu-multimedia/resources/changeMode/index.html"
+        >https://thomcorah.github.io/dmu-multimedia/resources/changeMode/index.html</a
+      >
+    </p>
+
+    <script>
+      // toggle the theme
+      // switching the stylesheet for the second link
+      // changing the label on the button
+
+      switchTheme = () => {
+        let targetTheme = document.getElementById("themeSwitcher").value;
+        document
+          .getElementById("themeStyleSheet")
+          .setAttribute("href", "css/" + targetTheme + ".css");
+      };
+
+      // detect a click on the button
+      document
+        .getElementById("themeSwitcher")
+        .addEventListener("change", switchTheme);
+    </script>
+  </body>
+</html>
