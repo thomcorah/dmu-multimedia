@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!-- This is adapted from the example on W3Schools:
+https://www.w3schools.com/howto/howto_js_tabs.asp
+
+Some aspects of the javascript have been updated.
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" id="LondonTab">London</button>
+      <button class="tablinks" id="ParisTab">Paris</button>
+      <button class="tablinks" id="TokyoTab">Tokyo</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+      /* We want to display a tab when the page first loads, so
+         there are two different ways we are displaying a tab:
+         1. On page load
+         2. When a tab is selected
+
+         We therefore have a generic openCity function that we
+         give a city name to in order to tell it which tab to
+         open. But, we also have a function that will extract
+         that info from the event information passed by the
+         event listener on each tab.
+         */
+      handleTabSelect = (evt) => {
+        let cityName = evt.target.textContent;
+        openCity(cityName);
+      };
+
+      openCity = (cityName) => {
+        /* The first thing we do when an new tab is selected is
+           to unshow the old tab content and unactive the old tab.
+           We could keep a record of which tab is active in a variable,
+           and then use this to know what to do. Or, as in the approach here,
+           we could just go through all the tab contents and hide them, and
+           all the tabs and unactive them.
+
+           We'll then show and activate the one we want after.
+           */
+
+        // Get all elements with class="tabcontent" and hide them
+        let tabcontent = document.getElementsByClassName("tabcontent");
+        for (let i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        let tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        document.getElementById(cityName + "Tab").classList.add("active");
+      };
+
+      /* When the page first loads we need to add an event listener to
+         each of the tabs that will run our function to show the tab content.
+         */
+      let tabs = document.getElementsByClassName("tablinks");
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener("click", handleTabSelect);
+      }
+
+      /* We want to have the page open with the first tab content showing,
+         so we run openCity and give it a tab name */
+      openCity("London");
+    </script>
+  </body>
+</html>
