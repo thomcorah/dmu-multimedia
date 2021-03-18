@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script
+      src="https://kit.fontawesome.com/a89069ad2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title></title>
+
+    <style>
+      .imageContainer img {
+        max-width: 100%;
+      }
+
+      .imageContainer {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imageContainer">
+      <img src="img/circles.jpeg" alt="Stone circles" />
+      <i id="circlesLike" class="far fa-heart"></i>
+      <span id="circlesLikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake.jpeg" alt="Lake" />
+      <i id="lakeLike" class="far fa-heart"></i><span id="lakeLikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake2.jpeg" alt="Stone circles" />
+      <i id="lake2Like" class="far fa-heart"></i
+      ><span id="lake2LikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/lake3.jpeg" alt="Stone circles" />
+      <i id="lake3Like" class="far fa-heart"></i
+      ><span id="lake3LikeCount"></span>
+    </div>
+
+    <div class="imageContainer">
+      <img src="img/pier.jpeg" alt="Stone circles" />
+      <i id="pierLike" class="far fa-heart"></i><span id="pierLikeCount"></span>
+    </div>
+
+    <script>
+      let images = ["circles", "lake", "lake2", "lake3", "pier"];
+
+      toggleLike = (evt) => {
+        console.log(evt.target);
+        let imageName = evt.target.id.substring(0, evt.target.id.length - 4);
+
+        if (evt.target.classList.contains("fas")) {
+          evt.target.classList.remove("fas");
+          localStorage.setItem(imageName + "Liked", false);
+        } else {
+          evt.target.classList.add("fas");
+          localStorage.setItem(imageName + "Liked", true);
+
+          let likedCount = localStorage.getItem(imageName + "LikeCount");
+          likedCount++;
+          document.getElementById(
+            imageName + "LikeCount"
+          ).innerText = likedCount;
+          localStorage.setItem(imageName + "LikeCount", likedCount);
+        }
+      };
+
+      updateLikeButtons = () => {
+        for (let i = 0; i < images.length; i++) {
+          document
+            .getElementById(images[i] + "Like")
+            .addEventListener("click", toggleLike);
+
+          let imageLiked = localStorage.getItem(images[i] + "Liked");
+          if (imageLiked == "true") {
+            document.getElementById(images[i] + "Like").classList.add("fas");
+          }
+
+          let likeCount = localStorage.getItem(images[i] + "LikeCount");
+          if (likeCount) {
+            document.getElementById(
+              images[i] + "LikeCount"
+            ).innerText = likeCount;
+          } else {
+            document.getElementById(images[i] + "LikeCount").innerText = "0";
+            localStorage.setItem(images[i] + "LikeCount", 0);
+          }
+        }
+      };
+
+      updateLikeButtons();
+    </script>
+  </body>
+</html>

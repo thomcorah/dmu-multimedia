@@ -90,6 +90,7 @@
             ).innerText = thisLikes;
           } else {
             localStorage.setItem(images[i] + "LikeCount", 0);
+            document.getElementById(images[i] + "LikeCount").innerText = "0";
           }
         }
       };
