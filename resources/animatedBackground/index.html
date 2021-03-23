@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      @keyframes fallingSquares {
+        0% {
+          top: 0;
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        100% {
+          top: 100%;
+          transform: rotate(720deg);
+          opacity: 1;
+        }
+      }
+
+      .littleSquare {
+        top: 101%;
+        width: 40px;
+        height: 40px;
+        background-color: maroon;
+        position: absolute;
+        animation: fallingSquares 3s infinite ease-in;
+        z-index: -1;
+      }
+
+      #ls1 {
+        left: 60%;
+        animation-delay: 0.5s;
+      }
+
+      #ls2 {
+        left: 65%;
+        animation-delay: 2s;
+      }
+
+      #ls3 {
+        left: 70%;
+        animation-delay: 2.5s;
+      }
+      #ls4 {
+        left: 75%;
+        animation-delay: 1s;
+      }
+      #ls5 {
+        left: 80%;
+        animation-delay: 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>
+      Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.
+    </p>
+
+    <p>
+      Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.
+    </p>
+    <p>
+      Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.
+    </p>
+    <p>
+      Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.
+    </p>
+    <p>
+      Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.Paragraph of text.Paragraph of text.Paragraph of text.Paragraph of
+      text.
+    </p>
+    <img
+      style="width: 50%;"
+      src="https://2.bp.blogspot.com/-89EDYZgqUe8/TWRnqvwwtoI/AAAAAAAAA-0/eATShLwHX0o/s1600/Elephant_1-6128.jpg"
+    />
+
+    <div class="littleSquare" id="ls1"></div>
+    <div class="littleSquare" id="ls2"></div>
+    <div class="littleSquare" id="ls3"></div>
+    <div class="littleSquare" id="ls4"></div>
+    <div class="littleSquare" id="ls5"></div>
+  </body>
+</html>
