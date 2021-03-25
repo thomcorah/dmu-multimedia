@@ -74,6 +74,12 @@ Some aspects of the javascript have been updated.
     </div>
 
     <script>
+      /* We need to keep track of which tab is currently open
+         so that we can close it before opening a new one.
+         We create this variable to keep hold of that.
+         */
+      let currentTab;
+
       /* We want to display a tab when the page first loads, so
          there are two different ways we are displaying a tab:
          1. On page load
@@ -93,25 +99,27 @@ Some aspects of the javascript have been updated.
       openCity = (cityName) => {
         /* The first thing we do when an new tab is selected is
            to unshow the old tab content and unactive the old tab.
-           We could keep a record of which tab is active in a variable,
-           and then use this to know what to do. Or, as in the approach here,
-           we could just go through all the tab contents and hide them, and
+           We could either:
+           a. keep a record of which tab is active in a variable,
+           and then use this to know what to do. Or,
+           b. we could  go through all the tab contents and hide them, and
            all the tabs and unactive them.
+
+           We're going to use option a.
 
            We'll then show and activate the one we want after.
            */
 
-        // Get all elements with class="tabcontent" and hide them
-        let tabcontent = document.getElementsByClassName("tabcontent");
-        for (let i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+        /* If we have a currentTab, unactive it and hide the
+           corresponding content. */
+        if (currentTab) {
+          let previousTab = document.getElementById(currentTab + "Tab");
+          previousTab.classList.remove("active");
+          document.getElementById(currentTab).style.display = "none";
         }
 
-        // Get all elements with class="tablinks" and remove the class "active"
-        let tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].classList.remove("active");
-        }
+        // Update the variable that keeps track of the currently opened tab
+        currentTab = cityName;
 
         // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(cityName).style.display = "block";
