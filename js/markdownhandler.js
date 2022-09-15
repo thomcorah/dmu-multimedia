@@ -87,7 +87,7 @@ listLabSheets = () => {
 
 writeList = (lectures, labs, talks, misc) => {
   let htmlstring =
-    "<h1>All Files</h1><p>You've come here as a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
+    "<h1>All Files</h1><p>You've come here because a file to view hasn't been specified, or has been provided incorrectly. In an attempt to help, here's a list of all available files to view.</p>";
   htmlstring += "<h2>Lectures</h2>";
 
   for (let i = 0; i < lectures.length; i++) {
