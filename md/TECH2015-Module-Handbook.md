@@ -8,7 +8,7 @@
 
 **Level:** 5
 
-**Session:** 2020/21
+**Session:** 2022/23
 
 <div style="page-break-after: always;"></div>
 
@@ -50,6 +50,7 @@ Thom Corah - Module Leader
 **Thom Corah** (Module Leader)  
 Email: <tcorah@dmu.ac.uk>  
 Tel: 0116 207 8088
+Office: Gateway House 6.62
 
 [Back to the Contents](#toc)
 
@@ -69,27 +70,25 @@ Throughout the module you are encouraged to undertake your own research in to th
 
 ## How the Module Works
 
-These are difficult and unprecedented times. You may have keen worries about your own health, or those you care for, or you may not. We wanted this module to be one which you can tackle in the way in which you feel most safe and comfortable.
+This module is delivered through a weekly series of lectures and practical lab sessions. They are both on Fridays. 
+
+### Lecture Sessions
+
+We will have a one-hour lecture each week. These will be used to discuss issues such as design and accessibility, as well as engage in collaborative practical tasks to help explain and demonstrate key concepts as we move through the module. 
 
 ### Practical Lab Sessions
 
-In previous years, you would have a one hour lecture and a two hour lab session every week, and an optional drop-in weekly lab from about week 22 onwards. However, we've changed this.
-
-You'll still see you have a lab on your timetable for this module. Ignore that. Instead, you can choose which you go to. There are two labs, one will be face-face and the other will be online. You'll need to choose each week whether you want the face-face or the online lab.
-
-We need to keep a cap on numbers though, so you'll need to book yourself onto the lab you want to go to. There are links on Blackboard for this. If you don't book a slot, you may not be allowed entry as the lab may be full.
+The practical lab sessions will follow directly after the lecture each week. These will be an opportunity for you to practice your skills in producing interactive experiences on the web, with ongoing support from your lab tutor. 
 
 ### Learning Materials
 
-In past years, you'd walk into your lab session and we'd start off with your tutor giving a live demo at the front. You'd then work through a task that sees you learning whatever we're doing at that point. Ideally you'd finish before the end of the lab.
+The lecture sessions will be recorded and made available to you via DMU Replay for review within a few days of the lecture. These might provide helpful reminders.
 
-This year, things will be slightly different. There will be no live demo at the front of the room. Instead, we are producing a series of short explainers for each lab session. Each of these will discuss a particular 'thing', such as a HTML refresher for example, with both a video and a text version. There will then be a guided activity that will see you using those techniques. All of these will be available via Blackboard from the beginning of the week BEFORE the lab.
+In addition, we have a collection of short-form practical videos and explainers that step through key tasks and concepts when coding for the web. These will be linked to as they become appropriate, though you're more than welcome to browse the whole catalogue. 
 
-This means you can start on this at home really early. You can start on week 2 work as soon as you've finished your week 1 lab for example. You don't have to, but you can if you want, if that's what suits you. You might find you get to week 2 and it all made total sense and you don't need to go to a lab session. If that's the case, just check in with a tutor via email or book into an online session for a quick review.
+In the labs, you'll be working through set tasks, with an opportunity for comment, help, and review by your lab tutor. 
 
-### Lectures
-
-Before COVID, we'd already planned to remove the lectures entirely for this module and replace them with a weekly 1hr drop-in from week 1. For reasons unknown, this hasn't been timetabled, so in week 1 we'll find a mutually ok 1hr slot and do an additional online lab session in it.
+You should also make use of the reading list, linked from the Blackboard Shell, to find sources of information that could help you master particular concepts along the way. 
 
 [Back to the Contents](#toc)
 
@@ -99,10 +98,11 @@ Before COVID, we'd already planned to remove the lectures entirely for this modu
 
 At the end of the module, you will be able to:
 
-- Understand the constraints and possibilities for the effective presentation of different media types on the Internet.
-- Understand a range of established web technologies in the production of an interactive media presentation
-- Source technical solutions and critically evaluate their suitability for a given problem.
-- Select, analyse, and present detailed information in a variety of forms as appropriate.
+- Understand the constraints and possibilities for the effective presentation of different media types in a multimedia presentation. 
+- Understand a range of established media technologies in the production of an interactive media presentation.
+- Source technical solutions and critically evaluate their suitability for a given problem. 
+- Select, analyse, and present detailed information in a variety of forms as appropriate. 
+
 
 [Back to the Contents](#toc)
 
@@ -117,51 +117,10 @@ This module will develop your understanding and engagement with:
 - Intermediate animation techniques as applicable to web interfaces.
 - Introduction to interactive multimedia authoring using appropriate scripting languages such as JavaScript
 - Media User Interface prototype and design
-- Responsive web design - user interfaces that adapt to screen size
+- Responsive web design: user interfaces that adapt to screen size
 - The use of animation in user interface design and presentation
 
 There is some flexibility with what we cover. As we progress through the year, if there's any topic you would like covered in more detail, or a different topic introduced, please email the module tutor or discuss this in labs.
-
-[Back to the Contents](#toc)
-
-<a name='reading'></a>
-
-## Module Reading
-
-The Blackboard shell for the module will contain an increasing list of resources to help support you through the module. This will include links to tutorials, examples, articles and books. To get you started, the following publications will provide some useful depth on a number of the topics and techniques covered on the module.
-
-Castro, E. & Hyslop, B. (2015). **HTML and CSS 8th Ed.** Peachpit Press.  
-Kimberlin Library shelf mark: 005.72/HTM CAS  
-Resource List Link: <https://rl.talis.com/3/dmu/items/01A2C757-DC2E-47E1-DDDE-DD60E6193355.html>
-
-Coremans, C. (2015). **HTML: A Beginner’s Tutorial.** Brainy Software.  
-Resource List Link: <https://rl.talis.com/3/dmu/items/EFEC37BF-7E62-2963-E3B5-5B3CA1EFAC45.html>
-
-Drasner, S. (2017). **SVG Animations: From Common UX Implementations to Complex Responsive Animation.** O'Reilly Media.
-Resource List Link: <https://rl.talis.com/3/dmu/items/8C148D5C-8344-3048-A60F-EF05E0D3017B.html>
-
-Duckett, J., Moore, J., Stone, E., & Ruppert, G. (2014). **JavaScript & JQuery: interactive front-end Web development.** Indianapolis, Indiana: John Wiley & Sons.  
-Kimberlin Library shelf mark: 005.133/JAV DUC
-Resource List Link: <https://rl.talis.com/3/dmu/items/9C74AEE0-1974-52C3-AC1D-73D4FD48D1F9.html>
-
-Krug, S. (2014). **Don’t make me think, revisited: a common sense approach to web usability.** Berkeley, California: New Riders. In particular, look at Chapter 10 on mobile web sites and apps.  
-Kimberlin Library shelf mark: 004.019/KRU  
-Resource List Link: <https://rl.talis.com/3/dmu/items/B924404D-6103-F284-C24F-1394280F93E3.html>
-
-Smashing Magazine (2012). **The Mobile Book.** Frieburg, Germany: Smashing Magazine GmbH. Kimberlin Library Shelf Mark: 006.7/KOC.  
-Resource List Link: <https://rl.talis.com/3/dmu/items/6B179BB8-1219-C183-72C8-4C9501043EC0.html>
-
-**<http://stackoverflow.com>**  
-Question and answer site perhaps used by every developer ever. If you put a web development question into Google, chances are the answer will come up here.
-
-**<http://www.w3schools.com/>**  
-Amazing resource with mini tutorials and a great reference section for HTML, CSS, and JavaScript.
-
-**<https://www.codecademy.com>** and **<https://www.udacity.com>**  
-Short form online courses in many things, including web authoring.
-
-**<https://css-tricks.com>**  
-Really great website with loads of posts on stying your webpages and sites, all really well explained.
 
 [Back to the Contents](#toc)
 
@@ -209,11 +168,11 @@ You will be assessed continuously through the module with formal feedback given 
 
 ### Coursework 1
 
-Worth 40% of the module total, your first coursework will see you produce an individual piece of work. This will involve specifying and designing a web app, including producing a prototype, testing, and getting feedback from users.
+Worth 40% of the module total, your first coursework will see you produce an individual piece of work. This will involve specifying and designing an interactive experience to be delivered via the web, including producing a prototype, testing, and getting feedback from users.
 
 ### Coursework 2
 
-Worth 60% of the module total this coursework will tackle HTML5 and other web technologies to have you produce the website or application you designed for Coursework1.
+Worth 60% of the module total this coursework will tackle HTML5 and other web technologies to have you produce the interactive experience you designed for Coursework 1.
 
 ### Some notes on assessment submissions
 
@@ -267,46 +226,71 @@ All practical work uploaded to your public server space
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 5th October </td>
+	<td><b>Date set:</b></td><td> 3rd October </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Monday 21st December </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 2nd December </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Tuesday 26th January </td>
+	<td><b>In accordance with the <a href="https://www.dmu.ac.uk/about-dmu/quality-management-and-policy/academic-quality/learning-teaching-assessment/assessment-feedback-policy.aspx">University Assessment and Feedback Policy</a>, your marked coursework and feedback will be available to you on:</b></td><td>Friday 23rd December</td>
 </tr>
 <tr>
-	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
-	Note that you should normally receive feedback on your coursework by <b>no later than 20 University working days after the formal hand-in date</b>, provided that you have met the submission deadline.</td>
-</tr>
-<tr>
-	<td colspan='2'><b>When completed you are required to submit your coursework to</b></td>
-</tr>
-<tr>
-	<td colspan='2'>
-		The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page.<br />
-
-    <b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
-    		</td>
-
-</tr>
-<tr>
-	<td colspan='2'><b>Late submission of coursework policy</b></td>
-</tr>
-<tr>
-	<td colspan='2'>
-	Late submissions will be processed in accordance with current University regulations which state: “the time period during which a student may submit a piece of work late without authorisation and have the work capped at 40% [50% at PG level] if passed is 14 calendar days. Work submitted unauthorised more than 14 calendar days after the original submission date will receive a mark of 0%.  These regulations apply to a student’s first attempt at coursework. Work submitted late without authorisation which constitutes reassessment of a previously failed piece of coursework will always receive a mark of 0%.”
+	<td colspan='2'>You should normally receive feedback on your coursework by <b>no later than 15 University working days after the formal hand-in date</b>, provided that you have met the submission deadline. <br />
+	If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
 	</td>
 </tr>
 <tr>
-	<td colspan='2'><b>Academic Offences and Bad Academic Practices</b></td>
+	<td colspan='2'><b>When completed you are required to submit your coursework via:</b>
+		<ol>
+			<li>The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page.</li>
+		</ol>
+    	If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.
+    </td>
+
+</tr>
+<tr>
+	<td colspan='2'><b>Late submission of coursework policy:</b></td>
 </tr>
 <tr>
 	<td colspan='2'>
-	These include plagiarism, cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own. If you are in any doubt about what constitutes an academic offence or bad academic practice you must check with your tutor. Further information and details of how DSU can support you, if needed, is available at:
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/academic-offences.aspx</a> and
-<a href='http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx'>http://www.dmu.ac.uk/dmu-students/the-student-gateway/academic-support-office/bad-academic-practice.aspx</a>
+	Late submissions will be processed in accordance with current <a href="https://www.dmu.ac.uk/about-dmu/quality-management-and-policy/academic-quality/academic-regulations-assessment-boards/academic-regs-assessment-board-homepage.aspx">University regulations</a>. 
+	<b>Please check the regulations carefully to determine what late submission period is allowed for your programme.</b>
 	</td>
+</tr>
+<tr>
+	<td colspan='2'><b>Academic Offences and Bad Academic Practices:</b></td>
+</tr>
+<tr>
+	<td colspan='2'>
+	Please ensure you read the section entitled “Academic Offences and Bad Academic Practice” in the module handbook or the relevant sections in this link:  BaseCamp Link:  <a href="https://eobject.dmu.ac.uk/Basecamp/content/#/lessons/yOPAkeivJkTEsfYw5ONH0Z71uXc-Iu7Y">Overview: Assessment and Good Academic Practices</a>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	<b>Tasks to be undertaken:</b> You are to produce an interactive prototype and supporting design and testing documentation for a web-based interactive story. More details below. 
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<b>Deliverables to be submitted for assessment:</b> You are to submit your design and testing document via Turnitin. This should include a link to your interactive prototype.
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<b>How the work will be marked:</b> Your work will be marked according to the marking criteria set out below.
+	</td>
+</tr>
+<tr>
+	<td>
+		<b>Module leader/tutor name:</b>
+	</td>
+	<td>
+		Thom Corah
+	</td>
+</tr>
+<tr>
+	<td><b>Contact details:</b></td>
+	<td>Email: <a href="mailto:tcorah@dmu.ac.uk">tcorah@dmu.ac.uk</a></td>
 </tr>
 </table>
 
@@ -314,23 +298,22 @@ All practical work uploaded to your public server space
 
 ### Overview
 
-Coursework 1 will see you tackle the specification and design of a media-driven web app. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your web app is and does, your testing results, and justification for your design choices.
+Coursework 1 will see you tackle the specification and design of a web-based interactive story. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your story is and does, your testing results, and justification for your design choices.
 
-The submission deadline for this work is midday (12pm) on Monday 21st December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
+The submission deadline for this work is midday (12pm) on Friday 2nd December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
 
 This design and specification can form the basis of what you produce for Coursework 2, so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework.
 
 ### Where to Start?
 
-Your first job is to decide what your app is going to be. Although you are going to carry this design forward into Coursework 2, you can make changes between the two based on the feedback you’ll get, so don’t feel you’ve got to commit to something that will satisfy CW2 right now.
+Your first job is to decide what your story is going to be. Although you are going to carry this design forward into Coursework 2, you can make changes between the two based on the feedback you’ll get, so don’t feel you’ve got to commit to something that will satisfy CW2 right now.
 
-However, there are a number of points that your app must satisfy:
+However, there are a number of points that your story must satisfy:
 
 - Uses or presents audio and/or video content
 - Animates the user interface
 - Is accessible
 - Is mobile-first and adapts to desktop
-- Contains four pages, or is equivalent.
 
 If you’re stuck for an idea, you’ll find some suggestions at the end of this brief, so feel free to use one of them.
 
@@ -340,7 +323,7 @@ Your final submission will be a written report and your interactive prototype.
 
 The report should contain:
 
-- An introduction - what is your app
+- An introduction - what is your story
 - A specification - a detailed list of the things it should do/be
 - Initial design sketches of the mobile view with commentary
 - Your final mobile designs with commentary
@@ -358,7 +341,7 @@ Your report will be submitted through Turnitin. If you do not submit through Tur
 
 Your report should be 1000 words plus imagery.
 
-You will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This should be the prototype for the mobile version of your website. It should demonstrate website structure and functionality as much as the prototyping platform allows.
+You will also be submitting an interactive prototype. The URL to access this should be clearly included in your report. This should be the prototype for the mobile version of your story. It should demonstrate story structure and functionality as much as the prototyping platform allows.
 
 ### Marking Criteria
 
@@ -366,7 +349,7 @@ There are five marking criteria, each worth an equal 20% of the total coursework
 
 #### Accessibility
 
-This is concerned with the degree to which to make sure your app is as accessible as possible to all, regardless of physical or mental impairments. This should be discussed in your report, justifying aspects of your design in terms of their accessibility.
+This is concerned with the degree to which to make sure your story is as accessible as possible to all, regardless of physical or mental impairments. This should be discussed in your report, justifying aspects of your design in terms of their accessibility.
 
 | Mark Range             | Requirement                                                                                                                                                          |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -383,7 +366,7 @@ This is concerned with the degree to which to make sure your app adapts to the s
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Excellent (70+)        | The report discusses clear differences between the desktop and mobile versions, with the advantages and limitations of each clearly accepted. It discusses these choices and why they have been made, with reference to external sources where appropriate.                                         |
 | Good (50 - 69)         | The report shows that a moderate amount of effort has gone in to working with each screen size. This is mostly successful, though there are some minor issues. It discusses these well showing a good grasp of responsive design.                                                                   |
-| Satisfactory (40 - 49) | The report shows that there is some difference between the two versions, though there is at least one major issue, such as a single column not expanding into a grid. The documentation shows an awareness of the principles of responsive design and provides some commentary on the choices made. |
+| Satisfactory (40 - 49) | The report shows that there is some difference between the two versions, though there is at least one major issue, such as a single column not expanding into a grid on desktop. The documentation shows an awareness of the principles of responsive design and provides some commentary on the choices made. |
 | Poor (0 - 39)          | The report fails to discuss responsive design, or at most does so poorly.                                                                                                                                                                                                                           |
 
 #### Critical Analysis
@@ -419,21 +402,25 @@ This is concerned with the presentation of both your prototype and the report.
 | Satisfactory (40 - 49) | The prototype mostly matches the final design, most links work. The report is properly formatted, though there may be issues with language, spelling, or grammar.                                                                                      |
 | Poor (0 - 39)          | The prototype is unfinished or rudimentary. Links and transitions don't work. The report is difficult to read.                                                                                                                                         |
 
-### Example App Ideas
+### Example Story Ideas
 
 Here are a few examples of what you could do. You can use one of these ideas as a start point as it is, or simply for inspiration to get you going.
 
-#### A Single-Page Website
+#### A choose-your-own-adventure story
 
-Multiple sections combine into a single long vertical-scrolling page. As the user scrolls down, new sections are introduced through a combination of background (colour, shape, image) and foreground (text, graphics) animations. A menu provides direct access to each section.
+Allow the reader to make choices through the course of the story that change the trajectory of the story. This will require careful planning of the options they will have along the way in order to try to avoid dead ends. 
 
-#### Online Gallary
+#### A story with interactive elements
 
-A grid of thumbnails presents a range of artwork. Click on one and you can see it full size, alongside notes such as the artist, medium, date etc. The thumbnails in the grid are resizeable - when they're made larger, you get less in a row - they rearrange. The grid is filterable: the user selects to just show photography, everything else disappears and the grid rearranges.
+A linear story where some visual elements respond to interaction from the reader. For example, a simple children's story where a butterfly flaps its wings when tapped or clicked. 
 
-#### A Personalised Story
+#### A murder mystery
 
-The user enters their name and other details on page 1, before being presented with a simple interactive story that incorporates these details. Animations mark the transition between scenes and the introduction of text and graphics within them.
+Similar to the choose-your-own-adventure structure, where the reader navigates their own path through the story, uncovering evidence as they do so. The conclusion sees them having to decide who they think did the deed.
+
+#### A documentary story
+
+You could tell a real life story, such as the history of a football club or a crime case. You could intersplice real footage into your design along the way. 
 
 [Back to the Contents](#toc)
 
