@@ -24,7 +24,7 @@
 [Key Topics](#topics)  
 [Module Reading](#reading)  
 [Blackboard - Virtual Learning Environment](#blackboard)  
-[Plagiarism](#plagiarism)  
+[Academic Offences and Bad Academic Practice ](#plagiarism)  
 [Assessment](#assessment)  
 [Coursework 1](#cw1)  
 [Coursework 2](#cw2)
@@ -145,18 +145,20 @@ Access to Blackboard can be found at:
 
 <a name="plagiarism"></a>
 
-## Plagiarism
+## Academic Offences and Bad Academic Practice 
 
-DMU defines plagiarism as “the deliberate attempt to gain advantage by presenting any work, data or concepts (including drafts and work in progress) that are not the student’s own as if they were”. The University takes a very serious stance against copying other people’s work without giving the proper credit.
+These include but are not limited to plagiarism, cheating, contract cheating, exam cheating, collusion, copying work and reuse of your own work, poor referencing or the passing off of somebody else's ideas as your own (as defined in Chapter 4 of the General Regulations and Procedures Affecting Students). For modules containing a research element, please note that the conduct of research without an ethics review (if applicable) will be treated as an academic offence.
 
-You can read more about plagiarism and other acedemic offences in Chapter 4 of the student regulations: <https://www.dmu.ac.uk/documents/dmu-students/academic-support-office/student-regulations/chapter-4-17.18.pdf>
+If you are in any doubt about what constitutes an academic offence or bad academic practice, you must check with your tutor.
 
-If you use somebody else’s work, either as research or directly, always attribute the author/artist/musician etc in the proper way. In this module we use the Harvard Referencing style. Directions on the use of the Harvard referencing system can be found through the library website: <http://www.library.dmu.ac.uk/Images/Selfstudy/Harvard.pdf>
+If you are suspected of committing an academic offence you will be called to a meeting with an Academic Practice Officer (APO). APOs are based within in each faculty and it is their role to advise on how to prevent bad academic practice and academic offences and to deal with serious cases.
 
-If you are found to of copied work without crediting the source you are likely to face a disciplinary panel and could see your mark reduced to 0, or worse in extreme cases.
+For further information please see the below webpages:  
+<a href="https://www.dmu.ac.uk/current-students/student-support/exams-deferrals-regulations-policies/student-regulations-and-policies/academic-offences.aspx">Academic offences webpage</a>  
+<a href="https://www.dmu.ac.uk/current-students/student-support/exams-deferrals-regulations-policies/student-regulations-and-policies/bad-academic-practice.aspx">Bad academic practice webpage </a>
 
-If you have any questions regarding plagiarism and other academic practice offences, you can email the Leicester Media School's Academic Practice Officer:  
-Helen Ackerley <hackerley@dmu.ac.uk>
+The current Academic Practice Officer (APO) for your faculty who you may contact for any advice on this matter is:   
+Helen Ackerley <helen.ackerley@dmu.ac.uk>
 
 [Back to the Contents](#toc)
 
