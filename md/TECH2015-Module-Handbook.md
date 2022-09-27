@@ -198,6 +198,8 @@ All practical work uploaded to your public server space
 
 ## Coursework 1
 
+**Due Date:** 12pm (midday) on Friday 2nd December  
+
 Coursework 1 will see you tackle the specification and design of a web-based interactive story. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your story is and does, your testing results, and justification for your design choices.
 
 The submission deadline for this work is midday (12pm) on Friday 2nd December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
@@ -212,6 +214,8 @@ You can find the full coursework brief, including the marking criteria, here: <a
 <a name='cw2'></a>  
 
 ## Coursework 2
+
+**Due Date:** 12pm (midday) on Tuesday 2nd May  
 
 For Coursework 1 you designed and prototyped a web-based interactive story. For this coursework you will go on to produce it using HTML, CSS and JavaScript.
 
