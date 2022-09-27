@@ -1,4 +1,4 @@
-# TECH2015 Multimedia II  
+# TECH2015 Multimedia II
 ## Coursework 2 Brief
 
 <table>
@@ -119,7 +119,7 @@ But what if you don't want to use your design from Coursework 1? That's fine, sp
 
 Some key points to consider:
 
-- Make sure to pay attention to the marking criteria. A good mark for Coursework 1 doesn't automatically translate to an interactive story that hits all the criteria for coursework 2 - you may need to adapt your design
+- Make sure to pay attention to the marking criteria. A good mark for Coursework 1 doesn't automatically translate to an interactive story that hits all the criteria for Coursework 2 - you may need to adapt your design
 - Don't skimp on the testing - this is critically important and **will** get you a better mark.
 - Stick to your (updated) design. If you need to differ from it, make sure to discuss this in your report.
 
@@ -189,7 +189,8 @@ The story will be assessed on the following three points.
 
 ### Content
 
-**Weighting:** 15% of the coursework mark  
+**Weighting:** 15% of the coursework mark 
+
 Your content should be fit for purpose and appropriate. This includes all text, graphics, images, sounds, and videos. You should use the correct techniques for displaying these in modern web browsers and ensure that you are using disk space and bandwidth efficiently.
 
 - Text content shows semantic structure e.g. headings, lists
@@ -200,6 +201,7 @@ Your content should be fit for purpose and appropriate. This includes all text, 
 ### Style
 
 **Weighting:** 15% of the coursework mark  
+
 Your interactive story should appeal to your intended audience and be consistent with your storyboards / designs. You should make appropriate use of CSS in order to properly style and layout your story.
 
 - Style and layout reflect/have evolved from design
@@ -210,6 +212,7 @@ Your interactive story should appeal to your intended audience and be consistent
 ### Technical Skills
 
 **Weighting:** 30% of the coursework mark  
+
 Your interactive story should contain a variety of appropriate techniques that demonstrate your ability to apply the concepts you have learnt in this module.
 
 - Evidence of intelligent ability to choose and code current web development techniques
