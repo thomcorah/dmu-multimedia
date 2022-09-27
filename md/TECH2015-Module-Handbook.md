@@ -199,6 +199,7 @@ All practical work uploaded to your public server space
 ## Coursework 1
 
 **Due Date:** 12pm (midday) on Friday 2nd December  
+**Weighting:** 40% of your module mark
 
 Coursework 1 will see you tackle the specification and design of a web-based interactive story. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your story is and does, your testing results, and justification for your design choices.
 
@@ -216,6 +217,7 @@ You can find the full coursework brief, including the marking criteria, here: <a
 ## Coursework 2
 
 **Due Date:** 12pm (midday) on Tuesday 2nd May  
+**Weighting:** 60% of your module mark  
 
 For Coursework 1 you designed and prototyped a web-based interactive story. For this coursework you will go on to produce it using HTML, CSS and JavaScript.
 
