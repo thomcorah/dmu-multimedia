@@ -162,7 +162,7 @@ The full brief for Coursework 1 can be found here: <a href="https://thomcorah.gi
 
 ### Coursework 2
 
-**Date Date:** 12pm (midday) on Tuesday 2nd May
+**Date Date:** 12pm (midday) on Tuesday 2nd May  
 **Weighting:** 60% of your module mark  
 
 This coursework will see you using HTML5, CSS3 and JavaScript ES6 to  produce the interactive story you designed for coursework 1.
