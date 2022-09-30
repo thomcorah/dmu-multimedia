@@ -34,13 +34,13 @@
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 3rd October </td>
+	<td><b>Date set:</b></td><td> 5th December </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 2nd December </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 2nd May </td>
 </tr>
 <tr>
-	<td><b>In accordance with the <a href="https://www.dmu.ac.uk/about-dmu/quality-management-and-policy/academic-quality/learning-teaching-assessment/assessment-feedback-policy.aspx">University Assessment and Feedback Policy</a>, your marked coursework and feedback will be available to you on:</b></td><td>Friday 23rd December</td>
+	<td><b>In accordance with the <a href="https://www.dmu.ac.uk/about-dmu/quality-management-and-policy/academic-quality/learning-teaching-assessment/assessment-feedback-policy.aspx">University Assessment and Feedback Policy</a>, your marked coursework and feedback will be available to you on:</b></td><td>Tuesday 23rd May</td>
 </tr>
 <tr>
 	<td colspan='2'>You should normally receive feedback on your coursework by <b>no later than 15 University working days after the formal hand-in date</b>, provided that you have met the submission deadline. <br />
