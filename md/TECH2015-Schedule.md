@@ -6,7 +6,7 @@
 - Welcome to the module
 - Discussion of our aims over the year
 - What will the coursework be?
-- The importance of design
+- What is Interactive Storytelling
 
 ### Lab
 
@@ -14,7 +14,7 @@
 
 ### Lecture
 - Review of PARC design principles
-- Look at some examples of online storytelling
+
 
 ### Lab
 
