@@ -7,3 +7,14 @@
     display: none;
   }
 }
+
+.todo {
+  background-color: rgb(191, 235, 220);
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+code {
+  font-weight: 100;
+}
