@@ -1,26 +1,28 @@
-# Lists and headings, and an intro to style
+# Lists and headings
 
-This week's lab is going to build on the simple page you put together last week.
+Now it's time to build a little on the simple page you've started.
 
-You're going to do three things:
+You're going to do two things:
 
 1. Add a list to your page
 2. Add subheadings
-3. Change its appearance with some basic styling
 
-First though, duplicate the html file you created for week 1 to use that as a start point.
 
 ## 1. Add a List
 
 Lists in HTML come in two flavours, ordered and unordered. Ordered lists are numbered (or lettered) and created using an `<ol>` element. Unordered lists are bulleted lists and created with a `<ul>` element.
 
+<div class="todo">
 Add an ordered list to your page that lists the top three reasons dogs have decided to work for the bank.
+</div>
 
 By default, ordered lists are numbered, but they can also have letters or Roman numerals (in upper and lowercase).
 
-Have a look at entry on W3Schools for the `<ul>` element: <https://www.w3schools.com/tags/tag_ol.asp>
+Have a look at entry on W3Schools for the `<ol>` element: <https://www.w3schools.com/tags/tag_ol.asp>
 
+<div class="todo">
 Can you change your list to use Roman numerals instead?
+</div>
 
 ## 2. Add Subheadings
 
@@ -28,13 +30,17 @@ You've now got a some content building up on this page, getting to the point whe
 
 The list you just created for example could do with a subheading. So far, you've just got the main heading at the top with the `<h1>` element. A subheading for this list should therefore use a `<h2>` element.
 
+<div class="todo">
 Use a `<h2>` to add a subheading to the list.
+</div>
 
 HTML provides six levels of heading, from `<h1>` to `<h6>`.
 
 Let's add some more content to see more of how headings work.
 
+<div class="todo">
 Copy the following content after your list.
+</div>
 
 > **Businesses Suited to Animal Employees**
 >
@@ -54,21 +60,7 @@ Copy the following content after your list.
 
 The bold items are headings. Mark them up with suitable headings tags. Hint: this should use both `<h2>` and `<h3>` elements.
 
-## Changing Appearance
+## That's a Wrap
 
-So far we've looked at HTML. HTML describes the content and structure of a webpage. However, it does nothing to tell the browser how any of it should look. The browser makes some decisions based on what the content is, such as making headings bigger, but this is pretty basic.
-
-If we want to change the appearance of our webpage, we need to use CSS. This stands for Cascading Style Sheets, which we'll get to in a future lab. For now, there are two key things you need to know:
-
-1. We use rules to affect appearance, in the format `rule-name: rule-value;`
-2. We can apply these rules using the `style` attribute of the element we want to apply them to.
-
-You can find more on using the `style` attribute of an element here: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?Inline-Style-talk.md>
-
-You can find a list of all the style rules available on the W3Schools website here: https://www.w3schools.com/cssref/default.asp
-
-Armed with this, make some changes to the way your website looks. Think in the first instance about font, text colour, and background colour. Have a scroll through that list on W3Schools and see if anything else sounds interesting. Play around, see what happens.
-
-## Finally
-
-And that's it for this week. Save your work, upload to GitHub, make sure it works on a mobile.
+And that's it. Make sure to load your page in the browser to see how it looks, on both desktop and mobile sizes.  
+Now you know how HTML works, how to create a simple page, and how to start adding structure to it.   
