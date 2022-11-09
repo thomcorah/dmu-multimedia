@@ -31,7 +31,7 @@ You've now got a some content building up on this page, getting to the point whe
 The list you just created for example could do with a subheading. So far, you've just got the main heading at the top with the `<h1>` element. A subheading for this list should therefore use a `<h2>` element.
 
 <div class="todo">
-Use a `<h2>` to add a subheading to the list.
+Use a <code><h2></code> to add a subheading to the list.
 </div>
 
 HTML provides six levels of heading, from `<h1>` to `<h6>`.
