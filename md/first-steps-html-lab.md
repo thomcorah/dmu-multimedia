@@ -156,8 +156,4 @@ From here you can change the size of the display and a couple of other things. H
 
 ## And That's It
 
-If you’ve got time left, you can take your page further. For a start, you could head over to the w3schools website and browse the long list of HTML elements. Try out any that take your fancy.
-
-<http://www.w3schools.com/tags/default.asp>
-
-While you’re there, it’s worth having a bit more of a look around. W3Schools is a great resource packed with information about developing for the web.
+Well done so far! Next up, you'll be adding lists and headings to help add structure to your page. 

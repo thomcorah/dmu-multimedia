@@ -64,3 +64,9 @@ The bold items are headings. Mark them up with suitable headings tags. Hint: thi
 
 And that's it. Make sure to load your page in the browser to see how it looks, on both desktop and mobile sizes.  
 Now you know how HTML works, how to create a simple page, and how to start adding structure to it.   
+
+If you’ve got time left, you can take your page further. For a start, you could head over to the w3schools website and browse the long list of HTML elements. Try out any that take your fancy.
+
+<http://www.w3schools.com/tags/default.asp>
+
+While you’re there, it’s worth having a bit more of a look around. W3Schools is a great resource packed with information about developing for the web.
