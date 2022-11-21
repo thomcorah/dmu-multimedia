@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+.menuItem {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 2px;
+    transition: background-color 0.5s;
+}
+
+.menuItem:hover {
+    background-color: rgb(233, 231, 231);
+}
+
+.menuItem:nth-child(1) {
+    margin-left: 0;
+}
+
+
+
+
+.work img {
+    width: 33%;
+}

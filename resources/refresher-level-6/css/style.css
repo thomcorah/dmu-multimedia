@@ -1,0 +1,48 @@
+body {
+    font-family: monospace;
+}
+
+.container {
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#display {
+    background-color: rgb(10, 30, 9);
+    height: 70px;
+    border-radius: 5px 5px 0 0;
+    color:lightgreen;
+    padding: 10px;
+    text-align: right;
+    font-size: 350%;
+}
+
+.keys {
+    padding: 15px;
+}
+
+.keyrow {
+    margin: 20px 0;
+    display:flex;
+}
+
+.key {
+    flex-grow: 1;
+    margin: 0 5px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    display: inline;
+    padding: 8px;
+    font-size: 250%;
+    box-shadow: 3px 3px 4px -1px rgba(0,0,0,0.56);
+    background-color: rgb(238, 237, 235);
+    transition: box-shadow 0.2s;
+}
+
+.keySelected {
+    box-shadow: 1px 1px 4px -1px rgba(0,0,0,0.56);
+    background: white;
+}
