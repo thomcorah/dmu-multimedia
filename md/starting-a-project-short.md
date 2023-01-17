@@ -1,19 +1,19 @@
 # Starting a Project
 
-### 1. Create a folder, open it in Atom.
-Use the normal windows explorer to create the folder. Open it in Atom using File -> Open Folder.. if you're on Windows, or just File -> Open.. if you're on a Mac.
+### 1. Create a folder, open it in your code editor.
+Use the normal file explorer to create the folder. Open it in your code editor. This is usually File -> Open Folder.
 
 ### 2. Create a `css` folder, and create a `style.css` file inside it.
-You can do this in Atom. Right click your new project folder in Atom and select New Folder. Put a name in the box. Right click the new folder and select New File. Don't forget the .css file extension on the new file.
+You can usually do this in your code editor. Right click your new project folder in the file view of your code editor and select New Folder. Give it a name. Don't forget the .css file extension on the new file.
 
 ### 3. Create your `html` file.
-Right click your main project folder in Atom and select New File. Don't forget the .html file extension.
+Right click your main project folder and select New File. Don't forget the .html file extension.
 
 ### 4. Fill it with the starting HTML
-In your new html file, type `html` and hit the Tab key.
+In your new html file, type `html` and select the appropriate shortcut. In VS Code for example, it'll come up with a little box from which you can select HTML 5.
 
 ### 5. Add the viewport meta tag to the `<head>` section:
-This is it:
+If this isn't already included in your `<head>` section, here it is:
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
