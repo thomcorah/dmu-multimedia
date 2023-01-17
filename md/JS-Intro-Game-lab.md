@@ -20,16 +20,16 @@ Or use your own.
 
 ## If things don't work
 
-If at any point your page is working, use the developer tools to try to find out why. The Console tab will give you any errors that JavaScript creates, and tell you where they are. Check your work regularly in the browser and pick up errors as they occur.
+If at any point your page isn't working, use the developer tools to try to find out why. The Console tab will give you any errors that JavaScript creates, and tell you where they are. Check your work regularly in the browser and pick up errors as they occur.
 
 ## Set up the HTML
 
 ### 1. Create a new project
 
 - Create a new folder
-- Open it in Atom
+- Open it in VS Code
 - Add an img folder and put the images in
-- Create an index.html file, and fill in the boiler plate html (type html and hit tab)
+- Create an index.html file, and fill in the boiler plate html
 - Open index.html in Chrome
 
 ### 2. Create the HTML components

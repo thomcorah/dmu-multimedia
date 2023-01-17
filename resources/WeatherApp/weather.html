@@ -61,6 +61,7 @@
 
     <script>
       // First off, get the location
+      /*
       $.getJSON("https://ipinfo.io", function (data) {
         console.log(data);
         var location = data.loc.split(",");
@@ -68,8 +69,17 @@
         /* armed with the location information, we can run a function
          * to get the weather data.
          */
-        getWeather(location[0], location[1], data.city);
-      });
+        //getWeather(location[0], location[1], data.city);
+        
+
+        
+
+
+      //});
+      
+      let response = await fetch("https://ipinfo.io", {headers: {token: "661ead18f7fe87"}});
+      let json = await response.json();
+      console.log(json)
 
       getWeather = (lat, lon, city) => {
         /* We're using an AJAX call here as we need to send a GET request to the
