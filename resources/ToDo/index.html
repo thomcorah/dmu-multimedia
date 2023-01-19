@@ -10,8 +10,7 @@
     <div class="container">
       <h1>ToDo</h1>
       <form>
-        <label
-          ><h2>Add a ToDo</h2>
+        <label><h2>Add a ToDo</h2>
           <input id="newTodo" />
         </label>
         <button id="addTodoBtn">Add</button>
@@ -26,6 +25,43 @@
       <div><input type="checkbox" /><label></label></div>
     </div>
 
-    <script src="js/todo.js"></script>
+    <script>
+
+      removeTodo = (evt) => {
+        let todoToRemove = evt.target.parentNode;
+        let todoIndex = todoToRemove.getAttribute('data-todo-index');
+        todos.splice(todoIndex, 1);
+        drawTodos();
+      }
+
+      drawTodos = () => {
+        console.log("WORKING")
+        let todolist = document.getElementById('todolist');
+        todolist.innerHTML = "";
+        let todoTemplate = document.querySelector('#TodoTemplate div');
+        for(let i = 0; i < todos.length; i++){
+          let newTodo = todoTemplate.cloneNode(true);
+          newTodo.setAttribute('data-todo-index', i);
+          let label = newTodo.querySelector('label');
+          label.textContent = todos[i];
+
+          let checkbox = newTodo.querySelector('input');
+          checkbox.addEventListener('click', removeTodo);
+          todolist.appendChild(newTodo);
+        }
+      }
+
+      addTodo = evt => {
+        evt.preventDefault();
+        let newTodo = document.getElementById("newTodo").value;
+        if (newTodo) {
+          todos.push(newTodo);
+        }
+        drawTodos();
+      };
+
+      let todos = [];
+      document.getElementById("addTodoBtn").addEventListener("click", addTodo);
+    </script>
   </body>
 </html>
