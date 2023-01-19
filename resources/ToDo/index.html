@@ -28,14 +28,12 @@
     <script>
 
       removeTodo = (evt) => {
-        let todoToRemove = evt.target.parentNode;
-        let todoIndex = todoToRemove.getAttribute('data-todo-index');
+        let todoIndex = evt.target.getAttribute('data-todo-index');
         todos.splice(todoIndex, 1);
         drawTodos();
       }
 
       drawTodos = () => {
-        console.log("WORKING")
         let todolist = document.getElementById('todolist');
         todolist.innerHTML = "";
         let todoTemplate = document.querySelector('#TodoTemplate div');
@@ -47,6 +45,7 @@
 
           let checkbox = newTodo.querySelector('input');
           checkbox.addEventListener('click', removeTodo);
+          checkbox.setAttribute('data-todo-index', i);
           todolist.appendChild(newTodo);
         }
       }
