@@ -26,40 +26,69 @@
     </div>
 
     <script>
-
-      removeTodo = (evt) => {
+      /**
+       * This function is used to remove an item from the todo array
+       * in response to the user clicking the item's checkbox.
+       */
+      function removeTodo(evt){
+        // get the index of this todo in the array from a custom attribute
         let todoIndex = evt.target.getAttribute('data-todo-index');
+        // use splice to remove the item from the array
         todos.splice(todoIndex, 1);
+        // redraw the todo list
         drawTodos();
       }
 
-      drawTodos = () => {
+      /**
+       * This function is used to redraw the list of todo items.
+       */
+      function drawTodos(){
+        // get a reference to the list container
         let todolist = document.getElementById('todolist');
+        // empty the list container
         todolist.innerHTML = "";
+        //get a reference to the list item template
         let todoTemplate = document.querySelector('#TodoTemplate div');
+        // loop over the array of todos
         for(let i = 0; i < todos.length; i++){
+          // create a copy of the HTML template
           let newTodo = todoTemplate.cloneNode(true);
-          newTodo.setAttribute('data-todo-index', i);
+          // get the label in the template
           let label = newTodo.querySelector('label');
+          // set the label's text to that of this array item
           label.textContent = todos[i];
 
+          // get a reference to the checkbox in the template
           let checkbox = newTodo.querySelector('input');
+          // add an event listener to remove this item when clicked
           checkbox.addEventListener('click', removeTodo);
+          // add a custom attribute so the remove function knows which item to remove
           checkbox.setAttribute('data-todo-index', i);
+          // add this template to the list container
           todolist.appendChild(newTodo);
         }
       }
 
-      addTodo = evt => {
+      /**
+       * This function adds the new todo to the array
+       */
+      function addTodo(evt){
+        // stop the default behaviour of submitting the form
         evt.preventDefault();
+        // get the value from the input
         let newTodo = document.getElementById("newTodo").value;
+        // check there's somethign in there!
         if (newTodo) {
+          // add the item to the array
           todos.push(newTodo);
         }
+        // redraw the list of todo items.
         drawTodos();
       };
 
+      // create an empty array on first load
       let todos = [];
+      // add an event listener to the 'add' button to add a new todo.
       document.getElementById("addTodoBtn").addEventListener("click", addTodo);
     </script>
   </body>
