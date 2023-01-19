@@ -6,7 +6,7 @@ The app should allow the user to add items to a list. These items will be displa
 
 You can see an example at <https://thomcorah.github.io/dmu-multimedia/resources/ToDo>
 
-I'm not going to tell you step by step in detail how to make this, but here are some pointers.  
+I'm not going to tell you step by step in detail how to make this, but here are some pointers. Remember to regularly check that things are working as you go with `console.log()` and use the internet to find out how to do things. 
 
 ## HTML Structure
 
