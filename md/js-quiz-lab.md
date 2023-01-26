@@ -19,9 +19,9 @@ However, it's not just the questions we're storing, it's the possible answers, a
 
 So, for each question, we actually want to store a few things:
 
-question: the text of the question
-answers: a list of possible answers
-correctAnswer: a number that points to which of the possible answers is correct
+question: the text of the question  
+answers: a list of possible answers  
+correctAnswer: a number that points to which of the possible answers is correct  
 
 This sounds like a job for an object. This means we're going to end up with an array of objects, one object for each question.
 
