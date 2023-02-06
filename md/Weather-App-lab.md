@@ -7,7 +7,7 @@ This is a simple web app that finds out a visitor’s location based on their IP
 To do that we’re going to use three different free API.
 
 **ipinfo.io** This can give us the latitude and longitude of a user based in their IP.  
-**openweathermap.org** We’ll use Open Weather Map to find out the weather given the location.  
+**weatherapi.com** We’ll use Open Weather Map to find out the weather given the location.  
 **flickr.com** Flickr have a very rich database of user-submitted photos that we can query by location and tags.
 
 You can see a fully completed version of this here: <https://thomcorah.github.io/dmu-multimedia/resources/WeatherApp/weather.html>
@@ -99,23 +99,46 @@ The order that we fetch this data in is important, as we need the data from one 
 
 First up, we’ll **find out the user’s location** using the ipinfo.io API.
 
-Armed with the latitude and longitude from this API call, we can then use Open Weather Map to **get the weather** at that location.
+Armed with the latitude and longitude from this API call, we can then use WeatherAPI to **get the weather** at that location.
 
 By this point we’ll know the location and the weather, so we can go ahead and ask Flickr for a **photo near that location that’s tagged with the same weather**.
 
 ## Getting Location
 
-This is the easiest bit. ipinfo doesn’t require you to create an account or provide an API key. You also don’t need to send them any info as they’ll pick up the IP address in the API request, and this is all they need.
+IPInfo requires you to create a free account and create an API key, which they call a token. This should be included in any calls to the API to identify you.
 
-All we need to do therefore is pull in data from their URL - https://ipinfo.io. ipinfo.io responds with JSON formatted data, so we can use jQuery’s getJSON method to do this and the result will be automatically parsed into a JavaScript object for us to use.
+Head to <https://ipinfo.io>, create an account, and get a token.
 
+We're going to use jQuery's `ajax` method throughout this lab to access the API. The `ajax` method needs to know a few things:  
+
+url: what is the web address of the API  
+data: what additional info do you want to attach to the request, like a token for example  
+success: what should happen when the request is successful  
+
+This is all provided as an object.  
 ```js
-$.getJSON("https://ipinfo.io", function (data) {
-  console.log(data);
-});
+$.ajax({
+  url: /* the web address of the API */,
+  data: /* an object of extra stuff to send */,
+  success: /* a function to handle the response */
+})
 ```
 
-From the log of the data you can see what information we’re getting back. There’s the name of the city there, but the latitude and longitude are wrapped up as a comma delimited list as the ‘loc’ property. We need to break this up into latitude and longitude to be able to use it.
+Our complete API call can be developed into this:
+
+```js
+$.ajax({
+  url: "https://ipinfo.io",
+  data: {
+    token: "661ead18f7fe87"
+  },
+  success: function (data){
+    console.log(data);
+  }
+})
+```
+
+From the log of the data that comes back you can see what information we’re getting. There’s the name of the city there, but the latitude and longitude are wrapped up as a comma delimited list as the ‘loc’ property. We need to break this up into latitude and longitude to be able to use it.
 
 We can use the split() string method to do this, giving us an array of two items. The first will be the latitude and the second the longitude.
 
@@ -123,66 +146,62 @@ We can use the split() string method to do this, giving us an array of two items
 var location = data.loc.split(",");
 ```
 
-You're going to create a function that will get the weather based on the location info. The final thing to do here then is to call that function and pass in the location data - latitude, longitude, city name. Your finished code to get the location should look something like this, where `getWeather` is the function you'll create:
+You're going to create a function that will get the weather based on the location info. The final thing to do here then is to call that function and pass in the location data - latitude, longitude, city name. Your finished code to get the location should look something like this, where `getWeather` is a function we've not written yet:
 
 ```js
-$.getJSON("https://ipinfo.io", function (data) {
-  console.log(data);
-  var location = data.loc.split(",");
-  getWeather(location[0], location[1], data.city);
-});
+$.ajax({
+  url: "https://ipinfo.io",
+  data: {
+    token: "661ead18f7fe87"
+  },
+  success: function (data){
+    console.log(data.loc);
+    let loc = data.loc.split(',');
+    getWeather(loc[0], loc[1], data.city)
+  }
+})
 ```
 
 ## Getting the Weather
 
-Now we know where the user is, we can find out the weather. In order to use Open Weather Map you’ll need to sign up for a free account and get an API key. Head over to openweathermap.org to do so. You’ll also find their API documentation there. You’ll see there’s a good deal more you can do there than just get the current weather. You can also get up to 16 day forecasts as well as historical data.
+Now we know where the user is, we can find out the weather. In order to use WeatherAPI you’ll need to sign up for a free account and get an API key. Head over to <https://www.weatherapi.com> to do so. You’ll also find their API documentation there. You’ll see there’s a good deal more you can do there than just get the current weather. 
 
 Create a function called getWeather that will contain the code to, well, get the weather.
 
-We need to send a GET request to the Open Weather Map API. The URL for this is:
+We need to send a GET request to the Weather API. The URL for this is:
 
-http://api.openweathermap.org/data/2.5/weather
+http://api.weatherapi.com/v1/current.json
 
 You will need to send this request with a few parameters.
 
-**APPID:** This is your API key. The API will refuse your request without this.
-**lat:** This is the longitude you got earlier.
-**lon:** This is the longitude you got earlier.
-**units:** Open Weather Map supplies temperatures in Kelvin by default, but we want centigrade.
+**key:** This is your API key. The API will refuse your request without this.
+**q:** This is the location. We supply this in the format "lat,lon" i.e. the latitude and longitude with a comma between them. Yep, I know that's how we originally got it from ipinfo, before we split it up. But, we'll them separately in a bit.
 
 We can construct this request using the jQuery ajax() method, which uses the GET method by default. You'll have a request that will look something like this, inside the getWeather function.
 
 ```js
 $.ajax({
-  url: "https://api.openweathermap.org/data/2.5/weather",
+  url: "http://api.weatherapi.com/v1/current.json",
   data: {
-    lat: lat,
-    lon: lon,
-    APPID: "faa5f3cbac49209a59c3a86dfeb48128",
-    units: "metric",
+    q: lat +',' + lon,
+    key: '0a92d5c087d24b0fbb9113115230602'
   },
   success: function onSuccess(result) {
-    // handle the result
-  },
-  error: function onError(error) {
-    // handle any errors
-  },
-});
+    console.log(result);
+  }
+})
 ```
+In this success function you can update the text components of your interface by pulling data out of the object that’s returned.
 
-The success parameter here specifies what to do when the data is received. There is also an error method to catch any errors, perhaps to be able to report back to the user. Note that functions specified as object methods (as here) have to use the `function` keyword syntax, you can't use => arrow functions here.
-
-Anyhow, in this success function you can update the text components of your interface by pulling data out of the object that’s returned.
-
-If you log the returned object to the console you’ll see that it’s got quite a lot of data in it, so you’ll have to dig into it a bit to get what you want. You can see that the temperature is at main.temp. A nice description of the weather however is a little trickier. It’s inside the weather object, but this object contains an array of just one item. Inside that item we then have the main property, with the value ‘Clouds’. This should do nicely. In order to get to it we need to dig in like so: weather[0].main.
+If you log the returned object to the console you’ll see that it’s got quite a lot of data in it, so you’ll have to dig into it a bit to get what you want. You can see that the temperature is at `current.feelslike_c`. A nice description of the weather however is a little trickier. You can find it at `current.condition.text`.
 
 All of this comes within the result object, so your success function should look something like this.
 
 ```js
 success: function onSuccess(result) {
   $("#city").html(city);
-  $("#temperature").html(result.main.temp + "&deg");
-  $("#weather").html(result.weather[0].main);
+  $("#temperature").html(result.current.feelslike_c + "&deg");
+  $("#weather").html(result.current.condition.text);
 },
 ```
 
@@ -191,10 +210,10 @@ Once you've logged the info to the screen, it's time to go get a photo. You're g
 ```js
 success: function onSuccess(result) {
   $("#city").html(city);
-  $("#temperature").html(result.main.temp + "&deg");
-  $("#weather").html(result.weather[0].main);
+  $("#temperature").html(result.current.feelslike_c + "&deg");
+  $("#weather").html(result.current.condition.text);
 
-  getPhoto(lat, lon, result.weather[0].main);
+  getPhoto(lat, lon, result.current.condition.text);
 },
 ```
 

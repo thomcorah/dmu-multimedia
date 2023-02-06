@@ -64,10 +64,10 @@
         data: {
           token: "661ead18f7fe87"
         },
-        success: function onSuccess(data){
+        success: function (data){
           console.log(data.loc);
           let loc = data.loc.split(',');
-          getWeather(loc[0], loc[2], data.city)
+          getWeather(loc[0], loc[1], data.city)
         }
       })
 
