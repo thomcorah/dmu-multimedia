@@ -54,44 +54,34 @@
         <a href="http://openweathermap.org">Open Weather Map</a>.
       </p>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script id="runFlickrScript"></script>
 
     <script>
       // First off, get the location
-      /*
-      $.getJSON("https://ipinfo.io", function (data) {
-        console.log(data);
-        var location = data.loc.split(",");
-
-        /* armed with the location information, we can run a function
-         * to get the weather data.
-         */
-        //getWeather(location[0], location[1], data.city);
-        
-
-        
-
-
-      //});
-      
-      let response = await fetch("https://ipinfo.io", {headers: {token: "661ead18f7fe87"}});
-      let json = await response.json();
-      console.log(json)
+      $.ajax({
+        url: "https://ipinfo.io",
+        data: {
+          token: "661ead18f7fe87"
+        },
+        success: function onSuccess(data){
+          console.log(data.loc);
+          let loc = data.loc.split(',');
+          getWeather(loc[0], loc[2], data.city)
+        }
+      })
 
       getWeather = (lat, lon, city) => {
         /* We're using an AJAX call here as we need to send a GET request to the
          * Open Weather Map API and include some additional parameters.
          */
+      
+            
         $.ajax({
-          url: "https://api.openweathermap.org/data/2.5/weather",
+          url: "http://api.weatherapi.com/v1/current.json",
           data: {
-            lat: lat,
-            lon: lon,
-            APPID: "faa5f3cbac49209a59c3a86dfeb48128",
-            units: "metric",
+            q: lat +',' + lon,
+            key: '0a92d5c087d24b0fbb9113115230602'
           },
           success: function onSuccess(result) {
             console.log(result);
@@ -100,16 +90,18 @@
              * degrees centigrade, so we want to display the degrees symbol
              * after the number. This is what &deg will do.
              */
+            
             $("#city").html(city);
-            $("#temperature").html(result.main.temp + "&deg");
-            $("#weather").html(result.weather[0].main);
+            $("#temperature").html(result.current.feelslike_c + "&deg");
+            $("#weather").html(result.current.condition.text);
 
             // Now we go to get a photo.
-            getPhoto(lat, lon, result.weather[0].main);
-          },
-        });
-      };
-
+            getPhoto(lat, lon, result.current.condition.text);
+          }
+        })
+      }
+      
+      
       getPhoto = (lat, lon, weather) => {
         /* Again, we're using an ajax request here as we need to use GET and
          * send some additional parameters. The url_l for the extras property
@@ -117,6 +109,7 @@
          * you can also get small ones (url_s), square ones (url_sq) and all
          * sorts of others. Details are in Flickr's API docs.
          */
+        
         $.ajax({
           url: "https://api.flickr.com/services/rest/",
           data: {
@@ -135,11 +128,11 @@
             /* Fickr actually gives us back a function call, so we inject that into an
              * empty <script> element to have it run.
              */
+           
             $("#runFlickrScript").html(result);
-          },
-        });
-      };
-
+             }
+            })
+          }
       /* This is the function that Flickr mandates we create to handle the result of
        * the API call.
        */
