@@ -44,18 +44,18 @@ To add a collaborator, go into the settings for your repository, and then select
 
 ## Enable Pages
 
-GitHub Pages is the service that creates a website from your code. You need to turn this on though. Go into the repository settings. In the Options section that you land in to start with, scroll down to the sub-section called GitHub Pages.
+GitHub Pages is the service that creates a website from your code. You need to turn this on though. Go into the repository settings. The menu on the left gives you access to different types of settings. About half-way down you'll see a section called `Pages`. Click this.
 
-There is a dropdown to select a branch to use for Pages. Just select Master, and then click the save button.
+There is a dropdown to select a branch to use for Pages. Just select Master or Main, and then click the save button.
 
 Your code is now viewable as a website. The URL to get to it is
 
 ```
-<your username>.GitHub.io/<repository name>
+<your username>.github.io/<repository name>
 ```
 
 For example, this page is held in a repository called `dmu-multimedia`, managed under the username `thomcorah`. It can be found within the following URL
 
 ```
-thomcorah.GitHub.io/dmu-multimedia
+thomcorah.github.io/dmu-multimedia
 ```

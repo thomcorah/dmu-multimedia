@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 600vh;
+            margin: 0;
+        }
+
+        .leftBox {
+            width: 70%;
+            height: 200px;
+            border-radius: 0 8px 8px 0;
+            background-color: aquamarine;
+            position: relative;
+            transform:translateX(-100%);
+        }
+
+        .rightBox {
+            width: 70%;
+            height: 200px;
+            border-radius: 8px 0 0 8px;
+            background-color: rgb(170, 52, 158);
+            position: relative;
+            transform:translateX(100%);
+        }
+
+        #boxOne {
+            top: 100vh;
+        }
+
+        #boxTwo {
+            top: 200vh;
+        }
+
+        #boxThree {
+            top: 300vh;
+        }
+
+        #boxFour {
+            top: 400vh;
+        }
+
+        #boxFive {
+            top: 450vh;
+        }
+
+        #boxSix {
+            top: 520vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="leftBox" id="boxOne"></div>
+    <div class="leftBox" id="boxTwo"></div>
+    <div class="leftBox" id="boxThree"></div>
+    <div class="rightBox" id="boxFour"></div>
+    <div class="rightBox" id="boxFive"></div>
+    <div class="rightBox" id="boxSix"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script>
+        document.addEventListener("scroll", checkScroll);
+
+        function checkScroll(evt){
+            console.log(document.documentElement.scrollTop);
+            document.querySelectorAll('.leftBox').forEach(box => {
+                if(document.documentElement.scrollTop > box.offsetTop - 10 - window.innerHeight){
+                    gsap.to(box, {x: 0, duration: 1})
+                }
+            }) 
+            document.querySelectorAll('.rightBox').forEach(box => {
+                if(document.documentElement.scrollTop > box.offsetTop - 10 - window.innerHeight){
+                    gsap.to(box, {x: '70%', duration: 1})
+                }
+            }) 
+
+        }
+    </script>
+
+</body>
+</html>

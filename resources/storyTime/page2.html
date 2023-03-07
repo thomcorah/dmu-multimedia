@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What a lovely day</h1>
+    <p>Ah, hello <span id="name"></span>. How very nice to see you.</p>
+    <script>
+        document.getElementById('name').textContent = sessionStorage.getItem("name");
+    </script>
+</body>
+</html>
