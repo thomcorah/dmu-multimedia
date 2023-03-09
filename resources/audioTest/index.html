@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: blanchedalmond;
+        }
+        div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Theramin</h1>
+        <button>Start</button>
+    </div>
+
+    <script>
+        let playing = false;
+        let started = false;
+
+        let context = new AudioContext()
+        let oscillator = context.createOscillator()
+        oscillator.type = 'sine';
+
+        let gain = context.createGain()
+        oscillator.connect(gain)
+        gain.connect(context.destination)
+
+        document.querySelector('button').addEventListener('click', toggleAudio)
+
+        function toggleAudio(){
+            let now = context.currentTime
+            if(playing){
+                document.querySelector('button').textContent = 'Start'
+                document.querySelector('div').removeEventListener('mousemove', updateTheramin)
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.5);
+                playing = false;
+            } else {
+                if(!started) {
+                    oscillator.start()
+                    started = true
+                }
+                gain.gain.exponentialRampToValueAtTime(1, now + 0.5);
+                document.querySelector('button').textContent = 'Stop'
+                document.querySelector('div').addEventListener('mousemove', updateTheramin)
+                playing  = true
+            }
+        }
+
+        function updateTheramin(evt) {
+            let volume = evt.clientX / window.innerWidth
+            let pitch = 1 - evt.clientY / window.innerHeight
+            pitch = 950 * pitch + 50
+            let now = context.currentTime
+            gain.gain.exponentialRampToValueAtTime(volume, now + 0.5)
+            oscillator.frequency.exponentialRampToValueAtTime(pitch, now + 0.5)
+        }
+    </script>
+</body>
+</html>

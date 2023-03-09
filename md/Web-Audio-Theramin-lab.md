@@ -20,7 +20,7 @@ The user interface for this is quite simple. Really, we just need an area over w
 
 We might as well stick the word 'Theramin' in the middle too.
 
-![Theramin interface](https://thomcorah.github.io/dmu-multimedia/resources/img/theraminScreenshot.jpg)
+![Theramin interface](https://thomcorah.github.io/dmu-multimedia/resources/img/theraminScreenshot.png)
 
 Some key points:
 
@@ -158,34 +158,34 @@ toggleAudio = (evt) => {
 
   // If the oscillator is playing, we need to stop the theramin...
 
-    // Remove the event listener from our big div that
-    // was responding to mouse movements on it.
+      // Remove the event listener from our big div that
+      // was responding to mouse movements on it.
 
-    // Change the button label to 'Start'
+      // Change the button label to 'Start'
 
-    // Turn the volume down to 0
+      // Turn the volume down to 0
 
-    // set the playing variable to false
+      // set the playing variable to false
 
   // But if the theramin isn't currently playing...
 
-    // If it's not been started before..
-      //start the oscillator
-      // set the started variable to true
+      // If it's not been started before..
+          // start the oscillator
+          // set the started variable to true
 
 
-    // Add an event listener to the big div to respond
-    // to mouse movements over it
+      // Add an event listener to the big div to respond
+      // to mouse movements over it
 
-    // Change the button label to 'Stop'
+      // Change the button label to 'Stop'
 
-    // Turn the volume up
+      // Turn the volume up
 
-    // Set the playing variable to true
+      // Set the playing variable to true
 }
 ```
 
-Let's step through each of those.
+Let's step through each of those comments.
 
 **// Get the current time - we'll need this later**
 
@@ -195,10 +195,85 @@ Audio requires exact timing, and requires us to provide an exact time in a coupl
 let now = context.currentTime;
 ```
 
-The if statements should be straightforward, I'll skip those.
+Let's jump down to the second half of the main `if` block, the bit that runs if playing is false. This is the bit that will turn on the theramin.
 
-**// Remove the event listener from our big div that  
-// was responding to mouse movements on it.**
+**// If it's not been started before..**
+
+This is important. We're only allowed to start the audio in response to a user interaction, but we only want it to happen the first time the button is clicked. That's why we need this bit. We only want to run `oscillator.start()` the first time that button is clicked. So, this comment should be replaced with an if statement that will run the enclosed code if `started` is false. 
+
+```JS
+if(!started){
+  // start the oscillator
+  // set the started variable to true
+}
+```
+
+That `!` can be read as `not`.
+
+**//start the oscillator**
+
+Oscillators have a `start()` method, so that's easy.
+
+```JS
+oscillator.start();
+```
+
+**// set the started variable to true**
+
+```JS
+started = true;
+```
+
+Now we're out of that little `if` block.
+
+**// Add an event listener to the big div to respond to mouse movements over it**  
+
+For this we need to get a reference to the `<div>`, and add an event listener that's listening for a `mousemove` event.  
+
+Have it run a function called `updateTheramin()` whenever the event is detected. In this example, the `<div>` has the id `theramin`.
+
+```JS
+document
+  .getElementById("theramin")
+  .addEventListener("mousemove", updateTheramin);
+```
+
+**// Change the button label to 'Stop'**  
+
+Once you've got a reference to the `<button>`, you can change the text on it with its `textContent` property. You can get a reference to it via the `target` property of the event object:
+
+```JS
+evt.target.textContent = "Stop";
+```
+
+Or using one of the JS methods to select an element:
+
+```JS
+document.querySelector('button').textcontent = "Stop";
+```
+
+**// Turn the volume up**  
+
+We've got a `gain` object in our audio chain. We're going to use this object to control the volume. Gain objects have a `gain` property. However, you can't
+change the value of the property directly. There are a few methods that you can use to change it. The simplest is `setValueAtTime()`. This method takes two arguments: 1. The value to set it to, and 2. A time at which to set it.  
+
+We saved the current time in a variable called `now`, so we can use that. To turn the volume up to full (which is 1), we want:
+
+```JS
+gain.gain.setValueAtTime(1, now)
+```
+
+**// Set the playing variable to true**  
+
+This should be straightforward.  
+
+```JS
+playing = true;
+```
+
+So that's what happens when we start playing the sound. Let's go to the top half of that `if` block and fill in what happens if the sound is already playing when the button is clicked.  
+
+**// Remove the event listener from our big div that was responding to mouse movements on it.**  
 
 Removing an event listener is just the same as adding it, except we use the `removeEventListener()` method instead of `addEventListener()`. In this example, the big `<div>` has an id of 'theramin', and we're going to go on to create a function called `updateTheramin` that will respond to changes in mouse position over it.
 
@@ -234,44 +309,6 @@ This bit should be simple.
 ```JS
 playing = false;
 ```
-
-So we end up with the following if the theramin is currently playing:
-
-```JS
-if (playing) {
-  document
-    .getElementById("theramin")
-    .removeEventListener("mousemove", updateTheramin);
-
-  evt.target.textContent = "Start";
-
-  gain.gain.setValueAtTime(0, now);
-
-  playing = false;
-}
-```
-
-Onto the next bit, when it's not already playing.
-
-**// If it's not been started before..**
-
-This is important. We're only allowed to start the audio in response to a user interaction, but we only want it to happen the first time the button is clicked. That's why we need this bit.
-
-**//start the oscillator**
-
-Oscillators have a `start()` method.
-
-```JS
-oscillator.start();
-```
-
-**// set the started variable to true**
-
-```JS
-started = true;
-```
-
-The rest of what follows in this section is the same as turning the theramin off, but the other way round.
 
 In all, you'll end up with this.
 
@@ -309,6 +346,7 @@ toggleAudio = (evt) => {
   }
 };
 ```
+
 
 Try it out. What happens. Anything? Probably just an annoying constant tone? Or an error because you haven't created the function the event listeners are trying to call when the mouse moves!
 
