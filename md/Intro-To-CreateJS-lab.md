@@ -2,9 +2,9 @@
 
 CreateJS is a third-party JavaScript library that helps you out with making games. It's actually made up of four components:
 
-- EaselJS: A JavaScript library that makes working with the HTML5 Canvas element easy.
+- EaselJS: A JavaScript library that makes working with the HTML5 Canvas element easier.
 - TweenJS: A JavaScript library for tweening and animating HTML5 and JavaScript properties.
-- SoundJS: A JavaScript library that lets you easily and efficiently work with audio on the web.
+- SoundJS: A JavaScript library that lets you more easily and efficiently work with audio on the web.
 - PreloadJS: A JavaScript library that lets you manage and co-ordinate the loading of assets and data.
 
 You can find out more here: <https://createjs.com>
@@ -27,9 +27,9 @@ Feel free to edit the graphics if you want a different feel.
 
 ## Create the HTML
 
-Start a new project, open it in Atom. Create a new HTML file and fill in the normal starting stuff - `<head>`, `<body>` etc.
+Start a new project, open it in your code editor. Create a new HTML file and fill in the normal starting stuff - `<head>`, `<body>` etc.
 
-CreateJS works by drawing into a `<canvas>` element, so we'll need on in the `<body>`. It'll need an id so that we can pass it to CreateJS. We'll also set its width to 480px and its height to 320.
+CreateJS works by drawing into a `<canvas>` element, so we'll need one in the `<body>`. It'll need an id so that we can pass the `<canvas>` to CreateJS. We'll also set its width to 480px and its height to 320.
 
 ```HTML
 <canvas id="PongStage" width="480" height="320"></canvas>
@@ -43,11 +43,20 @@ With CreateJS, you can download just the sub-library that you need, or the whole
 
 ## Set Up The Game
 
-When your page loads and is ready, CreateJS will look for a function called setup() and run it. This allows you to do any setup stuff such as loading files.
+There are a few things we need to do to setup for the game. 
 
 ### 1. Create an setup function
 
-Just an empty function is ok for now. You could put a `console.log()` in there to check it runs when the page first loads.
+Just an empty function is ok for now. Make sure that you're also running the function when the page loads.
+
+```JS
+
+start();
+
+function start(){
+  console.log('Started');
+}
+```
 
 ### 2. Set the Stage
 

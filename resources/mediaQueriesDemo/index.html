@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);
+            transition: all 0.3s;
+        }
+
+
+
+        nav.active {
+            transform: translateX(0);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 40pt;
+            padding: 20px 0;
+            border-bottom: 1px solid lightgray;
+        }
+
+        nav button {
+            color: black;
+            position:absolute;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            font-size: 20pt;
+
+            transform: translateX(30px)
+        }
+
+        nav.active button {
+            color: white;
+            transform: translateX(0);
+        }
+        
+
+        @media screen and (min-width: 600px){
+            nav {
+                flex-direction: row;
+                justify-content: end;
+                transform: translateX(0);
+                height: auto;
+            }
+
+            nav a {
+                margin: 0 20px;
+                font-size: 1.5em;
+                border: none;
+            }
+           
+        }
+
+       
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <button>X</button>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Flavours</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <script>
+        let button = document.querySelector('button');
+        button.addEventListener('click', toggleMenu);
+
+        function toggleMenu(){
+            document.querySelector('nav').classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
